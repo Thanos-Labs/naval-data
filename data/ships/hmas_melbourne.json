@@ -1,0 +1,39 @@
+{
+  "name": "HMAS Melbourne (R21)",
+  "dbpedia_uri": "http://dbpedia.org/resource/HMAS_Melbourne_(R21)",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/HMAS_Melbourne_(R21)",
+  "wikipedia_title": "HMAS Melbourne (R21)",
+  "country": "Australia",
+  "subtype": "light aircraft carrier",
+  "class": "Modified Majestic-class light aircraft carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "Vickers-Armstrongs, Barrow-in-Furness",
+  "date_commissioned": "1955-10-28",
+  "date_decommissioned": "1982-05-30",
+  "decommissioningReason": "scrapped",
+  "inService": false,
+  "displacement": {
+    "tonnes": 159.519,
+    "tons": 157.0
+  },
+  "pennant_number": null,
+  "length": {
+    "ft": 702.001,
+    "m": 213.97
+  },
+  "beam": {
+    "ft": 79.987,
+    "m": 24.38
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 25.0,
+    "m": 7.62
+  },
+  "speed": {
+    "km_h": 44.448,
+    "knots": 24.0
+  }
+}

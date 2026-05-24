@@ -1,0 +1,39 @@
+{
+  "name": "Japanese aircraft carrier Hiyō",
+  "dbpedia_uri": "http://dbpedia.org/resource/Japanese_aircraft_carrier_Hiyō",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/Japanese_aircraft_carrier_Hiyō",
+  "wikipedia_title": "Japanese aircraft carrier Hiyō",
+  "country": "Empire of Japan",
+  "subtype": "aircraft carrier",
+  "class": "Hiyō-class aircraft carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "Kawasaki Heavy Industries, Kobe",
+  "date_commissioned": "1942-07-31",
+  "date_decommissioned": "1944-11-10",
+  "decommissioningReason": "transferred",
+  "inService": false,
+  "displacement": {
+    "tonnes": 244.867,
+    "tons": 241.0
+  },
+  "pennant_number": null,
+  "length": {
+    "ft": 721.785,
+    "m": 220.0
+  },
+  "beam": {
+    "ft": 87.598,
+    "m": 26.7
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 26.739,
+    "m": 8.15
+  },
+  "speed": {
+    "km_h": 47.226,
+    "knots": 25.5
+  }
+}

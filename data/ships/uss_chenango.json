@@ -1,0 +1,39 @@
+{
+  "name": "USS Chenango (CVE-28)",
+  "dbpedia_uri": "http://dbpedia.org/resource/USS_Chenango_(CVE-28)",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/USS_Chenango_(CVE-28)",
+  "wikipedia_title": "USS Chenango (CVE-28)",
+  "country": "United States",
+  "subtype": "escort carrier",
+  "class": "Sangamon-class escort carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "Sun Shipbuilding and Dry Dock Company, Chester, Pennsylvania",
+  "date_commissioned": "1941-06-20",
+  "date_decommissioned": "1946-08-14",
+  "decommissioningReason": "transferred",
+  "inService": false,
+  "displacement": {
+    "tonnes": 11582.935,
+    "tons": 11400.0
+  },
+  "pennant_number": "Hull symbol: *AVG-28 (16 March 1942) *ACV-28 (20 August 1942) *CVE-28 (15 July 1943) *CVHE-28 (12 June 1955) *Callsign: NWSD *NovemberWhiskeySierraDelta",
+  "length": {
+    "ft": 1814.304,
+    "m": 553.0
+  },
+  "beam": {
+    "ft": 344.488,
+    "m": 105.0
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 98.425,
+    "m": 30.0
+  },
+  "speed": {
+    "km_h": 33.892,
+    "knots": 18.3
+  }
+}

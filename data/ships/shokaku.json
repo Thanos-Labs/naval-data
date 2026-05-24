@@ -1,0 +1,39 @@
+{
+  "name": "Japanese aircraft carrier Shōkaku",
+  "dbpedia_uri": "http://dbpedia.org/resource/Japanese_aircraft_carrier_Shōkaku",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/Japanese_aircraft_carrier_Shōkaku",
+  "wikipedia_title": "Japanese aircraft carrier Shōkaku",
+  "country": "Empire of Japan",
+  "subtype": "aircraft carrier",
+  "class": "Shōkaku-class aircraft carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "Yokosuka Naval Arsenal",
+  "date_commissioned": "1941-08-08",
+  "date_decommissioned": null,
+  "decommissioningReason": "sunk",
+  "inService": false,
+  "displacement": {
+    "tonnes": 260.108,
+    "tons": 256.0
+  },
+  "pennant_number": null,
+  "length": {
+    "ft": 844.816,
+    "m": 257.5
+  },
+  "beam": {
+    "ft": 85.302,
+    "m": 26.0
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 28.871,
+    "m": 8.8
+  },
+  "speed": {
+    "km_h": 63.338,
+    "knots": 34.2
+  }
+}

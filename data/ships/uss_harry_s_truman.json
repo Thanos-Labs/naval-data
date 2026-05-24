@@ -1,0 +1,35 @@
+{
+  "name": "USS Harry S. Truman",
+  "dbpedia_uri": "http://dbpedia.org/resource/USS_Harry_S._Truman",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/USS_Harry_S._Truman",
+  "wikipedia_title": "USS Harry S. Truman",
+  "country": "United States",
+  "subtype": "nuclear aircraft carrier",
+  "class": "Nimitz-class aircraft carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "Newport News Shipbuilding",
+  "date_commissioned": "1998-07-25",
+  "date_decommissioned": null,
+  "decommissioningReason": null,
+  "inService": true,
+  "displacement": {
+    "tonnes": 105567.274,
+    "tons": 103900.0
+  },
+  "pennant_number": "368800000 *Callsign: NHST *NovemberHotelSierraTango *Hull number: CVN-75",
+  "length": {
+    "m": null
+  },
+  "beam": {
+    "m": null
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "m": null
+  },
+  "speed": {
+    "knots": null
+  }
+}

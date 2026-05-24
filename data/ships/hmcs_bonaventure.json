@@ -1,0 +1,39 @@
+{
+  "name": "HMCS Bonaventure",
+  "dbpedia_uri": "http://dbpedia.org/resource/HMCS_Bonaventure",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/HMCS_Bonaventure",
+  "wikipedia_title": "HMCS Bonaventure",
+  "country": "Canada",
+  "subtype": "light aircraft carrier",
+  "class": "Majestic-class aircraft carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "Harland & Wolff, Belfast, Northern Ireland",
+  "date_commissioned": "1957-01-17",
+  "date_decommissioned": "1970-07-03",
+  "decommissioningReason": "scrapped",
+  "inService": false,
+  "displacement": {
+    "tonnes": 16256.751,
+    "tons": 16000.0
+  },
+  "pennant_number": null,
+  "length": {
+    "ft": 2066.601,
+    "m": 629.9
+  },
+  "beam": {
+    "ft": 262.139,
+    "m": 79.9
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 80.381,
+    "m": 24.5
+  },
+  "speed": {
+    "km_h": 45.374,
+    "knots": 24.5
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "French ship Dixmude (L9015)",
+  "dbpedia_uri": "http://dbpedia.org/resource/French_ship_Dixmude_(L9015)",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/French_ship_Dixmude_(L9015)",
+  "wikipedia_title": "French ship Dixmude (L9015)",
+  "country": "France",
+  "subtype": "aircraft carrier",
+  "class": "Mistral-class amphibious assault ship",
+  "configuration": "helicopter",
+  "manufacturer": "Chantiers de Saint-Nazaire",
+  "date_commissioned": "2012-12-27",
+  "date_decommissioned": null,
+  "decommissioningReason": null,
+  "inService": true,
+  "displacement": {
+    "tonnes": 16764.774,
+    "tons": 16500.0
+  },
+  "pennant_number": "L9015",
+  "length": {
+    "ft": 652.887,
+    "m": 199.0
+  },
+  "beam": {
+    "ft": 104.987,
+    "m": 32.0
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 20.669,
+    "m": 6.3
+  },
+  "speed": {
+    "km_h": 34.818,
+    "knots": 18.8
+  }
+}

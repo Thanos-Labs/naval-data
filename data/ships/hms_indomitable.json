@@ -1,0 +1,39 @@
+{
+  "name": "HMS Indomitable (92)",
+  "dbpedia_uri": "http://dbpedia.org/resource/HMS_Indomitable_(92)",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/HMS_Indomitable_(92)",
+  "wikipedia_title": "HMS Indomitable (92)",
+  "country": "United Kingdom",
+  "subtype": "fleet carrier",
+  "class": "Modified Illustrious-class aircraft carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "Vickers-Armstrong, Barrow-in-Furness",
+  "date_commissioned": "1941-10-10",
+  "date_decommissioned": null,
+  "decommissioningReason": "scrapped",
+  "inService": false,
+  "displacement": {
+    "tonnes": 23369.079,
+    "tons": 23000.0
+  },
+  "pennant_number": "92",
+  "length": {
+    "ft": 754.593,
+    "m": 230.0
+  },
+  "beam": {
+    "ft": 95.801,
+    "m": 29.2
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 28.871,
+    "m": 8.8
+  },
+  "speed": {
+    "km_h": 56.486,
+    "knots": 30.5
+  }
+}

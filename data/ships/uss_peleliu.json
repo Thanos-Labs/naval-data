@@ -1,0 +1,39 @@
+{
+  "name": "USS Peleliu",
+  "dbpedia_uri": "http://dbpedia.org/resource/USS_Peleliu",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/USS_Peleliu",
+  "wikipedia_title": "USS Peleliu",
+  "country": "United States",
+  "subtype": "aircraft carrier",
+  "class": "Tarawa-class amphibious assault ship",
+  "configuration": "STOVL",
+  "manufacturer": "Ingalls Shipbuilding",
+  "date_commissioned": "1980-05-03",
+  "date_decommissioned": "2015-03-31",
+  "decommissioningReason": "target",
+  "inService": false,
+  "displacement": {
+    "tonnes": 26398.931,
+    "tons": 25982.0
+  },
+  "pennant_number": "Callsign: NPEL *NovemberPapaEchoLima *Hull number: LHA-5",
+  "length": {
+    "ft": 2690.289,
+    "m": 820.0
+  },
+  "beam": {
+    "ft": 349.738,
+    "m": 106.6
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 88.583,
+    "m": 27.0
+  },
+  "speed": {
+    "km_h": 44.448,
+    "knots": 24.0
+  }
+}

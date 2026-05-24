@@ -1,0 +1,39 @@
+{
+  "name": "HMS Courageous (50)",
+  "dbpedia_uri": "http://dbpedia.org/resource/HMS_Courageous_(50)",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/HMS_Courageous_(50)",
+  "wikipedia_title": "HMS Courageous (50)",
+  "country": "United Kingdom",
+  "subtype": "aircraft carrier",
+  "class": "Courageous-class aircraft carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "Armstrong Whitworth",
+  "date_commissioned": null,
+  "date_decommissioned": null,
+  "decommissioningReason": "sunk",
+  "inService": false,
+  "displacement": {
+    "tonnes": 24598.496,
+    "tons": 24210.0
+  },
+  "pennant_number": "50",
+  "length": {
+    "ft": 2411.417,
+    "m": 735.0
+  },
+  "beam": {
+    "ft": 295.276,
+    "m": 90.0
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 88.583,
+    "m": 27.0
+  },
+  "speed": {
+    "km_h": 55.56,
+    "knots": 30.0
+  }
+}

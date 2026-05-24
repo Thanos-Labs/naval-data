@@ -1,0 +1,39 @@
+{
+  "name": "USS Yorktown (CV-5)",
+  "dbpedia_uri": "http://dbpedia.org/resource/USS_Yorktown_(CV-5)",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/USS_Yorktown_(CV-5)",
+  "wikipedia_title": "USS Yorktown (CV-5)",
+  "country": "United States",
+  "subtype": "fleet carrier",
+  "class": "Yorktown-class aircraft carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "Newport News Shipbuilding, Newport News, Virginia",
+  "date_commissioned": "1937-09-30",
+  "date_decommissioned": "1942-10-02",
+  "decommissioningReason": "retired",
+  "inService": false,
+  "displacement": {
+    "tonnes": 259.092,
+    "tons": 255.0
+  },
+  "pennant_number": "CV-5",
+  "length": {
+    "ft": 2526.247,
+    "m": 770.0
+  },
+  "beam": {
+    "ft": 272.31,
+    "m": 83.0
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 85.302,
+    "m": 26.0
+  },
+  "speed": {
+    "km_h": 60.19,
+    "knots": 32.5
+  }
+}

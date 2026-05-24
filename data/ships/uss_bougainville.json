@@ -1,0 +1,39 @@
+{
+  "name": "USS Bougainville (LHA-8)",
+  "dbpedia_uri": "http://dbpedia.org/resource/USS_Bougainville_(LHA-8)",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/USS_Bougainville_(LHA-8)",
+  "wikipedia_title": "USS Bougainville (LHA-8)",
+  "country": "United States",
+  "subtype": "amphibious assault ship",
+  "class": "America-class amphibious assault ship",
+  "configuration": "STOVL",
+  "manufacturer": "Huntington Ingalls Industries",
+  "date_commissioned": null,
+  "date_decommissioned": null,
+  "decommissioningReason": null,
+  "inService": false,
+  "displacement": {
+    "tonnes": 45692.646,
+    "tons": 44971.0
+  },
+  "pennant_number": "Hull number: LHA-8",
+  "length": {
+    "ft": 2769.029,
+    "m": 844.0
+  },
+  "beam": {
+    "ft": 347.769,
+    "m": 106.0
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 85.302,
+    "m": 26.0
+  },
+  "speed": {
+    "km_h": 40.744,
+    "knots": 22.0
+  }
+}

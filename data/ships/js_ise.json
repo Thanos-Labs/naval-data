@@ -1,0 +1,38 @@
+{
+  "name": "JS Ise",
+  "dbpedia_uri": "http://dbpedia.org/resource/JS_Ise",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/JS_Ise",
+  "wikipedia_title": "JS Ise",
+  "country": "Japan",
+  "subtype": "helicopter carrier",
+  "class": "Hyūga-class helicopter destroyer",
+  "configuration": "helicopter",
+  "manufacturer": "IHI, Yokohama",
+  "date_commissioned": "2011-03-16",
+  "date_decommissioned": null,
+  "decommissioningReason": null,
+  "inService": true,
+  "displacement": {
+    "tonnes": 14173.854,
+    "tons": 13950.0
+  },
+  "pennant_number": "431999551 *Pennant number: DDH-182",
+  "length": {
+    "ft": 646.325,
+    "m": 197.0
+  },
+  "beam": {
+    "ft": 108.268,
+    "m": 33.0
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "m": null
+  },
+  "speed": {
+    "km_h": 55.56,
+    "knots": 30.0
+  }
+}

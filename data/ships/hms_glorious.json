@@ -1,0 +1,39 @@
+{
+  "name": "HMS Glorious",
+  "dbpedia_uri": "http://dbpedia.org/resource/HMS_Glorious",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/HMS_Glorious",
+  "wikipedia_title": "HMS Glorious",
+  "country": "United Kingdom",
+  "subtype": "aircraft carrier",
+  "class": "Courageous-class aircraft carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "Harland and Wolff, Belfast",
+  "date_commissioned": "1917",
+  "date_decommissioned": null,
+  "decommissioningReason": "sunk",
+  "inService": false,
+  "displacement": {
+    "tonnes": 25370.691,
+    "tons": 24970.0
+  },
+  "pennant_number": "77",
+  "length": {
+    "ft": 2411.417,
+    "m": 735.0
+  },
+  "beam": {
+    "ft": 295.276,
+    "m": 90.0
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 91.043,
+    "m": 27.75
+  },
+  "speed": {
+    "km_h": 55.56,
+    "knots": 30.0
+  }
+}

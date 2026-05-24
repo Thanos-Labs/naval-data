@@ -1,0 +1,39 @@
+{
+  "name": "USS Nassau (LHA-4)",
+  "dbpedia_uri": "http://dbpedia.org/resource/USS_Nassau_(LHA-4)",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/USS_Nassau_(LHA-4)",
+  "wikipedia_title": "USS Nassau (LHA-4)",
+  "country": "United States",
+  "subtype": "amphibious assault ship",
+  "class": "Tarawa-class amphibious assault ship",
+  "configuration": "STOVL",
+  "manufacturer": "Ingalls Shipbuilding",
+  "date_commissioned": "1979-07-28",
+  "date_decommissioned": "2011-03-31",
+  "decommissioningReason": "scrapped",
+  "inService": false,
+  "displacement": {
+    "tonnes": 39930.644,
+    "tons": 39300.0
+  },
+  "pennant_number": "Callsign: NJPX *NovemberJulietPapaXray *Hull number: LHA-4",
+  "length": {
+    "ft": 2734.055,
+    "m": 833.34
+  },
+  "beam": {
+    "ft": 349.738,
+    "m": 106.6
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 86.122,
+    "m": 26.25
+  },
+  "speed": {
+    "km_h": 44.448,
+    "knots": 24.0
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "USS Cabot (CVL-28)",
+  "dbpedia_uri": "http://dbpedia.org/resource/USS_Cabot_(CVL-28)",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/USS_Cabot_(CVL-28)",
+  "wikipedia_title": "USS Cabot (CVL-28)",
+  "country": "Spain",
+  "subtype": "light aircraft carrier",
+  "class": "Independence-class aircraft carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "New York Shipbuilding Corporation",
+  "date_commissioned": "1943-07-24",
+  "date_decommissioned": "1955-01-21",
+  "decommissioningReason": "transferred",
+  "inService": false,
+  "displacement": {
+    "tonnes": 11176.516,
+    "tons": 11000.0
+  },
+  "pennant_number": "Hull number: CVL-28",
+  "length": {
+    "ft": 2042.323,
+    "m": 622.5
+  },
+  "beam": {
+    "ft": 234.58,
+    "m": 71.5
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 85.302,
+    "m": 26.0
+  },
+  "speed": {
+    "km_h": 59.264,
+    "knots": 32.0
+  }
+}

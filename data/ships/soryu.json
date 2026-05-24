@@ -1,0 +1,39 @@
+{
+  "name": "Japanese aircraft carrier Sōryū",
+  "dbpedia_uri": "http://dbpedia.org/resource/Japanese_aircraft_carrier_Sōryū",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/Japanese_aircraft_carrier_Sōryū",
+  "wikipedia_title": "Japanese aircraft carrier Sōryū",
+  "country": "Empire of Japan",
+  "subtype": "aircraft carrier",
+  "class": null,
+  "configuration": "CATOBAR",
+  "manufacturer": "Kure Naval Arsenal",
+  "date_commissioned": "1937-12-29",
+  "date_decommissioned": "1942-08-10",
+  "decommissioningReason": "scuttled",
+  "inService": false,
+  "displacement": {
+    "tonnes": 164.6,
+    "tons": 162.0
+  },
+  "pennant_number": null,
+  "length": {
+    "ft": 746.391,
+    "m": 227.5
+  },
+  "beam": {
+    "ft": 69.882,
+    "m": 21.3
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 24.934,
+    "m": 7.6
+  },
+  "speed": {
+    "km_h": 62.968,
+    "knots": 34.0
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "USS Corregidor",
+  "dbpedia_uri": "http://dbpedia.org/resource/USS_Corregidor",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/USS_Corregidor",
+  "wikipedia_title": "USS Corregidor",
+  "country": "United States",
+  "subtype": "escort carrier",
+  "class": "Casablanca-class escort carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "Kaiser Shipbuilding Company, Vancouver, Washington",
+  "date_commissioned": "1951-05-19",
+  "date_decommissioned": "1958-09-04",
+  "decommissioningReason": "transferred",
+  "inService": false,
+  "displacement": {
+    "tons": null
+  },
+  "pennant_number": "Hull symbol: T-CVU-58",
+  "length": {
+    "m": null
+  },
+  "beam": {
+    "m": null
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "m": null
+  },
+  "speed": {
+    "knots": null
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "USS Guadalcanal (LPH-7)",
+  "dbpedia_uri": "http://dbpedia.org/resource/USS_Guadalcanal_(LPH-7)",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/USS_Guadalcanal_(LPH-7)",
+  "wikipedia_title": "USS Guadalcanal (LPH-7)",
+  "country": "United States",
+  "subtype": "aircraft carrier",
+  "class": "Iwo Jima-class amphibious assault ship",
+  "configuration": "STOVL",
+  "manufacturer": "Philadelphia Naval Shipyard",
+  "date_commissioned": "1963-07-20",
+  "date_decommissioned": "1994-08-31",
+  "decommissioningReason": "sunk",
+  "inService": false,
+  "displacement": {
+    "tonnes": 19706.23,
+    "tons": 19395.0
+  },
+  "pennant_number": "Callsign: NIEG * NovemberIndiaEchoGolf * Hull number: LPH-7",
+  "length": {
+    "ft": 1976.05,
+    "m": 602.3
+  },
+  "beam": {
+    "ft": 275.591,
+    "m": 84.0
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 88.583,
+    "m": 27.0
+  },
+  "speed": {
+    "km_h": 42.596,
+    "knots": 23.0
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "USS Princeton (CVL-23)",
+  "dbpedia_uri": "http://dbpedia.org/resource/USS_Princeton_(CVL-23)",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/USS_Princeton_(CVL-23)",
+  "wikipedia_title": "USS Princeton (CVL-23)",
+  "country": "United States",
+  "subtype": "light aircraft carrier",
+  "class": "Independence-class aircraft carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "New York Shipbuilding Corporation",
+  "date_commissioned": "1943-02-25",
+  "date_decommissioned": "1944-11-13",
+  "decommissioningReason": "scuttled",
+  "inService": false,
+  "displacement": {
+    "tonnes": 13208.61,
+    "tons": 13000.0
+  },
+  "pennant_number": null,
+  "length": {
+    "ft": 2042.323,
+    "m": 622.5
+  },
+  "beam": {
+    "ft": 234.58,
+    "m": 71.5
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 85.302,
+    "m": 26.0
+  },
+  "speed": {
+    "km_h": 57.001,
+    "knots": 30.778
+  }
+}

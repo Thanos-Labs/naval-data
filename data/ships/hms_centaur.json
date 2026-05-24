@@ -1,0 +1,39 @@
+{
+  "name": "HMS Centaur (R06)",
+  "dbpedia_uri": "http://dbpedia.org/resource/HMS_Centaur_(R06)",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/HMS_Centaur_(R06)",
+  "wikipedia_title": "HMS Centaur (R06)",
+  "country": "United Kingdom",
+  "subtype": "light aircraft carrier",
+  "class": "Centaur-class aircraft carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "Harland and Wolff",
+  "date_commissioned": "1953-09-01",
+  "date_decommissioned": "1965",
+  "decommissioningReason": "scrapped",
+  "inService": false,
+  "displacement": {
+    "tonnes": 22353.032,
+    "tons": 22000.0
+  },
+  "pennant_number": "R06",
+  "length": {
+    "ft": 2420.44,
+    "m": 737.75
+  },
+  "beam": {
+    "ft": 403.543,
+    "m": 123.0
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 91.207,
+    "m": 27.8
+  },
+  "speed": {
+    "km_h": 51.856,
+    "knots": 28.0
+  }
+}

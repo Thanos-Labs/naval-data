@@ -1,0 +1,35 @@
+{
+  "name": "USS Carl Vinson",
+  "dbpedia_uri": "http://dbpedia.org/resource/USS_Carl_Vinson",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/USS_Carl_Vinson",
+  "wikipedia_title": "USS Carl Vinson",
+  "country": "United States",
+  "subtype": "nuclear aircraft carrier",
+  "class": "Nimitz-class aircraft carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "Newport News Shipbuilding",
+  "date_commissioned": "1982-03-13",
+  "date_decommissioned": null,
+  "decommissioningReason": null,
+  "inService": true,
+  "displacement": {
+    "tonnes": 102.621,
+    "tons": 101.0
+  },
+  "pennant_number": "369970409 * Callsign: NCVV * NovemberCharlieVictorVictor * Hull number: CVN-70",
+  "length": {
+    "m": null
+  },
+  "beam": {
+    "m": null
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "m": null
+  },
+  "speed": {
+    "knots": null
+  }
+}

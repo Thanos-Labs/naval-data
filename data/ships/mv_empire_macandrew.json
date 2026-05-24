@@ -1,0 +1,37 @@
+{
+  "name": "MV Empire MacAndrew",
+  "dbpedia_uri": "http://dbpedia.org/resource/MV_Empire_MacAndrew",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/MV_Empire_MacAndrew",
+  "wikipedia_title": "MV Empire MacAndrew",
+  "country": "United Kingdom",
+  "subtype": "aircraft carrier",
+  "class": null,
+  "configuration": "CATOBAR",
+  "manufacturer": "William Denny and Brothers Dumbarton Scotland",
+  "date_commissioned": null,
+  "date_decommissioned": null,
+  "decommissioningReason": "scrapped",
+  "inService": false,
+  "displacement": {
+    "tons": null
+  },
+  "pennant_number": null,
+  "length": {
+    "ft": 1394.357,
+    "m": 425.0
+  },
+  "beam": {
+    "ft": 183.727,
+    "m": 56.0
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "m": null
+  },
+  "speed": {
+    "km_h": 23.15,
+    "knots": 12.5
+  }
+}

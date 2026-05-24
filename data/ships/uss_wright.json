@@ -1,0 +1,39 @@
+{
+  "name": "USS Wright (CVL-49)",
+  "dbpedia_uri": "http://dbpedia.org/resource/USS_Wright_(CVL-49)",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/USS_Wright_(CVL-49)",
+  "wikipedia_title": "USS Wright (CVL-49)",
+  "country": "United States",
+  "subtype": "aircraft carrier",
+  "class": "Saipan-class aircraft carrier",
+  "configuration": "STOVL",
+  "manufacturer": "New York Shipbuilding Corporation",
+  "date_commissioned": "1947-02-09",
+  "date_decommissioned": "1970-05-27",
+  "decommissioningReason": "scrapped",
+  "inService": false,
+  "displacement": {
+    "tonnes": 14732.68,
+    "tons": 14500.0
+  },
+  "pennant_number": null,
+  "length": {
+    "ft": 2244.094,
+    "m": 684.0
+  },
+  "beam": {
+    "ft": 251.969,
+    "m": 76.8
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 91.864,
+    "m": 28.0
+  },
+  "speed": {
+    "km_h": 61.116,
+    "knots": 33.0
+  }
+}

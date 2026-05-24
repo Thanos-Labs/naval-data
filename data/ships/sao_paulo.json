@@ -1,0 +1,39 @@
+{
+  "name": "Brazilian aircraft carrier São Paulo",
+  "dbpedia_uri": "http://dbpedia.org/resource/Brazilian_aircraft_carrier_São_Paulo",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/Brazilian_aircraft_carrier_São_Paulo",
+  "wikipedia_title": "Brazilian aircraft carrier São Paulo",
+  "country": "Brazil",
+  "subtype": "aircraft carrier",
+  "class": "Clemenceau-class aircraft carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "Chantiers de l’Atlantique",
+  "date_commissioned": "2000-11-15",
+  "date_decommissioned": "2018-11-22",
+  "decommissioningReason": "retired",
+  "inService": false,
+  "displacement": {
+    "tonnes": 24588.335,
+    "tons": 24200.0
+  },
+  "pennant_number": "A12",
+  "length": {
+    "ft": 869.423,
+    "m": 265.0
+  },
+  "beam": {
+    "ft": 104.003,
+    "m": 31.7
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 28.215,
+    "m": 8.6
+  },
+  "speed": {
+    "km_h": 59.264,
+    "knots": 32.0
+  }
+}

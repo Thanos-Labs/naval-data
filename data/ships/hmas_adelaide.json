@@ -1,0 +1,39 @@
+{
+  "name": "HMAS Adelaide (L01)",
+  "dbpedia_uri": "http://dbpedia.org/resource/HMAS_Adelaide_(L01)",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/HMAS_Adelaide_(L01)",
+  "wikipedia_title": "HMAS Adelaide (L01)",
+  "country": "Australia",
+  "subtype": "helicopter carrier",
+  "class": "Canberra-class Landing Helicopter Dock",
+  "configuration": "helicopter",
+  "manufacturer": "Navantia, Ferrol, Spain & BAE Systems Australia, Williamstown Dockyard, Australia",
+  "date_commissioned": "2015-12-04",
+  "date_decommissioned": null,
+  "decommissioningReason": null,
+  "inService": true,
+  "displacement": {
+    "tonnes": 27941.29,
+    "tons": 27500.0
+  },
+  "pennant_number": "9608972 *503000021 *Callsign: VHJY",
+  "length": {
+    "ft": 757.283,
+    "m": 230.82
+  },
+  "beam": {
+    "ft": 104.987,
+    "m": 32.0
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 23.228,
+    "m": 7.08
+  },
+  "speed": {
+    "km_h": 37.04,
+    "knots": 20.0
+  }
+}

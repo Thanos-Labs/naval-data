@@ -1,0 +1,34 @@
+{
+  "name": "USS Marcus Island",
+  "dbpedia_uri": "http://dbpedia.org/resource/USS_Marcus_Island",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/USS_Marcus_Island",
+  "wikipedia_title": "USS Marcus Island",
+  "country": "United States",
+  "subtype": "escort carrier",
+  "class": "Casablanca-class escort carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "Kaiser Shipbuilding Company, Vancouver, Washington, US",
+  "date_commissioned": "1944-01-26",
+  "date_decommissioned": "1946-12-12",
+  "decommissioningReason": "scrapped",
+  "inService": false,
+  "displacement": {
+    "tons": null
+  },
+  "pennant_number": "Hull symbol: **CVE-77 (1943–55) **CVHE-77 (1955–59) **AKV-27 (1959–60)",
+  "length": {
+    "m": null
+  },
+  "beam": {
+    "m": null
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "m": null
+  },
+  "speed": {
+    "knots": null
+  }
+}

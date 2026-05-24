@@ -1,0 +1,39 @@
+{
+  "name": "Japanese aircraft carrier Chūyō",
+  "dbpedia_uri": "http://dbpedia.org/resource/Japanese_aircraft_carrier_Chūyō",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/Japanese_aircraft_carrier_Chūyō",
+  "wikipedia_title": "Japanese aircraft carrier Chūyō",
+  "country": "Empire of Japan",
+  "subtype": "escort carrier",
+  "class": "Taiyō-class escort carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "Mitsubishi Shipbuilding & Engineering Co., Nagasaki, Japan",
+  "date_commissioned": "1942-11-25",
+  "date_decommissioned": "1944-02-05",
+  "decommissioningReason": "transferred",
+  "inService": false,
+  "displacement": {
+    "tonnes": 18116.116,
+    "tons": 17830.0
+  },
+  "pennant_number": null,
+  "length": {
+    "ft": 1938.976,
+    "m": 591.0
+  },
+  "beam": {
+    "ft": 239.501,
+    "m": 73.0
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 82.021,
+    "m": 25.0
+  },
+  "speed": {
+    "km_h": 38.892,
+    "knots": 21.0
+  }
+}

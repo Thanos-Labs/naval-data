@@ -1,0 +1,39 @@
+{
+  "name": "INS Viraat",
+  "dbpedia_uri": "http://dbpedia.org/resource/INS_Viraat",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/INS_Viraat",
+  "wikipedia_title": "INS Viraat",
+  "country": "United Kingdom",
+  "subtype": "light aircraft carrier",
+  "class": "Centaur-class light aircraft carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "Vickers-Armstrong",
+  "date_commissioned": "1959-11-25",
+  "date_decommissioned": "1984",
+  "decommissioningReason": "scrapped",
+  "inService": false,
+  "displacement": {
+    "tonnes": 24283.521,
+    "tons": 23900.0
+  },
+  "pennant_number": "R12",
+  "length": {
+    "ft": 743.11,
+    "m": 226.5
+  },
+  "beam": {
+    "ft": 160.039,
+    "m": 48.78
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 28.871,
+    "m": 8.8
+  },
+  "speed": {
+    "km_h": 51.856,
+    "knots": 28.0
+  }
+}

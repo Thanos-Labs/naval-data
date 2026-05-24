@@ -1,0 +1,34 @@
+{
+  "name": "USS Shipley Bay",
+  "dbpedia_uri": "http://dbpedia.org/resource/USS_Shipley_Bay",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/USS_Shipley_Bay",
+  "wikipedia_title": "USS Shipley Bay",
+  "country": "United States",
+  "subtype": "escort carrier",
+  "class": "Casablanca-class escort carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "Kaiser Shipyards",
+  "date_commissioned": "1944-03-21",
+  "date_decommissioned": "1946-06-28",
+  "decommissioningReason": "scrapped",
+  "inService": false,
+  "displacement": {
+    "tons": null
+  },
+  "pennant_number": "Hull symbol: CVE-85",
+  "length": {
+    "m": null
+  },
+  "beam": {
+    "m": null
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "m": null
+  },
+  "speed": {
+    "knots": null
+  }
+}

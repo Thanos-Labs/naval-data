@@ -1,0 +1,39 @@
+{
+  "name": "HMS Striker (D12)",
+  "dbpedia_uri": "http://dbpedia.org/resource/HMS_Striker_(D12)",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/HMS_Striker_(D12)",
+  "wikipedia_title": "HMS Striker (D12)",
+  "country": "United Kingdom",
+  "subtype": "escort carrier",
+  "class": "Attacker-class escort carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "Western Pipe and Steel Company",
+  "date_commissioned": "1943-05-18",
+  "date_decommissioned": "1946-02-12",
+  "decommissioningReason": "transferred",
+  "inService": false,
+  "displacement": {
+    "tonnes": 14631.075,
+    "tons": 14400.0
+  },
+  "pennant_number": null,
+  "length": {
+    "ft": 1610.892,
+    "m": 491.0
+  },
+  "beam": {
+    "ft": 344.488,
+    "m": 105.0
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 85.302,
+    "m": 26.0
+  },
+  "speed": {
+    "km_h": 33.336,
+    "knots": 18.0
+  }
+}

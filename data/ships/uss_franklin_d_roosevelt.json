@@ -1,0 +1,39 @@
+{
+  "name": "USS Franklin D. Roosevelt",
+  "dbpedia_uri": "http://dbpedia.org/resource/USS_Franklin_D._Roosevelt",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/USS_Franklin_D._Roosevelt",
+  "wikipedia_title": "USS Franklin D. Roosevelt",
+  "country": "United States",
+  "subtype": "aircraft carrier",
+  "class": "Midway-class aircraft carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "New York Naval Shipyard",
+  "date_commissioned": "1945-10-27",
+  "date_decommissioned": "1977-09-30",
+  "decommissioningReason": "scrapped",
+  "inService": false,
+  "displacement": {
+    "tonnes": 45722.111,
+    "tons": 45000.0
+  },
+  "pennant_number": null,
+  "length": {
+    "ft": 3175.853,
+    "m": 968.0
+  },
+  "beam": {
+    "ft": 370.735,
+    "m": 113.0
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 114.829,
+    "m": 35.0
+  },
+  "speed": {
+    "km_h": 61.116,
+    "knots": 33.0
+  }
+}

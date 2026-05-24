@@ -1,0 +1,39 @@
+{
+  "name": "USS Monterey (CVL-26)",
+  "dbpedia_uri": "http://dbpedia.org/resource/USS_Monterey_(CVL-26)",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/USS_Monterey_(CVL-26)",
+  "wikipedia_title": "USS Monterey (CVL-26)",
+  "country": "United States",
+  "subtype": "light aircraft carrier",
+  "class": "Independence-class aircraft carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "New York Shipbuilding Corporation",
+  "date_commissioned": "1943-06-17",
+  "date_decommissioned": "1956-01-16",
+  "decommissioningReason": "scrapped",
+  "inService": false,
+  "displacement": {
+    "tonnes": 11176.516,
+    "tons": 11000.0
+  },
+  "pennant_number": null,
+  "length": {
+    "ft": 2042.323,
+    "m": 622.5
+  },
+  "beam": {
+    "ft": 234.58,
+    "m": 71.5
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 85.302,
+    "m": 26.0
+  },
+  "speed": {
+    "km_h": 58.523,
+    "knots": 31.6
+  }
+}

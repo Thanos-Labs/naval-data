@@ -1,0 +1,39 @@
+{
+  "name": "French aircraft carrier Clemenceau",
+  "dbpedia_uri": "http://dbpedia.org/resource/French_aircraft_carrier_Clemenceau",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/French_aircraft_carrier_Clemenceau",
+  "wikipedia_title": "French aircraft carrier Clemenceau",
+  "country": "France",
+  "subtype": "aircraft carrier",
+  "class": "Clemenceau-class aircraft carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "Brest shipyard",
+  "date_commissioned": "1961-11-22",
+  "date_decommissioned": "1997-10-01",
+  "decommissioningReason": "scrapped",
+  "inService": false,
+  "displacement": {
+    "tonnes": 22353.032,
+    "tons": 22000.0
+  },
+  "pennant_number": "R98",
+  "length": {
+    "ft": 869.423,
+    "m": 265.0
+  },
+  "beam": {
+    "ft": 167.979,
+    "m": 51.2
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 28.215,
+    "m": 8.6
+  },
+  "speed": {
+    "km_h": 59.264,
+    "knots": 32.0
+  }
+}

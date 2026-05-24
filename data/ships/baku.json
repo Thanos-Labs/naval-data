@@ -1,0 +1,39 @@
+{
+  "name": "Soviet aircraft carrier Baku",
+  "dbpedia_uri": "http://dbpedia.org/resource/Soviet_aircraft_carrier_Baku",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/Soviet_aircraft_carrier_Baku",
+  "wikipedia_title": "Soviet aircraft carrier Baku",
+  "country": "Soviet Union",
+  "subtype": "aircraft cruiser",
+  "class": "Kiev-class aircraft cruiser",
+  "configuration": "STOBAR",
+  "manufacturer": "Chernomorskiy Yard, Nikolayev",
+  "date_commissioned": "1987-12-11",
+  "date_decommissioned": "1996",
+  "decommissioningReason": "transferred",
+  "inService": false,
+  "displacement": {
+    "tonnes": 33976.609,
+    "tons": 33440.0
+  },
+  "pennant_number": null,
+  "length": {
+    "ft": 895.669,
+    "m": 273.0
+  },
+  "beam": {
+    "ft": 170.276,
+    "m": 51.9
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 30.906,
+    "m": 9.42
+  },
+  "speed": {
+    "km_h": 59.264,
+    "knots": 32.0
+  }
+}

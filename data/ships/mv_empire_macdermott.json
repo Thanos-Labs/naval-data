@@ -1,0 +1,38 @@
+{
+  "name": "MV Empire MacDermott",
+  "dbpedia_uri": "http://dbpedia.org/resource/MV_Empire_MacDermott",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/MV_Empire_MacDermott",
+  "wikipedia_title": "MV Empire MacDermott",
+  "country": "United Kingdom",
+  "subtype": "aircraft carrier",
+  "class": null,
+  "configuration": "CATOBAR",
+  "manufacturer": "William Denny and Brothers, Dumbarton, Scotland",
+  "date_commissioned": "1944-03-31",
+  "date_decommissioned": null,
+  "decommissioningReason": null,
+  "inService": false,
+  "displacement": {
+    "tonnes": 12192.563,
+    "tons": 12000.0
+  },
+  "pennant_number": null,
+  "length": {
+    "ft": 1469.816,
+    "m": 448.0
+  },
+  "beam": {
+    "ft": 196.85,
+    "m": 60.0
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "m": null
+  },
+  "speed": {
+    "km_h": 23.15,
+    "knots": 12.5
+  }
+}

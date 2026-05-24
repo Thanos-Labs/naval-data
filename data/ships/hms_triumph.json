@@ -1,0 +1,39 @@
+{
+  "name": "HMS Triumph (R16)",
+  "dbpedia_uri": "http://dbpedia.org/resource/HMS_Triumph_(R16)",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/HMS_Triumph_(R16)",
+  "wikipedia_title": "HMS Triumph (R16)",
+  "country": "United Kingdom",
+  "subtype": "light aircraft carrier",
+  "class": "Colossus-class aircraft carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "Hawthorn Leslie and Company",
+  "date_commissioned": "1946-05-06",
+  "date_decommissioned": "1981",
+  "decommissioningReason": "scrapped",
+  "inService": false,
+  "displacement": {
+    "tonnes": 13564.226,
+    "tons": 13350.0
+  },
+  "pennant_number": null,
+  "length": {
+    "ft": 2280.184,
+    "m": 695.0
+  },
+  "beam": {
+    "ft": 262.467,
+    "m": 80.0
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 77.1,
+    "m": 23.5
+  },
+  "speed": {
+    "km_h": 46.3,
+    "knots": 25.0
+  }
+}

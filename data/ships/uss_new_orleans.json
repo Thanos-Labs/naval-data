@@ -1,0 +1,39 @@
+{
+  "name": "USS New Orleans (LPH-11)",
+  "dbpedia_uri": "http://dbpedia.org/resource/USS_New_Orleans_(LPH-11)",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/USS_New_Orleans_(LPH-11)",
+  "wikipedia_title": "USS New Orleans (LPH-11)",
+  "country": "United States",
+  "subtype": "aircraft carrier",
+  "class": "Iwo Jima-class amphibious assault ship",
+  "configuration": "STOVL",
+  "manufacturer": "Philadelphia Naval Shipyard",
+  "date_commissioned": "1968-11-16",
+  "date_decommissioned": "1997-10-31",
+  "decommissioningReason": "sunk",
+  "inService": false,
+  "displacement": {
+    "tonnes": 19742.807,
+    "tons": 19431.0
+  },
+  "pennant_number": "Callsign: NAON *NovemberAlphaOscarNovember *Hull number: LPH-11",
+  "length": {
+    "ft": 1961.942,
+    "m": 598.0
+  },
+  "beam": {
+    "ft": 275.591,
+    "m": 84.0
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 98.425,
+    "m": 30.0
+  },
+  "speed": {
+    "km_h": 42.596,
+    "knots": 23.0
+  }
+}

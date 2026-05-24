@@ -1,0 +1,39 @@
+{
+  "name": "INS Vikrant (1961)",
+  "dbpedia_uri": "http://dbpedia.org/resource/INS_Vikrant_(1961)",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/INS_Vikrant_(1961)",
+  "wikipedia_title": "INS Vikrant (1961)",
+  "country": "India",
+  "subtype": "light aircraft carrier",
+  "class": "Majestic-class aircraft carrier light carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "Vickers-Armstrongs, High Walker * Harland & Wolff",
+  "date_commissioned": "1961-03-04",
+  "date_decommissioned": "1997-01-31",
+  "decommissioningReason": "transferred",
+  "inService": false,
+  "displacement": {
+    "tonnes": 16256.751,
+    "tons": 16000.0
+  },
+  "pennant_number": "R11",
+  "length": {
+    "ft": 700.0,
+    "m": 213.36
+  },
+  "beam": {
+    "ft": 127.999,
+    "m": 39.014
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 23.999,
+    "m": 7.315
+  },
+  "speed": {
+    "km_h": 46.3,
+    "knots": 25.0
+  }
+}

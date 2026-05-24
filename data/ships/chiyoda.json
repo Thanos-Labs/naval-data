@@ -1,0 +1,39 @@
+{
+  "name": "Japanese aircraft carrier Chiyoda",
+  "dbpedia_uri": "http://dbpedia.org/resource/Japanese_aircraft_carrier_Chiyoda",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/Japanese_aircraft_carrier_Chiyoda",
+  "wikipedia_title": "Japanese aircraft carrier Chiyoda",
+  "country": "Japan",
+  "subtype": "aircraft carrier",
+  "class": "Chitose-class aircraft carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "Kure Naval Arsenal",
+  "date_commissioned": "1938-12-15",
+  "date_decommissioned": null,
+  "decommissioningReason": "sunk",
+  "inService": false,
+  "displacement": {
+    "tonnes": 11379.725,
+    "tons": 11200.0
+  },
+  "pennant_number": null,
+  "length": {
+    "ft": 631.562,
+    "m": 192.5
+  },
+  "beam": {
+    "ft": 68.241,
+    "m": 20.8
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 24.606,
+    "m": 7.5
+  },
+  "speed": {
+    "km_h": 53.523,
+    "knots": 28.9
+  }
+}

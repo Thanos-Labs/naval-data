@@ -1,0 +1,36 @@
+{
+  "name": "USS Nimitz",
+  "dbpedia_uri": "http://dbpedia.org/resource/USS_Nimitz",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/USS_Nimitz",
+  "wikipedia_title": "USS Nimitz",
+  "country": "United States",
+  "subtype": "nuclear aircraft carrier",
+  "class": "Nimitz-class aircraft carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "Newport News Shipbuilding",
+  "date_commissioned": "1975-05-03",
+  "date_decommissioned": null,
+  "decommissioningReason": null,
+  "inService": true,
+  "displacement": {
+    "tonnes": 101.605,
+    "tons": 100.0
+  },
+  "pennant_number": "303981000 *Callsign: NMTZ *NovemberMikeTangoZulu *Hull number: CVN-68",
+  "length": {
+    "m": null
+  },
+  "beam": {
+    "m": null
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "m": null
+  },
+  "speed": {
+    "km_h": 58.338,
+    "knots": 31.5
+  }
+}

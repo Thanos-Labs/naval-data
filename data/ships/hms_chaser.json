@@ -1,0 +1,34 @@
+{
+  "name": "HMS Chaser (D32)",
+  "dbpedia_uri": "http://dbpedia.org/resource/HMS_Chaser_(D32)",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/HMS_Chaser_(D32)",
+  "wikipedia_title": "HMS Chaser (D32)",
+  "country": "United States",
+  "subtype": "escort carrier",
+  "class": "Bogue-class escort carrier (USA) *Attacker-class escort carrier (UK)",
+  "configuration": "CATOBAR",
+  "manufacturer": "Ingalls Shipbuilding, Pascagoula, Mississippi",
+  "date_commissioned": "1943-04-09",
+  "date_decommissioned": "1946-08-03",
+  "decommissioningReason": "transferred",
+  "inService": false,
+  "displacement": {
+    "tons": null
+  },
+  "pennant_number": "D32",
+  "length": {
+    "m": null
+  },
+  "beam": {
+    "m": null
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "m": null
+  },
+  "speed": {
+    "knots": null
+  }
+}

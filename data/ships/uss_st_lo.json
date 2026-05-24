@@ -1,0 +1,34 @@
+{
+  "name": "USS St. Lo",
+  "dbpedia_uri": "http://dbpedia.org/resource/USS_St._Lo",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/USS_St._Lo",
+  "wikipedia_title": "USS St. Lo",
+  "country": "United States",
+  "subtype": "escort carrier",
+  "class": "Casablanca-class escort carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "Kaiser Vancouver, Vancouver, Washington",
+  "date_commissioned": "1943-10-23",
+  "date_decommissioned": "1944-11-27",
+  "decommissioningReason": "sunk",
+  "inService": false,
+  "displacement": {
+    "tons": null
+  },
+  "pennant_number": "Hull symbol: AVG-63 *ACV-63 *CVE-63",
+  "length": {
+    "m": null
+  },
+  "beam": {
+    "m": null
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "m": null
+  },
+  "speed": {
+    "knots": null
+  }
+}

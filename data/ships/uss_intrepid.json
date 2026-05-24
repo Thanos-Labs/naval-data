@@ -1,0 +1,39 @@
+{
+  "name": "USS Intrepid (CV-11)",
+  "dbpedia_uri": "http://dbpedia.org/resource/USS_Intrepid_(CV-11)",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/USS_Intrepid_(CV-11)",
+  "wikipedia_title": "USS Intrepid (CV-11)",
+  "country": "United States",
+  "subtype": "fleet carrier",
+  "class": "Essex-class aircraft carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "Newport News Shipbuilding",
+  "date_commissioned": "1943-08-16",
+  "date_decommissioned": "1974-03-15",
+  "decommissioningReason": "museum",
+  "inService": false,
+  "displacement": {
+    "tonnes": 275.349,
+    "tons": 271.0
+  },
+  "pennant_number": null,
+  "length": {
+    "ft": 2690.289,
+    "m": 820.0
+  },
+  "beam": {
+    "ft": 305.118,
+    "m": 93.0
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 111.549,
+    "m": 34.0
+  },
+  "speed": {
+    "km_h": 61.116,
+    "knots": 33.0
+  }
+}

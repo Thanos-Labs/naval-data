@@ -1,0 +1,38 @@
+{
+  "name": "MV Amastra",
+  "dbpedia_uri": "http://dbpedia.org/resource/MV_Amastra",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/MV_Amastra",
+  "wikipedia_title": "MV Amastra",
+  "country": "United Kingdom",
+  "subtype": "aircraft carrier",
+  "class": null,
+  "configuration": "CATOBAR",
+  "manufacturer": "Lithgows",
+  "date_commissioned": "1935",
+  "date_decommissioned": null,
+  "decommissioningReason": "scrapped",
+  "inService": false,
+  "displacement": {
+    "tons": null
+  },
+  "pennant_number": null,
+  "length": {
+    "ft": 1525.591,
+    "m": 465.0
+  },
+  "beam": {
+    "ft": 193.57,
+    "m": 59.0
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 88.583,
+    "m": 27.0
+  },
+  "speed": {
+    "km_h": 24.076,
+    "knots": 13.0
+  }
+}

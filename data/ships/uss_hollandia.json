@@ -1,0 +1,34 @@
+{
+  "name": "USS Hollandia",
+  "dbpedia_uri": "http://dbpedia.org/resource/USS_Hollandia",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/USS_Hollandia",
+  "wikipedia_title": "USS Hollandia",
+  "country": "United States",
+  "subtype": "escort carrier",
+  "class": "Casablanca-class escort carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "Kaiser Shipyards",
+  "date_commissioned": "1944-06-01",
+  "date_decommissioned": "1947-01-17",
+  "decommissioningReason": "scrapped",
+  "inService": false,
+  "displacement": {
+    "tons": null
+  },
+  "pennant_number": "Hull symbol: CVE-97",
+  "length": {
+    "m": null
+  },
+  "beam": {
+    "m": null
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "m": null
+  },
+  "speed": {
+    "knots": null
+  }
+}

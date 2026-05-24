@@ -1,0 +1,39 @@
+{
+  "name": "USS Langley (CVL-27)",
+  "dbpedia_uri": "http://dbpedia.org/resource/USS_Langley_(CVL-27)",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/USS_Langley_(CVL-27)",
+  "wikipedia_title": "USS Langley (CVL-27)",
+  "country": "France",
+  "subtype": "light aircraft carrier",
+  "class": "Independence-class aircraft carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "New York Shipbuilding Corporation",
+  "date_commissioned": "1951-06-02",
+  "date_decommissioned": "1963-03-20",
+  "decommissioningReason": "scrapped",
+  "inService": false,
+  "displacement": {
+    "tonnes": 11176.516,
+    "tons": 11000.0
+  },
+  "pennant_number": "R96",
+  "length": {
+    "ft": 2042.323,
+    "m": 622.5
+  },
+  "beam": {
+    "ft": 234.58,
+    "m": 71.5
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 85.302,
+    "m": 26.0
+  },
+  "speed": {
+    "km_h": 57.412,
+    "knots": 31.0
+  }
+}

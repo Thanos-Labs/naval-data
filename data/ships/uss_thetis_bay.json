@@ -1,0 +1,34 @@
+{
+  "name": "USS Thetis Bay",
+  "dbpedia_uri": "http://dbpedia.org/resource/USS_Thetis_Bay",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/USS_Thetis_Bay",
+  "wikipedia_title": "USS Thetis Bay",
+  "country": "United States",
+  "subtype": "escort carrier",
+  "class": "Casablanca-class escort carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "Kaiser Shipyards",
+  "date_commissioned": "1944-04-12",
+  "date_decommissioned": "1964-03-01",
+  "decommissioningReason": "scrapped",
+  "inService": false,
+  "displacement": {
+    "tons": null
+  },
+  "pennant_number": "CVE-90 (1944–55) *CVHA-1 (1955–59) *LPH-6 (1959–64)",
+  "length": {
+    "m": null
+  },
+  "beam": {
+    "m": null
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "m": null
+  },
+  "speed": {
+    "knots": null
+  }
+}

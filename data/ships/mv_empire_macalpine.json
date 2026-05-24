@@ -1,0 +1,37 @@
+{
+  "name": "MV Empire MacAlpine",
+  "dbpedia_uri": "http://dbpedia.org/resource/MV_Empire_MacAlpine",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/MV_Empire_MacAlpine",
+  "wikipedia_title": "MV Empire MacAlpine",
+  "country": "United Kingdom",
+  "subtype": "aircraft carrier",
+  "class": null,
+  "configuration": "CATOBAR",
+  "manufacturer": "Burntisland Shipbuilding Company, Fife, Scotland",
+  "date_commissioned": null,
+  "date_decommissioned": null,
+  "decommissioningReason": "scrapped",
+  "inService": false,
+  "displacement": {
+    "tons": null
+  },
+  "pennant_number": null,
+  "length": {
+    "ft": 1351.706,
+    "m": 412.0
+  },
+  "beam": {
+    "ft": 183.727,
+    "m": 56.0
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "m": null
+  },
+  "speed": {
+    "km_h": 23.15,
+    "knots": 12.5
+  }
+}

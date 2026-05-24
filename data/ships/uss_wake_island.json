@@ -1,0 +1,39 @@
+{
+  "name": "USS Wake Island",
+  "dbpedia_uri": "http://dbpedia.org/resource/USS_Wake_Island",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/USS_Wake_Island",
+  "wikipedia_title": "USS Wake Island",
+  "country": "United States",
+  "subtype": "escort carrier",
+  "class": "Casablanca-class escort carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "Kaiser Shipyards",
+  "date_commissioned": "1943-11-07",
+  "date_decommissioned": "1946-04-05",
+  "decommissioningReason": "scrapped",
+  "inService": false,
+  "displacement": {
+    "tonnes": 7925.166,
+    "tons": 7800.0
+  },
+  "pennant_number": null,
+  "length": {
+    "ft": 1679.79,
+    "m": 512.0
+  },
+  "beam": {
+    "ft": 213.255,
+    "m": 65.0
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 72.178,
+    "m": 22.0
+  },
+  "speed": {
+    "km_h": 35.188,
+    "knots": 19.0
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "HMS Prince of Wales (R09)",
+  "dbpedia_uri": "http://dbpedia.org/resource/HMS_Prince_of_Wales_(R09)",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/HMS_Prince_of_Wales_(R09)",
+  "wikipedia_title": "HMS Prince of Wales (R09)",
+  "country": "United Kingdom",
+  "subtype": "aircraft carrier",
+  "class": "Queen Elizabeth-class aircraft carrier",
+  "configuration": "STOVL",
+  "manufacturer": "Aircraft Carrier Alliance",
+  "date_commissioned": "2019-12-10",
+  "date_decommissioned": null,
+  "decommissioningReason": null,
+  "inService": true,
+  "displacement": {
+    "tonnes": 818.934,
+    "tons": 806.0
+  },
+  "pennant_number": "R09",
+  "length": {
+    "ft": 931.759,
+    "m": 284.0
+  },
+  "beam": {
+    "ft": 127.953,
+    "m": 39.0
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 68.898,
+    "m": 21.0
+  },
+  "speed": {
+    "km_h": 46.3,
+    "knots": 25.0
+  }
+}

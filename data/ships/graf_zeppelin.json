@@ -1,0 +1,39 @@
+{
+  "name": "German aircraft carrier Graf Zeppelin",
+  "dbpedia_uri": "http://dbpedia.org/resource/German_aircraft_carrier_Graf_Zeppelin",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/German_aircraft_carrier_Graf_Zeppelin",
+  "wikipedia_title": "German aircraft carrier Graf Zeppelin",
+  "country": "Germany",
+  "subtype": "aircraft carrier",
+  "class": "Graf Zeppelin-class aircraft carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "Deutsche Werke, Kiel Shipyards",
+  "date_commissioned": null,
+  "date_decommissioned": null,
+  "decommissioningReason": "sunk",
+  "inService": false,
+  "displacement": {
+    "tonnes": 340.376,
+    "tons": 335.0
+  },
+  "pennant_number": null,
+  "length": {
+    "ft": 861.22,
+    "m": 262.5
+  },
+  "beam": {
+    "ft": 118.766,
+    "m": 36.2
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 27.887,
+    "m": 8.5
+  },
+  "speed": {
+    "km_h": 62.598,
+    "knots": 33.8
+  }
+}

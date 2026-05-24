@@ -1,0 +1,34 @@
+{
+  "name": "USS Kitkun Bay",
+  "dbpedia_uri": "http://dbpedia.org/resource/USS_Kitkun_Bay",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/USS_Kitkun_Bay",
+  "wikipedia_title": "USS Kitkun Bay",
+  "country": "United States",
+  "subtype": "escort carrier",
+  "class": "Casablanca-class escort carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "Kaiser Shipyards",
+  "date_commissioned": "1943-12-15",
+  "date_decommissioned": "1946-04-19",
+  "decommissioningReason": "scrapped",
+  "inService": false,
+  "displacement": {
+    "tons": null
+  },
+  "pennant_number": "Hull symbol: CVE-71",
+  "length": {
+    "m": null
+  },
+  "beam": {
+    "m": null
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "m": null
+  },
+  "speed": {
+    "knots": null
+  }
+}

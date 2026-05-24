@@ -1,0 +1,38 @@
+{
+  "name": "JS Hyūga",
+  "dbpedia_uri": "http://dbpedia.org/resource/JS_Hyūga",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/JS_Hyūga",
+  "wikipedia_title": "JS Hyūga",
+  "country": "Japan",
+  "subtype": "helicopter carrier",
+  "class": "Hyūga-class helicopter destroyer",
+  "configuration": "helicopter",
+  "manufacturer": "IHI, Yokohama",
+  "date_commissioned": "2009-03-18",
+  "date_decommissioned": null,
+  "decommissioningReason": null,
+  "inService": true,
+  "displacement": {
+    "tonnes": 14173.854,
+    "tons": 13950.0
+  },
+  "pennant_number": "431999693 *Callsign: JSNI *Pennant number: DDH-181",
+  "length": {
+    "ft": 646.325,
+    "m": 197.0
+  },
+  "beam": {
+    "ft": 108.268,
+    "m": 33.0
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "m": null
+  },
+  "speed": {
+    "km_h": 55.56,
+    "knots": 30.0
+  }
+}

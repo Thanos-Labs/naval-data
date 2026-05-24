@@ -1,0 +1,40 @@
+{
+  "name": "USS John F. Kennedy (CV-67)",
+  "dbpedia_uri": "http://dbpedia.org/resource/USS_John_F._Kennedy_(CV-67)",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/USS_John_F._Kennedy_(CV-67)",
+  "wikipedia_title": "USS John F. Kennedy (CV-67)",
+  "country": "United States",
+  "subtype": "aircraft carrier",
+  "class": null,
+  "configuration": "CATOBAR",
+  "manufacturer": "Newport News Shipbuilding",
+  "date_commissioned": "1968-09-07",
+  "date_decommissioned": "2007-03-23",
+  "decommissioningReason": "scrapped",
+  "inService": false,
+  "displacement": {
+    "tonnes": 616.74,
+    "tons": 607.0
+  },
+  "pennant_number": "Callsign: NJFK *NovemberJulietFoxtrotKilo",
+  "length": {
+    "ft": 3451.444,
+    "m": 1052.0
+  },
+  "beam": {
+    "ft": 826.772,
+    "m": 252.0
+  },
+  "height": {
+    "ft": 629.921,
+    "m": 192.0
+  },
+  "draught": {
+    "ft": 118.11,
+    "m": 36.0
+  },
+  "speed": {
+    "km_h": 62.968,
+    "knots": 34.0
+  }
+}

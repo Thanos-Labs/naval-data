@@ -1,0 +1,38 @@
+{
+  "name": "Chinese aircraft carrier Liaoning",
+  "dbpedia_uri": "http://dbpedia.org/resource/Chinese_aircraft_carrier_Liaoning",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/Chinese_aircraft_carrier_Liaoning",
+  "wikipedia_title": "Chinese aircraft carrier Liaoning",
+  "country": "CHN",
+  "subtype": "aircraft carrier",
+  "class": "Type 001 aircraft carrier",
+  "configuration": "STOBAR",
+  "manufacturer": "Dalian Shipbuilding Industry",
+  "date_commissioned": "2012-09-25",
+  "date_decommissioned": null,
+  "decommissioningReason": null,
+  "inService": true,
+  "displacement": {
+    "tonnes": 43690.017,
+    "tons": 43000.0
+  },
+  "pennant_number": null,
+  "length": {
+    "ft": 1005.249,
+    "m": 306.4
+  },
+  "beam": {
+    "ft": 244.094,
+    "m": 74.4
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "m": null
+  },
+  "speed": {
+    "km_h": 59.264,
+    "knots": 32.0
+  }
+}

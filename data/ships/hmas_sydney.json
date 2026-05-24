@@ -1,0 +1,39 @@
+{
+  "name": "HMAS Sydney (R17)",
+  "dbpedia_uri": "http://dbpedia.org/resource/HMAS_Sydney_(R17)",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/HMAS_Sydney_(R17)",
+  "wikipedia_title": "HMAS Sydney (R17)",
+  "country": "Australian Navy",
+  "subtype": "light aircraft carrier",
+  "class": "Majestic-class aircraft carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "HM Dockyard Devonport, England",
+  "date_commissioned": "1948-12-16",
+  "date_decommissioned": "1973-11-12",
+  "decommissioningReason": "scrapped",
+  "inService": false,
+  "displacement": {
+    "tonnes": 14610.755,
+    "tons": 14380.0
+  },
+  "pennant_number": null,
+  "length": {
+    "ft": 2066.929,
+    "m": 630.0
+  },
+  "beam": {
+    "ft": 262.467,
+    "m": 80.0
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 82.021,
+    "m": 25.0
+  },
+  "speed": {
+    "km_h": 45.93,
+    "knots": 24.8
+  }
+}

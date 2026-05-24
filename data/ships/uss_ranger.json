@@ -1,0 +1,39 @@
+{
+  "name": "USS Ranger (CV-61)",
+  "dbpedia_uri": "http://dbpedia.org/resource/USS_Ranger_(CV-61)",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/USS_Ranger_(CV-61)",
+  "wikipedia_title": "USS Ranger (CV-61)",
+  "country": "United States",
+  "subtype": "aircraft carrier",
+  "class": "Forrestal-class aircraft carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "Newport News Shipbuilding",
+  "date_commissioned": "1957-08-10",
+  "date_decommissioned": "1993-07-10",
+  "decommissioningReason": "scrapped",
+  "inService": false,
+  "displacement": {
+    "tonnes": 57203.441,
+    "tons": 56300.0
+  },
+  "pennant_number": "Callsign: NHKG *NovemberHotelKiloGolf *Hull number: CVA-61",
+  "length": {
+    "ft": 3513.78,
+    "m": 1071.0
+  },
+  "beam": {
+    "ft": 426.509,
+    "m": 130.0
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 121.391,
+    "m": 37.0
+  },
+  "speed": {
+    "km_h": 62.968,
+    "knots": 34.0
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "USS Makin Island (LHD-8)",
+  "dbpedia_uri": "http://dbpedia.org/resource/USS_Makin_Island_(LHD-8)",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/USS_Makin_Island_(LHD-8)",
+  "wikipedia_title": "USS Makin Island (LHD-8)",
+  "country": "United States",
+  "subtype": "landing helicopter dock",
+  "class": null,
+  "configuration": "STOVL",
+  "manufacturer": "Ingalls Shipbuilding",
+  "date_commissioned": "2009-10-24",
+  "date_decommissioned": null,
+  "decommissioningReason": null,
+  "inService": true,
+  "displacement": {
+    "tonnes": 417.595,
+    "tons": 411.0
+  },
+  "pennant_number": "369970689 *Callsign: NMKI *NovemberMikeKiloIndia *Hull number: LHD-8",
+  "length": {
+    "ft": 843.176,
+    "m": 257.0
+  },
+  "beam": {
+    "ft": 104.331,
+    "m": 31.8
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 26.575,
+    "m": 8.1
+  },
+  "speed": {
+    "km_h": 51.856,
+    "knots": 28.0
+  }
+}

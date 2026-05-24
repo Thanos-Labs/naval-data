@@ -1,0 +1,39 @@
+{
+  "name": "Soviet aircraft carrier Kiev",
+  "dbpedia_uri": "http://dbpedia.org/resource/Soviet_aircraft_carrier_Kiev",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/Soviet_aircraft_carrier_Kiev",
+  "wikipedia_title": "Soviet aircraft carrier Kiev",
+  "country": "Soviet Union",
+  "subtype": "aircraft cruiser",
+  "class": "Kiev-class aircraft carrier aircraft cruiser",
+  "configuration": "CATOBAR",
+  "manufacturer": "Chernomorskiy yard, Nikolayev, Ukrainian SSR",
+  "date_commissioned": "1975-12-28",
+  "date_decommissioned": "1993-06-30",
+  "decommissioningReason": "transferred",
+  "inService": false,
+  "displacement": {
+    "tonnes": 31019.912,
+    "tons": 30530.0
+  },
+  "pennant_number": null,
+  "length": {
+    "ft": 895.997,
+    "m": 273.1
+  },
+  "beam": {
+    "ft": 161.417,
+    "m": 49.2
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 29.364,
+    "m": 8.95
+  },
+  "speed": {
+    "km_h": 59.264,
+    "knots": 32.0
+  }
+}

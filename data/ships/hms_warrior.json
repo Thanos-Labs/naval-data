@@ -1,0 +1,39 @@
+{
+  "name": "HMS Warrior (R31)",
+  "dbpedia_uri": "http://dbpedia.org/resource/HMS_Warrior_(R31)",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/HMS_Warrior_(R31)",
+  "wikipedia_title": "HMS Warrior (R31)",
+  "country": "Argentina",
+  "subtype": "light aircraft carrier",
+  "class": "Colossus-class aircraft carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "Harland and Wolff",
+  "date_commissioned": "1959-07-08",
+  "date_decommissioned": "1970",
+  "decommissioningReason": "transferred",
+  "inService": false,
+  "displacement": {
+    "tonnes": 18593.658,
+    "tons": 18300.0
+  },
+  "pennant_number": "V-1",
+  "length": {
+    "ft": 2066.929,
+    "m": 630.0
+  },
+  "beam": {
+    "ft": 262.467,
+    "m": 80.0
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 75.459,
+    "m": 23.0
+  },
+  "speed": {
+    "km_h": 46.3,
+    "knots": 25.0
+  }
+}

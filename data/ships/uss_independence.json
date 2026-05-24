@@ -1,0 +1,39 @@
+{
+  "name": "USS Independence (CV-62)",
+  "dbpedia_uri": "http://dbpedia.org/resource/USS_Independence_(CV-62)",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/USS_Independence_(CV-62)",
+  "wikipedia_title": "USS Independence (CV-62)",
+  "country": "United States",
+  "subtype": "aircraft carrier",
+  "class": "Forrestal-class aircraft carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "New York Navy Yard",
+  "date_commissioned": "1959-01-10",
+  "date_decommissioned": "1998-09-30",
+  "decommissioningReason": "scrapped",
+  "inService": false,
+  "displacement": {
+    "tonnes": 60962.815,
+    "tons": 60000.0
+  },
+  "pennant_number": "Callsign: NNQN *NovemberNovemberQuebecNovember *Hull number: CVA-62",
+  "length": {
+    "ft": 1069.882,
+    "m": 326.1
+  },
+  "beam": {
+    "ft": 130.02,
+    "m": 39.63
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 37.073,
+    "m": 11.3
+  },
+  "speed": {
+    "km_h": 62.968,
+    "knots": 34.0
+  }
+}

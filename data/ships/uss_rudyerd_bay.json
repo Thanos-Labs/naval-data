@@ -1,0 +1,34 @@
+{
+  "name": "USS Rudyerd Bay",
+  "dbpedia_uri": "http://dbpedia.org/resource/USS_Rudyerd_Bay",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/USS_Rudyerd_Bay",
+  "wikipedia_title": "USS Rudyerd Bay",
+  "country": "United States",
+  "subtype": "escort carrier",
+  "class": "Casablanca-class escort carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "Kaiser Shipyards",
+  "date_commissioned": "1944-02-25",
+  "date_decommissioned": "1946-06-11",
+  "decommissioningReason": "scrapped",
+  "inService": false,
+  "displacement": {
+    "tons": null
+  },
+  "pennant_number": "Hull symbol: CVE-81",
+  "length": {
+    "m": null
+  },
+  "beam": {
+    "m": null
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "m": null
+  },
+  "speed": {
+    "knots": null
+  }
+}

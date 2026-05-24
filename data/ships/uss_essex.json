@@ -1,0 +1,39 @@
+{
+  "name": "USS Essex (LHD-2)",
+  "dbpedia_uri": "http://dbpedia.org/resource/USS_Essex_(LHD-2)",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/USS_Essex_(LHD-2)",
+  "wikipedia_title": "USS Essex (LHD-2)",
+  "country": "United States",
+  "subtype": "landing helicopter dock",
+  "class": null,
+  "configuration": "STOVL",
+  "manufacturer": "Ingalls Shipbuilding",
+  "date_commissioned": "1992-10-17",
+  "date_decommissioned": null,
+  "decommissioningReason": null,
+  "inService": true,
+  "displacement": {
+    "tonnes": 417.595,
+    "tons": 411.0
+  },
+  "pennant_number": "368779000 *Callsign: NESX *NovemberEchoSierraX-ray *Hull number: LHD-2",
+  "length": {
+    "ft": 843.996,
+    "m": 257.25
+  },
+  "beam": {
+    "ft": 105.971,
+    "m": 32.3
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 26.575,
+    "m": 8.1
+  },
+  "speed": {
+    "km_h": 40.744,
+    "knots": 22.0
+  }
+}

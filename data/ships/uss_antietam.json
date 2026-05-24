@@ -1,0 +1,39 @@
+{
+  "name": "USS Antietam (CV-36)",
+  "dbpedia_uri": "http://dbpedia.org/resource/USS_Antietam_(CV-36)",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/USS_Antietam_(CV-36)",
+  "wikipedia_title": "USS Antietam (CV-36)",
+  "country": "United States",
+  "subtype": "fleet carrier",
+  "class": "Essex-class aircraft carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "Philadelphia Naval Shipyard",
+  "date_commissioned": "1945-01-28",
+  "date_decommissioned": "1963-05-08",
+  "decommissioningReason": "scrapped",
+  "inService": false,
+  "displacement": {
+    "tonnes": 27534.871,
+    "tons": 27100.0
+  },
+  "pennant_number": null,
+  "length": {
+    "ft": 2913.386,
+    "m": 888.0
+  },
+  "beam": {
+    "ft": 305.118,
+    "m": 93.0
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 91.864,
+    "m": 28.0
+  },
+  "speed": {
+    "km_h": 61.116,
+    "knots": 33.0
+  }
+}

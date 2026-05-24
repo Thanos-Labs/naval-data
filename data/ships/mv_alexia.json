@@ -1,0 +1,38 @@
+{
+  "name": "MV Alexia",
+  "dbpedia_uri": "http://dbpedia.org/resource/MV_Alexia",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/MV_Alexia",
+  "wikipedia_title": "MV Alexia",
+  "country": "United Kingdom",
+  "subtype": "aircraft carrier",
+  "class": null,
+  "configuration": "CATOBAR",
+  "manufacturer": "Bremer Vulkan",
+  "date_commissioned": null,
+  "date_decommissioned": null,
+  "decommissioningReason": "scrapped",
+  "inService": false,
+  "displacement": {
+    "tons": null
+  },
+  "pennant_number": null,
+  "length": {
+    "ft": 1519.029,
+    "m": 463.0
+  },
+  "beam": {
+    "ft": 193.57,
+    "m": 59.0
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 88.583,
+    "m": 27.0
+  },
+  "speed": {
+    "km_h": 24.076,
+    "knots": 13.0
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "USS Sangamon (CVE-26)",
+  "dbpedia_uri": "http://dbpedia.org/resource/USS_Sangamon_(CVE-26)",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/USS_Sangamon_(CVE-26)",
+  "wikipedia_title": "USS Sangamon (CVE-26)",
+  "country": "United States",
+  "subtype": "escort carrier",
+  "class": "Sangamon-class escort carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "Federal Shipbuilding and Dry Dock Company, Kearny, New Jersey",
+  "date_commissioned": "1940-10-23",
+  "date_decommissioned": "1945-10-24",
+  "decommissioningReason": "transferred",
+  "inService": false,
+  "displacement": {
+    "tonnes": 11582.935,
+    "tons": 11400.0
+  },
+  "pennant_number": "Hull symbol: *AVG-26 (14 February 1942) *ACV-26 (20 August 1942) *CVE-26 (15 July 1943) *Callsign: NWQD *NovemberWhiskeyQuebecDelta",
+  "length": {
+    "ft": 1814.304,
+    "m": 553.0
+  },
+  "beam": {
+    "ft": 246.063,
+    "m": 75.0
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 98.425,
+    "m": 30.0
+  },
+  "speed": {
+    "km_h": 33.892,
+    "knots": 18.3
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "USS Charger",
+  "dbpedia_uri": "http://dbpedia.org/resource/USS_Charger",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/USS_Charger",
+  "wikipedia_title": "USS Charger",
+  "country": "United States",
+  "subtype": "escort carrier",
+  "class": "Charger-class escort carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "Sun Shipbuilding & Drydock Co., Chester, Pennsylvania",
+  "date_commissioned": "1942-03-03",
+  "date_decommissioned": "1946-03-15",
+  "decommissioningReason": "retired",
+  "inService": false,
+  "displacement": {
+    "tonnes": 15367.709,
+    "tons": 15125.0
+  },
+  "pennant_number": null,
+  "length": {
+    "ft": 492.001,
+    "m": 149.962
+  },
+  "beam": {
+    "ft": 226.378,
+    "m": 69.0
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 85.302,
+    "m": 26.0
+  },
+  "speed": {
+    "km_h": 31.484,
+    "knots": 17.0
+  }
+}

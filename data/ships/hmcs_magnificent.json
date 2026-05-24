@@ -1,0 +1,39 @@
+{
+  "name": "HMCS Magnificent",
+  "dbpedia_uri": "http://dbpedia.org/resource/HMCS_Magnificent",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/HMCS_Magnificent",
+  "wikipedia_title": "HMCS Magnificent",
+  "country": "Canada",
+  "subtype": "light aircraft carrier",
+  "class": "Majestic-class aircraft carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "Harland and Wolff, Belfast",
+  "date_commissioned": "1948-03-21",
+  "date_decommissioned": "1957-06-14",
+  "decommissioningReason": "transferred",
+  "inService": false,
+  "displacement": {
+    "tonnes": 15951.936,
+    "tons": 15700.0
+  },
+  "pennant_number": "CVL 21",
+  "length": {
+    "ft": 2290.026,
+    "m": 698.0
+  },
+  "beam": {
+    "ft": 262.467,
+    "m": 80.0
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 82.021,
+    "m": 25.0
+  },
+  "speed": {
+    "km_h": 44.448,
+    "knots": 24.0
+  }
+}

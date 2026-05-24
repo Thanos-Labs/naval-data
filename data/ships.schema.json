@@ -1,0 +1,192 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://naval-data.local/schemas/ship.schema.json",
+  "title": "Aircraft Carrier",
+  "type": "object",
+  "additionalProperties": false,
+  "$defs": {
+    "nullableText": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "nullableDate": {
+      "type": ["string", "null"],
+      "pattern": "^(\\d{4}|\\d{4}-\\d{2}-\\d{2})$"
+    },
+    "metricMeasurement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "m"
+      ],
+      "properties": {
+        "m": {
+          "type": ["number", "null"],
+          "minimum": 0
+        },
+        "ft": {
+          "type": "number",
+          "minimum": 0
+        }
+      }
+    },
+    "speedMeasurement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "knots"
+      ],
+      "properties": {
+        "knots": {
+          "type": ["number", "null"],
+          "minimum": 0
+        },
+        "km_h": {
+          "type": "number",
+          "minimum": 0
+        }
+      }
+    },
+    "displacementMeasurement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tons"
+      ],
+      "properties": {
+        "tons": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "tonnes": {
+          "type": "number",
+          "minimum": 0
+        }
+      }
+    }
+  },
+  "required": [
+    "name",
+    "dbpedia_uri",
+    "wikipedia_url",
+    "wikipedia_title",
+    "country",
+    "subtype",
+    "class",
+    "configuration",
+    "manufacturer",
+    "date_commissioned",
+    "date_decommissioned",
+    "decommissioningReason",
+    "inService",
+    "displacement",
+    "pennant_number",
+    "length",
+    "beam",
+    "height",
+    "draught",
+    "speed"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "dbpedia_uri": {
+      "type": "string",
+      "format": "uri"
+    },
+    "wikipedia_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "wikipedia_title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "country": {
+      "type": "string",
+      "minLength": 1
+    },
+    "subtype": {
+      "enum": [
+        "aircraft carrier",
+        "nuclear aircraft carrier",
+        "helicopter carrier",
+        "escort carrier",
+        "light aircraft carrier",
+        "fleet carrier",
+        "seaplane carrier",
+        "amphibious assault ship",
+        "landing helicopter dock",
+        "aircraft cruiser"
+      ]
+    },
+    "class": {
+      "$ref": "#/$defs/nullableText"
+    },
+    "configuration": {
+      "enum": [
+        "CATOBAR",
+        "STOBAR",
+        "STOVL",
+        "helicopter",
+        "seaplane"
+      ]
+    },
+    "manufacturer": {
+      "type": "string",
+      "minLength": 1
+    },
+    "date_commissioned": {
+      "$ref": "#/$defs/nullableDate"
+    },
+    "date_decommissioned": {
+      "$ref": "#/$defs/nullableDate"
+    },
+    "decommissioningReason": {
+      "type": ["string", "null"],
+      "enum": [
+        "scrapped",
+        "scuttled",
+        "sunk",
+        "target",
+        "museum",
+        "transferred",
+        "cancelled",
+        "converted",
+        "retired",
+        null
+      ]
+    },
+    "inService": {
+      "type": "boolean"
+    },
+    "displacement": {
+      "$ref": "#/$defs/displacementMeasurement"
+    },
+    "pennant_number": {
+      "$ref": "#/$defs/nullableText"
+    },
+    "length": {
+      "$ref": "#/$defs/metricMeasurement"
+    },
+    "beam": {
+      "$ref": "#/$defs/metricMeasurement"
+    },
+    "height": {
+      "$ref": "#/$defs/metricMeasurement"
+    },
+    "draught": {
+      "$ref": "#/$defs/metricMeasurement"
+    },
+    "speed": {
+      "$ref": "#/$defs/speedMeasurement"
+    }
+  }
+}

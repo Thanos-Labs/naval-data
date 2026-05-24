@@ -1,0 +1,39 @@
+{
+  "name": "USS Lexington (CV-2)",
+  "dbpedia_uri": "http://dbpedia.org/resource/USS_Lexington_(CV-2)",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/USS_Lexington_(CV-2)",
+  "wikipedia_title": "USS Lexington (CV-2)",
+  "country": "United States",
+  "subtype": "aircraft carrier",
+  "class": "Lexington-class aircraft carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "Fore River Ship Building Co., Quincy, Massachusetts, US",
+  "date_commissioned": "1927-12-14",
+  "date_decommissioned": "1942-06-24",
+  "decommissioningReason": "scuttled",
+  "inService": false,
+  "displacement": {
+    "tonnes": 36577.689,
+    "tons": 36000.0
+  },
+  "pennant_number": "Hull number: CC-1, then CV-2",
+  "length": {
+    "ft": 2913.386,
+    "m": 888.0
+  },
+  "beam": {
+    "ft": 351.05,
+    "m": 107.0
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 104.987,
+    "m": 32.0
+  },
+  "speed": {
+    "km_h": 61.579,
+    "knots": 33.25
+  }
+}

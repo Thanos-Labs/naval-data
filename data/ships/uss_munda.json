@@ -1,0 +1,34 @@
+{
+  "name": "USS Munda",
+  "dbpedia_uri": "http://dbpedia.org/resource/USS_Munda",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/USS_Munda",
+  "wikipedia_title": "USS Munda",
+  "country": "United States",
+  "subtype": "escort carrier",
+  "class": "Casablanca-class escort carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "Kaiser Shipyards",
+  "date_commissioned": "1944-07-08",
+  "date_decommissioned": "1946-04-24",
+  "decommissioningReason": "scrapped",
+  "inService": false,
+  "displacement": {
+    "tons": null
+  },
+  "pennant_number": "Hull symbol: CVE-104",
+  "length": {
+    "m": null
+  },
+  "beam": {
+    "m": null
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "m": null
+  },
+  "speed": {
+    "knots": null
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "HMS Illustrious (R06)",
+  "dbpedia_uri": "http://dbpedia.org/resource/HMS_Illustrious_(R06)",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/HMS_Illustrious_(R06)",
+  "wikipedia_title": "HMS Illustrious (R06)",
+  "country": "United Kingdom",
+  "subtype": "light aircraft carrier",
+  "class": "Invincible-class aircraft carrier",
+  "configuration": "STOVL",
+  "manufacturer": "Swan Hunter, Tyne and Wear, United Kingdom",
+  "date_commissioned": "1982-06-20",
+  "date_decommissioned": "2014-08-28",
+  "decommissioningReason": "scrapped",
+  "inService": false,
+  "displacement": {
+    "tonnes": 22353.032,
+    "tons": 22000.0
+  },
+  "pennant_number": "R06",
+  "length": {
+    "ft": 688.976,
+    "m": 210.0
+  },
+  "beam": {
+    "ft": 387.139,
+    "m": 118.0
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 82.021,
+    "m": 25.0
+  },
+  "speed": {
+    "km_h": 51.856,
+    "knots": 28.0
+  }
+}

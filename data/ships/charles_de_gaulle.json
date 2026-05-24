@@ -1,0 +1,40 @@
+{
+  "name": "French aircraft carrier Charles de Gaulle",
+  "dbpedia_uri": "http://dbpedia.org/resource/French_aircraft_carrier_Charles_de_Gaulle",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/French_aircraft_carrier_Charles_de_Gaulle",
+  "wikipedia_title": "French aircraft carrier Charles de Gaulle",
+  "country": "France",
+  "subtype": "nuclear aircraft carrier",
+  "class": "Charles de Gaulle-class aircraft carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "DCNS Brest",
+  "date_commissioned": "2001",
+  "date_decommissioned": null,
+  "decommissioningReason": null,
+  "inService": true,
+  "displacement": {
+    "tons": 41829.0,
+    "tonnes": 42500.0
+  },
+  "pennant_number": "R91",
+  "length": {
+    "m": 261.5,
+    "ft": 857.94
+  },
+  "beam": {
+    "m": 64.36,
+    "ft": 211.16
+  },
+  "height": {
+    "m": 75.0,
+    "ft": 246.06
+  },
+  "draught": {
+    "m": 9.43,
+    "ft": 30.94
+  },
+  "speed": {
+    "knots": 27.0,
+    "km_h": 50.004
+  }
+}

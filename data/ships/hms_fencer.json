@@ -1,0 +1,39 @@
+{
+  "name": "HMS Fencer (D64)",
+  "dbpedia_uri": "http://dbpedia.org/resource/HMS_Fencer_(D64)",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/HMS_Fencer_(D64)",
+  "wikipedia_title": "HMS Fencer (D64)",
+  "country": "United States",
+  "subtype": "escort carrier",
+  "class": "Bogue-class escort carrier (USA) *Attacker-class escort carrier (UK)",
+  "configuration": "CATOBAR",
+  "manufacturer": "Western Pipe and Steel Company, San Francisco, California",
+  "date_commissioned": "1943-03-01",
+  "date_decommissioned": "1946-12-11",
+  "decommissioningReason": "transferred",
+  "inService": false,
+  "displacement": {
+    "tonnes": 103.637,
+    "tons": 102.0
+  },
+  "pennant_number": "D64",
+  "length": {
+    "ft": 465.0,
+    "m": 141.732
+  },
+  "beam": {
+    "ft": 226.378,
+    "m": 69.0
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 75.459,
+    "m": 23.0
+  },
+  "speed": {
+    "km_h": 33.336,
+    "knots": 18.0
+  }
+}

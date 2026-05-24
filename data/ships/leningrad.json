@@ -1,0 +1,39 @@
+{
+  "name": "Soviet helicopter carrier Leningrad",
+  "dbpedia_uri": "http://dbpedia.org/resource/Soviet_helicopter_carrier_Leningrad",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/Soviet_helicopter_carrier_Leningrad",
+  "wikipedia_title": "Soviet helicopter carrier Leningrad",
+  "country": "Soviet Union",
+  "subtype": "helicopter carrier",
+  "class": "Moskva-class helicopter carrier",
+  "configuration": "helicopter",
+  "manufacturer": "Nikolayev South (Shipyard No.444)",
+  "date_commissioned": "1969-06-02",
+  "date_decommissioned": "1991-06-24",
+  "decommissioningReason": "scrapped",
+  "inService": false,
+  "displacement": {
+    "tonnes": 12111.279,
+    "tons": 11920.0
+  },
+  "pennant_number": null,
+  "length": {
+    "ft": 620.079,
+    "m": 189.0
+  },
+  "beam": {
+    "ft": 111.549,
+    "m": 34.0
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 25.262,
+    "m": 7.7
+  },
+  "speed": {
+    "km_h": 57.412,
+    "knots": 31.0
+  }
+}

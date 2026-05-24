@@ -1,0 +1,39 @@
+{
+  "name": "USS Inchon",
+  "dbpedia_uri": "http://dbpedia.org/resource/USS_Inchon",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/USS_Inchon",
+  "wikipedia_title": "USS Inchon",
+  "country": "United States",
+  "subtype": "aircraft carrier",
+  "class": "Iwo Jima-class amphibious assault ship",
+  "configuration": "STOVL",
+  "manufacturer": "Ingalls Shipbuilding",
+  "date_commissioned": "1970-06-20",
+  "date_decommissioned": "2002-06-20",
+  "decommissioningReason": "sunk",
+  "inService": false,
+  "displacement": {
+    "tonnes": 19812.915,
+    "tons": 19500.0
+  },
+  "pennant_number": "Callsign: NOUD *NovemberOscarUniformDelta *Hull number: LPH-12",
+  "length": {
+    "ft": 1980.479,
+    "m": 603.65
+  },
+  "beam": {
+    "ft": 341.207,
+    "m": 104.0
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 84.974,
+    "m": 25.9
+  },
+  "speed": {
+    "km_h": 38.892,
+    "knots": 21.0
+  }
+}

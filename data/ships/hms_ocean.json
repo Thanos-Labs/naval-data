@@ -1,0 +1,39 @@
+{
+  "name": "HMS Ocean (R68)",
+  "dbpedia_uri": "http://dbpedia.org/resource/HMS_Ocean_(R68)",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/HMS_Ocean_(R68)",
+  "wikipedia_title": "HMS Ocean (R68)",
+  "country": "United Kingdom",
+  "subtype": "light aircraft carrier",
+  "class": "Colossus-class aircraft carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "Alexander Stephen & Sons",
+  "date_commissioned": "1945-08-08",
+  "date_decommissioned": "1960",
+  "decommissioningReason": "scrapped",
+  "inService": false,
+  "displacement": {
+    "tonnes": 13401.659,
+    "tons": 13190.0
+  },
+  "pennant_number": null,
+  "length": {
+    "ft": 2066.929,
+    "m": 630.0
+  },
+  "beam": {
+    "ft": 262.467,
+    "m": 80.0
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 59.055,
+    "m": 18.0
+  },
+  "speed": {
+    "km_h": 46.3,
+    "knots": 25.0
+  }
+}

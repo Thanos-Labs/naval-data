@@ -1,0 +1,39 @@
+{
+  "name": "USS Constellation (CV-64)",
+  "dbpedia_uri": "http://dbpedia.org/resource/USS_Constellation_(CV-64)",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/USS_Constellation_(CV-64)",
+  "wikipedia_title": "USS Constellation (CV-64)",
+  "country": "United States",
+  "subtype": "aircraft carrier",
+  "class": "Kitty Hawk-class aircraft carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "Brooklyn Navy Yard",
+  "date_commissioned": "1961-10-27",
+  "date_decommissioned": "2003-08-06",
+  "decommissioningReason": "scrapped",
+  "inService": false,
+  "displacement": {
+    "tonnes": 62975.603,
+    "tons": 61981.0
+  },
+  "pennant_number": "Callsign: NNUL *NovemberNovemberUniformLima *Hull number: CVA-64",
+  "length": {
+    "ft": 3569.554,
+    "m": 1088.0
+  },
+  "beam": {
+    "ft": 925.197,
+    "m": 282.0
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "ft": 127.953,
+    "m": 39.0
+  },
+  "speed": {
+    "km_h": 62.968,
+    "knots": 34.0
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "USS Savo Island",
+  "dbpedia_uri": "http://dbpedia.org/resource/USS_Savo_Island",
+  "wikipedia_url": "http://en.wikipedia.org/wiki/USS_Savo_Island",
+  "wikipedia_title": "USS Savo Island",
+  "country": "United States",
+  "subtype": "escort carrier",
+  "class": "Casablanca-class escort carrier",
+  "configuration": "CATOBAR",
+  "manufacturer": "Kaiser Shipyards",
+  "date_commissioned": "1944-02-03",
+  "date_decommissioned": "1946-12-12",
+  "decommissioningReason": "scrapped",
+  "inService": false,
+  "displacement": {
+    "tons": null
+  },
+  "pennant_number": "Hull symbol: CVE-78",
+  "length": {
+    "m": null
+  },
+  "beam": {
+    "m": null
+  },
+  "height": {
+    "m": null
+  },
+  "draught": {
+    "m": null
+  },
+  "speed": {
+    "knots": null
+  }
+}
