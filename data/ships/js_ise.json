@@ -10,13 +10,13 @@
   "manufacturer": "IHI, Yokohama",
   "date_commissioned": "2011-03-16",
   "date_decommissioned": null,
-  "decommissioningReason": null,
-  "inService": true,
+  "decommissioning_reason": null,
+  "in_service": true,
   "displacement": {
     "tonnes": 14173.854,
     "tons": 13950.0
   },
-  "pennant_number": "431999551 *Pennant number: DDH-182",
+  "pennant_number": "DDH-182",
   "length": {
     "ft": 646.325,
     "m": 197.0

@@ -10,13 +10,13 @@
   "manufacturer": "Newport News Shipbuilding",
   "date_commissioned": "1989-11-11",
   "date_decommissioned": null,
-  "decommissioningReason": null,
-  "inService": true,
+  "decommissioning_reason": null,
+  "in_service": true,
   "displacement": {
     "tonnes": 105.669,
     "tons": 104.0
   },
-  "pennant_number": "369970406 *Callsign: NABE *NovemberAlphaBravoEcho *Hull number: CVN-72",
+  "pennant_number": "CVN-72",
   "length": {
     "ft": 3582.677,
     "m": 1092.0

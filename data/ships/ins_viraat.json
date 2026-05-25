@@ -10,8 +10,8 @@
   "manufacturer": "Vickers-Armstrong",
   "date_commissioned": "1959-11-25",
   "date_decommissioned": "1984",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 24283.521,
     "tons": 23900.0

@@ -10,8 +10,8 @@
   "manufacturer": "Mitsubishi Shipbuilding & Engineering, Nagasaki",
   "date_commissioned": null,
   "date_decommissioned": null,
-  "decommissioningReason": "transferred",
-  "inService": false,
+  "decommissioning_reason": "transferred",
+  "in_service": false,
   "displacement": {
     "tonnes": 18116.116,
     "tons": 17830.0

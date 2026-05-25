@@ -10,13 +10,13 @@
   "manufacturer": "New York Navy Yard",
   "date_commissioned": "1959-01-10",
   "date_decommissioned": "1998-09-30",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 60962.815,
     "tons": 60000.0
   },
-  "pennant_number": "Callsign: NNQN *NovemberNovemberQuebecNovember *Hull number: CVA-62",
+  "pennant_number": "CVA-62",
   "length": {
     "ft": 1069.882,
     "m": 326.1

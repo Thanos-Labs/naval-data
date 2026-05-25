@@ -10,8 +10,8 @@
   "manufacturer": "Newport News Shipbuilding",
   "date_commissioned": "2036",
   "date_decommissioned": null,
-  "decommissioningReason": null,
-  "inService": false,
+  "decommissioning_reason": null,
+  "in_service": false,
   "displacement": {
     "tons": null
   },

@@ -10,8 +10,8 @@
   "manufacturer": "Seattle-Tacoma Shipbuilding Corporation, Tacoma, Washington",
   "date_commissioned": "1943-01-31",
   "date_decommissioned": "1946-11-02",
-  "decommissioningReason": "transferred",
-  "inService": false,
+  "decommissioning_reason": "transferred",
+  "in_service": false,
   "displacement": {
     "tonnes": 103.637,
     "tons": 102.0

@@ -10,13 +10,13 @@
   "manufacturer": "Ingalls Shipbuilding",
   "date_commissioned": "1979-07-28",
   "date_decommissioned": "2011-03-31",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 39930.644,
     "tons": 39300.0
   },
-  "pennant_number": "Callsign: NJPX *NovemberJulietPapaXray *Hull number: LHA-4",
+  "pennant_number": "LHA-4",
   "length": {
     "ft": 2734.055,
     "m": 833.34

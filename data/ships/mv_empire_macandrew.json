@@ -10,8 +10,8 @@
   "manufacturer": "William Denny and Brothers Dumbarton Scotland",
   "date_commissioned": null,
   "date_decommissioned": null,
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tons": null
   },

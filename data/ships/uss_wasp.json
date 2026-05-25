@@ -10,13 +10,13 @@
   "manufacturer": "Ingalls Shipbuilding",
   "date_commissioned": "1989-07-29",
   "date_decommissioned": null,
-  "decommissioningReason": null,
-  "inService": true,
+  "decommissioning_reason": null,
+  "in_service": true,
   "displacement": {
     "tonnes": 417.595,
     "tons": 411.0
   },
-  "pennant_number": "366000001 *Callsign: NEBP *NovemberEchoBravoPapa *Hull number: LHD-1",
+  "pennant_number": "LHD-1",
   "length": {
     "ft": 846.457,
     "m": 258.0

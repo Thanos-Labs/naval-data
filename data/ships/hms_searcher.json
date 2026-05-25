@@ -10,13 +10,13 @@
   "manufacturer": "Seattle-Tacoma Shipbuilding Corporation",
   "date_commissioned": "1943-04-07",
   "date_decommissioned": null,
-  "decommissioningReason": "transferred",
-  "inService": false,
+  "decommissioning_reason": "transferred",
+  "in_service": false,
   "displacement": {
     "tonnes": 14631.075,
     "tons": 14400.0
   },
-  "pennant_number": "IMO number: 6116575",
+  "pennant_number": "D40",
   "length": {
     "ft": 1610.892,
     "m": 491.0

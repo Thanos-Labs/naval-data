@@ -10,12 +10,12 @@
   "manufacturer": "Kaiser Vancouver, Vancouver, Washington",
   "date_commissioned": "1943-10-23",
   "date_decommissioned": "1944-11-27",
-  "decommissioningReason": "sunk",
-  "inService": false,
+  "decommissioning_reason": "sunk",
+  "in_service": false,
   "displacement": {
     "tons": null
   },
-  "pennant_number": "Hull symbol: AVG-63 *ACV-63 *CVE-63",
+  "pennant_number": "AVG-63",
   "length": {
     "m": null
   },

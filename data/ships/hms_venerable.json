@@ -10,13 +10,13 @@
   "manufacturer": "Cammell Laird",
   "date_commissioned": "1969-03-12",
   "date_decommissioned": "1997",
-  "decommissioningReason": "transferred",
-  "inService": false,
+  "decommissioning_reason": "transferred",
+  "in_service": false,
   "displacement": {
     "tonnes": 13401.659,
     "tons": 13190.0
   },
-  "pennant_number": "V-2",
+  "pennant_number": "R63",
   "length": {
     "ft": 2280.184,
     "m": 695.0

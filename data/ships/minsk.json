@@ -10,8 +10,8 @@
   "manufacturer": "Chernomorskiy yard, Mykolaiv",
   "date_commissioned": "1978-09-27",
   "date_decommissioned": "1993-06-30",
-  "decommissioningReason": "museum",
-  "inService": false,
+  "decommissioning_reason": "museum",
+  "in_service": false,
   "displacement": {
     "tonnes": 31024.992,
     "tons": 30535.0

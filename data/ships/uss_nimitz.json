@@ -10,13 +10,13 @@
   "manufacturer": "Newport News Shipbuilding",
   "date_commissioned": "1975-05-03",
   "date_decommissioned": null,
-  "decommissioningReason": null,
-  "inService": true,
+  "decommissioning_reason": null,
+  "in_service": true,
   "displacement": {
     "tonnes": 101.605,
     "tons": 100.0
   },
-  "pennant_number": "303981000 *Callsign: NMTZ *NovemberMikeTangoZulu *Hull number: CVN-68",
+  "pennant_number": "CVN-68",
   "length": {
     "m": null
   },

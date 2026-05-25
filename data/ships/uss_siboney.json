@@ -10,13 +10,13 @@
   "manufacturer": "Todd-Pacific Shipyards, Tacoma, Washington",
   "date_commissioned": "1945-05-14",
   "date_decommissioned": "1956-07-31",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 21740.356,
     "tons": 21397.0
   },
-  "pennant_number": null,
+  "pennant_number": "CVE-112",
   "length": {
     "ft": 1827.428,
     "m": 557.0

@@ -10,8 +10,8 @@
   "manufacturer": "Hudong–Zhonghua Shipbuilding",
   "date_commissioned": null,
   "date_decommissioned": null,
-  "decommissioningReason": null,
-  "inService": false,
+  "decommissioning_reason": null,
+  "in_service": false,
   "displacement": {
     "tonnes": 35561.642,
     "tons": 35000.0

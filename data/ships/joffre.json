@@ -10,8 +10,8 @@
   "manufacturer": "Ateliers et Chantiers de Saint-Nazaire Penhoët",
   "date_commissioned": null,
   "date_decommissioned": null,
-  "decommissioningReason": null,
-  "inService": false,
+  "decommissioning_reason": "cancelled",
+  "in_service": false,
   "displacement": {
     "tonnes": 20320.938,
     "tons": 20000.0

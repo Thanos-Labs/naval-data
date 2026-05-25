@@ -10,12 +10,12 @@
   "manufacturer": "Kaiser Shipyards",
   "date_commissioned": "1944-04-09",
   "date_decommissioned": "1946-08-22",
-  "decommissioningReason": "retired",
-  "inService": false,
+  "decommissioning_reason": "retired",
+  "in_service": false,
   "displacement": {
     "tons": null
   },
-  "pennant_number": "Hull symbol: CVE-88",
+  "pennant_number": "CVE-88",
   "length": {
     "m": null
   },

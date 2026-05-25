@@ -10,13 +10,13 @@
   "manufacturer": "John Brown & Co., Clydebank, Scotland",
   "date_commissioned": "1943-12-08",
   "date_decommissioned": "1954",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 32625.266,
     "tons": 32110.0
   },
-  "pennant_number": "10",
+  "pennant_number": "R10",
   "length": {
     "ft": 2395.013,
     "m": 730.0

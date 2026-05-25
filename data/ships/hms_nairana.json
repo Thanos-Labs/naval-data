@@ -10,8 +10,8 @@
   "manufacturer": "John Brown & Company",
   "date_commissioned": "1946-03-23",
   "date_decommissioned": "1948-05-28",
-  "decommissioningReason": "transferred",
-  "inService": false,
+  "decommissioning_reason": "transferred",
+  "in_service": false,
   "displacement": {
     "tonnes": 14275.459,
     "tons": 14050.0

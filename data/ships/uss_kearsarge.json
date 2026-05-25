@@ -10,13 +10,13 @@
   "manufacturer": "Ingalls Shipbuilding",
   "date_commissioned": "1993-10-16",
   "date_decommissioned": null,
-  "decommissioningReason": null,
-  "inService": true,
+  "decommissioning_reason": null,
+  "in_service": true,
   "displacement": {
     "tonnes": 417.595,
     "tons": 411.0
   },
-  "pennant_number": "368702000 *Callsign: NNKP *NovemberNovemberKiloPapa *Hull number: LHD-3",
+  "pennant_number": "LHD-3",
   "length": {
     "ft": 843.176,
     "m": 257.0

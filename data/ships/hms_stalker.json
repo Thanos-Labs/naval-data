@@ -10,13 +10,13 @@
   "manufacturer": "Western Pipe and Steel Company",
   "date_commissioned": "1942-12-21",
   "date_decommissioned": "1945-12-29",
-  "decommissioningReason": "transferred",
-  "inService": false,
+  "decommissioning_reason": "transferred",
+  "in_service": false,
   "displacement": {
     "tonnes": 14631.075,
     "tons": 14400.0
   },
-  "pennant_number": null,
+  "pennant_number": "D91",
   "length": {
     "ft": 1610.892,
     "m": 491.0

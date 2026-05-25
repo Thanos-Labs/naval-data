@@ -10,8 +10,8 @@
   "manufacturer": "Arsenal de Brest",
   "date_commissioned": "1963-07-15",
   "date_decommissioned": "2000-11-15",
-  "decommissioningReason": "transferred",
-  "inService": false,
+  "decommissioning_reason": "transferred",
+  "in_service": false,
   "displacement": {
     "tonnes": 245.883,
     "tons": 242.0

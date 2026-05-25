@@ -4,14 +4,14 @@
   "wikipedia_url": "http://en.wikipedia.org/wiki/USS_George_W._Bush",
   "wikipedia_title": "USS George W. Bush",
   "country": "United States",
-  "subtype": "aircraft carrier",
+  "subtype": "nuclear aircraft carrier",
   "class": "Gerald R. Ford-class aircraft carrier",
   "configuration": "CATOBAR",
   "manufacturer": "Newport News Shipbuilding",
   "date_commissioned": null,
   "date_decommissioned": null,
-  "decommissioningReason": null,
-  "inService": false,
+  "decommissioning_reason": null,
+  "in_service": false,
   "displacement": {
     "tons": null
   },

@@ -10,13 +10,13 @@
   "manufacturer": "Philadelphia Naval Shipyard",
   "date_commissioned": "1962-04-14",
   "date_decommissioned": "1992-12-17",
-  "decommissioningReason": "sunk",
-  "inService": false,
+  "decommissioning_reason": "sunk",
+  "in_service": false,
   "displacement": {
     "tonnes": 11176.516,
     "tons": 11000.0
   },
-  "pennant_number": "Callsign: NOKI *NovemberOscarKiloIndia *Hull number: LPH-3",
+  "pennant_number": "LPH-3",
   "length": {
     "ft": 1942.257,
     "m": 592.0

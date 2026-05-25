@@ -10,13 +10,13 @@
   "manufacturer": "Harland & Wolff, Belfast",
   "date_commissioned": "1945-04-02",
   "date_decommissioned": "1956",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 13401.659,
     "tons": 13190.0
   },
-  "pennant_number": null,
+  "pennant_number": "R62",
   "length": {
     "ft": 2280.184,
     "m": 695.0

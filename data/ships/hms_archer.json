@@ -10,13 +10,13 @@
   "manufacturer": "Sun Shipbuilding & Drydock Co., Chester, Pennsylvania",
   "date_commissioned": "1941-11-17",
   "date_decommissioned": "1943-11-06",
-  "decommissioningReason": "retired",
-  "inService": false,
+  "decommissioning_reason": "retired",
+  "in_service": false,
   "displacement": {
     "tonnes": 914.442,
     "tons": 900.0
   },
-  "pennant_number": null,
+  "pennant_number": "D78",
   "length": {
     "ft": 1512.467,
     "m": 461.0

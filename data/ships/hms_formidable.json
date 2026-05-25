@@ -10,13 +10,13 @@
   "manufacturer": "Harland & Wolff, Belfast, Northern Ireland",
   "date_commissioned": "1940-11-24",
   "date_decommissioned": "1947-08-12",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 23369.079,
     "tons": 23000.0
   },
-  "pennant_number": "67",
+  "pennant_number": null,
   "length": {
     "ft": 2427.822,
     "m": 740.0

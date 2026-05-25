@@ -10,13 +10,13 @@
   "manufacturer": "Ingalls Shipbuilding",
   "date_commissioned": "2009-10-24",
   "date_decommissioned": null,
-  "decommissioningReason": null,
-  "inService": true,
+  "decommissioning_reason": null,
+  "in_service": true,
   "displacement": {
     "tonnes": 417.595,
     "tons": 411.0
   },
-  "pennant_number": "369970689 *Callsign: NMKI *NovemberMikeKiloIndia *Hull number: LHD-8",
+  "pennant_number": "LHD-8",
   "length": {
     "ft": 843.176,
     "m": 257.0

@@ -10,13 +10,13 @@
   "manufacturer": "Navantia, Ferrol, Spain & BAE Systems Australia, Williamstown Dockyard, Australia",
   "date_commissioned": "2015-12-04",
   "date_decommissioned": null,
-  "decommissioningReason": null,
-  "inService": true,
+  "decommissioning_reason": null,
+  "in_service": true,
   "displacement": {
     "tonnes": 27941.29,
     "tons": 27500.0
   },
-  "pennant_number": "9608972 *503000021 *Callsign: VHJY",
+  "pennant_number": "L01",
   "length": {
     "ft": 757.283,
     "m": 230.82

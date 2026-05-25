@@ -10,8 +10,8 @@
   "manufacturer": "Harland & Wolff, Belfast, Northern Ireland",
   "date_commissioned": "1957-01-17",
   "date_decommissioned": "1970-07-03",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 16256.751,
     "tons": 16000.0

@@ -10,13 +10,13 @@
   "manufacturer": "Alexander Stephen & Sons",
   "date_commissioned": "1945-08-08",
   "date_decommissioned": "1960",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 13401.659,
     "tons": 13190.0
   },
-  "pennant_number": null,
+  "pennant_number": "R68",
   "length": {
     "ft": 2066.929,
     "m": 630.0

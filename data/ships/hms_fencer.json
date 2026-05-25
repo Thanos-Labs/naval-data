@@ -10,8 +10,8 @@
   "manufacturer": "Western Pipe and Steel Company, San Francisco, California",
   "date_commissioned": "1943-03-01",
   "date_decommissioned": "1946-12-11",
-  "decommissioningReason": "transferred",
-  "inService": false,
+  "decommissioning_reason": "transferred",
+  "in_service": false,
   "displacement": {
     "tonnes": 103.637,
     "tons": 102.0

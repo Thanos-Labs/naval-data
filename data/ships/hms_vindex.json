@@ -10,13 +10,13 @@
   "manufacturer": "Swan Hunter",
   "date_commissioned": "1943-12-03",
   "date_decommissioned": null,
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 13670.911,
     "tons": 13455.0
   },
-  "pennant_number": null,
+  "pennant_number": "D15",
   "length": {
     "ft": 1719.16,
     "m": 524.0

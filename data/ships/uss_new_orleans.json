@@ -10,13 +10,13 @@
   "manufacturer": "Philadelphia Naval Shipyard",
   "date_commissioned": "1968-11-16",
   "date_decommissioned": "1997-10-31",
-  "decommissioningReason": "sunk",
-  "inService": false,
+  "decommissioning_reason": "sunk",
+  "in_service": false,
   "displacement": {
     "tonnes": 19742.807,
     "tons": 19431.0
   },
-  "pennant_number": "Callsign: NAON *NovemberAlphaOscarNovember *Hull number: LPH-11",
+  "pennant_number": "LPH-11",
   "length": {
     "ft": 1961.942,
     "m": 598.0

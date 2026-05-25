@@ -10,13 +10,13 @@
   "manufacturer": "Brooklyn Navy Yard",
   "date_commissioned": "1961-10-27",
   "date_decommissioned": "2003-08-06",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 62975.603,
     "tons": 61981.0
   },
-  "pennant_number": "Callsign: NNUL *NovemberNovemberUniformLima *Hull number: CVA-64",
+  "pennant_number": "CVA-64",
   "length": {
     "ft": 3569.554,
     "m": 1088.0

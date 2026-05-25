@@ -10,13 +10,13 @@
   "manufacturer": "Vickers-Armstrong",
   "date_commissioned": "1959-11-25",
   "date_decommissioned": "2017-03-06",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 242.835,
     "tons": 239.0
   },
-  "pennant_number": "R22",
+  "pennant_number": "R12",
   "length": {
     "ft": 650.0,
     "m": 198.12

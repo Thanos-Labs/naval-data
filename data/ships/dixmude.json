@@ -10,13 +10,13 @@
   "manufacturer": "Chantiers de Saint-Nazaire",
   "date_commissioned": "2012-12-27",
   "date_decommissioned": null,
-  "decommissioningReason": null,
-  "inService": true,
+  "decommissioning_reason": null,
+  "in_service": true,
   "displacement": {
     "tonnes": 16764.774,
     "tons": 16500.0
   },
-  "pennant_number": "L9015",
+  "pennant_number": null,
   "length": {
     "ft": 652.887,
     "m": 199.0

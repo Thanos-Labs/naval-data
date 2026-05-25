@@ -10,8 +10,8 @@
   "manufacturer": "Aircraft Carrier Alliance",
   "date_commissioned": "2019-12-10",
   "date_decommissioned": null,
-  "decommissioningReason": null,
-  "inService": true,
+  "decommissioning_reason": null,
+  "in_service": true,
   "displacement": {
     "tonnes": 818.934,
     "tons": 806.0

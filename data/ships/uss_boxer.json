@@ -10,13 +10,13 @@
   "manufacturer": "Ingalls Shipbuilding",
   "date_commissioned": "1995-02-11",
   "date_decommissioned": null,
-  "decommissioningReason": null,
-  "inService": true,
+  "decommissioning_reason": null,
+  "in_service": true,
   "displacement": {
     "tonnes": 417.595,
     "tons": 411.0
   },
-  "pennant_number": "368710000 * Callsign: NBXR * NovemberBravoX-rayRomeo * Hull number: LHD-4",
+  "pennant_number": "LHD-4",
   "length": {
     "ft": 843.176,
     "m": 257.0

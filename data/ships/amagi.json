@@ -10,8 +10,8 @@
   "manufacturer": "Mitsubishi, Nagasaki",
   "date_commissioned": "1944-08-10",
   "date_decommissioned": null,
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 207.274,
     "tons": 204.0

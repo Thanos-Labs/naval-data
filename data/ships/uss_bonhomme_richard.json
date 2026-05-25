@@ -10,13 +10,13 @@
   "manufacturer": "Ingalls Shipbuilding",
   "date_commissioned": "1998-08-15",
   "date_decommissioned": "2021-04-15",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 409.467,
     "tons": 403.0
   },
-  "pennant_number": "Callsign: NBHR *NovemberBravoHotelRomeo *Hull number: LHD-6",
+  "pennant_number": "LHD-6",
   "length": {
     "ft": 2769.029,
     "m": 844.0

@@ -10,8 +10,8 @@
   "manufacturer": "Deutsche Werke, Kiel Shipyards",
   "date_commissioned": null,
   "date_decommissioned": null,
-  "decommissioningReason": "sunk",
-  "inService": false,
+  "decommissioning_reason": "sunk",
+  "in_service": false,
   "displacement": {
     "tonnes": 340.376,
     "tons": 335.0

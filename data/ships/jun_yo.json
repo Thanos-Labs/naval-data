@@ -10,8 +10,8 @@
   "manufacturer": "Mitsubishi Heavy Industries, Nagasaki",
   "date_commissioned": "1942-05-03",
   "date_decommissioned": "1945-11-30",
-  "decommissioningReason": "transferred",
-  "inService": false,
+  "decommissioning_reason": "transferred",
+  "in_service": false,
   "displacement": {
     "tonnes": 24537.533,
     "tons": 24150.0

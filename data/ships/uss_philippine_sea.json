@@ -10,8 +10,8 @@
   "manufacturer": "Fore River Shipyard",
   "date_commissioned": "1946-05-11",
   "date_decommissioned": "1958-12-28",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 27534.871,
     "tons": 27100.0

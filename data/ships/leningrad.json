@@ -10,8 +10,8 @@
   "manufacturer": "Nikolayev South (Shipyard No.444)",
   "date_commissioned": "1969-06-02",
   "date_decommissioned": "1991-06-24",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 12111.279,
     "tons": 11920.0

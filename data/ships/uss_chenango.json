@@ -10,13 +10,13 @@
   "manufacturer": "Sun Shipbuilding and Dry Dock Company, Chester, Pennsylvania",
   "date_commissioned": "1941-06-20",
   "date_decommissioned": "1946-08-14",
-  "decommissioningReason": "transferred",
-  "inService": false,
+  "decommissioning_reason": "transferred",
+  "in_service": false,
   "displacement": {
     "tonnes": 11582.935,
     "tons": 11400.0
   },
-  "pennant_number": "Hull symbol: *AVG-28 (16 March 1942) *ACV-28 (20 August 1942) *CVE-28 (15 July 1943) *CVHE-28 (12 June 1955) *Callsign: NWSD *NovemberWhiskeySierraDelta",
+  "pennant_number": "CVE-28",
   "length": {
     "ft": 1814.304,
     "m": 553.0

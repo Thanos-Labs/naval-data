@@ -10,13 +10,13 @@
   "manufacturer": "Todd Pacific Shipyards",
   "date_commissioned": "1944-12-30",
   "date_decommissioned": "1954-08-27",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 21740.356,
     "tons": 21397.0
   },
-  "pennant_number": null,
+  "pennant_number": "CVE-106",
   "length": {
     "ft": 1827.428,
     "m": 557.0

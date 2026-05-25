@@ -10,13 +10,13 @@
   "manufacturer": "Ingalls Shipbuilding",
   "date_commissioned": "1943-01-11",
   "date_decommissioned": "1945-12-29",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 14631.075,
     "tons": 14400.0
   },
-  "pennant_number": null,
+  "pennant_number": "D80",
   "length": {
     "ft": 1610.892,
     "m": 491.0

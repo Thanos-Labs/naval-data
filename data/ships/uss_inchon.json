@@ -10,13 +10,13 @@
   "manufacturer": "Ingalls Shipbuilding",
   "date_commissioned": "1970-06-20",
   "date_decommissioned": "2002-06-20",
-  "decommissioningReason": "sunk",
-  "inService": false,
+  "decommissioning_reason": "sunk",
+  "in_service": false,
   "displacement": {
     "tonnes": 19812.915,
     "tons": 19500.0
   },
-  "pennant_number": "Callsign: NOUD *NovemberOscarUniformDelta *Hull number: LPH-12",
+  "pennant_number": "LPH-12",
   "length": {
     "ft": 1980.479,
     "m": 603.65

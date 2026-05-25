@@ -10,8 +10,8 @@
   "manufacturer": "William Denny and Brothers, Dumbarton, Scotland",
   "date_commissioned": "1944-03-31",
   "date_decommissioned": null,
-  "decommissioningReason": null,
-  "inService": false,
+  "decommissioning_reason": "converted",
+  "in_service": false,
   "displacement": {
     "tonnes": 12192.563,
     "tons": 12000.0

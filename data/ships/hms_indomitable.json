@@ -10,13 +10,13 @@
   "manufacturer": "Vickers-Armstrong, Barrow-in-Furness",
   "date_commissioned": "1941-10-10",
   "date_decommissioned": null,
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 23369.079,
     "tons": 23000.0
   },
-  "pennant_number": "92",
+  "pennant_number": null,
   "length": {
     "ft": 754.593,
     "m": 230.0

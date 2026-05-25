@@ -10,12 +10,12 @@
   "manufacturer": "Kaiser Shipyards",
   "date_commissioned": "1943-11-21",
   "date_decommissioned": "1946-05-15",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tons": null
   },
-  "pennant_number": "ACV-67 (1943) *CVE-67 (1943–46)",
+  "pennant_number": "CVE-67",
   "length": {
     "m": null
   },

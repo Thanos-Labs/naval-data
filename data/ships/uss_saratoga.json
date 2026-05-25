@@ -10,13 +10,13 @@
   "manufacturer": "New York Naval Shipyard",
   "date_commissioned": "1956-04-14",
   "date_decommissioned": "1994-08-20",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 82402.42,
     "tons": 81101.0
   },
-  "pennant_number": "Callsign: NJRS *NovemberJulietRomeoSierra *Hull number: CVB-60",
+  "pennant_number": "CVB-60",
   "length": {
     "ft": 1062.999,
     "m": 324.002

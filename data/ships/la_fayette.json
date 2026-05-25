@@ -10,8 +10,8 @@
   "manufacturer": "New York Shipbuilding Corporation",
   "date_commissioned": null,
   "date_decommissioned": null,
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 11176.516,
     "tons": 11000.0

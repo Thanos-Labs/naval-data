@@ -10,12 +10,12 @@
   "manufacturer": "Kaiser Shipbuilding Company, Vancouver, Washington",
   "date_commissioned": "1943-07-08",
   "date_decommissioned": "1946-06-10",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tons": null
   },
-  "pennant_number": "Hull symbol: AVG-55 *ACV-55 *CVE-55 *Code letters: NXMO *NovemberX-rayMikeOscarNavsource 2018",
+  "pennant_number": "AVG-55",
   "length": {
     "m": null
   },

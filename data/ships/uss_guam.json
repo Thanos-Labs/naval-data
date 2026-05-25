@@ -10,13 +10,13 @@
   "manufacturer": "Philadelphia Naval Shipyard",
   "date_commissioned": "1965-01-16",
   "date_decommissioned": "1998-08-25",
-  "decommissioningReason": "sunk",
-  "inService": false,
+  "decommissioning_reason": "sunk",
+  "in_service": false,
   "displacement": {
     "tonnes": 19525.373,
     "tons": 19217.0
   },
-  "pennant_number": "Callsign: NAHM *NovemberAlphaHotelMike *Hull number: LPH-9",
+  "pennant_number": "LPH-9",
   "length": {
     "ft": 1978.346,
     "m": 603.0

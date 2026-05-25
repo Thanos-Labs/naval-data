@@ -10,8 +10,8 @@
   "manufacturer": "Kaiser Company, Vancouver Shipyard",
   "date_commissioned": "1944-05-20",
   "date_decommissioned": "1945-03-30",
-  "decommissioningReason": "sunk",
-  "inService": false,
+  "decommissioning_reason": "sunk",
+  "in_service": false,
   "displacement": {
     "tons": null
   },

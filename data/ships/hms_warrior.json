@@ -10,13 +10,13 @@
   "manufacturer": "Harland and Wolff",
   "date_commissioned": "1959-07-08",
   "date_decommissioned": "1970",
-  "decommissioningReason": "transferred",
-  "inService": false,
+  "decommissioning_reason": "transferred",
+  "in_service": false,
   "displacement": {
     "tonnes": 18593.658,
     "tons": 18300.0
   },
-  "pennant_number": "V-1",
+  "pennant_number": "R31",
   "length": {
     "ft": 2066.929,
     "m": 630.0

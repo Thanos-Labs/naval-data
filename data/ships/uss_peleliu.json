@@ -10,13 +10,13 @@
   "manufacturer": "Ingalls Shipbuilding",
   "date_commissioned": "1980-05-03",
   "date_decommissioned": "2015-03-31",
-  "decommissioningReason": "target",
-  "inService": false,
+  "decommissioning_reason": "target",
+  "in_service": false,
   "displacement": {
     "tonnes": 26398.931,
     "tons": 25982.0
   },
-  "pennant_number": "Callsign: NPEL *NovemberPapaEchoLima *Hull number: LHA-5",
+  "pennant_number": "LHA-5",
   "length": {
     "ft": 2690.289,
     "m": 820.0

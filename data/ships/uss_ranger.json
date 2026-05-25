@@ -10,13 +10,13 @@
   "manufacturer": "Newport News Shipbuilding",
   "date_commissioned": "1957-08-10",
   "date_decommissioned": "1993-07-10",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 57203.441,
     "tons": 56300.0
   },
-  "pennant_number": "Callsign: NHKG *NovemberHotelKiloGolf *Hull number: CVA-61",
+  "pennant_number": "CVA-61",
   "length": {
     "ft": 3513.78,
     "m": 1071.0

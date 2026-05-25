@@ -10,13 +10,13 @@
   "manufacturer": "Harland and Wolff, Belfast",
   "date_commissioned": "1948-03-21",
   "date_decommissioned": "1957-06-14",
-  "decommissioningReason": "transferred",
-  "inService": false,
+  "decommissioning_reason": "transferred",
+  "in_service": false,
   "displacement": {
     "tonnes": 15951.936,
     "tons": 15700.0
   },
-  "pennant_number": "CVL 21",
+  "pennant_number": "CVL-21",
   "length": {
     "ft": 2290.026,
     "m": 698.0

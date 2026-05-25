@@ -10,8 +10,8 @@
   "manufacturer": "Vickers Shipbuilding Limited, Barrow-in-Furness, England",
   "date_commissioned": "1980-07-11",
   "date_decommissioned": "2005-08-03",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 22353.032,
     "tons": 22000.0

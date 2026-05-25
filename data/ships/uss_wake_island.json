@@ -10,8 +10,8 @@
   "manufacturer": "Kaiser Shipyards",
   "date_commissioned": "1943-11-07",
   "date_decommissioned": "1946-04-05",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 7925.166,
     "tons": 7800.0

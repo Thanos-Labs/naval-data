@@ -10,13 +10,13 @@
   "manufacturer": "Ingalls Shipbuilding",
   "date_commissioned": "1977-10-15",
   "date_decommissioned": "2007-04-25",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 27600.914,
     "tons": 27165.0
   },
-  "pennant_number": "Callsign: NHOV *NovemberHotelOscarVictor *Hull number: LHA-2",
+  "pennant_number": "LHA-2",
   "length": {
     "ft": 2690.289,
     "m": 820.0

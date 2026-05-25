@@ -10,8 +10,8 @@
   "manufacturer": "Kure Naval Arsenal",
   "date_commissioned": null,
   "date_decommissioned": "1946-11-15",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 228.611,
     "tons": 225.0

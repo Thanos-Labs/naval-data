@@ -10,13 +10,13 @@
   "manufacturer": "Seattle-Tacoma Shipbuilding Corporation, Tacoma, Washington",
   "date_commissioned": "1943-04-25",
   "date_decommissioned": "1946-04-12",
-  "decommissioningReason": "transferred",
-  "inService": false,
+  "decommissioning_reason": "transferred",
+  "in_service": false,
   "displacement": {
     "tonnes": 792.517,
     "tons": 780.0
   },
-  "pennant_number": "Hull symbol: D70",
+  "pennant_number": "D70",
   "length": {
     "ft": 1525.591,
     "m": 465.0

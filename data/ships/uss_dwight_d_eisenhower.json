@@ -10,13 +10,13 @@
   "manufacturer": "Newport News Shipbuilding",
   "date_commissioned": "1977-10-18",
   "date_decommissioned": null,
-  "decommissioningReason": null,
-  "inService": true,
+  "decommissioning_reason": null,
+  "in_service": true,
   "displacement": {
     "tonnes": 102.621,
     "tons": 101.0
   },
-  "pennant_number": "368962000 *Callsign: NIKE *NovemberIndiaKiloEcho *Hull number: CVN-69",
+  "pennant_number": "CVN-69",
   "length": {
     "m": null
   },

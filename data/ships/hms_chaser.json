@@ -10,8 +10,8 @@
   "manufacturer": "Ingalls Shipbuilding, Pascagoula, Mississippi",
   "date_commissioned": "1943-04-09",
   "date_decommissioned": "1946-08-03",
-  "decommissioningReason": "transferred",
-  "inService": false,
+  "decommissioning_reason": "transferred",
+  "in_service": false,
   "displacement": {
     "tons": null
   },

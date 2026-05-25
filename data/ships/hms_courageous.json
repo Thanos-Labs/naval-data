@@ -10,13 +10,13 @@
   "manufacturer": "Armstrong Whitworth",
   "date_commissioned": null,
   "date_decommissioned": null,
-  "decommissioningReason": "sunk",
-  "inService": false,
+  "decommissioning_reason": "sunk",
+  "in_service": false,
   "displacement": {
     "tonnes": 24598.496,
     "tons": 24210.0
   },
-  "pennant_number": "50",
+  "pennant_number": null,
   "length": {
     "ft": 2411.417,
     "m": 735.0

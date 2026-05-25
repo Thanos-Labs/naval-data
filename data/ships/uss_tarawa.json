@@ -10,13 +10,13 @@
   "manufacturer": "Ingalls Shipbuilding",
   "date_commissioned": "1976-05-29",
   "date_decommissioned": "2009-03-31",
-  "decommissioningReason": "sunk",
-  "inService": false,
+  "decommissioning_reason": "sunk",
+  "in_service": false,
   "displacement": {
     "tonnes": 39524.225,
     "tons": 38900.0
   },
-  "pennant_number": "Callsign: NLHA *NovemberLimaHotelAlpha *Hull number: LHA-1",
+  "pennant_number": "LHA-1",
   "length": {
     "ft": 2690.289,
     "m": 820.0

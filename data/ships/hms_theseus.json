@@ -10,13 +10,13 @@
   "manufacturer": "Fairfield",
   "date_commissioned": "1946-01-09",
   "date_decommissioned": "1960",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 13615.029,
     "tons": 13400.0
   },
-  "pennant_number": null,
+  "pennant_number": "R64",
   "length": {
     "ft": 2280.184,
     "m": 695.0

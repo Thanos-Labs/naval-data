@@ -10,13 +10,13 @@
   "manufacturer": "Harland and Wolff, Belfast",
   "date_commissioned": "1917",
   "date_decommissioned": null,
-  "decommissioningReason": "sunk",
-  "inService": false,
+  "decommissioning_reason": "sunk",
+  "in_service": false,
   "displacement": {
     "tonnes": 25370.691,
     "tons": 24970.0
   },
-  "pennant_number": "77",
+  "pennant_number": null,
   "length": {
     "ft": 2411.417,
     "m": 735.0

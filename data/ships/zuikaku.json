@@ -10,8 +10,8 @@
   "manufacturer": "Kawasaki Kobe Shipyard",
   "date_commissioned": "1941-09-25",
   "date_decommissioned": "1945-08-26",
-  "decommissioningReason": "sunk",
-  "inService": false,
+  "decommissioning_reason": "sunk",
+  "in_service": false,
   "displacement": {
     "tonnes": 326.151,
     "tons": 321.0

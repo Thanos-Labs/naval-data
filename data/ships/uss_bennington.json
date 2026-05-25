@@ -10,8 +10,8 @@
   "manufacturer": "New York Naval Shipyard",
   "date_commissioned": "1944-08-06",
   "date_decommissioned": "1970-01-15",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 275.349,
     "tons": 271.0

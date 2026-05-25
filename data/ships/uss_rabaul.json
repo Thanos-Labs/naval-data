@@ -10,8 +10,8 @@
   "manufacturer": "Todd Pacific Shipyards",
   "date_commissioned": null,
   "date_decommissioned": "1971-09-01",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 21740.356,
     "tons": 21397.0

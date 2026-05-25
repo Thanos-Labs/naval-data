@@ -10,8 +10,8 @@
   "manufacturer": "Cammell Laird, Birkenhead, England",
   "date_commissioned": "1955-02-22",
   "date_decommissioned": "1979-02-14",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 37390.526,
     "tons": 36800.0

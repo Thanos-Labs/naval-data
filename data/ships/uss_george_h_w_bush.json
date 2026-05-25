@@ -4,32 +4,33 @@
   "wikipedia_url": "http://en.wikipedia.org/wiki/USS_George_H._W._Bush",
   "wikipedia_title": "USS George H. W. Bush",
   "country": "United States",
-  "subtype": "aircraft carrier",
+  "subtype": "nuclear aircraft carrier",
   "class": "Nimitz-class aircraft carrier",
   "configuration": "CATOBAR",
   "manufacturer": "Northrop Grumman Newport News",
   "date_commissioned": "2009-01-10",
   "date_decommissioned": null,
-  "decommissioningReason": null,
-  "inService": false,
+  "decommissioning_reason": null,
+  "in_service": true,
   "displacement": {
-    "tonnes": 103.637,
-    "tons": 102.0
+    "tonnes": 104000,
+    "tons": 102000
   },
-  "pennant_number": "369970663 *Callsign: NGHW *NovemberGolfHotelWhiskey *Hull number: CVN-77",
+  "pennant_number": "CVN-77",
   "length": {
-    "m": null
+    "m": 332.8,
+    "ft": 1092
   },
   "beam": {
-    "m": null
-  },
-  "height": {
-    "m": null
+    "m": 76.8,
+    "ft": 252
   },
   "draught": {
-    "m": null
+    "m": 11.3,
+    "ft": 37
   },
   "speed": {
-    "knots": null
+    "knots": 30,
+    "km_h": 56
   }
 }

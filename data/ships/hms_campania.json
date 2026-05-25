@@ -10,8 +10,8 @@
   "manufacturer": "Harland & Wolff",
   "date_commissioned": "1952",
   "date_decommissioned": "1952",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 13208.61,
     "tons": 13000.0

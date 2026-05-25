@@ -10,13 +10,13 @@
   "manufacturer": "New York Shipbuilding Corporation",
   "date_commissioned": "1943-02-25",
   "date_decommissioned": "1944-11-13",
-  "decommissioningReason": "scuttled",
-  "inService": false,
+  "decommissioning_reason": "scuttled",
+  "in_service": false,
   "displacement": {
     "tonnes": 13208.61,
     "tons": 13000.0
   },
-  "pennant_number": null,
+  "pennant_number": "CVL-23",
   "length": {
     "ft": 2042.323,
     "m": 622.5

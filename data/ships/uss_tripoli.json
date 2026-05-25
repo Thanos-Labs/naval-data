@@ -10,13 +10,13 @@
   "manufacturer": "Ingalls Shipbuilding",
   "date_commissioned": "1966-08-06",
   "date_decommissioned": "1995-09-15",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 19611.737,
     "tons": 19302.0
   },
-  "pennant_number": "Callsign: NWQU *NovemberWhiskeyQuebecUniform *Hull number: LPH-10",
+  "pennant_number": "LPH-10",
   "length": {
     "ft": 1961.942,
     "m": 598.0

@@ -10,13 +10,13 @@
   "manufacturer": "Hawthorn Leslie and Company",
   "date_commissioned": "1946-05-06",
   "date_decommissioned": "1981",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 13564.226,
     "tons": 13350.0
   },
-  "pennant_number": null,
+  "pennant_number": "R16",
   "length": {
     "ft": 2280.184,
     "m": 695.0

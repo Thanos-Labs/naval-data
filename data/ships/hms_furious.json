@@ -10,13 +10,13 @@
   "manufacturer": "Armstrong Whitworth, Wallsend",
   "date_commissioned": "1917-06-26",
   "date_decommissioned": null,
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 22861.055,
     "tons": 22500.0
   },
-  "pennant_number": "47",
+  "pennant_number": null,
   "length": {
     "ft": 2578.74,
     "m": 786.0

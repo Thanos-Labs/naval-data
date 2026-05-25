@@ -10,13 +10,13 @@
   "manufacturer": "Northrop Grumman Newport News",
   "date_commissioned": "1995-12-09",
   "date_decommissioned": null,
-  "decommissioningReason": null,
-  "inService": true,
+  "decommissioning_reason": null,
+  "in_service": true,
   "displacement": {
     "tonnes": 104957.646,
     "tons": 103300.0
   },
-  "pennant_number": "368912000 *Callsign: NJCS *NovemberJulietCharlieSierra *Hull number: CVN-74",
+  "pennant_number": "CVN-74",
   "length": {
     "m": null
   },

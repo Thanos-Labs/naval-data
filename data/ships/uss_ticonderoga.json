@@ -10,8 +10,8 @@
   "manufacturer": "Newport News Shipbuilding",
   "date_commissioned": "1944-05-08",
   "date_decommissioned": "1973-09-01",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 27534.871,
     "tons": 27100.0

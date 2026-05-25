@@ -10,13 +10,13 @@
   "manufacturer": "Fore River Ship Building Co., Quincy, Massachusetts, US",
   "date_commissioned": "1927-12-14",
   "date_decommissioned": "1942-06-24",
-  "decommissioningReason": "scuttled",
-  "inService": false,
+  "decommissioning_reason": "scuttled",
+  "in_service": false,
   "displacement": {
     "tonnes": 36577.689,
     "tons": 36000.0
   },
-  "pennant_number": "Hull number: CC-1, then CV-2",
+  "pennant_number": null,
   "length": {
     "ft": 2913.386,
     "m": 888.0

@@ -10,8 +10,8 @@
   "manufacturer": "Chantiers de l’Atlantique",
   "date_commissioned": "2000-11-15",
   "date_decommissioned": "2018-11-22",
-  "decommissioningReason": "retired",
-  "inService": false,
+  "decommissioning_reason": "retired",
+  "in_service": false,
   "displacement": {
     "tonnes": 24588.335,
     "tons": 24200.0

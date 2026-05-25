@@ -10,13 +10,13 @@
   "manufacturer": "Vickers-Armstrong",
   "date_commissioned": "1941-05-14",
   "date_decommissioned": "1968-03-13",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 23579.401,
     "tons": 23207.0
   },
-  "pennant_number": "Pennant numbers: 38, R38, 38",
+  "pennant_number": "R38",
   "length": {
     "ft": 2208.005,
     "m": 673.0

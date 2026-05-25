@@ -10,8 +10,8 @@
   "manufacturer": "Soviet Union Nikolayev South Shipyard",
   "date_commissioned": "1967",
   "date_decommissioned": "1996",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 12111.279,
     "tons": 11920.0

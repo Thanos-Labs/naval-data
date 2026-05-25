@@ -10,13 +10,13 @@
   "manufacturer": "Newport News Shipbuilding",
   "date_commissioned": "1986-10-25",
   "date_decommissioned": null,
-  "decommissioningReason": null,
-  "inService": true,
+  "decommissioning_reason": null,
+  "in_service": true,
   "displacement": {
     "tonnes": 105.669,
     "tons": 104.0
   },
-  "pennant_number": "366984000 *Callsign: NNTR *NovemberNovemberTangoRomeo *Hull number: CVN-71",
+  "pennant_number": "CVN-71",
   "length": {
     "ft": 3582.677,
     "m": 1092.0

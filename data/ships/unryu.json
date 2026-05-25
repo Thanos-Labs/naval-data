@@ -10,8 +10,8 @@
   "manufacturer": "Yokosuka Naval Arsenal",
   "date_commissioned": "1944-08-06",
   "date_decommissioned": null,
-  "decommissioningReason": "sunk",
-  "inService": false,
+  "decommissioning_reason": "sunk",
+  "in_service": false,
   "displacement": {
     "tonnes": 207.274,
     "tons": 204.0

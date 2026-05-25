@@ -10,8 +10,8 @@
   "manufacturer": "DCNS Brest",
   "date_commissioned": "2001",
   "date_decommissioned": null,
-  "decommissioningReason": null,
-  "inService": true,
+  "decommissioning_reason": null,
+  "in_service": true,
   "displacement": {
     "tons": 41829.0,
     "tonnes": 42500.0

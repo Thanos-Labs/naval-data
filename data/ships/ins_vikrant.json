@@ -10,8 +10,8 @@
   "manufacturer": "Vickers-Armstrongs, High Walker * Harland & Wolff",
   "date_commissioned": "1961-03-04",
   "date_decommissioned": "1997-01-31",
-  "decommissioningReason": "transferred",
-  "inService": false,
+  "decommissioning_reason": "transferred",
+  "in_service": false,
   "displacement": {
     "tonnes": 16256.751,
     "tons": 16000.0

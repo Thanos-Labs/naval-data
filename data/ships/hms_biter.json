@@ -10,13 +10,13 @@
   "manufacturer": "Sun Shipbuilding",
   "date_commissioned": "1945-04-09",
   "date_decommissioned": "1951-01-24",
-  "decommissioningReason": "transferred",
-  "inService": false,
+  "decommissioning_reason": "transferred",
+  "in_service": false,
   "displacement": {
     "tonnes": 8331.585,
     "tons": 8200.0
   },
-  "pennant_number": null,
+  "pennant_number": "D97",
   "length": {
     "ft": 1614.173,
     "m": 492.0

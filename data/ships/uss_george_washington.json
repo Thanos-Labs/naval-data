@@ -10,13 +10,13 @@
   "manufacturer": "Northrop Grumman Shipbuilding Newport News",
   "date_commissioned": "1992-07-04",
   "date_decommissioned": null,
-  "decommissioningReason": null,
-  "inService": true,
+  "decommissioning_reason": null,
+  "in_service": true,
   "displacement": {
     "tonnes": 105.669,
     "tons": 104.0
   },
-  "pennant_number": "368913000 *Callsign: NNGW *NovemberNovemberGolfWhiskey *Hull number: CVN-73",
+  "pennant_number": "CVN-73",
   "length": {
     "m": null
   },

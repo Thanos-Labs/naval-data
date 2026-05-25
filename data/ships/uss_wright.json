@@ -10,13 +10,13 @@
   "manufacturer": "New York Shipbuilding Corporation",
   "date_commissioned": "1947-02-09",
   "date_decommissioned": "1970-05-27",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 14732.68,
     "tons": 14500.0
   },
-  "pennant_number": null,
+  "pennant_number": "CVL-49",
   "length": {
     "ft": 2244.094,
     "m": 684.0

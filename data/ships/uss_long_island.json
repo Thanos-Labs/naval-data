@@ -10,13 +10,13 @@
   "manufacturer": "Sun Shipbuilding & Drydock Co.",
   "date_commissioned": "1941-06-02",
   "date_decommissioned": "1946-03-26",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 13715.617,
     "tons": 13499.0
   },
-  "pennant_number": null,
+  "pennant_number": "CVE-1",
   "length": {
     "ft": 1614.173,
     "m": 492.0

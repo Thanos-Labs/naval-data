@@ -10,12 +10,12 @@
   "manufacturer": "Kaiser Shipbuilding Company, Vancouver, Washington, US",
   "date_commissioned": "1943-08-27",
   "date_decommissioned": "1946-08-05",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tons": null
   },
-  "pennant_number": "Hull symbol: **ACV-57 (1943) **CVE-57 (1943–1955) **CVHE-57 (1955–1959)",
+  "pennant_number": "CVE-57",
   "length": {
     "m": null
   },

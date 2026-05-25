@@ -10,8 +10,8 @@
   "manufacturer": "Vickers-Armstrongs, Newcastle-upon-Tyne",
   "date_commissioned": null,
   "date_decommissioned": null,
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 12461.815,
     "tons": 12265.0

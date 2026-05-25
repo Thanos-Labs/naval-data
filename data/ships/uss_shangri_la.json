@@ -10,8 +10,8 @@
   "manufacturer": "Norfolk Naval Shipyard",
   "date_commissioned": "1944-09-15",
   "date_decommissioned": "1971-07-30",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 27534.871,
     "tons": 27100.0

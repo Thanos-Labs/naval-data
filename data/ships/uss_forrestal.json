@@ -10,13 +10,13 @@
   "manufacturer": "Newport News Shipbuilding",
   "date_commissioned": "1955-10-01",
   "date_decommissioned": "1993-09-11",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 60607.198,
     "tons": 59650.0
   },
-  "pennant_number": "Callsign: NJVF *NovemberJulietVictorFoxtrot *Hull number: CVB-59",
+  "pennant_number": "CVB-59",
   "length": {
     "ft": 3248.031,
     "m": 990.0

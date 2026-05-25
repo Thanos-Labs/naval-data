@@ -10,13 +10,13 @@
   "manufacturer": "New York Shipbuilding Corporation",
   "date_commissioned": "1961-04-29",
   "date_decommissioned": "2009-05-12",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 62335.494,
     "tons": 61351.0
   },
-  "pennant_number": "Callsign: NZFF * NovemberZuluFoxtrotFoxtrot * Hull number: CVA-63",
+  "pennant_number": "CVA-63",
   "length": {
     "ft": 3506.89,
     "m": 1068.9

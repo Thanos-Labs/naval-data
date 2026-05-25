@@ -10,8 +10,8 @@
   "manufacturer": "Kure Naval Arsenal, Kure, Japan",
   "date_commissioned": "1938-07-25",
   "date_decommissioned": "1944-12-20",
-  "decommissioningReason": "sunk",
-  "inService": false,
+  "decommissioning_reason": "sunk",
+  "in_service": false,
   "displacement": {
     "tonnes": 11379.725,
     "tons": 11200.0

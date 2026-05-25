@@ -10,13 +10,13 @@
   "manufacturer": "Philadelphia Naval Shipyard",
   "date_commissioned": "1963-07-20",
   "date_decommissioned": "1994-08-31",
-  "decommissioningReason": "sunk",
-  "inService": false,
+  "decommissioning_reason": "sunk",
+  "in_service": false,
   "displacement": {
     "tonnes": 19706.23,
     "tons": 19395.0
   },
-  "pennant_number": "Callsign: NIEG * NovemberIndiaEchoGolf * Hull number: LPH-7",
+  "pennant_number": "LPH-7",
   "length": {
     "ft": 1976.05,
     "m": 602.3

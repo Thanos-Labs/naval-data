@@ -10,8 +10,8 @@
   "manufacturer": "Brest shipyard",
   "date_commissioned": "1961-11-22",
   "date_decommissioned": "1997-10-01",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 22353.032,
     "tons": 22000.0

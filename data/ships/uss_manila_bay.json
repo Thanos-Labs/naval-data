@@ -10,13 +10,13 @@
   "manufacturer": "Kaiser Shipyards, Vancouver, Washington",
   "date_commissioned": "1943-10-05",
   "date_decommissioned": "1946-07-31",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 7925.166,
     "tons": 7800.0
   },
-  "pennant_number": "Hull symbol:CVE-61 *Code letters:NKVK *NovemberKiloVictorKilo",
+  "pennant_number": "CVE-61",
   "length": {
     "ft": 1679.79,
     "m": 512.0

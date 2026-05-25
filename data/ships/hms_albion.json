@@ -10,8 +10,8 @@
   "manufacturer": "Swan Hunter, Tyne and Wear, United Kingdom",
   "date_commissioned": "1954-05-26",
   "date_decommissioned": "1973",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 22353.032,
     "tons": 22000.0

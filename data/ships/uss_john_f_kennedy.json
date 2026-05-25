@@ -10,13 +10,13 @@
   "manufacturer": "Newport News Shipbuilding",
   "date_commissioned": "1968-09-07",
   "date_decommissioned": "2007-03-23",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 616.74,
     "tons": 607.0
   },
-  "pennant_number": "Callsign: NJFK *NovemberJulietFoxtrotKilo",
+  "pennant_number": null,
   "length": {
     "ft": 3451.444,
     "m": 1052.0

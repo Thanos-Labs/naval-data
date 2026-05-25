@@ -10,13 +10,13 @@
   "manufacturer": "Ingalls Shipbuilding",
   "date_commissioned": "1978-09-23",
   "date_decommissioned": "2005-10-28",
-  "decommissioningReason": "sunk",
-  "inService": false,
+  "decommissioning_reason": "sunk",
+  "in_service": false,
   "displacement": {
     "tonnes": 40641.876,
     "tons": 40000.0
   },
-  "pennant_number": "Callsign: NBWD *NovemberBravoWhiskeyDelta *Hull number: LHA-3",
+  "pennant_number": "LHA-3",
   "length": {
     "ft": 2690.289,
     "m": 820.0

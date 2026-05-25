@@ -10,8 +10,8 @@
   "manufacturer": "Black Sea Shipyard, Nikolayev",
   "date_commissioned": "1991-01-20",
   "date_decommissioned": null,
-  "decommissioningReason": null,
-  "inService": true,
+  "decommissioning_reason": null,
+  "in_service": true,
   "displacement": {
     "tonnes": 43690.017,
     "tons": 43000.0

@@ -10,13 +10,13 @@
   "manufacturer": "Workman, Clark & Co, Belfast",
   "date_commissioned": null,
   "date_decommissioned": null,
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 162.568,
     "tons": 160.0
   },
-  "pennant_number": "UK official number 163564 *1935: call sign GYDF *GolfYankeeDeltaFoxtrot *1952: call sign FOBT *FoxtrotOscarBravoTango",
+  "pennant_number": null,
   "length": {
     "ft": 633.202,
     "m": 193.0

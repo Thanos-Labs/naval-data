@@ -10,8 +10,8 @@
   "manufacturer": "Kawasaki Heavy Industries, Kobe",
   "date_commissioned": "1942-07-31",
   "date_decommissioned": "1944-11-10",
-  "decommissioningReason": "transferred",
-  "inService": false,
+  "decommissioning_reason": "transferred",
+  "in_service": false,
   "displacement": {
     "tonnes": 244.867,
     "tons": 241.0

@@ -10,13 +10,13 @@
   "manufacturer": "Fairfield Shipbuilding, Govan",
   "date_commissioned": "1944-08-28",
   "date_decommissioned": "1954-09-01",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 32625.266,
     "tons": 32110.0
   },
-  "pennant_number": "86",
+  "pennant_number": "R86",
   "length": {
     "ft": 2395.013,
     "m": 730.0

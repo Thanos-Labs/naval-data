@@ -10,13 +10,13 @@
   "manufacturer": "HM Dockyard Devonport, England",
   "date_commissioned": "1948-12-16",
   "date_decommissioned": "1973-11-12",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 14610.755,
     "tons": 14380.0
   },
-  "pennant_number": null,
+  "pennant_number": "R17",
   "length": {
     "ft": 2066.929,
     "m": 630.0

@@ -10,12 +10,12 @@
   "manufacturer": "Kaiser Shipbuilding Company, Vancouver, Washington",
   "date_commissioned": "1951-05-19",
   "date_decommissioned": "1958-09-04",
-  "decommissioningReason": "transferred",
-  "inService": false,
+  "decommissioning_reason": "transferred",
+  "in_service": false,
   "displacement": {
     "tons": null
   },
-  "pennant_number": "Hull symbol: T-CVU-58",
+  "pennant_number": "CVU-58",
   "length": {
     "m": null
   },

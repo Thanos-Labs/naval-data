@@ -10,13 +10,13 @@
   "manufacturer": "Huntington Ingalls Industries",
   "date_commissioned": null,
   "date_decommissioned": null,
-  "decommissioningReason": null,
-  "inService": false,
+  "decommissioning_reason": null,
+  "in_service": false,
   "displacement": {
     "tonnes": 45692.646,
     "tons": 44971.0
   },
-  "pennant_number": "Hull number: LHA-9",
+  "pennant_number": "LHA-9",
   "length": {
     "ft": 2769.029,
     "m": 844.0

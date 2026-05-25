@@ -10,8 +10,8 @@
   "manufacturer": "Dalian Shipbuilding Industry",
   "date_commissioned": "2012-09-25",
   "date_decommissioned": null,
-  "decommissioningReason": null,
-  "inService": true,
+  "decommissioning_reason": null,
+  "in_service": true,
   "displacement": {
     "tonnes": 43690.017,
     "tons": 43000.0

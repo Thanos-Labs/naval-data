@@ -10,13 +10,13 @@
   "manufacturer": "Federal Shipbuilding and Dry Dock Company, Kearny, New Jersey",
   "date_commissioned": "1940-10-23",
   "date_decommissioned": "1945-10-24",
-  "decommissioningReason": "transferred",
-  "inService": false,
+  "decommissioning_reason": "transferred",
+  "in_service": false,
   "displacement": {
     "tonnes": 11582.935,
     "tons": 11400.0
   },
-  "pennant_number": "Hull symbol: *AVG-26 (14 February 1942) *ACV-26 (20 August 1942) *CVE-26 (15 July 1943) *Callsign: NWQD *NovemberWhiskeyQuebecDelta",
+  "pennant_number": "CVE-26",
   "length": {
     "ft": 1814.304,
     "m": 553.0

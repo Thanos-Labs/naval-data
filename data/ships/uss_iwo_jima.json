@@ -10,13 +10,13 @@
   "manufacturer": "Puget Sound Naval Shipyard",
   "date_commissioned": "1961-08-26",
   "date_decommissioned": "1993-07-14",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 18770.451,
     "tons": 18474.0
   },
-  "pennant_number": "Callsign: NXXG *NovemberX-rayX-rayGolf *Hull number: LPH-2",
+  "pennant_number": "LPH-2",
   "length": {
     "ft": 1942.257,
     "m": 592.0

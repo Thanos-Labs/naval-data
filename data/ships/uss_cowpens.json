@@ -10,13 +10,13 @@
   "manufacturer": "New York Shipbuilding Corporation",
   "date_commissioned": "1943-05-28",
   "date_decommissioned": "1947-01-13",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 11176.516,
     "tons": 11000.0
   },
-  "pennant_number": "Hull number CVL-25",
+  "pennant_number": "CVL-25",
   "length": {
     "ft": 2042.323,
     "m": 622.5

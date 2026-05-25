@@ -10,13 +10,13 @@
   "manufacturer": "Newport News Shipbuilding, Newport News, Virginia",
   "date_commissioned": "1937-09-30",
   "date_decommissioned": "1942-10-02",
-  "decommissioningReason": "retired",
-  "inService": false,
+  "decommissioning_reason": "retired",
+  "in_service": false,
   "displacement": {
     "tonnes": 259.092,
     "tons": 255.0
   },
-  "pennant_number": "CV-5",
+  "pennant_number": null,
   "length": {
     "ft": 2526.247,
     "m": 770.0

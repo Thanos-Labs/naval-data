@@ -10,8 +10,8 @@
   "manufacturer": "Philadelphia Naval Shipyard",
   "date_commissioned": "1945-01-28",
   "date_decommissioned": "1963-05-08",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 27534.871,
     "tons": 27100.0

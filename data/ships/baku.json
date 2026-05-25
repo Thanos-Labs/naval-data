@@ -10,8 +10,8 @@
   "manufacturer": "Chernomorskiy Yard, Nikolayev",
   "date_commissioned": "1987-12-11",
   "date_decommissioned": "1996",
-  "decommissioningReason": "transferred",
-  "inService": false,
+  "decommissioning_reason": "transferred",
+  "in_service": false,
   "displacement": {
     "tonnes": 33976.609,
     "tons": 33440.0

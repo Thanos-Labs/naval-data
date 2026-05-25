@@ -10,13 +10,13 @@
   "manufacturer": "Ingalls Shipbuilding",
   "date_commissioned": "1992-10-17",
   "date_decommissioned": null,
-  "decommissioningReason": null,
-  "inService": true,
+  "decommissioning_reason": null,
+  "in_service": true,
   "displacement": {
     "tonnes": 417.595,
     "tons": 411.0
   },
-  "pennant_number": "368779000 *Callsign: NESX *NovemberEchoSierraX-ray *Hull number: LHD-2",
+  "pennant_number": "LHD-2",
   "length": {
     "ft": 843.996,
     "m": 257.25

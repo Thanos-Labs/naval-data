@@ -10,8 +10,8 @@
   "manufacturer": "Vickers-Armstrong, Barrow-in-Furness",
   "date_commissioned": null,
   "date_decommissioned": "1954",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tonnes": 12461.815,
     "tons": 12265.0

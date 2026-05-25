@@ -10,12 +10,12 @@
   "manufacturer": "Kaiser Shipyards",
   "date_commissioned": "1944-04-12",
   "date_decommissioned": "1964-03-01",
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tons": null
   },
-  "pennant_number": "CVE-90 (1944–55) *CVHA-1 (1955–59) *LPH-6 (1959–64)",
+  "pennant_number": "LPH-6",
   "length": {
     "m": null
   },

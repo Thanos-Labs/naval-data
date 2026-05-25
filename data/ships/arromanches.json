@@ -10,8 +10,8 @@
   "manufacturer": "Vickers-Armstrongs, High Walker",
   "date_commissioned": "1944-12-16",
   "date_decommissioned": "1974",
-  "decommissioningReason": "transferred",
-  "inService": false,
+  "decommissioning_reason": "transferred",
+  "in_service": false,
   "displacement": {
     "tonnes": 609.628,
     "tons": 600.0

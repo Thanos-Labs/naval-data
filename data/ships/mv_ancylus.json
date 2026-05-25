@@ -10,8 +10,8 @@
   "manufacturer": "Swan Hunter",
   "date_commissioned": null,
   "date_decommissioned": null,
-  "decommissioningReason": "scrapped",
-  "inService": false,
+  "decommissioning_reason": "scrapped",
+  "in_service": false,
   "displacement": {
     "tons": null
   },

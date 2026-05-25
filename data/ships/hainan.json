@@ -10,13 +10,13 @@
   "manufacturer": "Hudong Shipyard, Shanghai",
   "date_commissioned": "2021-04-23",
   "date_decommissioned": null,
-  "decommissioningReason": null,
-  "inService": true,
+  "decommissioning_reason": null,
+  "in_service": true,
   "displacement": {
     "tonnes": 36577.689,
     "tons": 36000.0
   },
-  "pennant_number": "31",
+  "pennant_number": null,
   "length": {
     "ft": 761.155,
     "m": 232.0
