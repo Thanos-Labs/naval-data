@@ -4,16 +4,21 @@
 from __future__ import annotations
 
 import argparse
+import importlib.util
 import json
 import sys
 from pathlib import Path
-from typing import Iterable
+from typing import Any, Callable, Iterable
 
 from jsonschema import Draft202012Validator
+
+# Custom validators are loaded dynamically; do not leave __pycache__ behind.
+sys.dont_write_bytecode = True
 
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "data"
+VALIDATORS_DIR = ROOT / "scripts" / "validators"
 
 
 def parse_args() -> argparse.Namespace:
@@ -74,6 +79,37 @@ def format_path(path_parts: Iterable[object]) -> str:
     return path
 
 
+def load_custom_validator(target_name: str) -> Callable[[dict[str, Any]], object] | None:
+    validator_path = VALIDATORS_DIR / f"{target_name}.py"
+    if not validator_path.exists():
+        return None
+
+    spec = importlib.util.spec_from_file_location(f"validators.{target_name}", validator_path)
+    if spec is None or spec.loader is None:
+        raise SystemExit(f"Could not load custom validator: {validator_path}")
+
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    validate = getattr(module, "validate", None)
+    if validate is None:
+        return None
+    if not callable(validate):
+        raise SystemExit(f"Custom validator is not callable: {validator_path}: validate")
+    return validate
+
+
+def normalize_custom_errors(result: object) -> list[str]:
+    if result is None or result is True:
+        return []
+    if result is False:
+        return ["custom validation failed"]
+    if isinstance(result, str):
+        return [result]
+    if isinstance(result, Iterable):
+        return [str(item) for item in result if item]
+    return [str(result)]
+
+
 def main() -> int:
     args = parse_args()
     data_path = resolve_target(args.target)
@@ -83,6 +119,7 @@ def main() -> int:
         schema = json.load(f)
     Draft202012Validator.check_schema(schema)
     validator = Draft202012Validator(schema)
+    custom_validate = load_custom_validator(data_path.name)
 
     files = list(json_files(data_path, schema_path))
     if not files:
@@ -103,19 +140,28 @@ def main() -> int:
             validator.iter_errors(payload),
             key=lambda error: list(error.absolute_path),
         )
-        if errors:
+        custom_errors: list[str] = []
+        if custom_validate is not None:
+            try:
+                custom_errors = normalize_custom_errors(custom_validate(payload))
+            except Exception as exc:
+                custom_errors = [f"custom validator raised {exc.__class__.__name__}: {exc}"]
+
+        if errors or custom_errors:
             failures += 1
             for error in errors:
                 print(
                     f"{path}: {format_path(error.absolute_path)}: {error.message}",
                     file=sys.stderr,
                 )
+            for error in custom_errors:
+                print(f"{path}: custom: {error}", file=sys.stderr)
 
     if failures:
-        print(f"Validation failed: {failures}/{len(files)} files invalid", file=sys.stderr)
+        print(f"Validation for {args.target} failed: {failures}/{len(files)} files invalid", file=sys.stderr)
         return 1
 
-    print(f"Validation passed: {len(files)} files")
+    print(f"Validation for {args.target} passed: {len(files)} files")
     return 0
 
 
