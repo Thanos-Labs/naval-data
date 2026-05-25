@@ -1,0 +1,21 @@
+{
+  "name": "English Channel",
+  "type": "sea_lane",
+  "region": "Western Europe",
+  "bounds": {
+    "north": 51.5,
+    "south": 48.0,
+    "east": 2.0,
+    "west": -6.5
+  },
+  "center": {
+    "lat": 50.0,
+    "lon": -2.0
+  },
+  "min_depth_m": 45,
+  "min_width_km": 34,
+  "strategic_value": "high",
+  "carrier_navigable": true,
+  "notes": "Major sea lane between the Atlantic and North Sea; includes the Dover Strait constriction.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/English_Channel"
+}

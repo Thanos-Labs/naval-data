@@ -1,0 +1,19 @@
+{
+  "name": "Toulon Naval Base",
+  "country": "France",
+  "operator": "French Navy",
+  "location": {
+    "lat": 43.114,
+    "lon": 5.918
+  },
+  "nearest_city": "Toulon",
+  "max_ship_length_m": 262,
+  "max_ship_beam_m": 65,
+  "max_draught_m": 10,
+  "pier_depth_m": 10,
+  "dry_dock_length_m": null,
+  "carrier_capable": "yes",
+  "homeport_for_carriers": true,
+  "notes": "Principal French Mediterranean naval base and homeport of Charles de Gaulle.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Military_port_of_Toulon"
+}

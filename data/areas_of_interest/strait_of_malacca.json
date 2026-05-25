@@ -1,0 +1,21 @@
+{
+  "name": "Strait of Malacca",
+  "type": "strait",
+  "region": "Southeast Asia",
+  "bounds": {
+    "north": 6.7,
+    "south": 1.0,
+    "east": 103.9,
+    "west": 95.0
+  },
+  "center": {
+    "lat": 3.5,
+    "lon": 100.0
+  },
+  "min_depth_m": 25,
+  "min_width_km": 2.8,
+  "strategic_value": "critical",
+  "carrier_navigable": true,
+  "notes": "Major Indian Ocean-Pacific chokepoint between the Malay Peninsula and Sumatra; shallowest constriction is near Singapore Strait approaches.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Strait_of_Malacca"
+}

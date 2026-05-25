@@ -1,0 +1,21 @@
+{
+  "name": "Mozambique Channel",
+  "type": "sea_lane",
+  "region": "Western Indian Ocean",
+  "bounds": {
+    "north": -10.0,
+    "south": -26.0,
+    "east": 49.0,
+    "west": 35.0
+  },
+  "center": {
+    "lat": -18.0,
+    "lon": 42.0
+  },
+  "min_depth_m": 3000,
+  "min_width_km": 400,
+  "strategic_value": "high",
+  "carrier_navigable": true,
+  "notes": "Major route between Madagascar and southeastern Africa.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Mozambique_Channel"
+}

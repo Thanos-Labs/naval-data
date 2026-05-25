@@ -1,0 +1,19 @@
+{
+  "name": "Changi Naval Base",
+  "country": "Singapore",
+  "operator": "Republic of Singapore Navy",
+  "location": {
+    "lat": 1.317,
+    "lon": 104.025
+  },
+  "nearest_city": "Singapore",
+  "max_ship_length_m": 335,
+  "max_ship_beam_m": 60,
+  "max_draught_m": 12,
+  "pier_depth_m": 12,
+  "dry_dock_length_m": null,
+  "carrier_capable": "yes",
+  "homeport_for_carriers": false,
+  "notes": "Designed with deep-water berths and pier length sufficient for aircraft carriers and large allied naval vessels.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Changi_Naval_Base"
+}

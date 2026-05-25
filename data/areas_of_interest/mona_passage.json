@@ -1,0 +1,21 @@
+{
+  "name": "Mona Passage",
+  "type": "strait",
+  "region": "Puerto Rico / Hispaniola",
+  "bounds": {
+    "north": 19.2,
+    "south": 17.5,
+    "east": -67.0,
+    "west": -69.5
+  },
+  "center": {
+    "lat": 18.3,
+    "lon": -68.2
+  },
+  "min_depth_m": 400,
+  "min_width_km": 130,
+  "strategic_value": "medium",
+  "carrier_navigable": true,
+  "notes": "Passage between Puerto Rico and the Dominican Republic.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Mona_Passage"
+}

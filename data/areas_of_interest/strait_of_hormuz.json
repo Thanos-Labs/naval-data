@@ -1,0 +1,21 @@
+{
+  "name": "Strait of Hormuz",
+  "type": "strait",
+  "region": "Persian Gulf / Gulf of Oman",
+  "bounds": {
+    "north": 26.9,
+    "south": 25.2,
+    "east": 57.3,
+    "west": 55.0
+  },
+  "center": {
+    "lat": 26.1,
+    "lon": 56.25
+  },
+  "min_depth_m": 60,
+  "min_width_km": 33,
+  "strategic_value": "critical",
+  "carrier_navigable": true,
+  "notes": "Primary maritime chokepoint between the Persian Gulf and Gulf of Oman. Deep-water traffic separation schemes support very large commercial traffic and naval vessels.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Strait_of_Hormuz"
+}

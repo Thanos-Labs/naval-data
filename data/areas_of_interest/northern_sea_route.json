@@ -1,0 +1,21 @@
+{
+  "name": "Northern Sea Route",
+  "type": "sea_lane",
+  "region": "Arctic Ocean",
+  "bounds": {
+    "north": 78.0,
+    "south": 66.0,
+    "east": 170.0,
+    "west": 30.0
+  },
+  "center": {
+    "lat": 72.0,
+    "lon": 100.0
+  },
+  "min_depth_m": 12,
+  "min_width_km": 50,
+  "strategic_value": "medium",
+  "carrier_navigable": false,
+  "notes": "Arctic route along Russia’s northern coast; ice, shallow shelves, and seasonality limit carrier operations.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Northern_Sea_Route"
+}

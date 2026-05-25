@@ -1,0 +1,21 @@
+{
+  "name": "Denmark Strait",
+  "type": "strait",
+  "region": "North Atlantic / Arctic",
+  "bounds": {
+    "north": 68.0,
+    "south": 63.0,
+    "east": -20.0,
+    "west": -40.0
+  },
+  "center": {
+    "lat": 65.5,
+    "lon": -30.0
+  },
+  "min_depth_m": 190,
+  "min_width_km": 290,
+  "strategic_value": "medium",
+  "carrier_navigable": true,
+  "notes": "Passage between Greenland and Iceland connecting the Arctic and North Atlantic.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Denmark_Strait"
+}

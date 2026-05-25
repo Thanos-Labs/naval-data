@@ -1,0 +1,19 @@
+{
+  "name": "Naval Air Station North Island",
+  "country": "United States",
+  "operator": "United States Navy",
+  "location": {
+    "lat": 32.699,
+    "lon": -117.215
+  },
+  "nearest_city": "San Diego",
+  "max_ship_length_m": 337,
+  "max_ship_beam_m": 78,
+  "max_draught_m": 11,
+  "pier_depth_m": 12,
+  "dry_dock_length_m": null,
+  "carrier_capable": "yes",
+  "homeport_for_carriers": true,
+  "notes": "Aircraft carrier homeport on San Diego Bay.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Naval_Air_Station_North_Island"
+}

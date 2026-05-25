@@ -1,0 +1,21 @@
+{
+  "name": "Strait of Tiran",
+  "type": "strait",
+  "region": "Red Sea",
+  "bounds": {
+    "north": 28.1,
+    "south": 27.7,
+    "east": 34.9,
+    "west": 34.2
+  },
+  "center": {
+    "lat": 27.9,
+    "lon": 34.55
+  },
+  "min_depth_m": 70,
+  "min_width_km": 13,
+  "strategic_value": "high",
+  "carrier_navigable": true,
+  "notes": "Entrance to the Gulf of Aqaba between Sinai and Saudi Arabia.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Straits_of_Tiran"
+}

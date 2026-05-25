@@ -1,0 +1,21 @@
+{
+  "name": "Balabac Strait",
+  "type": "strait",
+  "region": "Philippines / Malaysia",
+  "bounds": {
+    "north": 8.5,
+    "south": 7.1,
+    "east": 117.8,
+    "west": 116.4
+  },
+  "center": {
+    "lat": 7.8,
+    "lon": 117.1
+  },
+  "min_depth_m": 50,
+  "min_width_km": 50,
+  "strategic_value": "medium",
+  "carrier_navigable": true,
+  "notes": "Passage between Palawan and Borneo linking the Sulu Sea and South China Sea.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Balabac_Strait"
+}

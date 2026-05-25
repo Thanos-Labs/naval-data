@@ -1,0 +1,21 @@
+{
+  "name": "Great Belt",
+  "type": "strait",
+  "region": "Denmark",
+  "bounds": {
+    "north": 56.2,
+    "south": 54.8,
+    "east": 11.6,
+    "west": 10.5
+  },
+  "center": {
+    "lat": 55.5,
+    "lon": 11.0
+  },
+  "min_depth_m": 15,
+  "min_width_km": 16,
+  "strategic_value": "medium",
+  "carrier_navigable": true,
+  "notes": "Primary deep-water Danish strait between the Kattegat and Baltic Sea.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Belt"
+}

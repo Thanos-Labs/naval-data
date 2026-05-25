@@ -1,0 +1,19 @@
+{
+  "name": "HMNB Portsmouth",
+  "country": "United Kingdom",
+  "operator": "Royal Navy",
+  "location": {
+    "lat": 50.812,
+    "lon": -1.108
+  },
+  "nearest_city": "Portsmouth",
+  "max_ship_length_m": 284,
+  "max_ship_beam_m": 73,
+  "max_draught_m": 10,
+  "pier_depth_m": 10,
+  "dry_dock_length_m": null,
+  "carrier_capable": "yes",
+  "homeport_for_carriers": true,
+  "notes": "Home of Queen Elizabeth-class aircraft carriers; access depends on tides and dredged channel.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/HMNB_Portsmouth"
+}

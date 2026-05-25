@@ -1,0 +1,19 @@
+{
+  "name": "Karwar Naval Base",
+  "country": "India",
+  "operator": "Indian Navy",
+  "location": {
+    "lat": 14.822,
+    "lon": 74.124
+  },
+  "nearest_city": "Karwar",
+  "max_ship_length_m": 285,
+  "max_ship_beam_m": 60,
+  "max_draught_m": 14,
+  "pier_depth_m": 14,
+  "dry_dock_length_m": null,
+  "carrier_capable": "yes",
+  "homeport_for_carriers": true,
+  "notes": "Major Indian naval base developed to support aircraft carriers and large combatants.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/INS_Kadamba"
+}

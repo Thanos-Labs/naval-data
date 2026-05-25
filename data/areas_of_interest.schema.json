@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://naval-data.local/schemas/area_of_interest.schema.json",
+  "title": "Geographical Area of Interest",
+  "type": "object",
+  "additionalProperties": false,
+  "$defs": {
+    "nullableText": {
+      "type": ["string", "null"]
+    },
+    "nullableNonNegativeNumber": {
+      "type": ["number", "null"],
+      "minimum": 0
+    },
+    "latitude": {
+      "type": "number",
+      "minimum": -90,
+      "maximum": 90
+    },
+    "longitude": {
+      "type": "number",
+      "minimum": -180,
+      "maximum": 180
+    },
+    "coordinate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["lat", "lon"],
+      "properties": {
+        "lat": { "$ref": "#/$defs/latitude" },
+        "lon": { "$ref": "#/$defs/longitude" }
+      }
+    },
+    "bounds": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["north", "south", "east", "west"],
+      "properties": {
+        "north": { "$ref": "#/$defs/latitude" },
+        "south": { "$ref": "#/$defs/latitude" },
+        "east": { "$ref": "#/$defs/longitude" },
+        "west": { "$ref": "#/$defs/longitude" }
+      }
+    }
+  },
+  "required": [
+    "name",
+    "type",
+    "region",
+    "bounds",
+    "center",
+    "min_depth_m",
+    "min_width_km",
+    "strategic_value",
+    "carrier_navigable",
+    "notes",
+    "wikipedia_url"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "type": {
+      "enum": [
+        "strait",
+        "canal",
+        "chokepoint",
+        "sea_lane",
+        "sea",
+        "gulf",
+        "bay",
+        "operating_area"
+      ]
+    },
+    "region": {
+      "type": "string",
+      "minLength": 1
+    },
+    "bounds": {
+      "$ref": "#/$defs/bounds"
+    },
+    "center": {
+      "$ref": "#/$defs/coordinate"
+    },
+    "min_depth_m": {
+      "$ref": "#/$defs/nullableNonNegativeNumber"
+    },
+    "min_width_km": {
+      "$ref": "#/$defs/nullableNonNegativeNumber"
+    },
+    "strategic_value": {
+      "enum": ["low", "medium", "high", "critical"]
+    },
+    "carrier_navigable": {
+      "type": ["boolean", "null"]
+    },
+    "notes": {
+      "$ref": "#/$defs/nullableText"
+    },
+    "wikipedia_url": {
+      "type": ["string", "null"],
+      "format": "uri"
+    }
+  }
+}

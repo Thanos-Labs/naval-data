@@ -1,0 +1,21 @@
+{
+  "name": "Qiongzhou Strait",
+  "type": "strait",
+  "region": "China",
+  "bounds": {
+    "north": 20.4,
+    "south": 19.8,
+    "east": 110.8,
+    "west": 109.7
+  },
+  "center": {
+    "lat": 20.1,
+    "lon": 110.2
+  },
+  "min_depth_m": 20,
+  "min_width_km": 18,
+  "strategic_value": "medium",
+  "carrier_navigable": true,
+  "notes": "Strait between Guangdong and Hainan connecting the Gulf of Tonkin and South China Sea.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Qiongzhou_Strait"
+}

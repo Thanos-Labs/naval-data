@@ -1,0 +1,21 @@
+{
+  "name": "Sibutu Passage",
+  "type": "strait",
+  "region": "Philippines / Malaysia",
+  "bounds": {
+    "north": 5.4,
+    "south": 4.2,
+    "east": 120.6,
+    "west": 119.0
+  },
+  "center": {
+    "lat": 4.8,
+    "lon": 119.8
+  },
+  "min_depth_m": 200,
+  "min_width_km": 29,
+  "strategic_value": "medium",
+  "carrier_navigable": true,
+  "notes": "Deep passage between the Sulu Sea and Sulawesi Sea.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Sibutu_Passage"
+}

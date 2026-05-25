@@ -1,0 +1,21 @@
+{
+  "name": "Torres Strait",
+  "type": "strait",
+  "region": "Australia / Papua New Guinea",
+  "bounds": {
+    "north": -9.0,
+    "south": -11.0,
+    "east": 144.5,
+    "west": 141.5
+  },
+  "center": {
+    "lat": -10.0,
+    "lon": 143.0
+  },
+  "min_depth_m": 7,
+  "min_width_km": 150,
+  "strategic_value": "medium",
+  "carrier_navigable": false,
+  "notes": "Shallow reef-filled passage between Australia and New Guinea; unsuitable for large aircraft carriers.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Torres_Strait"
+}

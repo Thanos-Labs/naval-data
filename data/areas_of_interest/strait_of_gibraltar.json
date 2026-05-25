@@ -1,0 +1,21 @@
+{
+  "name": "Strait of Gibraltar",
+  "type": "strait",
+  "region": "Mediterranean / Atlantic",
+  "bounds": {
+    "north": 36.3,
+    "south": 35.8,
+    "east": -5.0,
+    "west": -6.3
+  },
+  "center": {
+    "lat": 36.05,
+    "lon": -5.6
+  },
+  "min_depth_m": 300,
+  "min_width_km": 14,
+  "strategic_value": "critical",
+  "carrier_navigable": true,
+  "notes": "Only natural Atlantic entrance to the Mediterranean Sea.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Strait_of_Gibraltar"
+}

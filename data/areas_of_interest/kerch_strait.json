@@ -1,0 +1,21 @@
+{
+  "name": "Kerch Strait",
+  "type": "strait",
+  "region": "Black Sea / Sea of Azov",
+  "bounds": {
+    "north": 45.6,
+    "south": 44.9,
+    "east": 36.8,
+    "west": 35.9
+  },
+  "center": {
+    "lat": 45.25,
+    "lon": 36.35
+  },
+  "min_depth_m": 8,
+  "min_width_km": 4,
+  "strategic_value": "medium",
+  "carrier_navigable": false,
+  "notes": "Shallow passage between the Black Sea and Sea of Azov; unsuitable for aircraft carriers.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Kerch_Strait"
+}

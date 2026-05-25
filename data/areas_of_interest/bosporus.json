@@ -1,0 +1,21 @@
+{
+  "name": "Bosporus",
+  "type": "strait",
+  "region": "Turkey",
+  "bounds": {
+    "north": 41.3,
+    "south": 40.95,
+    "east": 29.2,
+    "west": 28.8
+  },
+  "center": {
+    "lat": 41.12,
+    "lon": 29.0
+  },
+  "min_depth_m": 13,
+  "min_width_km": 0.7,
+  "strategic_value": "high",
+  "carrier_navigable": false,
+  "notes": "Narrow urban strait connecting the Black Sea and Sea of Marmara.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Bosporus"
+}

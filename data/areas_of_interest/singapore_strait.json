@@ -1,0 +1,21 @@
+{
+  "name": "Singapore Strait",
+  "type": "strait",
+  "region": "Southeast Asia",
+  "bounds": {
+    "north": 1.45,
+    "south": 1.05,
+    "east": 104.4,
+    "west": 103.45
+  },
+  "center": {
+    "lat": 1.2,
+    "lon": 103.85
+  },
+  "min_depth_m": 20,
+  "min_width_km": 16,
+  "strategic_value": "critical",
+  "carrier_navigable": true,
+  "notes": "Eastern exit of the Malacca route and one of the world’s busiest shipping lanes.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Singapore_Strait"
+}

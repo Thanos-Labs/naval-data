@@ -1,0 +1,21 @@
+{
+  "name": "Norwegian Sea Access Route",
+  "type": "sea_lane",
+  "region": "North Atlantic",
+  "bounds": {
+    "north": 72.0,
+    "south": 58.0,
+    "east": 15.0,
+    "west": -10.0
+  },
+  "center": {
+    "lat": 65.0,
+    "lon": 2.0
+  },
+  "min_depth_m": 500,
+  "min_width_km": 500,
+  "strategic_value": "high",
+  "carrier_navigable": true,
+  "notes": "Broad maritime operating area linking the North Atlantic, Barents Sea, and approaches to northern Europe.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Norwegian_Sea"
+}

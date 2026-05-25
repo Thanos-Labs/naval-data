@@ -1,0 +1,21 @@
+{
+  "name": "Taiwan Strait",
+  "type": "strait",
+  "region": "East Asia",
+  "bounds": {
+    "north": 26.3,
+    "south": 22.0,
+    "east": 121.5,
+    "west": 117.0
+  },
+  "center": {
+    "lat": 24.2,
+    "lon": 119.3
+  },
+  "min_depth_m": 60,
+  "min_width_km": 130,
+  "strategic_value": "critical",
+  "carrier_navigable": true,
+  "notes": "Strategic passage between Taiwan and mainland China.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Taiwan_Strait"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Suez Canal",
+  "type": "canal",
+  "region": "Egypt",
+  "bounds": {
+    "north": 31.4,
+    "south": 29.8,
+    "east": 32.7,
+    "west": 32.2
+  },
+  "center": {
+    "lat": 30.6,
+    "lon": 32.35
+  },
+  "min_depth_m": 24,
+  "min_width_km": 0.2,
+  "strategic_value": "critical",
+  "carrier_navigable": true,
+  "notes": "Artificial canal linking the Mediterranean Sea and Red Sea; carrier transit is possible subject to canal authority restrictions and vessel dimensions.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Suez_Canal"
+}

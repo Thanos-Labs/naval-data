@@ -1,0 +1,21 @@
+{
+  "name": "Strait of Otranto",
+  "type": "strait",
+  "region": "Adriatic / Ionian Sea",
+  "bounds": {
+    "north": 41.0,
+    "south": 39.3,
+    "east": 20.0,
+    "west": 18.0
+  },
+  "center": {
+    "lat": 40.2,
+    "lon": 19.0
+  },
+  "min_depth_m": 700,
+  "min_width_km": 72,
+  "strategic_value": "medium",
+  "carrier_navigable": true,
+  "notes": "Entrance to the Adriatic Sea between Italy and Albania.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Strait_of_Otranto"
+}

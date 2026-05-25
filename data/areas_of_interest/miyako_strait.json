@@ -1,0 +1,21 @@
+{
+  "name": "Miyako Strait",
+  "type": "strait",
+  "region": "Ryukyu Islands",
+  "bounds": {
+    "north": 26.5,
+    "south": 24.0,
+    "east": 126.5,
+    "west": 124.0
+  },
+  "center": {
+    "lat": 25.2,
+    "lon": 125.3
+  },
+  "min_depth_m": 500,
+  "min_width_km": 250,
+  "strategic_value": "high",
+  "carrier_navigable": true,
+  "notes": "Deep-water passage through the Ryukyu island chain between Okinawa and Miyako.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Miyako_Strait"
+}

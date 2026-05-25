@@ -1,0 +1,21 @@
+{
+  "name": "Drake Passage",
+  "type": "strait",
+  "region": "Southern Ocean",
+  "bounds": {
+    "north": -55.0,
+    "south": -63.0,
+    "east": -55.0,
+    "west": -70.0
+  },
+  "center": {
+    "lat": -59.0,
+    "lon": -62.0
+  },
+  "min_depth_m": 3000,
+  "min_width_km": 800,
+  "strategic_value": "medium",
+  "carrier_navigable": true,
+  "notes": "Open-ocean passage between South America and Antarctica.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Drake_Passage"
+}

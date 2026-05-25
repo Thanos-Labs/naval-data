@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://naval-data.local/schemas/naval_base.schema.json",
+  "title": "Naval Base",
+  "type": "object",
+  "additionalProperties": false,
+  "$defs": {
+    "nullableText": {
+      "type": ["string", "null"]
+    },
+    "nullableNonNegativeNumber": {
+      "type": ["number", "null"],
+      "minimum": 0
+    },
+    "latitude": {
+      "type": "number",
+      "minimum": -90,
+      "maximum": 90
+    },
+    "longitude": {
+      "type": "number",
+      "minimum": -180,
+      "maximum": 180
+    },
+    "coordinate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["lat", "lon"],
+      "properties": {
+        "lat": { "$ref": "#/$defs/latitude" },
+        "lon": { "$ref": "#/$defs/longitude" }
+      }
+    }
+  },
+  "required": [
+    "name",
+    "country",
+    "operator",
+    "location",
+    "nearest_city",
+    "max_ship_length_m",
+    "max_ship_beam_m",
+    "max_draught_m",
+    "pier_depth_m",
+    "dry_dock_length_m",
+    "carrier_capable",
+    "homeport_for_carriers",
+    "notes",
+    "wikipedia_url"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "country": {
+      "type": "string",
+      "minLength": 1
+    },
+    "operator": {
+      "type": "string",
+      "minLength": 1
+    },
+    "location": {
+      "$ref": "#/$defs/coordinate"
+    },
+    "nearest_city": {
+      "$ref": "#/$defs/nullableText"
+    },
+    "max_ship_length_m": {
+      "$ref": "#/$defs/nullableNonNegativeNumber"
+    },
+    "max_ship_beam_m": {
+      "$ref": "#/$defs/nullableNonNegativeNumber"
+    },
+    "max_draught_m": {
+      "$ref": "#/$defs/nullableNonNegativeNumber"
+    },
+    "pier_depth_m": {
+      "$ref": "#/$defs/nullableNonNegativeNumber"
+    },
+    "dry_dock_length_m": {
+      "$ref": "#/$defs/nullableNonNegativeNumber"
+    },
+    "carrier_capable": {
+      "enum": ["yes", "no", "limited", "unknown"]
+    },
+    "homeport_for_carriers": {
+      "type": ["boolean", "null"]
+    },
+    "notes": {
+      "$ref": "#/$defs/nullableText"
+    },
+    "wikipedia_url": {
+      "type": ["string", "null"],
+      "format": "uri"
+    }
+  }
+}

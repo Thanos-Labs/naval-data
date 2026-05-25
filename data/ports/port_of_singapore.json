@@ -1,0 +1,19 @@
+{
+  "name": "Port of Singapore",
+  "country": "Singapore",
+  "type": "commercial",
+  "location": {
+    "lat": 1.264,
+    "lon": 103.84
+  },
+  "nearest_city": "Singapore",
+  "operator": "Maritime and Port Authority of Singapore",
+  "max_ship_length_m": 400,
+  "max_ship_beam_m": 61,
+  "max_draught_m": 16,
+  "berth_depth_m": 16,
+  "channel_depth_m": 16,
+  "carrier_capable": "yes",
+  "notes": "Major deep-water transshipment port regularly handling very large vessels.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Port_of_Singapore"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Windward Passage",
+  "type": "strait",
+  "region": "Cuba / Hispaniola",
+  "bounds": {
+    "north": 20.5,
+    "south": 18.5,
+    "east": -73.0,
+    "west": -75.5
+  },
+  "center": {
+    "lat": 19.5,
+    "lon": -74.2
+  },
+  "min_depth_m": 1700,
+  "min_width_km": 80,
+  "strategic_value": "medium",
+  "carrier_navigable": true,
+  "notes": "Deep passage between Cuba and Haiti linking the Caribbean Sea and Atlantic.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Windward_Passage"
+}

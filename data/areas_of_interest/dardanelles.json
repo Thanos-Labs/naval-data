@@ -1,0 +1,21 @@
+{
+  "name": "Dardanelles",
+  "type": "strait",
+  "region": "Turkey",
+  "bounds": {
+    "north": 40.5,
+    "south": 39.9,
+    "east": 26.8,
+    "west": 26.0
+  },
+  "center": {
+    "lat": 40.2,
+    "lon": 26.4
+  },
+  "min_depth_m": 55,
+  "min_width_km": 1.2,
+  "strategic_value": "high",
+  "carrier_navigable": false,
+  "notes": "Strait connecting the Aegean Sea and Sea of Marmara.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Dardanelles"
+}

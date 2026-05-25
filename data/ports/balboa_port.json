@@ -1,0 +1,19 @@
+{
+  "name": "Balboa Port",
+  "country": "Panama",
+  "type": "commercial",
+  "location": {
+    "lat": 8.959,
+    "lon": -79.565
+  },
+  "nearest_city": "Panama City",
+  "operator": "Panama Ports Company",
+  "max_ship_length_m": 366,
+  "max_ship_beam_m": 49,
+  "max_draught_m": 15,
+  "berth_depth_m": 16,
+  "channel_depth_m": 15,
+  "carrier_capable": "limited",
+  "notes": "Pacific entrance port for the Panama Canal; canal lock limits exclude large fleet carriers.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Balboa,_Panama"
+}

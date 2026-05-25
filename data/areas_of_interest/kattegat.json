@@ -1,0 +1,21 @@
+{
+  "name": "Kattegat",
+  "type": "sea_lane",
+  "region": "Denmark / Sweden",
+  "bounds": {
+    "north": 58.2,
+    "south": 55.5,
+    "east": 13.0,
+    "west": 9.5
+  },
+  "center": {
+    "lat": 56.8,
+    "lon": 11.2
+  },
+  "min_depth_m": 15,
+  "min_width_km": 60,
+  "strategic_value": "medium",
+  "carrier_navigable": true,
+  "notes": "Sea area connecting the Skagerrak and Danish straits.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Kattegat"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Wetar Strait",
+  "type": "strait",
+  "region": "Indonesia / Timor-Leste",
+  "bounds": {
+    "north": -7.5,
+    "south": -8.6,
+    "east": 128.0,
+    "west": 125.5
+  },
+  "center": {
+    "lat": -8.0,
+    "lon": 126.8
+  },
+  "min_depth_m": 1000,
+  "min_width_km": 35,
+  "strategic_value": "medium",
+  "carrier_navigable": true,
+  "notes": "Deep passage near Timor forming part of eastern Indonesian archipelagic routes.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Wetar_Strait"
+}

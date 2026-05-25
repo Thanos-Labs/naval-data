@@ -1,0 +1,21 @@
+{
+  "name": "La Pérouse Strait",
+  "type": "strait",
+  "region": "Russia / Japan",
+  "bounds": {
+    "north": 46.5,
+    "south": 45.5,
+    "east": 143.5,
+    "west": 141.0
+  },
+  "center": {
+    "lat": 46.0,
+    "lon": 142.2
+  },
+  "min_depth_m": 50,
+  "min_width_km": 43,
+  "strategic_value": "medium",
+  "carrier_navigable": true,
+  "notes": "Passage between Hokkaido and Sakhalin.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/La_P%C3%A9rouse_Strait"
+}

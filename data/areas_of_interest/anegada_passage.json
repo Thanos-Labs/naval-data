@@ -1,0 +1,21 @@
+{
+  "name": "Anegada Passage",
+  "type": "strait",
+  "region": "Caribbean",
+  "bounds": {
+    "north": 19.5,
+    "south": 17.5,
+    "east": -63.0,
+    "west": -65.5
+  },
+  "center": {
+    "lat": 18.5,
+    "lon": -64.2
+  },
+  "min_depth_m": 1800,
+  "min_width_km": 150,
+  "strategic_value": "medium",
+  "carrier_navigable": true,
+  "notes": "Deep passage between the Virgin Islands and Anguilla/Saba bank area.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Anegada_Passage"
+}

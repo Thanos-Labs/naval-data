@@ -1,0 +1,21 @@
+{
+  "name": "Cape of Good Hope Sea Lane",
+  "type": "sea_lane",
+  "region": "Southern Africa",
+  "bounds": {
+    "north": -32.0,
+    "south": -36.5,
+    "east": 22.0,
+    "west": 16.0
+  },
+  "center": {
+    "lat": -34.5,
+    "lon": 19.0
+  },
+  "min_depth_m": 2000,
+  "min_width_km": 300,
+  "strategic_value": "high",
+  "carrier_navigable": true,
+  "notes": "Strategic alternate route between the Atlantic and Indian oceans when Suez is unavailable.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Cape_of_Good_Hope"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Yokosuka Naval Base",
+  "country": "Japan",
+  "operator": "United States Navy / Japan Maritime Self-Defense Force",
+  "location": {
+    "lat": 35.292,
+    "lon": 139.672
+  },
+  "nearest_city": "Yokosuka",
+  "max_ship_length_m": 337,
+  "max_ship_beam_m": 78,
+  "max_draught_m": 12,
+  "pier_depth_m": 12,
+  "dry_dock_length_m": null,
+  "carrier_capable": "yes",
+  "homeport_for_carriers": true,
+  "notes": "Forward-deployed U.S. carrier homeport and major JMSDF/U.S. naval base.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/United_States_Fleet_Activities_Yokosuka"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Makassar Strait",
+  "type": "strait",
+  "region": "Indonesia",
+  "bounds": {
+    "north": 1.8,
+    "south": -5.9,
+    "east": 120.2,
+    "west": 116.0
+  },
+  "center": {
+    "lat": -2.0,
+    "lon": 118.2
+  },
+  "min_depth_m": 1000,
+  "min_width_km": 80,
+  "strategic_value": "high",
+  "carrier_navigable": true,
+  "notes": "Deep north-south route between Borneo and Sulawesi, often paired with Lombok Strait for deep-draught transit.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Makassar_Strait"
+}
