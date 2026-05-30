@@ -2,6 +2,12 @@
   "name": "Naval Station Norfolk",
   "country": "United States",
   "operator": "United States Navy",
+  "bounds": {
+    "north": 36.996,
+    "south": 36.896,
+    "east": -76.263,
+    "west": -76.363
+  },
   "location": {
     "lat": 36.946,
     "lon": -76.313

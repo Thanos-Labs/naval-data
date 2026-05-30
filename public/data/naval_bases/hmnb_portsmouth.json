@@ -2,6 +2,12 @@
   "name": "HMNB Portsmouth",
   "country": "United Kingdom",
   "operator": "Royal Navy",
+  "bounds": {
+    "north": 50.862,
+    "south": 50.762,
+    "east": -1.058,
+    "west": -1.158
+  },
   "location": {
     "lat": 50.812,
     "lon": -1.108

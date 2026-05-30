@@ -2,6 +2,12 @@
   "name": "Naval Air Station North Island",
   "country": "United States",
   "operator": "United States Navy",
+  "bounds": {
+    "north": 32.749,
+    "south": 32.649,
+    "east": -117.165,
+    "west": -117.265
+  },
   "location": {
     "lat": 32.699,
     "lon": -117.215

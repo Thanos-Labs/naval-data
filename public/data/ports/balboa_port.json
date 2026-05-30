@@ -2,6 +2,12 @@
   "name": "Balboa Port",
   "country": "Panama",
   "type": "commercial",
+  "bounds": {
+    "north": 9.009,
+    "south": 8.909,
+    "east": -79.515,
+    "west": -79.615
+  },
   "location": {
     "lat": 8.959,
     "lon": -79.565

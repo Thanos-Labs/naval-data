@@ -2,6 +2,12 @@
   "name": "Yokosuka Naval Base",
   "country": "Japan",
   "operator": "United States Navy / Japan Maritime Self-Defense Force",
+  "bounds": {
+    "north": 35.342,
+    "south": 35.242,
+    "east": 139.722,
+    "west": 139.622
+  },
   "location": {
     "lat": 35.292,
     "lon": 139.672

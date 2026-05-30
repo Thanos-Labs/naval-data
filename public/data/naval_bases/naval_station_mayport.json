@@ -2,6 +2,12 @@
   "name": "Naval Station Mayport",
   "country": "United States",
   "operator": "United States Navy",
+  "bounds": {
+    "north": 30.442,
+    "south": 30.342,
+    "east": -81.374,
+    "west": -81.474
+  },
   "location": {
     "lat": 30.392,
     "lon": -81.424

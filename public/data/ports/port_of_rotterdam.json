@@ -2,6 +2,12 @@
   "name": "Port of Rotterdam",
   "country": "Netherlands",
   "type": "commercial",
+  "bounds": {
+    "north": 52.005,
+    "south": 51.905,
+    "east": 4.184,
+    "west": 4.084
+  },
   "location": {
     "lat": 51.955,
     "lon": 4.134

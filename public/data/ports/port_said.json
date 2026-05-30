@@ -2,6 +2,12 @@
   "name": "Port Said",
   "country": "Egypt",
   "type": "commercial",
+  "bounds": {
+    "north": 31.315,
+    "south": 31.215,
+    "east": 32.352,
+    "west": 32.252
+  },
   "location": {
     "lat": 31.265,
     "lon": 32.302

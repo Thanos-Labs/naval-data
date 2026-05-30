@@ -2,6 +2,12 @@
   "name": "Changi Naval Base",
   "country": "Singapore",
   "operator": "Republic of Singapore Navy",
+  "bounds": {
+    "north": 1.367,
+    "south": 1.267,
+    "east": 104.075,
+    "west": 103.975
+  },
   "location": {
     "lat": 1.317,
     "lon": 104.025

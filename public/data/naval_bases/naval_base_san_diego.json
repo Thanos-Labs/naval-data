@@ -2,6 +2,12 @@
   "name": "Naval Base San Diego",
   "country": "United States",
   "operator": "United States Navy",
+  "bounds": {
+    "north": 32.734,
+    "south": 32.634,
+    "east": -117.069,
+    "west": -117.169
+  },
   "location": {
     "lat": 32.684,
     "lon": -117.119

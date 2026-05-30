@@ -1,7 +1,6 @@
-name: Validate data
+name: Validate
 
 on:
-  pull_request:
   workflow_call:
 
 permissions:
@@ -10,28 +9,11 @@ permissions:
 jobs:
   validate:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v6
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
         with:
-          python-version: "3.x"
-
-      - name: Install Python dependencies
-        run: python -m pip install -r requirements.txt
-
-      - name: Validate data directories
-        run: |
-          set -euo pipefail
-
-          for dir in data/*/; do
-            name="$(basename "$dir")"
-            if [[ -f "data/${name}.schema.json" || -f "${dir}schema.json" ]]; then
-              python scripts/validate_json.py "$name"
-            else
-              echo "::warning file=${dir}::No schema found; skipping ${name}"
-            fi
-          done
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run validate:data

@@ -2,6 +2,12 @@
   "name": "Toulon Naval Base",
   "country": "France",
   "operator": "French Navy",
+  "bounds": {
+    "north": 43.164,
+    "south": 43.064,
+    "east": 5.968,
+    "west": 5.868
+  },
   "location": {
     "lat": 43.114,
     "lon": 5.918

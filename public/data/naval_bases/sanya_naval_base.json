@@ -2,6 +2,12 @@
   "name": "Sanya Naval Base",
   "country": "China",
   "operator": "People’s Liberation Army Navy",
+  "bounds": {
+    "north": 18.259,
+    "south": 18.159,
+    "east": 109.736,
+    "west": 109.636
+  },
   "location": {
     "lat": 18.209,
     "lon": 109.686

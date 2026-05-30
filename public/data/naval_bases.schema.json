@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://naval-data.local/schemas/port.schema.json",
-  "title": "Port",
+  "$id": "https://naval-data.local/schemas/naval_base.schema.json",
+  "title": "Naval Base",
   "type": "object",
   "additionalProperties": false,
   "$defs": {
@@ -30,21 +30,33 @@
         "lat": { "$ref": "#/$defs/latitude" },
         "lon": { "$ref": "#/$defs/longitude" }
       }
+    },
+    "bounds": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["north", "south", "east", "west"],
+      "properties": {
+        "north": { "$ref": "#/$defs/latitude" },
+        "south": { "$ref": "#/$defs/latitude" },
+        "east": { "$ref": "#/$defs/longitude" },
+        "west": { "$ref": "#/$defs/longitude" }
+      }
     }
   },
   "required": [
     "name",
     "country",
-    "type",
+    "operator",
+    "bounds",
     "location",
     "nearest_city",
-    "operator",
     "max_ship_length_m",
     "max_ship_beam_m",
     "max_draught_m",
-    "berth_depth_m",
-    "channel_depth_m",
+    "pier_depth_m",
+    "dry_dock_length_m",
     "carrier_capable",
+    "homeport_for_carriers",
     "notes",
     "wikipedia_url"
   ],
@@ -57,16 +69,17 @@
       "type": "string",
       "minLength": 1
     },
-    "type": {
-      "enum": ["commercial", "military", "dual_use", "shipyard", "terminal"]
+    "operator": {
+      "type": "string",
+      "minLength": 1
+    },
+    "bounds": {
+      "$ref": "#/$defs/bounds"
     },
     "location": {
       "$ref": "#/$defs/coordinate"
     },
     "nearest_city": {
-      "$ref": "#/$defs/nullableText"
-    },
-    "operator": {
       "$ref": "#/$defs/nullableText"
     },
     "max_ship_length_m": {
@@ -78,14 +91,17 @@
     "max_draught_m": {
       "$ref": "#/$defs/nullableNonNegativeNumber"
     },
-    "berth_depth_m": {
+    "pier_depth_m": {
       "$ref": "#/$defs/nullableNonNegativeNumber"
     },
-    "channel_depth_m": {
+    "dry_dock_length_m": {
       "$ref": "#/$defs/nullableNonNegativeNumber"
     },
     "carrier_capable": {
       "enum": ["yes", "no", "limited", "unknown"]
+    },
+    "homeport_for_carriers": {
+      "type": ["boolean", "null"]
     },
     "notes": {
       "$ref": "#/$defs/nullableText"

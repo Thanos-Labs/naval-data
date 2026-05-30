@@ -2,6 +2,12 @@
   "name": "Karwar Naval Base",
   "country": "India",
   "operator": "Indian Navy",
+  "bounds": {
+    "north": 14.872,
+    "south": 14.772,
+    "east": 74.174,
+    "west": 74.074
+  },
   "location": {
     "lat": 14.822,
     "lon": 74.124

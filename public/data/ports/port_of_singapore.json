@@ -2,6 +2,12 @@
   "name": "Port of Singapore",
   "country": "Singapore",
   "type": "commercial",
+  "bounds": {
+    "north": 1.314,
+    "south": 1.214,
+    "east": 103.89,
+    "west": 103.79
+  },
   "location": {
     "lat": 1.264,
     "lon": 103.84

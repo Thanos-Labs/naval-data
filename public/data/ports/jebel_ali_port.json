@@ -2,6 +2,12 @@
   "name": "Jebel Ali Port",
   "country": "United Arab Emirates",
   "type": "commercial",
+  "bounds": {
+    "north": 25.061,
+    "south": 24.961,
+    "east": 55.111,
+    "west": 55.011
+  },
   "location": {
     "lat": 25.011,
     "lon": 55.061

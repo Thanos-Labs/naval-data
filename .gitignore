@@ -1,0 +1,9 @@
+node_modules
+dist
+.env
+.DS_Store
+.vite
+
+# for aggregated json files generated during build
+public/data/*.json
+!public/data/*.schema.json
