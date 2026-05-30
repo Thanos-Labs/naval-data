@@ -1,8 +1,13 @@
 import type { AreaOfInterest, DataKind, GeoItem, NavalBase, Port } from './types';
 
+function assetPath(path: string) {
+  return `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`;
+}
+
 async function loadJson<T>(path: string): Promise<T> {
-  const response = await fetch(path);
-  if (!response.ok) throw new Error(`${path}: ${response.status}`);
+  const url = assetPath(path);
+  const response = await fetch(url);
+  if (!response.ok) throw new Error(`${url}: ${response.status}`);
   return response.json() as Promise<T>;
 }
 
