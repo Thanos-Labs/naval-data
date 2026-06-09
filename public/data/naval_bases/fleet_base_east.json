@@ -1,0 +1,25 @@
+{
+  "name": "Fleet Base East",
+  "bounds": {
+    "north": -33.85808577503703,
+    "south": -33.869061500743065,
+    "east": 151.2311410903931,
+    "west": 151.21923208236697
+  },
+  "notes": null,
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Fleet_Base_East",
+  "country": "Australia",
+  "operator": "Department of Defence (Australia)",
+  "location": {
+    "lat": -33.86357363789005,
+    "lon": 151.22518658638003
+  },
+  "nearest_city": "Sydney",
+  "max_ship_length_m": null,
+  "max_ship_beam_m": null,
+  "max_draught_m": null,
+  "pier_depth_m": null,
+  "dry_dock_length_m": null,
+  "carrier_capable": "yes",
+  "homeport_for_carriers": null
+}

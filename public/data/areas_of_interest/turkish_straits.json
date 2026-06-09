@@ -1,21 +1,21 @@
 {
   "name": "Turkish Straits",
+  "bounds": {
+    "north": 41.062786068733026,
+    "south": 40.10328591293442,
+    "east": 29.410400390625004,
+    "west": 26.674804687500004
+  },
+  "notes": "Combined Bosporus, Sea of Marmara, and Dardanelles route between the Black Sea and Mediterranean; legal and physical constraints limit aircraft carrier transit.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Turkish_Straits",
   "type": "strait",
   "region": "Turkey",
-  "bounds": {
-    "north": 41.5,
-    "south": 39.8,
-    "east": 30.0,
-    "west": 26.0
-  },
   "center": {
-    "lat": 40.7,
-    "lon": 28.0
+    "lat": 40.58303599083372,
+    "lon": 28.042602539062504
   },
   "min_depth_m": 13,
   "min_width_km": 0.7,
   "strategic_value": "high",
-  "carrier_navigable": false,
-  "notes": "Combined Bosporus, Sea of Marmara, and Dardanelles route between the Black Sea and Mediterranean; legal and physical constraints limit aircraft carrier transit.",
-  "wikipedia_url": "https://en.wikipedia.org/wiki/Turkish_Straits"
+  "carrier_navigable": false
 }
