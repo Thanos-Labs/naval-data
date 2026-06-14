@@ -2,12 +2,24 @@
   "name": "Kerch Strait",
   "type": "strait",
   "region": "Black Sea / Sea of Azov",
-  "bounds": {
-    "north": 45.6,
-    "south": 44.9,
-    "east": 36.8,
-    "west": 35.9
-  },
+  "bounds": [
+    {
+      "lat": 45.6,
+      "lon": 35.9
+    },
+    {
+      "lat": 45.6,
+      "lon": 36.8
+    },
+    {
+      "lat": 44.9,
+      "lon": 36.8
+    },
+    {
+      "lat": 44.9,
+      "lon": 35.9
+    }
+  ],
   "center": {
     "lat": 45.25,
     "lon": 36.35

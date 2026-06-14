@@ -2,12 +2,24 @@
   "name": "Windward Passage",
   "type": "strait",
   "region": "Cuba / Hispaniola",
-  "bounds": {
-    "north": 20.5,
-    "south": 18.5,
-    "east": -73.0,
-    "west": -75.5
-  },
+  "bounds": [
+    {
+      "lat": 20.5,
+      "lon": -75.5
+    },
+    {
+      "lat": 20.5,
+      "lon": -73
+    },
+    {
+      "lat": 18.5,
+      "lon": -73
+    },
+    {
+      "lat": 18.5,
+      "lon": -75.5
+    }
+  ],
   "center": {
     "lat": 19.5,
     "lon": -74.2

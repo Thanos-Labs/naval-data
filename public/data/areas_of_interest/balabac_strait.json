@@ -2,12 +2,24 @@
   "name": "Balabac Strait",
   "type": "strait",
   "region": "Philippines / Malaysia",
-  "bounds": {
-    "north": 8.5,
-    "south": 7.1,
-    "east": 117.8,
-    "west": 116.4
-  },
+  "bounds": [
+    {
+      "lat": 8.5,
+      "lon": 116.4
+    },
+    {
+      "lat": 8.5,
+      "lon": 117.8
+    },
+    {
+      "lat": 7.1,
+      "lon": 117.8
+    },
+    {
+      "lat": 7.1,
+      "lon": 116.4
+    }
+  ],
   "center": {
     "lat": 7.8,
     "lon": 117.1

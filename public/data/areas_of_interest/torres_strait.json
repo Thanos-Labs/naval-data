@@ -2,15 +2,27 @@
   "name": "Torres Strait",
   "type": "strait",
   "region": "Australia / Papua New Guinea",
-  "bounds": {
-    "north": -9.0,
-    "south": -11.0,
-    "east": 144.5,
-    "west": 141.5
-  },
+  "bounds": [
+    {
+      "lat": -9,
+      "lon": 141.5
+    },
+    {
+      "lat": -9,
+      "lon": 144.5
+    },
+    {
+      "lat": -11,
+      "lon": 144.5
+    },
+    {
+      "lat": -11,
+      "lon": 141.5
+    }
+  ],
   "center": {
-    "lat": -10.0,
-    "lon": 143.0
+    "lat": -10,
+    "lon": 143
   },
   "min_depth_m": 7,
   "min_width_km": 150,

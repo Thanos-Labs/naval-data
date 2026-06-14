@@ -2,12 +2,24 @@
   "name": "Strait of Sicily",
   "type": "strait",
   "region": "Central Mediterranean",
-  "bounds": {
-    "north": 38.5,
-    "south": 35.0,
-    "east": 15.5,
-    "west": 10.0
-  },
+  "bounds": [
+    {
+      "lat": 38.5,
+      "lon": 10
+    },
+    {
+      "lat": 38.5,
+      "lon": 15.5
+    },
+    {
+      "lat": 35,
+      "lon": 15.5
+    },
+    {
+      "lat": 35,
+      "lon": 10
+    }
+  ],
   "center": {
     "lat": 36.8,
     "lon": 12.8

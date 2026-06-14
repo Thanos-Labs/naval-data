@@ -1,11 +1,23 @@
 {
   "name": "Panama Canal",
-  "bounds": {
-    "north": 9.390129165117468,
-    "south": 8.85,
-    "east": -79.45,
-    "west": -80.01548767089845
-  },
+  "bounds": [
+    {
+      "lat": 9.390129165117468,
+      "lon": -80.01548767089845
+    },
+    {
+      "lat": 9.390129165117468,
+      "lon": -79.45
+    },
+    {
+      "lat": 8.85,
+      "lon": -79.45
+    },
+    {
+      "lat": 8.85,
+      "lon": -80.01548767089845
+    }
+  ],
   "notes": "Artificial canal linking Atlantic and Pacific; locks constrain beam and length, excluding large fleet carriers.",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Panama_Canal",
   "type": "canal",

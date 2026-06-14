@@ -2,15 +2,27 @@
   "name": "Great Belt",
   "type": "strait",
   "region": "Denmark",
-  "bounds": {
-    "north": 56.2,
-    "south": 54.8,
-    "east": 11.6,
-    "west": 10.5
-  },
+  "bounds": [
+    {
+      "lat": 56.2,
+      "lon": 10.5
+    },
+    {
+      "lat": 56.2,
+      "lon": 11.6
+    },
+    {
+      "lat": 54.8,
+      "lon": 11.6
+    },
+    {
+      "lat": 54.8,
+      "lon": 10.5
+    }
+  ],
   "center": {
     "lat": 55.5,
-    "lon": 11.0
+    "lon": 11
   },
   "min_depth_m": 15,
   "min_width_km": 16,

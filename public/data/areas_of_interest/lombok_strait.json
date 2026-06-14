@@ -2,12 +2,24 @@
   "name": "Lombok Strait",
   "type": "strait",
   "region": "Indonesia",
-  "bounds": {
-    "north": -8.1,
-    "south": -9.0,
-    "east": 116.2,
-    "west": 115.4
-  },
+  "bounds": [
+    {
+      "lat": -8.1,
+      "lon": 115.4
+    },
+    {
+      "lat": -8.1,
+      "lon": 116.2
+    },
+    {
+      "lat": -9,
+      "lon": 116.2
+    },
+    {
+      "lat": -9,
+      "lon": 115.4
+    }
+  ],
   "center": {
     "lat": -8.55,
     "lon": 115.85

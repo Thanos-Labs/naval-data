@@ -2,12 +2,24 @@
   "name": "Strait of Messina",
   "type": "strait",
   "region": "Italy",
-  "bounds": {
-    "north": 38.4,
-    "south": 37.8,
-    "east": 15.8,
-    "west": 15.4
-  },
+  "bounds": [
+    {
+      "lat": 38.4,
+      "lon": 15.4
+    },
+    {
+      "lat": 38.4,
+      "lon": 15.8
+    },
+    {
+      "lat": 37.8,
+      "lon": 15.8
+    },
+    {
+      "lat": 37.8,
+      "lon": 15.4
+    }
+  ],
   "center": {
     "lat": 38.1,
     "lon": 15.6

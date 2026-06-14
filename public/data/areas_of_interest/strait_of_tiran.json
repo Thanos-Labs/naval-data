@@ -2,12 +2,24 @@
   "name": "Strait of Tiran",
   "type": "strait",
   "region": "Red Sea",
-  "bounds": {
-    "north": 28.1,
-    "south": 27.7,
-    "east": 34.9,
-    "west": 34.2
-  },
+  "bounds": [
+    {
+      "lat": 28.1,
+      "lon": 34.2
+    },
+    {
+      "lat": 28.1,
+      "lon": 34.9
+    },
+    {
+      "lat": 27.7,
+      "lon": 34.9
+    },
+    {
+      "lat": 27.7,
+      "lon": 34.2
+    }
+  ],
   "center": {
     "lat": 27.9,
     "lon": 34.55

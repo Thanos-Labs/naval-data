@@ -2,12 +2,24 @@
   "name": "Dardanelles",
   "type": "strait",
   "region": "Turkey",
-  "bounds": {
-    "north": 40.5,
-    "south": 39.9,
-    "east": 26.8,
-    "west": 26.0
-  },
+  "bounds": [
+    {
+      "lat": 40.5,
+      "lon": 26
+    },
+    {
+      "lat": 40.5,
+      "lon": 26.8
+    },
+    {
+      "lat": 39.9,
+      "lon": 26.8
+    },
+    {
+      "lat": 39.9,
+      "lon": 26
+    }
+  ],
   "center": {
     "lat": 40.2,
     "lon": 26.4

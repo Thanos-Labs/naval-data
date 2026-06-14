@@ -2,12 +2,24 @@
   "name": "Osumi Strait",
   "type": "strait",
   "region": "Japan",
-  "bounds": {
-    "north": 31.2,
-    "south": 30.0,
-    "east": 131.5,
-    "west": 129.8
-  },
+  "bounds": [
+    {
+      "lat": 31.2,
+      "lon": 129.8
+    },
+    {
+      "lat": 31.2,
+      "lon": 131.5
+    },
+    {
+      "lat": 30,
+      "lon": 131.5
+    },
+    {
+      "lat": 30,
+      "lon": 129.8
+    }
+  ],
   "center": {
     "lat": 30.6,
     "lon": 130.6

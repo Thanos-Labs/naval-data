@@ -2,12 +2,24 @@
   "name": "Dover Strait",
   "type": "strait",
   "region": "Western Europe",
-  "bounds": {
-    "north": 51.3,
-    "south": 50.8,
-    "east": 1.9,
-    "west": 0.8
-  },
+  "bounds": [
+    {
+      "lat": 51.3,
+      "lon": 0.8
+    },
+    {
+      "lat": 51.3,
+      "lon": 1.9
+    },
+    {
+      "lat": 50.8,
+      "lon": 1.9
+    },
+    {
+      "lat": 50.8,
+      "lon": 0.8
+    }
+  ],
   "center": {
     "lat": 51.05,
     "lon": 1.35

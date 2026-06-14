@@ -2,15 +2,27 @@
   "name": "Norwegian Sea Access Route",
   "type": "sea_lane",
   "region": "North Atlantic",
-  "bounds": {
-    "north": 72.0,
-    "south": 58.0,
-    "east": 15.0,
-    "west": -10.0
-  },
+  "bounds": [
+    {
+      "lat": 72,
+      "lon": -10
+    },
+    {
+      "lat": 72,
+      "lon": 15
+    },
+    {
+      "lat": 58,
+      "lon": 15
+    },
+    {
+      "lat": 58,
+      "lon": -10
+    }
+  ],
   "center": {
-    "lat": 65.0,
-    "lon": 2.0
+    "lat": 65,
+    "lon": 2
   },
   "min_depth_m": 500,
   "min_width_km": 500,
