@@ -1,0 +1,25 @@
+{
+  "name": "Kure Naval Base",
+  "bounds": {
+    "north": 34.24373663391195,
+    "south": 34.22322899473975,
+    "east": 132.55880355834964,
+    "west": 132.531852722168
+  },
+  "notes": null,
+  "wikipedia_url": null,
+  "country": "Japan",
+  "operator": "Japan Maritime Self-Defense Force",
+  "location": {
+    "lat": 34.23348281432585,
+    "lon": 132.54532814025882
+  },
+  "nearest_city": "Hiroshima",
+  "max_ship_length_m": null,
+  "max_ship_beam_m": null,
+  "max_draught_m": null,
+  "pier_depth_m": null,
+  "dry_dock_length_m": null,
+  "carrier_capable": "yes",
+  "homeport_for_carriers": true
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Fleet Base East Kuttabul",
+  "bounds": {
+    "north": -33.85705227364355,
+    "south": -33.869025867553056,
+    "east": 151.22908115386966,
+    "west": 151.22101306915286
+  },
+  "notes": null,
+  "wikipedia_url": null,
+  "country": "Australia",
+  "operator": "Royal Australian Navy",
+  "location": {
+    "lat": -33.863039070598305,
+    "lon": 151.22504711151126
+  },
+  "nearest_city": "Sydney",
+  "max_ship_length_m": null,
+  "max_ship_beam_m": null,
+  "max_draught_m": null,
+  "pier_depth_m": null,
+  "dry_dock_length_m": null,
+  "carrier_capable": "yes",
+  "homeport_for_carriers": true
+}

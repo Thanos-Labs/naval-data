@@ -1,0 +1,25 @@
+{
+  "name": "Zhoushan",
+  "bounds": {
+    "north": 30.004152177866132,
+    "south": 29.992872195070262,
+    "east": 122.11569786071779,
+    "west": 122.10732936859132
+  },
+  "notes": null,
+  "wikipedia_url": null,
+  "country": "China",
+  "operator": "People's Liberation Army Navy",
+  "location": {
+    "lat": 29.998512186468197,
+    "lon": 122.11151361465456
+  },
+  "nearest_city": "Zhoushan",
+  "max_ship_length_m": null,
+  "max_ship_beam_m": null,
+  "max_draught_m": null,
+  "pier_depth_m": null,
+  "dry_dock_length_m": null,
+  "carrier_capable": "yes",
+  "homeport_for_carriers": true
+}

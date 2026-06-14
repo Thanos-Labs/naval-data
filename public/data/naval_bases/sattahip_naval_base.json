@@ -1,0 +1,25 @@
+{
+  "name": "Sattahip Naval Base",
+  "bounds": {
+    "north": 12.656752858641697,
+    "south": 12.619022940154691,
+    "east": 100.92322111129762,
+    "west": 100.86256027221681
+  },
+  "notes": null,
+  "wikipedia_url": null,
+  "country": "Thailand",
+  "operator": "Royal Thai Navy",
+  "location": {
+    "lat": 12.637887899398194,
+    "lon": 100.89289069175722
+  },
+  "nearest_city": "Pattaya City",
+  "max_ship_length_m": null,
+  "max_ship_beam_m": null,
+  "max_draught_m": null,
+  "pier_depth_m": null,
+  "dry_dock_length_m": null,
+  "carrier_capable": "yes",
+  "homeport_for_carriers": true
+}
