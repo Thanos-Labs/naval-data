@@ -18,6 +18,7 @@ export function App() {
   const [visible, setVisible] = useState(initialVisibility);
   const [drawKind, setDrawKind] = useState<DataKind | null>(null);
   const [drawPoints, setDrawPoints] = useState<Point[]>([]);
+  const [movingIndex, setMovingIndex] = useState<number | null>(null);
   const [selected, setSelected] = useState<GeoItem | null>(null);
 
   async function refresh() {
@@ -32,6 +33,7 @@ export function App() {
   function closeEditor() {
     setDrawKind(null);
     setDrawPoints([]);
+    setMovingIndex(null);
   }
 
   useEffect(() => {
@@ -54,13 +56,23 @@ export function App() {
       <MapView
         items={filtered}
         selected={selected}
-        drawEnabled={drawKind !== null}
+        drawKind={drawKind}
         drawPoints={drawPoints}
         drawBounds={drawBounds}
+        movingIndex={movingIndex}
         onSelect={(item) => setSelected(item)}
         onClearSelection={() => setSelected(null)}
         onAddPoint={(point) => setDrawPoints((points) => [...points, point])}
-        onRemovePoint={(index) => setDrawPoints((points) => points.filter((_, i) => i !== index))}
+        onInsertPoint={(index, point) => setDrawPoints((points) => [...points.slice(0, index), point, ...points.slice(index)])}
+        onRemovePoint={(index) => {
+          setDrawPoints((points) => points.filter((_, i) => i !== index));
+          setMovingIndex((current) => current === index ? null : current !== null && current > index ? current - 1 : current);
+        }}
+        onBeginMovePoint={setMovingIndex}
+        onMovePoint={(index, point) => {
+          setDrawPoints((points) => points.map((current, i) => i === index ? point : current));
+          setMovingIndex(null);
+        }}
       />
 
       <div className="pointer-events-none absolute right-4 top-4 z-[1000] w-96 space-y-3">
@@ -73,11 +85,16 @@ export function App() {
             <EditorPanel
               selected={selected}
               bounds={drawBounds}
+              points={drawPoints}
               pointsCount={drawPoints.length}
-              onStartCreate={(kind) => { setDrawKind(kind); setDrawPoints([]); }}
-              onStartEdit={(item) => { setDrawKind(item.kind); setDrawPoints(boundsCorners(item.data.bounds)); }}
+              onStartCreate={(kind) => { setDrawKind(kind); setDrawPoints([]); setMovingIndex(null); }}
+              onStartEdit={(item) => {
+                setDrawKind(item.kind);
+                setDrawPoints(item.kind === 'areas_of_interest' ? item.data.bounds : boundsCorners(item.data.bounds));
+                setMovingIndex(null);
+              }}
               onClose={closeEditor}
-              onClearPoints={() => setDrawPoints([])}
+              onClearPoints={() => { setDrawPoints([]); setMovingIndex(null); }}
               onClearSelection={() => { setSelected(null); closeEditor(); }}
               onSaved={() => { setSelected(null); closeEditor(); void refresh(); }}
             />
