@@ -1,0 +1,35 @@
+{
+  "id": "tr-anadolu",
+  "mmsi": null,
+  "name": "Anadolu",
+  "proper": "TCG Anadolu",
+  "comm": "2023-04-10",
+  "pennant": "L-400",
+  "deck": null,
+  "type": "helicopter",
+  "country": "Turkey",
+  "navy": "Turkish Navy",
+  "class": "Anadolu(Juan Carlos I) class",
+  "home_port": "tr-tuzla",
+  "img": "https://commons.wikimedia.org/wiki/File:Turkish_Navy_amphibious_assault_ship_TCG_Anadolu_(L400)_steams_in_the_Mediterranean_Sea.jpg",
+  "displacement": {
+    "tons": 27079,
+    "tonnes": 27513.5
+  },
+  "length": {
+    "m": 231,
+    "ft": 757.9
+  },
+  "beam": {
+    "m": 32,
+    "ft": 105
+  },
+  "draught": {
+    "m": 7,
+    "ft": 23
+  },
+  "speed": {
+    "knots": 21,
+    "km_h": 38.9
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "eg-anwar-el-sadat",
+  "mmsi": 622121041,
+  "name": "Anwar El Sadat",
+  "proper": "ENS Anwar El Sadat",
+  "comm": "2016-09-16",
+  "pennant": "1020",
+  "deck": "AS",
+  "type": "helicopter",
+  "country": "Egypt",
+  "navy": "Egyptian Navy",
+  "class": "Mistral class",
+  "home_port": "eg-alexandria",
+  "img": "https://commons.wikimedia.org/wiki/Special:FilePath/ENS_Anwar_El_Sadat.jpg",
+  "displacement": {
+    "tons": 21300,
+    "tonnes": 21641.8
+  },
+  "length": {
+    "m": 199,
+    "ft": 652.9
+  },
+  "beam": {
+    "m": 32,
+    "ft": 105
+  },
+  "draught": {
+    "m": 6.3,
+    "ft": 20.7
+  },
+  "speed": {
+    "knots": 18.8,
+    "km_h": 34.8
+  }
+}

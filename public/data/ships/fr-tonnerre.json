@@ -1,0 +1,35 @@
+{
+  "id": "fr-tonnerre",
+  "mmsi": 278710000,
+  "name": "Tonnerre",
+  "proper": "FS Tonnerre",
+  "comm": "2006-12-01",
+  "pennant": "L9014",
+  "deck": "TO",
+  "type": "helicopter",
+  "country": "France",
+  "navy": "Marine nationale",
+  "class": "Mistral class",
+  "home_port": "fr-toulon",
+  "img": "https://commons.wikimedia.org/wiki/File:Le_Tonnerre.JPG",
+  "displacement": {
+    "tons": 21300,
+    "tonnes": 21641.8
+  },
+  "length": {
+    "m": 199,
+    "ft": 652.9
+  },
+  "beam": {
+    "m": 32,
+    "ft": 105
+  },
+  "draught": {
+    "m": 6.3,
+    "ft": 20.7
+  },
+  "speed": {
+    "knots": 18.8,
+    "km_h": 34.8
+  }
+}

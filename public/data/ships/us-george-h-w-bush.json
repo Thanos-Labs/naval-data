@@ -1,0 +1,35 @@
+{
+  "id": "us-george-h-w-bush",
+  "mmsi": 369970663,
+  "name": "George H.W. Bush",
+  "proper": "USS George H.W. Bush",
+  "comm": "2009-01-10",
+  "pennant": "CVN-77",
+  "deck": "77",
+  "type": "aircraft",
+  "country": "United States",
+  "navy": "United States Navy",
+  "class": "Nimitz class",
+  "home_port": "us-norfolk",
+  "img": "https://commons.wikimedia.org/wiki/File:USS_George_H.W._Bush_(CVN-77).jpg",
+  "displacement": {
+    "tons": 100000,
+    "tonnes": 101604.7
+  },
+  "length": {
+    "m": 332.8,
+    "ft": 1091.9
+  },
+  "beam": {
+    "m": 76.8,
+    "ft": 252
+  },
+  "draught": {
+    "m": 11.3,
+    "ft": 37.1
+  },
+  "speed": {
+    "knots": 30,
+    "km_h": 55.6
+  }
+}

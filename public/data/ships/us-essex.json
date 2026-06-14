@@ -1,0 +1,35 @@
+{
+  "id": "us-essex",
+  "mmsi": 368779000,
+  "name": "Essex",
+  "proper": "USS Essex",
+  "comm": "1992-10-17",
+  "pennant": "LHD-2",
+  "deck": "2",
+  "type": "helicopter",
+  "country": "United States",
+  "navy": "United States Navy",
+  "class": "Wasp class",
+  "home_port": "us-san-diego",
+  "img": "https://commons.wikimedia.org/wiki/File:USS_Essex_at_sea.jpg",
+  "displacement": {
+    "tons": 40500,
+    "tonnes": 41149.9
+  },
+  "length": {
+    "m": 257,
+    "ft": 843.2
+  },
+  "beam": {
+    "m": 42,
+    "ft": 137.8
+  },
+  "draught": {
+    "m": 8.1,
+    "ft": 26.6
+  },
+  "speed": {
+    "knots": 22,
+    "km_h": 40.7
+  }
+}

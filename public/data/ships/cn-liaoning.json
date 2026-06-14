@@ -1,0 +1,35 @@
+{
+  "id": "cn-liaoning",
+  "mmsi": null,
+  "name": "Liaoning",
+  "proper": "CNS Liaoning",
+  "comm": "2012-09-25",
+  "pennant": "16",
+  "deck": "16",
+  "type": "aircraft",
+  "country": "China",
+  "navy": "People's Liberation Army Navy",
+  "class": "Type 001 class",
+  "home_port": "cn-yuchi",
+  "img": "https://commons.wikimedia.org/wiki/File:Aircraft_Carrier_Liaoning_CV-16.jpg",
+  "displacement": {
+    "tons": 58500,
+    "tonnes": 59438.7
+  },
+  "length": {
+    "m": 304.5,
+    "ft": 999
+  },
+  "beam": {
+    "m": 75,
+    "ft": 246.1
+  },
+  "draught": {
+    "m": 10.5,
+    "ft": 34.4
+  },
+  "speed": {
+    "knots": 32,
+    "km_h": 59.3
+  }
+}

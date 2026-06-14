@@ -1,0 +1,35 @@
+{
+  "id": "it-cavour",
+  "mmsi": null,
+  "name": "Cavour",
+  "proper": "ITS Cavour",
+  "comm": "2008-03-27",
+  "pennant": "C 550",
+  "deck": "550",
+  "type": "aircraft",
+  "country": "Italy",
+  "navy": "Italian Navy",
+  "class": "Cavour class",
+  "home_port": "it-taranto",
+  "img": "https://commons.wikimedia.org/wiki/File:Cavour_(550).jpg",
+  "displacement": {
+    "tons": 30000,
+    "tonnes": 30481.4
+  },
+  "length": {
+    "m": 244,
+    "ft": 800.5
+  },
+  "beam": {
+    "m": 39,
+    "ft": 128
+  },
+  "draught": {
+    "m": 8.7,
+    "ft": 28.5
+  },
+  "speed": {
+    "knots": 28,
+    "km_h": 51.9
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "us-george-washington",
+  "mmsi": 368913000,
+  "name": "George Washington",
+  "proper": "USS George Washington",
+  "comm": "1992-07-04",
+  "pennant": "CVN-73",
+  "deck": "73",
+  "type": "aircraft",
+  "country": "United States",
+  "navy": "United States Navy",
+  "class": "Nimitz class",
+  "home_port": "jp-yokosuka",
+  "img": "https://commons.wikimedia.org/wiki/File:USS_George_Washington_(CVN-73)_LB.jpg",
+  "displacement": {
+    "tons": 100000,
+    "tonnes": 101604.7
+  },
+  "length": {
+    "m": 332.8,
+    "ft": 1091.9
+  },
+  "beam": {
+    "m": 76.8,
+    "ft": 252
+  },
+  "draught": {
+    "m": 11.3,
+    "ft": 37.1
+  },
+  "speed": {
+    "knots": 30,
+    "km_h": 55.6
+  }
+}

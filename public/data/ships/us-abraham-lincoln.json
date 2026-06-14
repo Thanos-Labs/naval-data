@@ -1,0 +1,35 @@
+{
+  "id": "us-abraham-lincoln",
+  "mmsi": 369970406,
+  "name": "Abraham Lincoln",
+  "proper": "USS Abraham Lincoln",
+  "comm": "1989-11-11",
+  "pennant": "CVN-72",
+  "deck": "72",
+  "type": "aircraft",
+  "country": "United States",
+  "navy": "United States Navy",
+  "class": "Nimitz class",
+  "home_port": "us-north-island",
+  "img": "https://commons.wikimedia.org/wiki/File:USS_Abraham_Lincoln_(CVN-72)_underway_in_the_Atlantic_Ocean_on_30_January_2019_(190130-N-PW716-1312).JPG",
+  "displacement": {
+    "tons": 100000,
+    "tonnes": 101604.7
+  },
+  "length": {
+    "m": 332.8,
+    "ft": 1091.9
+  },
+  "beam": {
+    "m": 76.8,
+    "ft": 252.0
+  },
+  "draught": {
+    "m": 11.3,
+    "ft": 37.1
+  },
+  "speed": {
+    "knots": 30,
+    "km_h": 55.6
+  }
+}

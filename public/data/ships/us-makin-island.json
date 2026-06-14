@@ -1,0 +1,35 @@
+{
+  "id": "us-makin-island",
+  "mmsi": 369970689,
+  "name": "Makin Island",
+  "proper": "USS Makin Island",
+  "comm": "2009-10-24",
+  "pennant": "LHD-8",
+  "deck": "8",
+  "type": "helicopter",
+  "country": "United States",
+  "navy": "United States Navy",
+  "class": "Wasp class",
+  "home_port": "us-san-diego",
+  "img": "https://commons.wikimedia.org/wiki/File:US_Navy_110911-N-RR095-209_The_Amphibious_assault_ship_USS_Makin_Island_(LHD_8)_operates_off_the_coast_of_Southern_California.jpg",
+  "displacement": {
+    "tons": 40500,
+    "tonnes": 41149.9
+  },
+  "length": {
+    "m": 257,
+    "ft": 843.2
+  },
+  "beam": {
+    "m": 42,
+    "ft": 137.8
+  },
+  "draught": {
+    "m": 8.1,
+    "ft": 26.6
+  },
+  "speed": {
+    "knots": 22,
+    "km_h": 40.7
+  }
+}

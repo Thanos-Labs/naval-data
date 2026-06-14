@@ -1,0 +1,35 @@
+{
+  "id": "us-tripoli",
+  "mmsi": 368926570,
+  "name": "Tripoli",
+  "proper": "USS Tripoli",
+  "comm": "2020-07-15",
+  "pennant": "LHA-7",
+  "deck": "7",
+  "type": "helicopter",
+  "country": "United States",
+  "navy": "United States Navy",
+  "class": "America class",
+  "home_port": "jp-sasebo",
+  "img": "https://commons.wikimedia.org/wiki/File:USS_Tripoli_(LHA-7)_underway_in_the_Gulf_of_Mexico_on_15_July_2019_(190715-O-N0101-115).JPG",
+  "displacement": {
+    "tons": 45700,
+    "tonnes": 46433.3
+  },
+  "length": {
+    "m": 257,
+    "ft": 843.2
+  },
+  "beam": {
+    "m": 32,
+    "ft": 105
+  },
+  "draught": {
+    "m": 8,
+    "ft": 26.2
+  },
+  "speed": {
+    "knots": 22,
+    "km_h": 40.7
+  }
+}

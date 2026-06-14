@@ -1,0 +1,35 @@
+{
+  "id": "us-carl-vinson",
+  "mmsi": null,
+  "name": "Carl Vinson",
+  "proper": "USS Carl Vinson",
+  "comm": "1982-03-13",
+  "pennant": "CVN-70",
+  "deck": null,
+  "type": "aircraft",
+  "country": "United States",
+  "navy": "United States Navy",
+  "class": "Nimitz class",
+  "home_port": null,
+  "img": "https://commons.wikimedia.org/wiki/Special:FilePath/USS_Carl_Vinson.jpg",
+  "displacement": {
+    "tons": 100000,
+    "tonnes": 101604.7
+  },
+  "length": {
+    "m": 332.8,
+    "ft": 1091.9
+  },
+  "beam": {
+    "m": 76.8,
+    "ft": 252
+  },
+  "draught": {
+    "m": 11.3,
+    "ft": 37.1
+  },
+  "speed": {
+    "knots": 30,
+    "km_h": 55.6
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "cn-shandong",
+  "mmsi": null,
+  "name": "Shandong",
+  "proper": "CNS Shandong",
+  "comm": "2019-12-17",
+  "pennant": "17",
+  "deck": "17",
+  "type": "aircraft",
+  "country": "China",
+  "navy": "People's Liberation Army Navy",
+  "class": "Type 002 class",
+  "home_port": "cn-yulin",
+  "img": "https://commons.wikimedia.org/wiki/File:Chinese_aircraft_carrier_Shandong_in_2019.jpg",
+  "displacement": {
+    "tons": 66000,
+    "tonnes": 67059.1
+  },
+  "length": {
+    "m": 315,
+    "ft": 1033.5
+  },
+  "beam": {
+    "m": 75,
+    "ft": 246.1
+  },
+  "draught": {
+    "m": 9,
+    "ft": 29.5
+  },
+  "speed": {
+    "knots": 31,
+    "km_h": 57.4
+  }
+}

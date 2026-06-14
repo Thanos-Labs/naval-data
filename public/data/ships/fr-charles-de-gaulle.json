@@ -1,0 +1,35 @@
+{
+  "id": "fr-charles-de-gaulle",
+  "mmsi": 228711555,
+  "name": "Charles de Gaulle",
+  "proper": "FS Charles de Gaulle",
+  "comm": "2001-05-18",
+  "pennant": "R91",
+  "deck": "G",
+  "type": "aircraft",
+  "country": "France",
+  "navy": "Marine nationale",
+  "class": "Charles de Gaulle class",
+  "home_port": "fr-toulon",
+  "img": "https://commons.wikimedia.org/wiki/File:French_aircraft_carrier_Charles_de_Gaulle_(R91)_underway_in_the_Ionian_Sea_on_17_March_2022_(220317-N-DH793-1322)cropped.JPG",
+  "displacement": {
+    "tons": 42500,
+    "tonnes": 43182
+  },
+  "length": {
+    "m": 261.5,
+    "ft": 857.9
+  },
+  "beam": {
+    "m": 64.36,
+    "ft": 211.2
+  },
+  "draught": {
+    "m": 9.43,
+    "ft": 30.9
+  },
+  "speed": {
+    "knots": 27,
+    "km_h": 50
+  }
+}

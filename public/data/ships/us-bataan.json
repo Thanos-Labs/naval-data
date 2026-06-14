@@ -1,0 +1,35 @@
+{
+  "id": "us-bataan",
+  "mmsi": 368958000,
+  "name": "Bataan",
+  "proper": "USS Bataan",
+  "comm": "1997-09-20",
+  "pennant": "LHD-5",
+  "deck": "5",
+  "type": "helicopter",
+  "country": "United States",
+  "navy": "United States Navy",
+  "class": "Wasp class",
+  "home_port": "us-norfolk",
+  "img": "https://commons.wikimedia.org/wiki/File:USS_Bataan_(LHD-5);10080504.jpg",
+  "displacement": {
+    "tons": 40500,
+    "tonnes": 41149.9
+  },
+  "length": {
+    "m": 257,
+    "ft": 843.2
+  },
+  "beam": {
+    "m": 42,
+    "ft": 137.8
+  },
+  "draught": {
+    "m": 8.1,
+    "ft": 26.6
+  },
+  "speed": {
+    "knots": 22,
+    "km_h": 40.7
+  }
+}

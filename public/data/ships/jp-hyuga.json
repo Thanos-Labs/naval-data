@@ -1,0 +1,35 @@
+{
+  "id": "jp-hyuga",
+  "mmsi": 431999693,
+  "name": "Hyūga",
+  "proper": "JS Hyūga",
+  "comm": "2009-03-18",
+  "pennant": "DDH-181",
+  "deck": "81",
+  "type": "helicopter",
+  "country": "Japan",
+  "navy": "Japan Maritime Self-Defense Force",
+  "class": "Hyūga class",
+  "home_port": "jp-yokosuka",
+  "img": "https://commons.wikimedia.org/wiki/File:Hyuuga_04.JPG",
+  "displacement": {
+    "tons": 19000,
+    "tonnes": 19304.9
+  },
+  "length": {
+    "m": 197,
+    "ft": 646.3
+  },
+  "beam": {
+    "m": 33,
+    "ft": 108.3
+  },
+  "draught": {
+    "m": 7,
+    "ft": 23
+  },
+  "speed": {
+    "knots": 30,
+    "km_h": 55.6
+  }
+}

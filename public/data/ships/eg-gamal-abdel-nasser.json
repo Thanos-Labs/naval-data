@@ -1,0 +1,35 @@
+{
+  "id": "eg-gamal-abdel-nasser",
+  "mmsi": 622121040,
+  "name": "Gamal Abdel Nasser",
+  "proper": "ENS Gamal Abdel Nasser",
+  "comm": "2016-06-02",
+  "pennant": "1010",
+  "deck": null,
+  "type": "helicopter",
+  "country": "Egypt",
+  "navy": "Egyptian Navy",
+  "class": "Mistral class",
+  "home_port": "eg-safaga",
+  "img": "https://commons.wikimedia.org/wiki/File:ENS_Gamal_Adbel_Nasser_(L_1010)_(52322694653)_(cropped).jpg",
+  "displacement": {
+    "tons": 21300,
+    "tonnes": 21641.8
+  },
+  "length": {
+    "m": 199,
+    "ft": 652.9
+  },
+  "beam": {
+    "m": 32,
+    "ft": 105
+  },
+  "draught": {
+    "m": 6.3,
+    "ft": 20.7
+  },
+  "speed": {
+    "knots": 18.8,
+    "km_h": 34.8
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "jp-izumo",
+  "mmsi": 431999556,
+  "name": "Izumo",
+  "proper": "JS Izumo",
+  "comm": "2015-03-25",
+  "pennant": "DDH-183",
+  "deck": "83",
+  "type": "helicopter",
+  "country": "Japan",
+  "navy": "Japan Maritime Self-Defense Force",
+  "class": "Izumo class",
+  "home_port": "jp-yokosuka",
+  "img": "https://commons.wikimedia.org/wiki/File:JS_Izumo（DDH-183）seen_from_the_sky_10-03-2021.jpg",
+  "displacement": {
+    "tons": 27000,
+    "tonnes": 27433.3
+  },
+  "length": {
+    "m": 248,
+    "ft": 813.6
+  },
+  "beam": {
+    "m": 38,
+    "ft": 124.7
+  },
+  "draught": {
+    "m": 7.5,
+    "ft": 24.6
+  },
+  "speed": {
+    "knots": 30,
+    "km_h": 55.6
+  }
+}

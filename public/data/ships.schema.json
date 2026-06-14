@@ -1,192 +1,128 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://naval-data.local/schemas/ship.schema.json",
-  "title": "Aircraft Carrier",
+  "title": "Carrier",
   "type": "object",
   "additionalProperties": false,
   "$defs": {
     "nullableText": {
-      "type": [
-        "string",
-        "null"
-      ]
+      "type": ["string", "null"]
     },
     "nullableDate": {
       "type": ["string", "null"],
       "pattern": "^(\\d{4}|\\d{4}-\\d{2}-\\d{2})$"
     },
-    "nullablePennantNumber": {
-      "type": ["string", "null"],
-      "pattern": "^(?:[A-Z]{1,5}-?\\d{1,3}|\\d{2,3})$"
+    "nullableNonNegativeNumber": {
+      "type": ["number", "null"],
+      "minimum": 0
     },
-    "metricMeasurement": {
+    "measurement": {
       "type": "object",
       "additionalProperties": false,
-      "required": [
-        "m"
-      ],
+      "required": ["m", "ft"],
       "properties": {
-        "m": {
-          "type": ["number", "null"],
-          "minimum": 0
-        },
-        "ft": {
-          "type": "number",
-          "minimum": 0
-        }
+        "m": { "$ref": "#/$defs/nullableNonNegativeNumber" },
+        "ft": { "$ref": "#/$defs/nullableNonNegativeNumber" }
       }
     },
     "speedMeasurement": {
       "type": "object",
       "additionalProperties": false,
-      "required": [
-        "knots"
-      ],
+      "required": ["knots", "km_h"],
       "properties": {
-        "knots": {
-          "type": ["number", "null"],
-          "minimum": 0
-        },
-        "km_h": {
-          "type": "number",
-          "minimum": 0
-        }
+        "knots": { "$ref": "#/$defs/nullableNonNegativeNumber" },
+        "km_h": { "$ref": "#/$defs/nullableNonNegativeNumber" }
       }
     },
     "displacementMeasurement": {
       "type": "object",
       "additionalProperties": false,
-      "required": [
-        "tons"
-      ],
+      "required": ["tons", "tonnes"],
       "properties": {
-        "tons": {
-          "type": [
-            "number",
-            "null"
-          ],
-          "minimum": 0
-        },
-        "tonnes": {
-          "type": "number",
-          "minimum": 0
-        }
+        "tons": { "$ref": "#/$defs/nullableNonNegativeNumber" },
+        "tonnes": { "$ref": "#/$defs/nullableNonNegativeNumber" }
       }
     }
   },
   "required": [
+    "id",
     "name",
-    "dbpedia_uri",
-    "wikipedia_url",
-    "wikipedia_title",
+    "mmsi",
+    "proper",
+    "comm",
+    "pennant",
+    "deck",
+    "type",
     "country",
-    "subtype",
+    "navy",
     "class",
-    "configuration",
-    "manufacturer",
-    "date_commissioned",
-    "date_decommissioned",
-    "decommissioning_reason",
-    "in_service",
+    "home_port",
+    "img",
     "displacement",
-    "pennant_number",
     "length",
     "beam",
     "draught",
     "speed"
   ],
   "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
     "name": {
       "type": "string",
       "minLength": 1
     },
-    "dbpedia_uri": {
-      "type": "string",
-      "format": "uri"
+    "mmsi": {
+      "type": ["integer", "null"],
+      "minimum": 100000000,
+      "maximum": 999999999
     },
-    "wikipedia_url": {
-      "type": "string",
-      "format": "uri"
-    },
-    "wikipedia_title": {
+    "proper": {
       "type": "string",
       "minLength": 1
+    },
+    "comm": {
+      "$ref": "#/$defs/nullableDate"
+    },
+    "pennant": {
+      "$ref": "#/$defs/nullableText"
+    },
+    "deck": {
+      "$ref": "#/$defs/nullableText"
+    },
+    "type": {
+      "enum": ["aircraft", "helicopter"]
     },
     "country": {
       "type": "string",
       "minLength": 1
     },
-    "subtype": {
-      "enum": [
-        "aircraft carrier",
-        "nuclear aircraft carrier",
-        "helicopter carrier",
-        "escort carrier",
-        "light aircraft carrier",
-        "fleet carrier",
-        "seaplane carrier",
-        "amphibious assault ship",
-        "landing helicopter dock",
-        "aircraft cruiser"
-      ]
+    "navy": {
+      "type": "string",
+      "minLength": 1
     },
     "class": {
       "$ref": "#/$defs/nullableText"
     },
-    "configuration": {
-      "enum": [
-        "CATOBAR",
-        "STOBAR",
-        "STOVL",
-        "helicopter",
-        "seaplane"
-      ]
+    "home_port": {
+      "$ref": "#/$defs/nullableText"
     },
-    "manufacturer": {
-      "type": "string",
-      "minLength": 1
-    },
-    "date_commissioned": {
-      "$ref": "#/$defs/nullableDate"
-    },
-    "date_decommissioned": {
-      "$ref": "#/$defs/nullableDate"
-    },
-    "decommissioning_reason": {
+    "img": {
       "type": ["string", "null"],
-      "enum": [
-        "scrapped",
-        "scuttled",
-        "sunk",
-        "target",
-        "museum",
-        "transferred",
-        "cancelled",
-        "converted",
-        "retired",
-        null
-      ]
-    },
-    "in_service": {
-      "type": "boolean"
+      "format": "uri"
     },
     "displacement": {
       "$ref": "#/$defs/displacementMeasurement"
     },
-    "pennant_number": {
-      "$ref": "#/$defs/nullablePennantNumber"
-    },
     "length": {
-      "$ref": "#/$defs/metricMeasurement"
+      "$ref": "#/$defs/measurement"
     },
     "beam": {
-      "$ref": "#/$defs/metricMeasurement"
-    },
-    "height": {
-      "$ref": "#/$defs/metricMeasurement"
+      "$ref": "#/$defs/measurement"
     },
     "draught": {
-      "$ref": "#/$defs/metricMeasurement"
+      "$ref": "#/$defs/measurement"
     },
     "speed": {
       "$ref": "#/$defs/speedMeasurement"

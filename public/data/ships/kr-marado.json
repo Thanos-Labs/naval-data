@@ -1,0 +1,35 @@
+{
+  "id": "kr-marado",
+  "mmsi": null,
+  "name": "Marado",
+  "proper": "ROKS Marado",
+  "comm": "2021-06-28",
+  "pennant": "LPH-6112",
+  "deck": "6112",
+  "type": "helicopter",
+  "country": "South Korea",
+  "navy": "Republic of Korea Navy",
+  "class": "Dokdo class",
+  "home_port": "kr-jinhae",
+  "img": "https://commons.wikimedia.org/wiki/File:ROKS_Marado_exercising_with_US_helicopters_in_June_2022.jpg",
+  "displacement": {
+    "tons": 18800,
+    "tonnes": 19101.7
+  },
+  "length": {
+    "m": 199,
+    "ft": 652.9
+  },
+  "beam": {
+    "m": 31,
+    "ft": 101.7
+  },
+  "draught": {
+    "m": 7,
+    "ft": 23
+  },
+  "speed": {
+    "knots": 23,
+    "km_h": 42.6
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "cn-anhui",
+  "mmsi": null,
+  "name": "Anhui",
+  "proper": "CNS Anhui",
+  "comm": "2022-10-01",
+  "pennant": "33",
+  "deck": "33",
+  "type": "helicopter",
+  "country": "China",
+  "navy": "People's Liberation Army Navy",
+  "class": "Type 075 class",
+  "home_port": "cn-zhoushan",
+  "img": "https://commons.wikimedia.org/wiki/File:Type_075_LHD-33_Anhui.png",
+  "displacement": {
+    "tons": 40000,
+    "tonnes": 40641.9
+  },
+  "length": {
+    "m": 237,
+    "ft": 777.6
+  },
+  "beam": {
+    "m": 36,
+    "ft": 118.1
+  },
+  "draught": {
+    "m": 8.5,
+    "ft": 27.9
+  },
+  "speed": {
+    "knots": 23,
+    "km_h": 42.6
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "fr-mistral",
+  "mmsi": 228700000,
+  "name": "Mistral",
+  "proper": "FS Mistral",
+  "comm": "2006-02-01",
+  "pennant": "L9013",
+  "deck": "MI",
+  "type": "helicopter",
+  "country": "France",
+  "navy": "Marine nationale",
+  "class": "Mistral class",
+  "home_port": "fr-toulon",
+  "img": "https://commons.wikimedia.org/wiki/File:French_amphibious_assault_ship_Mistral_(L9013)_underway_in_the_Mediterranean_Sea_on_24_June_2020_(200624-M-IR130-1284).JPG",
+  "displacement": {
+    "tons": 21300,
+    "tonnes": 21641.8
+  },
+  "length": {
+    "m": 199,
+    "ft": 652.9
+  },
+  "beam": {
+    "m": 32,
+    "ft": 105
+  },
+  "draught": {
+    "m": 6.3,
+    "ft": 20.7
+  },
+  "speed": {
+    "knots": 18.8,
+    "km_h": 34.8
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "us-iwo-jima",
+  "mmsi": 338813000,
+  "name": "Iwo Jima",
+  "proper": "USS Iwo Jima",
+  "comm": "2001-06-30",
+  "pennant": "LHD-7",
+  "deck": "7",
+  "type": "helicopter",
+  "country": "United States",
+  "navy": "United States Navy",
+  "class": "Wasp class",
+  "home_port": "us-norfolk",
+  "img": "https://commons.wikimedia.org/wiki/File:US_Navy_060829-N-4856C-055_The_amphibious_assault_ship_USS_Iwo_Jima_(LHD_7)_underway.jpg",
+  "displacement": {
+    "tons": 40500,
+    "tonnes": 41149.9
+  },
+  "length": {
+    "m": 257,
+    "ft": 843.2
+  },
+  "beam": {
+    "m": 42,
+    "ft": 137.8
+  },
+  "draught": {
+    "m": 8.1,
+    "ft": 26.6
+  },
+  "speed": {
+    "knots": 22,
+    "km_h": 40.7
+  }
+}

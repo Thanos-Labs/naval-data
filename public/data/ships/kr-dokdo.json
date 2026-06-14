@@ -1,0 +1,35 @@
+{
+  "id": "kr-dokdo",
+  "mmsi": null,
+  "name": "Dokdo",
+  "proper": "ROKS Dokdo",
+  "comm": "2007-07-03",
+  "pennant": "LPH-6111",
+  "deck": "6111",
+  "type": "helicopter",
+  "country": "South Korea",
+  "navy": "Republic of Korea Navy",
+  "class": "Dokdo class",
+  "home_port": "kr-jinhae",
+  "img": "https://commons.wikimedia.org/wiki/File:ROKS_Dokdo_(LPH_6111)_-_Invincible_Spirit.jpg",
+  "displacement": {
+    "tons": 18800,
+    "tonnes": 19101.7
+  },
+  "length": {
+    "m": 199,
+    "ft": 652.9
+  },
+  "beam": {
+    "m": 31,
+    "ft": 101.7
+  },
+  "draught": {
+    "m": 7,
+    "ft": 23
+  },
+  "speed": {
+    "knots": 23,
+    "km_h": 42.6
+  }
+}

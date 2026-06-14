@@ -1,0 +1,35 @@
+{
+  "id": "us-america",
+  "mmsi": 369970739,
+  "name": "America",
+  "proper": "USS America",
+  "comm": "2014-10-11",
+  "pennant": "LHA-6",
+  "deck": "6",
+  "type": "helicopter",
+  "country": "United States",
+  "navy": "United States Navy",
+  "class": "America class",
+  "home_port": "us-san-diego",
+  "img": "https://commons.wikimedia.org/wiki/File:USS_America_(LHA-6)_F-35B_loaded.jpg",
+  "displacement": {
+    "tons": 45700,
+    "tonnes": 46433.3
+  },
+  "length": {
+    "m": 257,
+    "ft": 843.2
+  },
+  "beam": {
+    "m": 32,
+    "ft": 105
+  },
+  "draught": {
+    "m": 8,
+    "ft": 26.2
+  },
+  "speed": {
+    "knots": 22,
+    "km_h": 40.7
+  }
+}
