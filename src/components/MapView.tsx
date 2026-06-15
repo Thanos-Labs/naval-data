@@ -151,7 +151,7 @@ export function MapView({
           }}
           eventHandlers={{
             click: (event: LeafletMouseEvent) => {
-              if (event.originalEvent.ctrlKey) {
+              if (event.originalEvent.ctrlKey || event.originalEvent.altKey) {
                 onBeginMovePoint(index);
                 return;
               }

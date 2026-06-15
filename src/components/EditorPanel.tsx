@@ -281,7 +281,7 @@ export function EditorPanel({
         <div className="space-y-1 border border-border/60 bg-background/70 p-2 text-[11px] text-muted-foreground">
           <div>Click map: add point</div>
           <div>Click point: remove point</div>
-          <div>Ctrl+click point, then click map: move point</div>
+          <div>Ctrl+click / Alt+click (mac) point, then click map: move point</div>
           <div>Click line segment: insert point between endpoints</div>
           <div>Esc: cancel without saving</div>
         </div>
