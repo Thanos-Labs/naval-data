@@ -1,11 +1,5 @@
 {
   "name": "Luzon Strait",
-  "bounds": {
-    "north": 20.159098270646936,
-    "south": 17.978733095556183,
-    "east": 123.44238281250001,
-    "west": 119.98168945312501
-  },
   "notes": "Deep passage between Taiwan and Luzon connecting the South China Sea and Philippine Sea.",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Luzon_Strait",
   "type": "strait",
