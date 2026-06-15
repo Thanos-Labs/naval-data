@@ -2,12 +2,24 @@
   "name": "Ombai Strait",
   "type": "strait",
   "region": "Indonesia / Timor-Leste",
-  "bounds": {
-    "north": -8.0,
-    "south": -9.6,
-    "east": 126.5,
-    "west": 124.0
-  },
+  "bounds": [
+    {
+      "lat": -8,
+      "lon": 124
+    },
+    {
+      "lat": -8,
+      "lon": 126.5
+    },
+    {
+      "lat": -9.6,
+      "lon": 126.5
+    },
+    {
+      "lat": -9.6,
+      "lon": 124
+    }
+  ],
   "center": {
     "lat": -8.8,
     "lon": 125.2

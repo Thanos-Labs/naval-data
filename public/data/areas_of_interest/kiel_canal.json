@@ -10,6 +10,24 @@
   "wikipedia_url": "https://en.wikipedia.org/wiki/Kiel_Canal",
   "type": "canal",
   "region": "Germany",
+  "bounds": [
+    {
+      "lat": 54.5,
+      "lon": 8.8
+    },
+    {
+      "lat": 54.5,
+      "lon": 10.2
+    },
+    {
+      "lat": 53.8,
+      "lon": 10.2
+    },
+    {
+      "lat": 53.8,
+      "lon": 8.8
+    }
+  ],
   "center": {
     "lat": 54.14497168544125,
     "lon": 9.464721679687502

@@ -10,6 +10,24 @@
   "wikipedia_url": "https://en.wikipedia.org/wiki/Luzon_Strait",
   "type": "strait",
   "region": "Western Pacific",
+  "bounds": [
+    {
+      "lat": 22.2,
+      "lon": 120
+    },
+    {
+      "lat": 22.2,
+      "lon": 123.5
+    },
+    {
+      "lat": 18,
+      "lon": 123.5
+    },
+    {
+      "lat": 18,
+      "lon": 120
+    }
+  ],
   "center": {
     "lat": 19.068915683101558,
     "lon": 121.71203613281251

@@ -2,12 +2,24 @@
   "name": "Sibutu Passage",
   "type": "strait",
   "region": "Philippines / Malaysia",
-  "bounds": {
-    "north": 5.4,
-    "south": 4.2,
-    "east": 120.6,
-    "west": 119.0
-  },
+  "bounds": [
+    {
+      "lat": 5.4,
+      "lon": 119
+    },
+    {
+      "lat": 5.4,
+      "lon": 120.6
+    },
+    {
+      "lat": 4.2,
+      "lon": 120.6
+    },
+    {
+      "lat": 4.2,
+      "lon": 119
+    }
+  ],
   "center": {
     "lat": 4.8,
     "lon": 119.8

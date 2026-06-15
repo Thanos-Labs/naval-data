@@ -2,12 +2,24 @@
   "name": "Gulf of Aden",
   "type": "sea_lane",
   "region": "Western Indian Ocean",
-  "bounds": {
-    "north": 15.0,
-    "south": 10.0,
-    "east": 52.0,
-    "west": 43.0
-  },
+  "bounds": [
+    {
+      "lat": 15,
+      "lon": 43
+    },
+    {
+      "lat": 15,
+      "lon": 52
+    },
+    {
+      "lat": 10,
+      "lon": 52
+    },
+    {
+      "lat": 10,
+      "lon": 43
+    }
+  ],
   "center": {
     "lat": 12.5,
     "lon": 47.5

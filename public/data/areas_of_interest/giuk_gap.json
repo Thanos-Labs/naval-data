@@ -2,15 +2,27 @@
   "name": "GIUK Gap",
   "type": "chokepoint",
   "region": "North Atlantic",
-  "bounds": {
-    "north": 66.0,
-    "south": 55.0,
-    "east": -5.0,
-    "west": -45.0
-  },
+  "bounds": [
+    {
+      "lat": 66,
+      "lon": -45
+    },
+    {
+      "lat": 66,
+      "lon": -5
+    },
+    {
+      "lat": 55,
+      "lon": -5
+    },
+    {
+      "lat": 55,
+      "lon": -45
+    }
+  ],
   "center": {
-    "lat": 61.0,
-    "lon": -25.0
+    "lat": 61,
+    "lon": -25
   },
   "min_depth_m": 500,
   "min_width_km": 300,

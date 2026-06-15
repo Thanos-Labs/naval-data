@@ -2,12 +2,24 @@
   "name": "Bering Strait",
   "type": "strait",
   "region": "Arctic / North Pacific",
-  "bounds": {
-    "north": 66.5,
-    "south": 65.3,
-    "east": -168.0,
-    "west": -170.5
-  },
+  "bounds": [
+    {
+      "lat": 66.5,
+      "lon": -170.5
+    },
+    {
+      "lat": 66.5,
+      "lon": -168
+    },
+    {
+      "lat": 65.3,
+      "lon": -168
+    },
+    {
+      "lat": 65.3,
+      "lon": -170.5
+    }
+  ],
   "center": {
     "lat": 65.9,
     "lon": -169.2

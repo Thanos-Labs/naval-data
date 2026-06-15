@@ -1,11 +1,23 @@
 {
   "name": "Mona Passage",
-  "bounds": {
-    "north": 19.2,
-    "south": 17.5,
-    "east": -67,
-    "west": -68.77990722656251
-  },
+  "bounds": [
+    {
+      "lat": 19.2,
+      "lon": -68.77990722656251
+    },
+    {
+      "lat": 19.2,
+      "lon": -67
+    },
+    {
+      "lat": 17.5,
+      "lon": -67
+    },
+    {
+      "lat": 17.5,
+      "lon": -68.77990722656251
+    }
+  ],
   "notes": "Passage between Puerto Rico and the Dominican Republic.",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Mona_Passage",
   "type": "strait",
