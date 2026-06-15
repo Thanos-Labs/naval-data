@@ -4,6 +4,7 @@ import { useMemo } from 'react';
 import type { Bounds, GeoItem, Point } from '../data/types';
 import { boundsArea, leafletBounds } from '../lib/bounds';
 import { DataRectangle } from './DataRectangle';
+import { OceanSeasLayer } from './OceanSeasLayer';
 
 function ClickCapture({
   enabled,
@@ -43,6 +44,7 @@ export function MapView({
   items,
   selected,
   drawEnabled,
+  showOceanSeas,
   drawPoints,
   drawBounds,
   onSelect,
@@ -53,6 +55,7 @@ export function MapView({
   items: GeoItem[];
   selected: GeoItem | null;
   drawEnabled: boolean;
+  showOceanSeas: boolean;
   drawPoints: Point[];
   drawBounds: Bounds | null;
   onSelect: (item: GeoItem) => void;
@@ -73,6 +76,7 @@ export function MapView({
         attribution="Tiles &copy; Esri &mdash; Source: Esri, Maxar, Earthstar Geographics, GIS User Community"
         url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
       />
+      <OceanSeasLayer visible={showOceanSeas} />
       {sortedItems.flatMap((item) => {
         const key = itemKey(item);
         return [-360, 0, 360].map((offset) => (
