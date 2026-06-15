@@ -2,12 +2,24 @@
   "name": "Strait of Gibraltar",
   "type": "strait",
   "region": "Mediterranean / Atlantic",
-  "bounds": {
-    "north": 36.3,
-    "south": 35.8,
-    "east": -5.0,
-    "west": -6.3
-  },
+  "bounds": [
+    {
+      "lat": 36.3,
+      "lon": -6.3
+    },
+    {
+      "lat": 36.3,
+      "lon": -5
+    },
+    {
+      "lat": 35.8,
+      "lon": -5
+    },
+    {
+      "lat": 35.8,
+      "lon": -6.3
+    }
+  ],
   "center": {
     "lat": 36.05,
     "lon": -5.6

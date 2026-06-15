@@ -2,12 +2,24 @@
   "name": "Øresund",
   "type": "strait",
   "region": "Denmark / Sweden",
-  "bounds": {
-    "north": 56.2,
-    "south": 55.4,
-    "east": 13.2,
-    "west": 12.3
-  },
+  "bounds": [
+    {
+      "lat": 56.2,
+      "lon": 12.3
+    },
+    {
+      "lat": 56.2,
+      "lon": 13.2
+    },
+    {
+      "lat": 55.4,
+      "lon": 13.2
+    },
+    {
+      "lat": 55.4,
+      "lon": 12.3
+    }
+  ],
   "center": {
     "lat": 55.8,
     "lon": 12.75

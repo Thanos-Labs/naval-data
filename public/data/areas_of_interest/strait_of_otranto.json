@@ -2,15 +2,27 @@
   "name": "Strait of Otranto",
   "type": "strait",
   "region": "Adriatic / Ionian Sea",
-  "bounds": {
-    "north": 41.0,
-    "south": 39.3,
-    "east": 20.0,
-    "west": 18.0
-  },
+  "bounds": [
+    {
+      "lat": 41,
+      "lon": 18
+    },
+    {
+      "lat": 41,
+      "lon": 20
+    },
+    {
+      "lat": 39.3,
+      "lon": 20
+    },
+    {
+      "lat": 39.3,
+      "lon": 18
+    }
+  ],
   "center": {
     "lat": 40.2,
-    "lon": 19.0
+    "lon": 19
   },
   "min_depth_m": 700,
   "min_width_km": 72,

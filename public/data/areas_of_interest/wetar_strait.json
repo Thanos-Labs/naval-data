@@ -2,14 +2,26 @@
   "name": "Wetar Strait",
   "type": "strait",
   "region": "Indonesia / Timor-Leste",
-  "bounds": {
-    "north": -7.5,
-    "south": -8.6,
-    "east": 128.0,
-    "west": 125.5
-  },
+  "bounds": [
+    {
+      "lat": -7.5,
+      "lon": 125.5
+    },
+    {
+      "lat": -7.5,
+      "lon": 128
+    },
+    {
+      "lat": -8.6,
+      "lon": 128
+    },
+    {
+      "lat": -8.6,
+      "lon": 125.5
+    }
+  ],
   "center": {
-    "lat": -8.0,
+    "lat": -8,
     "lon": 126.8
   },
   "min_depth_m": 1000,

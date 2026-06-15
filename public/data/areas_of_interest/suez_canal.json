@@ -2,12 +2,24 @@
   "name": "Suez Canal",
   "type": "canal",
   "region": "Egypt",
-  "bounds": {
-    "north": 31.4,
-    "south": 29.8,
-    "east": 32.7,
-    "west": 32.2
-  },
+  "bounds": [
+    {
+      "lat": 31.4,
+      "lon": 32.2
+    },
+    {
+      "lat": 31.4,
+      "lon": 32.7
+    },
+    {
+      "lat": 29.8,
+      "lon": 32.7
+    },
+    {
+      "lat": 29.8,
+      "lon": 32.2
+    }
+  ],
   "center": {
     "lat": 30.6,
     "lon": 32.35

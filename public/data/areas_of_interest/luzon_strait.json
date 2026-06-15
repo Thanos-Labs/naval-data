@@ -2,12 +2,24 @@
   "name": "Luzon Strait",
   "type": "strait",
   "region": "Western Pacific",
-  "bounds": {
-    "north": 22.2,
-    "south": 18.0,
-    "east": 123.5,
-    "west": 120.0
-  },
+  "bounds": [
+    {
+      "lat": 22.2,
+      "lon": 120
+    },
+    {
+      "lat": 22.2,
+      "lon": 123.5
+    },
+    {
+      "lat": 18,
+      "lon": 123.5
+    },
+    {
+      "lat": 18,
+      "lon": 120
+    }
+  ],
   "center": {
     "lat": 20.1,
     "lon": 121.8

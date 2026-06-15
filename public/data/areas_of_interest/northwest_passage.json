@@ -2,15 +2,27 @@
   "name": "Northwest Passage",
   "type": "sea_lane",
   "region": "Canadian Arctic",
-  "bounds": {
-    "north": 76.0,
-    "south": 68.0,
-    "east": -70.0,
-    "west": -130.0
-  },
+  "bounds": [
+    {
+      "lat": 76,
+      "lon": -130
+    },
+    {
+      "lat": 76,
+      "lon": -70
+    },
+    {
+      "lat": 68,
+      "lon": -70
+    },
+    {
+      "lat": 68,
+      "lon": -130
+    }
+  ],
   "center": {
-    "lat": 72.0,
-    "lon": -100.0
+    "lat": 72,
+    "lon": -100
   },
   "min_depth_m": 10,
   "min_width_km": 20,

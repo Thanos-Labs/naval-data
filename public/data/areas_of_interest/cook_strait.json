@@ -2,12 +2,24 @@
   "name": "Cook Strait",
   "type": "strait",
   "region": "New Zealand",
-  "bounds": {
-    "north": -40.7,
-    "south": -41.7,
-    "east": 175.2,
-    "west": 173.8
-  },
+  "bounds": [
+    {
+      "lat": -40.7,
+      "lon": 173.8
+    },
+    {
+      "lat": -40.7,
+      "lon": 175.2
+    },
+    {
+      "lat": -41.7,
+      "lon": 175.2
+    },
+    {
+      "lat": -41.7,
+      "lon": 173.8
+    }
+  ],
   "center": {
     "lat": -41.2,
     "lon": 174.5

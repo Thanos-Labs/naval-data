@@ -2,12 +2,24 @@
   "name": "Qiongzhou Strait",
   "type": "strait",
   "region": "China",
-  "bounds": {
-    "north": 20.4,
-    "south": 19.8,
-    "east": 110.8,
-    "west": 109.7
-  },
+  "bounds": [
+    {
+      "lat": 20.4,
+      "lon": 109.7
+    },
+    {
+      "lat": 20.4,
+      "lon": 110.8
+    },
+    {
+      "lat": 19.8,
+      "lon": 110.8
+    },
+    {
+      "lat": 19.8,
+      "lon": 109.7
+    }
+  ],
   "center": {
     "lat": 20.1,
     "lon": 110.2

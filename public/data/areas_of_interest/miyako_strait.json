@@ -2,12 +2,24 @@
   "name": "Miyako Strait",
   "type": "strait",
   "region": "Ryukyu Islands",
-  "bounds": {
-    "north": 26.5,
-    "south": 24.0,
-    "east": 126.5,
-    "west": 124.0
-  },
+  "bounds": [
+    {
+      "lat": 26.5,
+      "lon": 124
+    },
+    {
+      "lat": 26.5,
+      "lon": 126.5
+    },
+    {
+      "lat": 24,
+      "lon": 126.5
+    },
+    {
+      "lat": 24,
+      "lon": 124
+    }
+  ],
   "center": {
     "lat": 25.2,
     "lon": 125.3
