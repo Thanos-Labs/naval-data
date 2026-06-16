@@ -46,7 +46,9 @@ export function MapView({
   selected,
   drawEnabled,
   showOceanSeas,
+  showOceanSeasLabels,
   showWorldEez,
+  showWorldEezLabels,
   drawPoints,
   drawBounds,
   onSelect,
@@ -58,7 +60,9 @@ export function MapView({
   selected: GeoItem | null;
   drawEnabled: boolean;
   showOceanSeas: boolean;
+  showOceanSeasLabels: boolean;
   showWorldEez: boolean;
+  showWorldEezLabels: boolean;
   drawPoints: Point[];
   drawBounds: Bounds | null;
   onSelect: (item: GeoItem) => void;
@@ -79,8 +83,8 @@ export function MapView({
         attribution="Tiles &copy; Esri &mdash; Source: Esri, Maxar, Earthstar Geographics, GIS User Community"
         url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
       />
-      <OceanSeasLayer visible={showOceanSeas} />
-      <WorldEezLayer visible={showWorldEez} />
+      <OceanSeasLayer visible={showOceanSeas} showLabels={showOceanSeasLabels} />
+      <WorldEezLayer visible={showWorldEez} showLabels={showWorldEezLabels} />
       {sortedItems.flatMap((item) => {
         const key = itemKey(item);
         return [-360, 0, 360].map((offset) => (

@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { loadData } from './data/loaders';
-import type { DataKind, GeoItem, LayerVisibility, Point } from './data/types';
+import type { DataKind, GeoItem, LayerVisibility, OverlayKind, Point } from './data/types';
 import { boundsCorners, boundsFromPoints } from './lib/bounds';
 import { EditorPanel } from './components/EditorPanel';
 import { LayerControls } from './components/LayerControls';
@@ -14,10 +14,16 @@ const initialVisibility: LayerVisibility = {
   world_eez: false,
 };
 
+const initialOverlayLabels: Record<OverlayKind, boolean> = {
+  ocean_seas: false,
+  world_eez: false,
+};
+
 export function App() {
   const [items, setItems] = useState<GeoItem[]>([]);
   const [error, setError] = useState<string | null>(null);
   const [visible, setVisible] = useState(initialVisibility);
+  const [overlayLabels, setOverlayLabels] = useState(initialOverlayLabels);
   const [drawKind, setDrawKind] = useState<DataKind | null>(null);
   const [drawPoints, setDrawPoints] = useState<Point[]>([]);
   const [selected, setSelected] = useState<GeoItem | null>(null);
@@ -58,7 +64,9 @@ export function App() {
         selected={selected}
         drawEnabled={drawKind !== null}
         showOceanSeas={visible.ocean_seas}
+        showOceanSeasLabels={overlayLabels.ocean_seas}
         showWorldEez={visible.world_eez}
+        showWorldEezLabels={overlayLabels.world_eez}
         drawPoints={drawPoints}
         drawBounds={drawBounds}
         onSelect={(item) => setSelected(item)}
@@ -70,7 +78,13 @@ export function App() {
       <div className="pointer-events-none absolute right-4 top-4 z-[1000] w-96 space-y-3">
         {error && <div className="pointer-events-auto border border-destructive bg-card p-3 text-xs text-destructive">{error}</div>}
         <div className="pointer-events-auto">
-          <LayerControls visible={visible} counts={counts} onChange={setVisible} />
+          <LayerControls
+            visible={visible}
+            labelVisible={overlayLabels}
+            counts={counts}
+            onChange={setVisible}
+            onLabelChange={setOverlayLabels}
+          />
         </div>
         {import.meta.env.DEV && (
           <div className="pointer-events-auto max-h-[calc(100vh-12rem)] overflow-auto">

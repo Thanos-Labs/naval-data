@@ -10,7 +10,7 @@ type WorldEezProperties = {
 
 const WORLD_EEZ_URL = `${import.meta.env.BASE_URL}data/world-eez.geojson`;
 
-export function WorldEezLayer({ visible }: { visible: boolean }) {
+export function WorldEezLayer({ visible, showLabels }: { visible: boolean; showLabels: boolean }) {
   const [data, setData] = useState<GeoJsonObject | null>(null);
 
   useEffect(() => {
@@ -35,12 +35,12 @@ export function WorldEezLayer({ visible }: { visible: boolean }) {
 
   return (
     <GeoJSON
-      key="world-eez"
+      key={`world-eez:${showLabels}`}
       data={data}
       interactive={false}
       onEachFeature={(feature: Feature<Geometry, WorldEezProperties>, layer: Layer) => {
         const country = feature.properties?.Country;
-        if (!country) return;
+        if (!showLabels || !country) return;
 
         layer.bindTooltip(country, {
           permanent: true,

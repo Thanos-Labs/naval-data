@@ -9,7 +9,7 @@ type OceanSeaProperties = {
 
 const OCEANS_SEAS_URL = `${import.meta.env.BASE_URL}data/ocean-seas.geojson`;
 
-export function OceanSeasLayer({ visible }: { visible: boolean }) {
+export function OceanSeasLayer({ visible, showLabels }: { visible: boolean; showLabels: boolean }) {
   const [data, setData] = useState<GeoJsonObject | null>(null);
 
   useEffect(() => {
@@ -34,12 +34,12 @@ export function OceanSeasLayer({ visible }: { visible: boolean }) {
 
   return (
     <GeoJSON
-      key="ocean-seas"
+      key={`ocean-seas:${showLabels}`}
       data={data}
       interactive={false}
       onEachFeature={(feature: Feature<Geometry, OceanSeaProperties>, layer: Layer) => {
         const name = feature.properties?.NAME;
-        if (!name) return;
+        if (!showLabels || !name) return;
 
         layer.bindTooltip(name, {
           permanent: true,

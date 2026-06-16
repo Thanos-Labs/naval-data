@@ -1,18 +1,22 @@
-import type { DataKind, LayerKind, LayerVisibility } from '../data/types';
+import type { DataKind, LayerVisibility, OverlayKind } from '../data/types';
 import { colors, labels } from '../data/loaders';
 import { ColorIndicator, Panel } from './ui';
 
 const dataOrder: DataKind[] = ['ports', 'naval_bases', 'areas_of_interest'];
-const overlayOrder: LayerKind[] = ['ocean_seas', 'world_eez'];
+const overlayOrder: OverlayKind[] = ['ocean_seas', 'world_eez'];
 
 export function LayerControls({
   visible,
   counts,
+  labelVisible,
   onChange,
+  onLabelChange,
 }: {
   visible: LayerVisibility;
+  labelVisible: Record<OverlayKind, boolean>;
   counts: Record<DataKind, number>;
   onChange: (next: LayerVisibility) => void;
+  onLabelChange: (next: Record<OverlayKind, boolean>) => void;
 }) {
   return (
     <Panel title="Layers">
@@ -32,8 +36,8 @@ export function LayerControls({
           </label>
         ))}
         {overlayOrder.map((kind) => (
-          <label key={kind} className="flex cursor-pointer items-center justify-between gap-4 text-sm">
-            <span className="flex items-center gap-2">
+          <div key={kind} className="flex items-center justify-between gap-4 text-sm">
+            <label className="flex cursor-pointer items-center gap-2">
               <input
                 type="checkbox"
                 checked={visible[kind]}
@@ -41,8 +45,19 @@ export function LayerControls({
                 className="accent-cyan-300"
               />
               <ColorIndicator color={colors[kind]} label={labels[kind]} />
-            </span>
-          </label>
+            </label>
+            {visible[kind] && (
+              <label className="flex cursor-pointer items-center gap-1.5 text-[10px] tracking-tui uppercase text-muted-foreground">
+                <input
+                  type="checkbox"
+                  checked={labelVisible[kind]}
+                  onChange={(event) => onLabelChange({ ...labelVisible, [kind]: event.target.checked })}
+                  className="accent-cyan-300"
+                />
+                labels
+              </label>
+            )}
+          </div>
         ))}
       </div>
     </Panel>
