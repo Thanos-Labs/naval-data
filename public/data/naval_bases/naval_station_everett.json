@@ -1,0 +1,25 @@
+{
+  "name": "Naval Station Everett",
+  "country": "United States",
+  "operator": "United States Navy",
+  "bounds": {
+    "north": 48.005,
+    "south": 47.975,
+    "east": -122.205,
+    "west": -122.245
+  },
+  "location": {
+    "lat": 47.99,
+    "lon": -122.225
+  },
+  "nearest_city": "Everett",
+  "max_ship_length_m": 337,
+  "max_ship_beam_m": 78,
+  "max_draught_m": 12,
+  "pier_depth_m": null,
+  "dry_dock_length_m": null,
+  "carrier_capable": "yes",
+  "homeport_for_carriers": false,
+  "notes": "Designed as a carrier strike group homeport and formerly homeported U.S. aircraft carriers; no carrier is currently homeported there.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Naval_Station_Everett"
+}

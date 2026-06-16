@@ -1,15 +1,13 @@
 {
   "name": "Fleet Base East",
+  "country": "Australia",
+  "operator": "Department of Defence (Australia)",
   "bounds": {
     "north": -33.85808577503703,
     "south": -33.869061500743065,
     "east": 151.2311410903931,
     "west": 151.21923208236697
   },
-  "notes": null,
-  "wikipedia_url": "https://en.wikipedia.org/wiki/Fleet_Base_East",
-  "country": "Australia",
-  "operator": "Department of Defence (Australia)",
   "location": {
     "lat": -33.86357363789005,
     "lon": 151.22518658638003
@@ -21,5 +19,7 @@
   "pier_depth_m": null,
   "dry_dock_length_m": null,
   "carrier_capable": "yes",
-  "homeport_for_carriers": null
+  "homeport_for_carriers": null,
+  "notes": null,
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Fleet_Base_East"
 }
