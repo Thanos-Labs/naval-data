@@ -2,12 +2,24 @@
   "name": "Tsushima Strait",
   "type": "strait",
   "region": "Korea / Japan",
-  "bounds": {
-    "north": 35.2,
-    "south": 33.5,
-    "east": 131.5,
-    "west": 128.0
-  },
+  "bounds": [
+    {
+      "lat": 35.2,
+      "lon": 128
+    },
+    {
+      "lat": 35.2,
+      "lon": 131.5
+    },
+    {
+      "lat": 33.5,
+      "lon": 131.5
+    },
+    {
+      "lat": 33.5,
+      "lon": 128
+    }
+  ],
   "center": {
     "lat": 34.3,
     "lon": 129.8

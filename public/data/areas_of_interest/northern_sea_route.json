@@ -2,15 +2,27 @@
   "name": "Northern Sea Route",
   "type": "sea_lane",
   "region": "Arctic Ocean",
-  "bounds": {
-    "north": 78.0,
-    "south": 66.0,
-    "east": 170.0,
-    "west": 30.0
-  },
+  "bounds": [
+    {
+      "lat": 78,
+      "lon": 30
+    },
+    {
+      "lat": 78,
+      "lon": 170
+    },
+    {
+      "lat": 66,
+      "lon": 170
+    },
+    {
+      "lat": 66,
+      "lon": 30
+    }
+  ],
   "center": {
-    "lat": 72.0,
-    "lon": 100.0
+    "lat": 72,
+    "lon": 100
   },
   "min_depth_m": 12,
   "min_width_km": 50,

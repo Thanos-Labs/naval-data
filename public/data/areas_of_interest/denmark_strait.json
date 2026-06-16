@@ -2,15 +2,27 @@
   "name": "Denmark Strait",
   "type": "strait",
   "region": "North Atlantic / Arctic",
-  "bounds": {
-    "north": 68.0,
-    "south": 63.0,
-    "east": -20.0,
-    "west": -40.0
-  },
+  "bounds": [
+    {
+      "lat": 68,
+      "lon": -40
+    },
+    {
+      "lat": 68,
+      "lon": -20
+    },
+    {
+      "lat": 63,
+      "lon": -20
+    },
+    {
+      "lat": 63,
+      "lon": -40
+    }
+  ],
   "center": {
     "lat": 65.5,
-    "lon": -30.0
+    "lon": -30
   },
   "min_depth_m": 190,
   "min_width_km": 290,

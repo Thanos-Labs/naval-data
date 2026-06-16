@@ -2,12 +2,24 @@
   "name": "Yucatán Channel",
   "type": "strait",
   "region": "Caribbean / Gulf of Mexico",
-  "bounds": {
-    "north": 22.5,
-    "south": 20.0,
-    "east": -84.0,
-    "west": -87.0
-  },
+  "bounds": [
+    {
+      "lat": 22.5,
+      "lon": -87
+    },
+    {
+      "lat": 22.5,
+      "lon": -84
+    },
+    {
+      "lat": 20,
+      "lon": -84
+    },
+    {
+      "lat": 20,
+      "lon": -87
+    }
+  ],
   "center": {
     "lat": 21.2,
     "lon": -85.5

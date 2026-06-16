@@ -2,14 +2,26 @@
   "name": "La Pérouse Strait",
   "type": "strait",
   "region": "Russia / Japan",
-  "bounds": {
-    "north": 46.5,
-    "south": 45.5,
-    "east": 143.5,
-    "west": 141.0
-  },
+  "bounds": [
+    {
+      "lat": 46.5,
+      "lon": 141
+    },
+    {
+      "lat": 46.5,
+      "lon": 143.5
+    },
+    {
+      "lat": 45.5,
+      "lon": 143.5
+    },
+    {
+      "lat": 45.5,
+      "lon": 141
+    }
+  ],
   "center": {
-    "lat": 46.0,
+    "lat": 46,
     "lon": 142.2
   },
   "min_depth_m": 50,

@@ -2,15 +2,27 @@
   "name": "Bosporus",
   "type": "strait",
   "region": "Turkey",
-  "bounds": {
-    "north": 41.3,
-    "south": 40.95,
-    "east": 29.2,
-    "west": 28.8
-  },
+  "bounds": [
+    {
+      "lat": 41.3,
+      "lon": 28.8
+    },
+    {
+      "lat": 41.3,
+      "lon": 29.2
+    },
+    {
+      "lat": 40.95,
+      "lon": 29.2
+    },
+    {
+      "lat": 40.95,
+      "lon": 28.8
+    }
+  ],
   "center": {
     "lat": 41.12,
-    "lon": 29.0
+    "lon": 29
   },
   "min_depth_m": 13,
   "min_width_km": 0.7,

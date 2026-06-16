@@ -2,15 +2,27 @@
   "name": "Cape of Good Hope Sea Lane",
   "type": "sea_lane",
   "region": "Southern Africa",
-  "bounds": {
-    "north": -32.0,
-    "south": -36.5,
-    "east": 22.0,
-    "west": 16.0
-  },
+  "bounds": [
+    {
+      "lat": -32,
+      "lon": 16
+    },
+    {
+      "lat": -32,
+      "lon": 22
+    },
+    {
+      "lat": -36.5,
+      "lon": 22
+    },
+    {
+      "lat": -36.5,
+      "lon": 16
+    }
+  ],
   "center": {
     "lat": -34.5,
-    "lon": 19.0
+    "lon": 19
   },
   "min_depth_m": 2000,
   "min_width_km": 300,

@@ -2,7 +2,7 @@ import type * as React from 'react';
 import { useEffect, useMemo, useState } from 'react';
 import { X } from 'lucide-react';
 import type { Bounds, DataKind, GeoItem } from '../data/types';
-import { centerFromBounds } from '../lib/bounds';
+import { centerFromBounds, centerFromPoints } from '../lib/bounds';
 import { Panel, SectionHeader, Button } from './ui';
 
 const kindLabels: Record<DataKind, string> = {
@@ -93,6 +93,7 @@ function BoundsReadout({ bounds }: { bounds: Bounds }) {
 export function EditorPanel({
   selected,
   bounds,
+  points,
   pointsCount,
   onStartCreate,
   onStartEdit,
@@ -103,6 +104,7 @@ export function EditorPanel({
 }: {
   selected: GeoItem | null;
   bounds: Bounds | null;
+  points: { lat: number; lon: number }[];
   pointsCount: number;
   onStartCreate: (kind: DataKind) => void;
   onStartEdit: (item: GeoItem) => void;
@@ -116,7 +118,7 @@ export function EditorPanel({
   const [kind, setKind] = useState<DataKind>('ports');
   const [saving, setSaving] = useState(false);
   const [message, setMessage] = useState<string | null>(null);
-  const center = useMemo(() => (bounds ? centerFromBounds(bounds) : null), [bounds]);
+  const center = useMemo(() => (kind === 'areas_of_interest' ? centerFromPoints(points) : bounds ? centerFromBounds(bounds) : null), [bounds, kind, points]);
   const editing = mode === 'edit' ? selected : null;
   const data = editing?.data;
 
@@ -165,6 +167,7 @@ export function EditorPanel({
   async function submit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (!bounds || !center) return;
+    if (kind === 'areas_of_interest' && points.length < 3) return;
 
     const form = new FormData(event.currentTarget);
     const common = {
@@ -206,6 +209,7 @@ export function EditorPanel({
           }
         : {
             ...common,
+            bounds: points,
             type: String(form.get('type')),
             region: text(form.get('region'), true),
             center,
@@ -274,7 +278,14 @@ export function EditorPanel({
         </label>
 
         <SectionHeader label="Bounds" count={pointsCount} />
-        {bounds ? <BoundsReadout bounds={bounds} /> : <div className="text-xs text-muted-foreground">Click map points. Click point again to remove.</div>}
+        <div className="space-y-1 border border-border/60 bg-background/70 p-2 text-[11px] text-muted-foreground">
+          <div>Click map: add point</div>
+          <div>Click point: remove point</div>
+          <div>Ctrl+click / Alt+click (mac) point, then click map: move point</div>
+          <div>Click line segment: insert point between endpoints</div>
+          <div>Esc: cancel without saving</div>
+        </div>
+        {bounds ? <BoundsReadout bounds={bounds} /> : <div className="text-xs text-muted-foreground">Add points to define bounds.</div>}
 
         {bounds && (
           <form key={`${mode}:${kind}:${data?._file ?? 'new'}`} className="space-y-3" onSubmit={submit}>

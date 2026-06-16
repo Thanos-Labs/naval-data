@@ -2,12 +2,24 @@
   "name": "Anegada Passage",
   "type": "strait",
   "region": "Caribbean",
-  "bounds": {
-    "north": 19.5,
-    "south": 17.5,
-    "east": -63.0,
-    "west": -65.5
-  },
+  "bounds": [
+    {
+      "lat": 19.5,
+      "lon": -65.5
+    },
+    {
+      "lat": 19.5,
+      "lon": -63
+    },
+    {
+      "lat": 17.5,
+      "lon": -63
+    },
+    {
+      "lat": 17.5,
+      "lon": -65.5
+    }
+  ],
   "center": {
     "lat": 18.5,
     "lon": -64.2

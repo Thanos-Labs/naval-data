@@ -56,7 +56,7 @@ export type AreaOfInterest = CollectionMeta & {
   name: string;
   type: 'strait' | 'canal' | 'chokepoint' | 'sea_lane' | 'sea' | 'gulf' | 'bay' | 'operating_area';
   region: string;
-  bounds: Bounds;
+  bounds: Point[];
   center: Point;
   min_depth_m: number | null;
   min_width_km: number | null;

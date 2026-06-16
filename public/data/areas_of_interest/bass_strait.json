@@ -2,12 +2,24 @@
   "name": "Bass Strait",
   "type": "strait",
   "region": "Australia",
-  "bounds": {
-    "north": -38.0,
-    "south": -41.5,
-    "east": 149.0,
-    "west": 144.0
-  },
+  "bounds": [
+    {
+      "lat": -38,
+      "lon": 144
+    },
+    {
+      "lat": -38,
+      "lon": 149
+    },
+    {
+      "lat": -41.5,
+      "lon": 149
+    },
+    {
+      "lat": -41.5,
+      "lon": 144
+    }
+  ],
   "center": {
     "lat": -39.7,
     "lon": 146.5

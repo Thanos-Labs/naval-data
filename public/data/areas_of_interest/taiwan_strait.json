@@ -2,12 +2,24 @@
   "name": "Taiwan Strait",
   "type": "strait",
   "region": "East Asia",
-  "bounds": {
-    "north": 26.3,
-    "south": 22.0,
-    "east": 121.5,
-    "west": 117.0
-  },
+  "bounds": [
+    {
+      "lat": 26.3,
+      "lon": 117
+    },
+    {
+      "lat": 26.3,
+      "lon": 121.5
+    },
+    {
+      "lat": 22,
+      "lon": 121.5
+    },
+    {
+      "lat": 22,
+      "lon": 117
+    }
+  ],
   "center": {
     "lat": 24.2,
     "lon": 119.3
