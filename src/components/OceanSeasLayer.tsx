@@ -8,6 +8,8 @@ type OceanSeaProperties = {
 };
 
 const OCEANS_SEAS_URL = `${import.meta.env.BASE_URL}data/ocean-seas.geojson`;
+const oceanSeaLabelClass =
+  'pointer-events-none !border-0 !bg-transparent !shadow-none !text-[11px] !font-semibold !tracking-[0.12em] !text-[rgba(220,245,255,0.78)] !uppercase before:!hidden [text-shadow:0_1px_3px_#00121c,0_0_8px_#00121c]';
 
 export function OceanSeasLayer({ visible, showLabels }: { visible: boolean; showLabels: boolean }) {
   const [data, setData] = useState<GeoJsonObject | null>(null);
@@ -44,7 +46,7 @@ export function OceanSeasLayer({ visible, showLabels }: { visible: boolean; show
         layer.bindTooltip(name, {
           permanent: true,
           direction: 'center',
-          className: 'ocean-sea-label',
+          className: oceanSeaLabelClass,
           opacity: 1,
         });
       }}

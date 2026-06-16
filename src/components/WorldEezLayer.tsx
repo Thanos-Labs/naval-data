@@ -9,6 +9,8 @@ type WorldEezProperties = {
 };
 
 const WORLD_EEZ_URL = `${import.meta.env.BASE_URL}data/world-eez.geojson`;
+const worldEezLabelClass =
+  'pointer-events-none !border-0 !bg-transparent !shadow-none !text-[10px] !font-semibold !tracking-[0.1em] !text-[rgba(255,224,130,0.72)] !uppercase before:!hidden [text-shadow:0_1px_3px_#1c1500,0_0_8px_#1c1500]';
 
 export function WorldEezLayer({ visible, showLabels }: { visible: boolean; showLabels: boolean }) {
   const [data, setData] = useState<GeoJsonObject | null>(null);
@@ -45,7 +47,7 @@ export function WorldEezLayer({ visible, showLabels }: { visible: boolean; showL
         layer.bindTooltip(country, {
           permanent: true,
           direction: 'center',
-          className: 'world-eez-label',
+          className: worldEezLabelClass,
           opacity: 1,
         });
       }}
