@@ -54,7 +54,7 @@ function segmentIndexes(kind: GeoItem['kind'] | null, points: Point[]) {
 export function MapView({
   items,
   selected,
-  drawEnabled,
+  drawKind,
   showOceanSeas,
   showOceanSeasLabels,
   showWorldEez,
@@ -72,7 +72,7 @@ export function MapView({
 }: {
   items: GeoItem[];
   selected: GeoItem | null;
-  drawEnabled: boolean;
+  drawKind: GeoItem['kind'] | null;
   showOceanSeas: boolean;
   showOceanSeasLabels: boolean;
   showWorldEez: boolean;

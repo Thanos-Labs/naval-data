@@ -64,7 +64,7 @@ export function App() {
       <MapView
         items={filtered}
         selected={selected}
-        drawEnabled={drawKind !== null}
+        drawKind={drawKind}
         showOceanSeas={visible.ocean_seas}
         showOceanSeasLabels={overlayLabels.ocean_seas}
         showWorldEez={visible.world_eez}
