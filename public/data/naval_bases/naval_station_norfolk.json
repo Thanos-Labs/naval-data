@@ -1,16 +1,18 @@
 {
   "name": "Naval Station Norfolk",
+  "bounds": {
+    "north": 36.96525497589677,
+    "south": 36.92951706541426,
+    "east": -76.32438182830812,
+    "west": -76.34571075439455
+  },
+  "notes": "Largest U.S. Navy base and a principal aircraft carrier homeport.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Naval_Station_Norfolk",
   "country": "United States",
   "operator": "United States Navy",
-  "bounds": {
-    "north": 36.996,
-    "south": 36.896,
-    "east": -76.263,
-    "west": -76.363
-  },
   "location": {
-    "lat": 36.946,
-    "lon": -76.313
+    "lat": 36.947386020655514,
+    "lon": -76.33504629135133
   },
   "nearest_city": "Norfolk",
   "max_ship_length_m": 337,
@@ -19,7 +21,5 @@
   "pier_depth_m": 14,
   "dry_dock_length_m": null,
   "carrier_capable": "yes",
-  "homeport_for_carriers": true,
-  "notes": "Largest U.S. Navy base and a principal aircraft carrier homeport.",
-  "wikipedia_url": "https://en.wikipedia.org/wiki/Naval_Station_Norfolk"
+  "homeport_for_carriers": true
 }

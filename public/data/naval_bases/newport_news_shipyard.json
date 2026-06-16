@@ -1,0 +1,25 @@
+{
+  "name": "Newport News Shipyard",
+  "bounds": {
+    "north": 37.00652818599934,
+    "south": 36.95846537722048,
+    "east": -76.41192913055421,
+    "west": -76.45634651184083
+  },
+  "notes": null,
+  "wikipedia_url": null,
+  "country": "United States",
+  "operator": "United States Navy",
+  "location": {
+    "lat": 36.98249678160991,
+    "lon": -76.43413782119752
+  },
+  "nearest_city": "Norfolk",
+  "max_ship_length_m": null,
+  "max_ship_beam_m": null,
+  "max_draught_m": null,
+  "pier_depth_m": null,
+  "dry_dock_length_m": null,
+  "carrier_capable": "yes",
+  "homeport_for_carriers": null
+}

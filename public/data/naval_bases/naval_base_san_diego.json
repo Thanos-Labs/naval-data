@@ -1,16 +1,18 @@
 {
   "name": "Naval Base San Diego",
+  "bounds": {
+    "north": 32.69402628152427,
+    "south": 32.65682793875695,
+    "east": -117.11747646331787,
+    "west": -117.14986681938173
+  },
+  "notes": "Major Pacific Fleet base; supports large-deck amphibious ships and carrier logistics in San Diego Bay.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Naval_Base_San_Diego",
   "country": "United States",
   "operator": "United States Navy",
-  "bounds": {
-    "north": 32.734,
-    "south": 32.634,
-    "east": -117.069,
-    "west": -117.169
-  },
   "location": {
-    "lat": 32.684,
-    "lon": -117.119
+    "lat": 32.67542711014061,
+    "lon": -117.13367164134979
   },
   "nearest_city": "San Diego",
   "max_ship_length_m": 337,
@@ -19,7 +21,5 @@
   "pier_depth_m": 12,
   "dry_dock_length_m": null,
   "carrier_capable": "yes",
-  "homeport_for_carriers": true,
-  "notes": "Major Pacific Fleet base; supports large-deck amphibious ships and carrier logistics in San Diego Bay.",
-  "wikipedia_url": "https://en.wikipedia.org/wiki/Naval_Base_San_Diego"
+  "homeport_for_carriers": true
 }
