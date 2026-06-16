@@ -3,7 +3,7 @@ import { colors, labels } from '../data/loaders';
 import { ColorIndicator, Panel } from './ui';
 
 const dataOrder: DataKind[] = ['ports', 'naval_bases', 'areas_of_interest'];
-const overlayOrder: LayerKind[] = ['ocean_seas'];
+const overlayOrder: LayerKind[] = ['ocean_seas', 'world_eez'];
 
 export function LayerControls({
   visible,

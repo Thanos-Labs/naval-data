@@ -11,6 +11,7 @@ const initialVisibility: LayerVisibility = {
   naval_bases: true,
   areas_of_interest: true,
   ocean_seas: false,
+  world_eez: false,
 };
 
 export function App() {
@@ -57,6 +58,7 @@ export function App() {
         selected={selected}
         drawEnabled={drawKind !== null}
         showOceanSeas={visible.ocean_seas}
+        showWorldEez={visible.world_eez}
         drawPoints={drawPoints}
         drawBounds={drawBounds}
         onSelect={(item) => setSelected(item)}

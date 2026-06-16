@@ -1,5 +1,5 @@
 export type DataKind = 'ports' | 'naval_bases' | 'areas_of_interest';
-export type OverlayKind = 'ocean_seas';
+export type OverlayKind = 'ocean_seas' | 'world_eez';
 export type LayerKind = DataKind | OverlayKind;
 
 export type Point = {

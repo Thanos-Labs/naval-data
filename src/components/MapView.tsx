@@ -5,6 +5,7 @@ import type { Bounds, GeoItem, Point } from '../data/types';
 import { boundsArea, leafletBounds } from '../lib/bounds';
 import { DataRectangle } from './DataRectangle';
 import { OceanSeasLayer } from './OceanSeasLayer';
+import { WorldEezLayer } from './WorldEezLayer';
 
 function ClickCapture({
   enabled,
@@ -45,6 +46,7 @@ export function MapView({
   selected,
   drawEnabled,
   showOceanSeas,
+  showWorldEez,
   drawPoints,
   drawBounds,
   onSelect,
@@ -56,6 +58,7 @@ export function MapView({
   selected: GeoItem | null;
   drawEnabled: boolean;
   showOceanSeas: boolean;
+  showWorldEez: boolean;
   drawPoints: Point[];
   drawBounds: Bounds | null;
   onSelect: (item: GeoItem) => void;
@@ -77,6 +80,7 @@ export function MapView({
         url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
       />
       <OceanSeasLayer visible={showOceanSeas} />
+      <WorldEezLayer visible={showWorldEez} />
       {sortedItems.flatMap((item) => {
         const key = itemKey(item);
         return [-360, 0, 360].map((offset) => (

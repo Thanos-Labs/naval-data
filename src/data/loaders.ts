@@ -30,6 +30,7 @@ export const labels: Record<LayerKind, string> = {
   naval_bases: 'Naval Bases',
   areas_of_interest: 'Areas of Interest',
   ocean_seas: 'Oceans & Seas',
+  world_eez: 'World EEZs',
 };
 
 export const colors: Record<LayerKind, string> = {
@@ -37,4 +38,5 @@ export const colors: Record<LayerKind, string> = {
   naval_bases: '#ff6b6b',
   areas_of_interest: '#b7ff5a',
   ocean_seas: '#4f8cff',
+  world_eez: '#f5d36b',
 };
