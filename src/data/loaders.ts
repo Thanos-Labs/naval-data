@@ -1,4 +1,4 @@
-import type { AreaOfInterest, DataKind, GeoItem, NavalBase, Port } from './types';
+import type { AreaOfInterest, DataKind, GeoItem, LayerKind, NavalBase, Port } from './types';
 
 function assetPath(path: string) {
   return `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`;
@@ -25,14 +25,18 @@ export async function loadData(): Promise<GeoItem[]> {
   ];
 }
 
-export const labels: Record<DataKind, string> = {
+export const labels: Record<LayerKind, string> = {
   ports: 'Ports',
   naval_bases: 'Naval Bases',
   areas_of_interest: 'Areas of Interest',
+  ocean_seas: 'Oceans & Seas',
+  world_eez: 'World EEZs',
 };
 
-export const colors: Record<DataKind, string> = {
+export const colors: Record<LayerKind, string> = {
   ports: '#48d7ff',
   naval_bases: '#ff6b6b',
   areas_of_interest: '#b7ff5a',
+  ocean_seas: '#4f8cff',
+  world_eez: '#f5d36b',
 };
