@@ -1,4 +1,6 @@
 export type DataKind = 'ports' | 'naval_bases' | 'areas_of_interest';
+export type OverlayKind = 'ocean_seas' | 'world_eez';
+export type LayerKind = DataKind | OverlayKind;
 
 export type Point = {
   lat: number;
@@ -71,4 +73,4 @@ export type GeoItem =
   | { kind: 'naval_bases'; data: NavalBase }
   | { kind: 'areas_of_interest'; data: AreaOfInterest };
 
-export type LayerVisibility = Record<DataKind, boolean>;
+export type LayerVisibility = Record<LayerKind, boolean>;
