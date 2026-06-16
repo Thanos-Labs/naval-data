@@ -2,12 +2,24 @@
   "name": "Bab el-Mandeb",
   "type": "strait",
   "region": "Red Sea / Gulf of Aden",
-  "bounds": {
-    "north": 13.3,
-    "south": 11.8,
-    "east": 44.5,
-    "west": 42.8
-  },
+  "bounds": [
+    {
+      "lat": 13.3,
+      "lon": 42.8
+    },
+    {
+      "lat": 13.3,
+      "lon": 44.5
+    },
+    {
+      "lat": 11.8,
+      "lon": 44.5
+    },
+    {
+      "lat": 11.8,
+      "lon": 42.8
+    }
+  ],
   "center": {
     "lat": 12.6,
     "lon": 43.6

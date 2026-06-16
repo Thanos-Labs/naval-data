@@ -2,15 +2,27 @@
   "name": "Strait of Magellan",
   "type": "strait",
   "region": "Chile",
-  "bounds": {
-    "north": -52.0,
-    "south": -54.5,
-    "east": -69.0,
-    "west": -75.0
-  },
+  "bounds": [
+    {
+      "lat": -52,
+      "lon": -75
+    },
+    {
+      "lat": -52,
+      "lon": -69
+    },
+    {
+      "lat": -54.5,
+      "lon": -69
+    },
+    {
+      "lat": -54.5,
+      "lon": -75
+    }
+  ],
   "center": {
     "lat": -53.2,
-    "lon": -72.0
+    "lon": -72
   },
   "min_depth_m": 20,
   "min_width_km": 2,

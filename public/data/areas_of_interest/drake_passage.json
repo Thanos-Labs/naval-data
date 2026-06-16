@@ -2,15 +2,27 @@
   "name": "Drake Passage",
   "type": "strait",
   "region": "Southern Ocean",
-  "bounds": {
-    "north": -55.0,
-    "south": -63.0,
-    "east": -55.0,
-    "west": -70.0
-  },
+  "bounds": [
+    {
+      "lat": -55,
+      "lon": -70
+    },
+    {
+      "lat": -55,
+      "lon": -55
+    },
+    {
+      "lat": -63,
+      "lon": -55
+    },
+    {
+      "lat": -63,
+      "lon": -70
+    }
+  ],
   "center": {
-    "lat": -59.0,
-    "lon": -62.0
+    "lat": -59,
+    "lon": -62
   },
   "min_depth_m": 3000,
   "min_width_km": 800,

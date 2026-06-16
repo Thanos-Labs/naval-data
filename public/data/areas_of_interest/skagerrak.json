@@ -2,14 +2,26 @@
   "name": "Skagerrak",
   "type": "sea_lane",
   "region": "Norway / Denmark / Sweden",
-  "bounds": {
-    "north": 59.5,
-    "south": 56.5,
-    "east": 12.0,
-    "west": 7.0
-  },
+  "bounds": [
+    {
+      "lat": 59.5,
+      "lon": 7
+    },
+    {
+      "lat": 59.5,
+      "lon": 12
+    },
+    {
+      "lat": 56.5,
+      "lon": 12
+    },
+    {
+      "lat": 56.5,
+      "lon": 7
+    }
+  ],
   "center": {
-    "lat": 58.0,
+    "lat": 58,
     "lon": 9.5
   },
   "min_depth_m": 200,

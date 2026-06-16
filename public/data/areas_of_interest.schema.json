@@ -32,15 +32,9 @@
       }
     },
     "bounds": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["north", "south", "east", "west"],
-      "properties": {
-        "north": { "$ref": "#/$defs/latitude" },
-        "south": { "$ref": "#/$defs/latitude" },
-        "east": { "$ref": "#/$defs/longitude" },
-        "west": { "$ref": "#/$defs/longitude" }
-      }
+      "type": "array",
+      "minItems": 3,
+      "items": { "$ref": "#/$defs/coordinate" }
     }
   },
   "required": [
