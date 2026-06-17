@@ -2,6 +2,7 @@ import type { ReactNode } from 'react';
 import { useMemo, useState } from 'react';
 import type { DataKind, GeoItem, LayerVisibility, OverlayKind, Point } from '../data/types';
 import { boundsCorners, boundsFromPoints } from '../lib/bounds';
+import { DevEditPointLayer } from './DevEditPointLayer';
 import { EditorPanel } from './EditorPanel';
 import { MapView } from './MapView';
 
@@ -38,28 +39,32 @@ export function DevMapEditor({
       <MapView
         items={items}
         selected={selected}
-        drawKind={drawKind}
         showOceanSeas={visible.ocean_seas}
         showOceanSeasLabels={overlayLabels.ocean_seas}
         showWorldEez={visible.world_eez}
         showWorldEezLabels={overlayLabels.world_eez}
-        drawPoints={drawPoints}
-        drawBounds={drawBounds}
-        movingIndex={movingIndex}
         onSelect={onSelect}
         onClearSelection={() => onSelect(null)}
-        onAddPoint={(point) => setDrawPoints((points) => [...points, point])}
-        onInsertPoint={(index, point) => setDrawPoints((points) => [...points.slice(0, index), point, ...points.slice(index)])}
-        onRemovePoint={(index) => {
-          setDrawPoints((points) => points.filter((_, i) => i !== index));
-          setMovingIndex((current) => current === index ? null : current !== null && current > index ? current - 1 : current);
-        }}
-        onBeginMovePoint={setMovingIndex}
-        onMovePoint={(index, point) => {
-          setDrawPoints((points) => points.map((current, i) => i === index ? point : current));
-          setMovingIndex(null);
-        }}
-      />
+        clearSelectionOnMapClick={drawKind === null}
+      >
+        <DevEditPointLayer
+          kind={drawKind}
+          points={drawPoints}
+          bounds={drawBounds}
+          movingIndex={movingIndex}
+          onAddPoint={(point) => setDrawPoints((points) => [...points, point])}
+          onInsertPoint={(index, point) => setDrawPoints((points) => [...points.slice(0, index), point, ...points.slice(index)])}
+          onRemovePoint={(index) => {
+            setDrawPoints((points) => points.filter((_, i) => i !== index));
+            setMovingIndex((current) => current === index ? null : current !== null && current > index ? current - 1 : current);
+          }}
+          onBeginMovePoint={setMovingIndex}
+          onMovePoint={(index, point) => {
+            setDrawPoints((points) => points.map((current, i) => i === index ? point : current));
+            setMovingIndex(null);
+          }}
+        />
+      </MapView>
 
       <div className="pointer-events-none absolute right-4 top-4 z-[1000] w-96 space-y-3">
         {controls}
