@@ -25,13 +25,11 @@ export function DevMapEditor({
 }) {
   const [drawKind, setDrawKind] = useState<DataKind | null>(null);
   const [drawPoints, setDrawPoints] = useState<Point[]>([]);
-  const [movingIndex, setMovingIndex] = useState<number | null>(null);
   const drawBounds = useMemo(() => boundsFromPoints(drawPoints), [drawPoints]);
 
   function closeEditor() {
     setDrawKind(null);
     setDrawPoints([]);
-    setMovingIndex(null);
   }
 
   return (
@@ -51,18 +49,8 @@ export function DevMapEditor({
           kind={drawKind}
           points={drawPoints}
           bounds={drawBounds}
-          movingIndex={movingIndex}
-          onAddPoint={(point) => setDrawPoints((points) => [...points, point])}
+          onChangePoints={setDrawPoints}
           onInsertPoint={(index, point) => setDrawPoints((points) => [...points.slice(0, index), point, ...points.slice(index)])}
-          onRemovePoint={(index) => {
-            setDrawPoints((points) => points.filter((_, i) => i !== index));
-            setMovingIndex((current) => current === index ? null : current !== null && current > index ? current - 1 : current);
-          }}
-          onBeginMovePoint={setMovingIndex}
-          onMovePoint={(index, point) => {
-            setDrawPoints((points) => points.map((current, i) => i === index ? point : current));
-            setMovingIndex(null);
-          }}
         />
       </MapView>
 
@@ -74,14 +62,13 @@ export function DevMapEditor({
             bounds={drawBounds}
             points={drawPoints}
             pointsCount={drawPoints.length}
-            onStartCreate={(kind) => { setDrawKind(kind); setDrawPoints([]); setMovingIndex(null); }}
+            onStartCreate={(kind) => { setDrawKind(kind); setDrawPoints([]); }}
             onStartEdit={(item) => {
               setDrawKind(item.kind);
               setDrawPoints(item.kind === 'areas_of_interest' ? item.data.bounds : boundsCorners(item.data.bounds));
-              setMovingIndex(null);
             }}
             onClose={closeEditor}
-            onClearPoints={() => { setDrawPoints([]); setMovingIndex(null); }}
+            onClearPoints={() => setDrawPoints([])}
             onClearSelection={() => { onSelect(null); closeEditor(); }}
             onSaved={() => { onSelect(null); closeEditor(); onRefresh(); }}
           />
