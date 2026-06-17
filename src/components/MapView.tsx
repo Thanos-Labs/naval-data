@@ -54,39 +54,39 @@ function segmentIndexes(kind: GeoItem['kind'] | null, points: Point[]) {
 export function MapView({
   items,
   selected,
-  drawKind,
+  drawKind = null,
   showOceanSeas,
   showOceanSeasLabels,
   showWorldEez,
   showWorldEezLabels,
-  drawPoints,
-  drawBounds,
-  movingIndex,
+  drawPoints = [],
+  drawBounds = null,
+  movingIndex = null,
   onSelect,
   onClearSelection,
-  onAddPoint,
-  onInsertPoint,
-  onRemovePoint,
-  onBeginMovePoint,
-  onMovePoint,
+  onAddPoint = () => {},
+  onInsertPoint = () => {},
+  onRemovePoint = () => {},
+  onBeginMovePoint = () => {},
+  onMovePoint = () => {},
 }: {
   items: GeoItem[];
   selected: GeoItem | null;
-  drawKind: GeoItem['kind'] | null;
+  drawKind?: GeoItem['kind'] | null;
   showOceanSeas: boolean;
   showOceanSeasLabels: boolean;
   showWorldEez: boolean;
   showWorldEezLabels: boolean;
-  drawPoints: Point[];
-  drawBounds: Bounds | null;
-  movingIndex: number | null;
+  drawPoints?: Point[];
+  drawBounds?: Bounds | null;
+  movingIndex?: number | null;
   onSelect: (item: GeoItem) => void;
   onClearSelection: () => void;
-  onAddPoint: (point: Point) => void;
-  onInsertPoint: (index: number, point: Point) => void;
-  onRemovePoint: (index: number) => void;
-  onBeginMovePoint: (index: number) => void;
-  onMovePoint: (index: number, point: Point) => void;
+  onAddPoint?: (point: Point) => void;
+  onInsertPoint?: (index: number, point: Point) => void;
+  onRemovePoint?: (index: number) => void;
+  onBeginMovePoint?: (index: number) => void;
+  onMovePoint?: (index: number, point: Point) => void;
 }) {
   const center: LatLngExpression = [20, 0];
   const drawEnabled = drawKind !== null;

@@ -1,10 +1,12 @@
-import { useEffect, useMemo, useState } from 'react';
+import { lazy, Suspense, useEffect, useMemo, useState } from 'react';
 import { loadData } from './data/loaders';
-import type { DataKind, GeoItem, LayerVisibility, OverlayKind, Point } from './data/types';
-import { boundsCorners, boundsFromPoints } from './lib/bounds';
-import { EditorPanel } from './components/EditorPanel';
+import type { GeoItem, LayerVisibility, OverlayKind } from './data/types';
 import { LayerControls } from './components/LayerControls';
 import { MapView } from './components/MapView';
+
+const DevMapEditor = import.meta.env.DEV
+  ? lazy(() => import('./components/DevMapEditor').then((module) => ({ default: module.DevMapEditor })))
+  : null;
 
 const initialVisibility: LayerVisibility = {
   ports: true,
@@ -24,9 +26,6 @@ export function App() {
   const [error, setError] = useState<string | null>(null);
   const [visible, setVisible] = useState(initialVisibility);
   const [overlayLabels, setOverlayLabels] = useState(initialOverlayLabels);
-  const [drawKind, setDrawKind] = useState<DataKind | null>(null);
-  const [drawPoints, setDrawPoints] = useState<Point[]>([]);
-  const [movingIndex, setMovingIndex] = useState<number | null>(null);
   const [selected, setSelected] = useState<GeoItem | null>(null);
 
   async function refresh() {
@@ -36,12 +35,6 @@ export function App() {
     } catch (loadError) {
       setError(loadError instanceof Error ? loadError.message : String(loadError));
     }
-  }
-
-  function closeEditor() {
-    setDrawKind(null);
-    setDrawPoints([]);
-    setMovingIndex(null);
   }
 
   useEffect(() => {
@@ -57,68 +50,52 @@ export function App() {
     }),
     [items],
   );
-  const drawBounds = useMemo(() => boundsFromPoints(drawPoints), [drawPoints]);
+  const controls = (
+    <>
+      {error && <div className="pointer-events-auto border border-destructive bg-card p-3 text-xs text-destructive">{error}</div>}
+      <div className="pointer-events-auto">
+        <LayerControls
+          visible={visible}
+          labelVisible={overlayLabels}
+          counts={counts}
+          onChange={setVisible}
+          onLabelChange={setOverlayLabels}
+        />
+      </div>
+    </>
+  );
 
   return (
     <main className="relative h-full w-full bg-background text-foreground">
-      <MapView
-        items={filtered}
-        selected={selected}
-        drawKind={drawKind}
-        showOceanSeas={visible.ocean_seas}
-        showOceanSeasLabels={overlayLabels.ocean_seas}
-        showWorldEez={visible.world_eez}
-        showWorldEezLabels={overlayLabels.world_eez}
-        drawPoints={drawPoints}
-        drawBounds={drawBounds}
-        movingIndex={movingIndex}
-        onSelect={(item) => setSelected(item)}
-        onClearSelection={() => setSelected(null)}
-        onAddPoint={(point) => setDrawPoints((points) => [...points, point])}
-        onInsertPoint={(index, point) => setDrawPoints((points) => [...points.slice(0, index), point, ...points.slice(index)])}
-        onRemovePoint={(index) => {
-          setDrawPoints((points) => points.filter((_, i) => i !== index));
-          setMovingIndex((current) => current === index ? null : current !== null && current > index ? current - 1 : current);
-        }}
-        onBeginMovePoint={setMovingIndex}
-        onMovePoint={(index, point) => {
-          setDrawPoints((points) => points.map((current, i) => i === index ? point : current));
-          setMovingIndex(null);
-        }}
-      />
-
-      <div className="pointer-events-none absolute right-4 top-4 z-[1000] w-96 space-y-3">
-        {error && <div className="pointer-events-auto border border-destructive bg-card p-3 text-xs text-destructive">{error}</div>}
-        <div className="pointer-events-auto">
-          <LayerControls
+      {DevMapEditor ? (
+        <Suspense fallback={null}>
+          <DevMapEditor
+            items={filtered}
+            selected={selected}
             visible={visible}
-            labelVisible={overlayLabels}
-            counts={counts}
-            onChange={setVisible}
-            onLabelChange={setOverlayLabels}
+            overlayLabels={overlayLabels}
+            controls={controls}
+            onSelect={setSelected}
+            onRefresh={() => { void refresh(); }}
           />
-        </div>
-        {import.meta.env.DEV && (
-          <div className="pointer-events-auto max-h-[calc(100vh-12rem)] overflow-auto">
-            <EditorPanel
-              selected={selected}
-              bounds={drawBounds}
-              points={drawPoints}
-              pointsCount={drawPoints.length}
-              onStartCreate={(kind) => { setDrawKind(kind); setDrawPoints([]); setMovingIndex(null); }}
-              onStartEdit={(item) => {
-                setDrawKind(item.kind);
-                setDrawPoints(item.kind === 'areas_of_interest' ? item.data.bounds : boundsCorners(item.data.bounds));
-                setMovingIndex(null);
-              }}
-              onClose={closeEditor}
-              onClearPoints={() => { setDrawPoints([]); setMovingIndex(null); }}
-              onClearSelection={() => { setSelected(null); closeEditor(); }}
-              onSaved={() => { setSelected(null); closeEditor(); void refresh(); }}
-            />
+        </Suspense>
+      ) : (
+        <>
+          <MapView
+            items={filtered}
+            selected={selected}
+            showOceanSeas={visible.ocean_seas}
+            showOceanSeasLabels={overlayLabels.ocean_seas}
+            showWorldEez={visible.world_eez}
+            showWorldEezLabels={overlayLabels.world_eez}
+            onSelect={setSelected}
+            onClearSelection={() => setSelected(null)}
+          />
+          <div className="pointer-events-none absolute right-4 top-4 z-[1000] w-96 space-y-3">
+            {controls}
           </div>
-        )}
-      </div>
+        </>
+      )}
     </main>
   );
 }
