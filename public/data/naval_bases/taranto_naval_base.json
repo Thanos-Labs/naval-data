@@ -1,0 +1,25 @@
+{
+  "name": "Taranto Naval Base",
+  "country": "Italy",
+  "operator": "Italian Navy",
+  "bounds": {
+    "north": 40.49,
+    "south": 40.43,
+    "east": 17.265,
+    "west": 17.205
+  },
+  "location": {
+    "lat": 40.46,
+    "lon": 17.235
+  },
+  "nearest_city": "Taranto",
+  "max_ship_length_m": 244,
+  "max_ship_beam_m": 39,
+  "max_draught_m": 9,
+  "pier_depth_m": 10,
+  "dry_dock_length_m": null,
+  "carrier_capable": "yes",
+  "homeport_for_carriers": true,
+  "notes": "Italian Navy base on Mar Grande and homeport of the aircraft carrier Cavour.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Taranto"
+}

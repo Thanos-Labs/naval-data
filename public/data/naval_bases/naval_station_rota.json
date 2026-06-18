@@ -1,0 +1,25 @@
+{
+  "name": "Naval Station Rota",
+  "country": "Spain",
+  "operator": "Spanish Navy",
+  "bounds": {
+    "north": 36.62978706112516,
+    "south": 36.608672522366135,
+    "east": -6.322503089904785,
+    "west": -6.3378238677978525
+  },
+  "location": {
+    "lat": 36.619229791745646,
+    "lon": -6.330163478851318
+  },
+  "nearest_city": "Jerez de la Frontera",
+  "max_ship_length_m": null,
+  "max_ship_beam_m": null,
+  "max_draught_m": null,
+  "pier_depth_m": null,
+  "dry_dock_length_m": null,
+  "carrier_capable": "yes",
+  "homeport_for_carriers": true,
+  "notes": null,
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Naval_Station_Rota"
+}
