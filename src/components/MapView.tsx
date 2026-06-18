@@ -4,6 +4,8 @@ import { useMemo } from 'react';
 import type { Bounds, GeoItem, Point } from '../data/types';
 import { boundsArea, leafletBounds, leafletPolygon, pointsArea, shiftBounds, shiftPoints } from '../lib/bounds';
 import { DataRectangle } from './DataRectangle';
+import { OceanSeasLayer } from './OceanSeasLayer';
+import { WorldEezLayer } from './WorldEezLayer';
 
 function ClickCapture({
   enabled,
@@ -53,6 +55,10 @@ export function MapView({
   items,
   selected,
   drawKind,
+  showOceanSeas,
+  showOceanSeasLabels,
+  showWorldEez,
+  showWorldEezLabels,
   drawPoints,
   drawBounds,
   movingIndex,
@@ -67,6 +73,10 @@ export function MapView({
   items: GeoItem[];
   selected: GeoItem | null;
   drawKind: GeoItem['kind'] | null;
+  showOceanSeas: boolean;
+  showOceanSeasLabels: boolean;
+  showWorldEez: boolean;
+  showWorldEezLabels: boolean;
   drawPoints: Point[];
   drawBounds: Bounds | null;
   movingIndex: number | null;
@@ -92,6 +102,8 @@ export function MapView({
         attribution="Tiles &copy; Esri &mdash; Source: Esri, Maxar, Earthstar Geographics, GIS User Community"
         url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
       />
+      <OceanSeasLayer visible={showOceanSeas} showLabels={showOceanSeasLabels} />
+      <WorldEezLayer visible={showWorldEez} showLabels={showWorldEezLabels} />
       {sortedItems.flatMap((item) => {
         const key = itemKey(item);
         return [-360, 0, 360].map((offset) => (

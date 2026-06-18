@@ -1,0 +1,25 @@
+{
+  "name": "Naval Base Kitsap",
+  "country": "United States",
+  "operator": "United States Navy",
+  "bounds": {
+    "north": 47.59,
+    "south": 47.53,
+    "east": -122.61,
+    "west": -122.69
+  },
+  "location": {
+    "lat": 47.56,
+    "lon": -122.65
+  },
+  "nearest_city": "Bremerton",
+  "max_ship_length_m": 337,
+  "max_ship_beam_m": 78,
+  "max_draught_m": 12,
+  "pier_depth_m": null,
+  "dry_dock_length_m": 337,
+  "carrier_capable": "yes",
+  "homeport_for_carriers": true,
+  "notes": "Major Puget Sound naval base with carrier homeporting and West Coast dry-dock capability for Nimitz-class aircraft carriers.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Naval_Base_Kitsap"
+}
