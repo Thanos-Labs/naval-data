@@ -32,6 +32,11 @@ export function DevMapEditor({
     setDrawPoints([]);
   }
 
+  function selectMapItem(item: GeoItem) {
+    if (drawKind !== null) return;
+    onSelect(item);
+  }
+
   return (
     <>
       <MapView
@@ -41,9 +46,10 @@ export function DevMapEditor({
         showOceanSeasLabels={overlayLabels.ocean_seas}
         showWorldEez={visible.world_eez}
         showWorldEezLabels={overlayLabels.world_eez}
-        onSelect={onSelect}
+        onSelect={selectMapItem}
         onClearSelection={() => onSelect(null)}
         clearSelectionOnMapClick={drawKind === null}
+        editing={drawKind !== null}
       >
         <DevEditPointLayer
           kind={drawKind}

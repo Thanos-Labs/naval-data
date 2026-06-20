@@ -42,6 +42,7 @@ export function MapView({
   onSelect,
   onClearSelection,
   clearSelectionOnMapClick = true,
+  editing = false,
   children,
 }: {
   items: GeoItem[];
@@ -53,6 +54,7 @@ export function MapView({
   onSelect: (item: GeoItem) => void;
   onClearSelection: () => void;
   clearSelectionOnMapClick?: boolean;
+  editing?: boolean;
   children?: ReactNode;
 }) {
   const center: LatLngExpression = [20, 0];
@@ -78,7 +80,7 @@ export function MapView({
             item={item}
             bounds={item.kind === 'areas_of_interest' ? shiftPoints(item.data.bounds, offset) : shiftBounds(item.data.bounds, offset)}
             selected={selectedKey === key}
-            editing={false}
+            editing={editing}
             onSelect={onSelect}
           />
         ));
