@@ -121,6 +121,8 @@ export function EditorPanel({
   const center = useMemo(() => (kind === 'areas_of_interest' ? centerFromPoints(points) : bounds ? centerFromBounds(bounds) : null), [bounds, kind, points]);
   const editing = mode === 'edit' ? selected : null;
   const data = editing?.data;
+  const areaNeedsMorePoints = kind === 'areas_of_interest' && points.length > 0 && points.length < 3;
+  const canSave = Boolean(bounds && center && !areaNeedsMorePoints);
 
   useEffect(() => {
     if (!selected && mode === 'edit') {
@@ -166,8 +168,10 @@ export function EditorPanel({
 
   async function submit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    if (!bounds || !center) return;
-    if (kind === 'areas_of_interest' && points.length < 3) return;
+    if (!canSave || !bounds || !center) {
+      if (areaNeedsMorePoints) setMessage('Add at least 3 points to save an area.');
+      return;
+    }
 
     const form = new FormData(event.currentTarget);
     const common = {
@@ -179,45 +183,45 @@ export function EditorPanel({
 
     const payload = kind === 'ports'
       ? {
+        ...common,
+        country: text(form.get('country'), true),
+        type: String(form.get('type')),
+        location: center,
+        nearest_city: text(form.get('nearest_city')),
+        operator: text(form.get('operator')),
+        max_ship_length_m: num(form.get('max_ship_length_m')),
+        max_ship_beam_m: num(form.get('max_ship_beam_m')),
+        max_draught_m: num(form.get('max_draught_m')),
+        berth_depth_m: num(form.get('berth_depth_m')),
+        channel_depth_m: num(form.get('channel_depth_m')),
+        carrier_capable: String(form.get('carrier_capable')),
+      }
+      : kind === 'naval_bases'
+        ? {
           ...common,
           country: text(form.get('country'), true),
-          type: String(form.get('type')),
+          operator: text(form.get('operator'), true),
           location: center,
           nearest_city: text(form.get('nearest_city')),
-          operator: text(form.get('operator')),
           max_ship_length_m: num(form.get('max_ship_length_m')),
           max_ship_beam_m: num(form.get('max_ship_beam_m')),
           max_draught_m: num(form.get('max_draught_m')),
-          berth_depth_m: num(form.get('berth_depth_m')),
-          channel_depth_m: num(form.get('channel_depth_m')),
+          pier_depth_m: num(form.get('pier_depth_m')),
+          dry_dock_length_m: num(form.get('dry_dock_length_m')),
           carrier_capable: String(form.get('carrier_capable')),
+          homeport_for_carriers: bool(form.get('homeport_for_carriers')),
         }
-      : kind === 'naval_bases'
-        ? {
-            ...common,
-            country: text(form.get('country'), true),
-            operator: text(form.get('operator'), true),
-            location: center,
-            nearest_city: text(form.get('nearest_city')),
-            max_ship_length_m: num(form.get('max_ship_length_m')),
-            max_ship_beam_m: num(form.get('max_ship_beam_m')),
-            max_draught_m: num(form.get('max_draught_m')),
-            pier_depth_m: num(form.get('pier_depth_m')),
-            dry_dock_length_m: num(form.get('dry_dock_length_m')),
-            carrier_capable: String(form.get('carrier_capable')),
-            homeport_for_carriers: bool(form.get('homeport_for_carriers')),
-          }
         : {
-            ...common,
-            bounds: points,
-            type: String(form.get('type')),
-            region: text(form.get('region'), true),
-            center,
-            min_depth_m: num(form.get('min_depth_m')),
-            min_width_km: num(form.get('min_width_km')),
-            strategic_value: String(form.get('strategic_value')),
-            carrier_navigable: bool(form.get('carrier_navigable')),
-          };
+          ...common,
+          bounds: points,
+          type: String(form.get('type')),
+          region: text(form.get('region'), true),
+          center,
+          min_depth_m: num(form.get('min_depth_m')),
+          min_width_km: num(form.get('min_width_km')),
+          strategic_value: String(form.get('strategic_value')),
+          carrier_navigable: bool(form.get('carrier_navigable')),
+        };
 
     const file = mode === 'edit' && data?._file ? `?file=${encodeURIComponent(data._file)}` : '';
     setSaving(true);
@@ -279,13 +283,15 @@ export function EditorPanel({
 
         <SectionHeader label="Bounds" count={pointsCount} />
         <div className="space-y-1 border border-border/60 bg-background/70 p-2 text-[11px] text-muted-foreground">
-          <div>Click map: add point</div>
-          <div>Click point: remove point</div>
-          <div>Ctrl+click / Alt+click (mac) point, then click map: move point</div>
-          <div>Click line segment: insert point between endpoints</div>
-          <div>Esc: cancel without saving</div>
+          <p>select point + delete: remove the point</p>
+          <p>select point + drag: move the point</p>
+          <p>ctrl + drag: select points within a bounding box</p>
+          <p>shift + select points: select multiple points</p>
+          <p>click line segment: insert a new point in the middle</p>
+          <p>esc: cancel without saving</p>
         </div>
         {bounds ? <BoundsReadout bounds={bounds} /> : <div className="text-xs text-muted-foreground">Add points to define bounds.</div>}
+        {areaNeedsMorePoints && <div className="text-xs text-destructive">Add at least 3 points to save an area.</div>}
 
         {bounds && (
           <form key={`${mode}:${kind}:${data?._file ?? 'new'}`} className="space-y-3" onSubmit={submit}>
@@ -319,7 +325,7 @@ export function EditorPanel({
               <textarea name="notes" defaultValue={data?.notes ?? ''} className="h-20 w-full border border-border bg-background px-2 py-1 text-foreground" />
             </label>
             <div className="flex gap-2">
-              <Button type="submit" variant="accent" disabled={saving}>Save</Button>
+              <Button type="submit" variant="accent" disabled={saving || !canSave}>Save</Button>
               <Button type="button" onClick={onClearPoints}>Clear Points</Button>
             </div>
             {message && <pre className="max-h-32 overflow-auto whitespace-pre-wrap text-[10px] text-muted-foreground">{message}</pre>}
