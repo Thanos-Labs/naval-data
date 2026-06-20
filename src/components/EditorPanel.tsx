@@ -121,6 +121,8 @@ export function EditorPanel({
   const center = useMemo(() => (kind === 'areas_of_interest' ? centerFromPoints(points) : bounds ? centerFromBounds(bounds) : null), [bounds, kind, points]);
   const editing = mode === 'edit' ? selected : null;
   const data = editing?.data;
+  const areaNeedsMorePoints = kind === 'areas_of_interest' && points.length > 0 && points.length < 3;
+  const canSave = Boolean(bounds && center && !areaNeedsMorePoints);
 
   useEffect(() => {
     if (!selected && mode === 'edit') {
@@ -166,8 +168,10 @@ export function EditorPanel({
 
   async function submit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    if (!bounds || !center) return;
-    if (kind === 'areas_of_interest' && points.length < 3) return;
+    if (!canSave || !bounds || !center) {
+      if (areaNeedsMorePoints) setMessage('Add at least 3 points to save an area.');
+      return;
+    }
 
     const form = new FormData(event.currentTarget);
     const common = {
@@ -287,6 +291,7 @@ export function EditorPanel({
           <p>esc: cancel without saving</p>
         </div>
         {bounds ? <BoundsReadout bounds={bounds} /> : <div className="text-xs text-muted-foreground">Add points to define bounds.</div>}
+        {areaNeedsMorePoints && <div className="text-xs text-destructive">Add at least 3 points to save an area.</div>}
 
         {bounds && (
           <form key={`${mode}:${kind}:${data?._file ?? 'new'}`} className="space-y-3" onSubmit={submit}>
@@ -320,7 +325,7 @@ export function EditorPanel({
               <textarea name="notes" defaultValue={data?.notes ?? ''} className="h-20 w-full border border-border bg-background px-2 py-1 text-foreground" />
             </label>
             <div className="flex gap-2">
-              <Button type="submit" variant="accent" disabled={saving}>Save</Button>
+              <Button type="submit" variant="accent" disabled={saving || !canSave}>Save</Button>
               <Button type="button" onClick={onClearPoints}>Clear Points</Button>
             </div>
             {message && <pre className="max-h-32 overflow-auto whitespace-pre-wrap text-[10px] text-muted-foreground">{message}</pre>}
