@@ -11,15 +11,21 @@ async function loadJson<T>(path: string): Promise<T> {
   return response.json() as Promise<T>;
 }
 
+type KeyedCollection<T> = Record<string, T>;
+
+function collectionValues<T>(collection: KeyedCollection<T>) {
+  return Object.values(collection);
+}
+
 export async function loadData(): Promise<GeoItem[]> {
   const [poi, areas] = await Promise.all([
-    loadJson<PointOfInterest[]>('/data/poi.json'),
-    loadJson<AreaOfInterest[]>('/data/aoi.json'),
+    loadJson<KeyedCollection<PointOfInterest>>('/data/poi.json'),
+    loadJson<KeyedCollection<AreaOfInterest>>('/data/aoi.json'),
   ]);
 
   return [
-    ...poi.map((data) => ({ kind: 'poi' as const, data })),
-    ...areas.map((data) => ({ kind: 'aoi' as const, data })),
+    ...collectionValues(poi).map((data) => ({ kind: 'poi' as const, data })),
+    ...collectionValues(areas).map((data) => ({ kind: 'aoi' as const, data })),
   ];
 }
 
