@@ -2,9 +2,9 @@ import type { FacilityLayerKind, LayerVisibility, OverlayKind } from '../data/ty
 import { colors, labels } from '../data/loaders';
 import { ColorIndicator, Panel } from './ui';
 
-const dataOrder = ['ports', 'naval_bases', 'shipyards', 'areas_of_interest'] as const;
+const dataOrder = ['ports', 'naval_bases', 'shipyards', 'aoi'] as const;
 const overlayOrder: OverlayKind[] = ['ocean_seas', 'world_eez'];
-type DataLayerKind = FacilityLayerKind | 'areas_of_interest';
+type DataLayerKind = FacilityLayerKind | 'aoi';
 
 export function LayerControls({
   visible,

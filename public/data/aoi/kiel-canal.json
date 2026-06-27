@@ -1,0 +1,34 @@
+{
+  "id": "kiel-canal",
+  "name": "Kiel Canal",
+  "type": "canal",
+  "region": "Germany",
+  "bounds": {
+    "north": 54.5,
+    "south": 53.8,
+    "east": 10.2,
+    "west": 8.8
+  },
+  "poly": [
+    {
+      "lat": 54.5,
+      "lon": 8.8
+    },
+    {
+      "lat": 54.5,
+      "lon": 10.2
+    },
+    {
+      "lat": 53.8,
+      "lon": 10.2
+    },
+    {
+      "lat": 53.8,
+      "lon": 8.8
+    }
+  ],
+  "strategic_value": "medium",
+  "carrier_navigable": false,
+  "notes": "Artificial canal between the North Sea and Baltic; dimensions are too restrictive for aircraft carriers.",
+  "wiki_url": "https://en.wikipedia.org/wiki/Kiel_Canal"
+}

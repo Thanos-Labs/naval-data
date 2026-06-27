@@ -65,7 +65,7 @@ export function DevMapEditor({
             onStartCreate={(kind) => { setDrawKind(kind); setDrawPoints([]); }}
             onStartEdit={(item) => {
               setDrawKind(item.kind);
-              setDrawPoints(item.kind === 'areas_of_interest' ? item.data.bounds : boundsCorners(item.data.bounds));
+              setDrawPoints(item.kind === 'aoi' ? item.data.poly : boundsCorners(item.data.bounds));
             }}
             onClose={closeEditor}
             onClearPoints={() => setDrawPoints([])}

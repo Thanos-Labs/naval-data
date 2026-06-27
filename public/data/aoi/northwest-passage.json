@@ -1,0 +1,34 @@
+{
+  "id": "northwest-passage",
+  "name": "Northwest Passage",
+  "type": "sea_lane",
+  "region": "Canadian Arctic",
+  "bounds": {
+    "north": 76,
+    "south": 68,
+    "east": -70,
+    "west": -130
+  },
+  "poly": [
+    {
+      "lat": 76,
+      "lon": -130
+    },
+    {
+      "lat": 76,
+      "lon": -70
+    },
+    {
+      "lat": 68,
+      "lon": -70
+    },
+    {
+      "lat": 68,
+      "lon": -130
+    }
+  ],
+  "strategic_value": "medium",
+  "carrier_navigable": false,
+  "notes": "Arctic routes through the Canadian Arctic Archipelago; ice and shallow channels limit carrier operations.",
+  "wiki_url": "https://en.wikipedia.org/wiki/Northwest_Passage"
+}

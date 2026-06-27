@@ -1,0 +1,34 @@
+{
+  "id": "luzon-strait",
+  "name": "Luzon Strait",
+  "type": "chokepoint",
+  "region": "Western Pacific",
+  "bounds": {
+    "north": 22.2,
+    "south": 18,
+    "east": 123.5,
+    "west": 120
+  },
+  "poly": [
+    {
+      "lat": 22.2,
+      "lon": 120
+    },
+    {
+      "lat": 22.2,
+      "lon": 123.5
+    },
+    {
+      "lat": 18,
+      "lon": 123.5
+    },
+    {
+      "lat": 18,
+      "lon": 120
+    }
+  ],
+  "strategic_value": "high",
+  "carrier_navigable": true,
+  "notes": "Deep passage between Taiwan and Luzon connecting the South China Sea and Philippine Sea.",
+  "wiki_url": "https://en.wikipedia.org/wiki/Luzon_Strait"
+}

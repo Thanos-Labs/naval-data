@@ -17,7 +17,7 @@ type SelectBox = {
 
 function segmentIndexes(kind: DataKind, points: Point[]) {
   const segments = points.slice(0, -1).map((_, index) => [index, index + 1] as const);
-  if (kind === 'areas_of_interest' && points.length >= 3) segments.push([points.length - 1, 0]);
+  if (kind === 'aoi' && points.length >= 3) segments.push([points.length - 1, 0]);
   return segments;
 }
 
@@ -218,13 +218,13 @@ export function DevEditPointLayer({
       />
       <GestureMapDragToggle disabled={dragging !== null || selectBox !== null} />
       <Pane name="dev-edit-fill" style={{ zIndex: 610 }}>
-        {kind === 'areas_of_interest' && points.length >= 3 && (
+        {kind === 'aoi' && points.length >= 3 && (
           <Polygon
             positions={leafletPolygon(points)}
             pathOptions={{ color: '#ffffff', weight: 0, fillOpacity: 0.08, interactive: false }}
           />
         )}
-        {kind !== 'areas_of_interest' && bounds && (
+        {kind !== 'aoi' && bounds && (
           <Rectangle
             bounds={leafletBounds(bounds)}
             pathOptions={{ color: '#ffffff', weight: 2, dashArray: '6 6', fillOpacity: 0.08, interactive: false }}
@@ -232,7 +232,7 @@ export function DevEditPointLayer({
         )}
       </Pane>
       <Pane name="dev-edit-segments" style={{ zIndex: 620 }}>
-        {kind === 'areas_of_interest' && segmentIndexes(kind, points).map(([from, to], segmentIndex) => {
+        {kind === 'aoi' && segmentIndexes(kind, points).map(([from, to], segmentIndex) => {
           const positions: [[number, number], [number, number]] = [[points[from].lat, points[from].lon], [points[to].lat, points[to].lon]];
           return (
             <Polyline
@@ -244,7 +244,7 @@ export function DevEditPointLayer({
         })}
       </Pane>
       <Pane name="dev-edit-hit-targets" style={{ zIndex: 630 }}>
-        {kind === 'areas_of_interest' && segmentIndexes(kind, points).map(([from, to], segmentIndex) => {
+        {kind === 'aoi' && segmentIndexes(kind, points).map(([from, to], segmentIndex) => {
           const positions: [[number, number], [number, number]] = [[points[from].lat, points[from].lon], [points[to].lat, points[to].lon]];
           return (
             <Polyline

@@ -1,0 +1,34 @@
+{
+  "id": "strait-of-magellan",
+  "name": "Strait of Magellan",
+  "type": "chokepoint",
+  "region": "Chile",
+  "bounds": {
+    "north": -52,
+    "south": -54.5,
+    "east": -69,
+    "west": -75
+  },
+  "poly": [
+    {
+      "lat": -52,
+      "lon": -75
+    },
+    {
+      "lat": -52,
+      "lon": -69
+    },
+    {
+      "lat": -54.5,
+      "lon": -69
+    },
+    {
+      "lat": -54.5,
+      "lon": -75
+    }
+  ],
+  "strategic_value": "medium",
+  "carrier_navigable": true,
+  "notes": "Sheltered but narrow and complex passage through southern Chile.",
+  "wiki_url": "https://en.wikipedia.org/wiki/Strait_of_Magellan"
+}

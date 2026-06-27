@@ -1,8 +1,8 @@
 export type FacilityType = 'naval_base' | 'shipyard' | 'port';
 export type FacilityLayerKind = 'ports' | 'naval_bases' | 'shipyards';
-export type DataKind = 'poi' | 'areas_of_interest';
+export type DataKind = 'poi' | 'aoi';
 export type OverlayKind = 'ocean_seas' | 'world_eez';
-export type LayerKind = FacilityLayerKind | 'areas_of_interest' | OverlayKind;
+export type LayerKind = FacilityLayerKind | 'aoi' | OverlayKind;
 
 export type Point = {
   lat: number;
@@ -33,21 +33,20 @@ export type PointOfInterest = CollectionMeta & {
 };
 
 export type AreaOfInterest = CollectionMeta & {
+  id: string;
   name: string;
-  type: 'strait' | 'canal' | 'chokepoint' | 'sea_lane' | 'sea' | 'gulf' | 'bay' | 'operating_area';
+  type: 'chokepoint' | 'canal' | 'sea_lane' | 'operating_area';
   region: string;
-  bounds: Point[];
-  center: Point;
-  min_depth_m: number | null;
-  min_width_km: number | null;
+  bounds: Bounds;
+  poly: Point[];
   strategic_value: 'low' | 'medium' | 'high' | 'critical';
   carrier_navigable: boolean | null;
   notes: string | null;
-  wikipedia_url: string | null;
+  wiki_url: string | null;
 };
 
 export type GeoItem =
   | { kind: 'poi'; data: PointOfInterest }
-  | { kind: 'areas_of_interest'; data: AreaOfInterest };
+  | { kind: 'aoi'; data: AreaOfInterest };
 
 export type LayerVisibility = Record<LayerKind, boolean>;

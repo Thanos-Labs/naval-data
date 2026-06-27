@@ -14,12 +14,12 @@ async function loadJson<T>(path: string): Promise<T> {
 export async function loadData(): Promise<GeoItem[]> {
   const [poi, areas] = await Promise.all([
     loadJson<PointOfInterest[]>('/data/poi.json'),
-    loadJson<AreaOfInterest[]>('/data/areas_of_interest.json'),
+    loadJson<AreaOfInterest[]>('/data/aoi.json'),
   ]);
 
   return [
     ...poi.map((data) => ({ kind: 'poi' as const, data })),
-    ...areas.map((data) => ({ kind: 'areas_of_interest' as const, data })),
+    ...areas.map((data) => ({ kind: 'aoi' as const, data })),
   ];
 }
 
@@ -27,7 +27,7 @@ export const labels: Record<LayerKind, string> = {
   ports: 'Ports',
   naval_bases: 'Naval Bases',
   shipyards: 'Shipyards',
-  areas_of_interest: 'Areas of Interest',
+  aoi: 'Areas of Interest',
   ocean_seas: 'Oceans & Seas',
   world_eez: 'World EEZs',
 };
@@ -36,7 +36,7 @@ export const colors: Record<LayerKind, string> = {
   ports: '#48d7ff',
   naval_bases: '#ff6b6b',
   shipyards: '#ffb86b',
-  areas_of_interest: '#b7ff5a',
+  aoi: '#b7ff5a',
   ocean_seas: '#4f8cff',
   world_eez: '#f5d36b',
 };

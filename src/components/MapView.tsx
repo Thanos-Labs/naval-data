@@ -29,7 +29,7 @@ function itemKey(item: GeoItem) {
 }
 
 function itemArea(item: GeoItem) {
-  return item.kind === 'areas_of_interest' ? pointsArea(item.data.bounds) : boundsArea(item.data.bounds);
+  return item.kind === 'aoi' ? pointsArea(item.data.poly) : boundsArea(item.data.bounds);
 }
 
 export function MapView({
@@ -76,7 +76,7 @@ export function MapView({
           <DataRectangle
             key={`${key}:${offset}`}
             item={item}
-            bounds={item.kind === 'areas_of_interest' ? shiftPoints(item.data.bounds, offset) : shiftBounds(item.data.bounds, offset)}
+            bounds={item.kind === 'aoi' ? shiftPoints(item.data.poly, offset) : shiftBounds(item.data.bounds, offset)}
             selected={selectedKey === key}
             editing={false}
             onSelect={onSelect}

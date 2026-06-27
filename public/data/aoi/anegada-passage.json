@@ -1,0 +1,34 @@
+{
+  "id": "anegada-passage",
+  "name": "Anegada Passage",
+  "type": "chokepoint",
+  "region": "Caribbean",
+  "bounds": {
+    "north": 19.5,
+    "south": 17.5,
+    "east": -63,
+    "west": -65.5
+  },
+  "poly": [
+    {
+      "lat": 19.5,
+      "lon": -65.5
+    },
+    {
+      "lat": 19.5,
+      "lon": -63
+    },
+    {
+      "lat": 17.5,
+      "lon": -63
+    },
+    {
+      "lat": 17.5,
+      "lon": -65.5
+    }
+  ],
+  "strategic_value": "medium",
+  "carrier_navigable": true,
+  "notes": "Deep passage between the Virgin Islands and Anguilla/Saba bank area.",
+  "wiki_url": "https://en.wikipedia.org/wiki/Anegada_Passage"
+}

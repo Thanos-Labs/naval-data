@@ -1,0 +1,34 @@
+{
+  "id": "strait-of-messina",
+  "name": "Strait of Messina",
+  "type": "chokepoint",
+  "region": "Italy",
+  "bounds": {
+    "north": 38.4,
+    "south": 37.8,
+    "east": 15.8,
+    "west": 15.4
+  },
+  "poly": [
+    {
+      "lat": 38.4,
+      "lon": 15.4
+    },
+    {
+      "lat": 38.4,
+      "lon": 15.8
+    },
+    {
+      "lat": 37.8,
+      "lon": 15.8
+    },
+    {
+      "lat": 37.8,
+      "lon": 15.4
+    }
+  ],
+  "strategic_value": "medium",
+  "carrier_navigable": true,
+  "notes": "Narrow strait between Sicily and mainland Italy; navigable by large warships with constraints.",
+  "wiki_url": "https://en.wikipedia.org/wiki/Strait_of_Messina"
+}

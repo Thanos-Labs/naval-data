@@ -1,0 +1,34 @@
+{
+  "id": "tsugaru-strait",
+  "name": "Tsugaru Strait",
+  "type": "chokepoint",
+  "region": "Japan",
+  "bounds": {
+    "north": 41.8,
+    "south": 40.8,
+    "east": 142,
+    "west": 139.6
+  },
+  "poly": [
+    {
+      "lat": 41.8,
+      "lon": 139.6
+    },
+    {
+      "lat": 41.8,
+      "lon": 142
+    },
+    {
+      "lat": 40.8,
+      "lon": 142
+    },
+    {
+      "lat": 40.8,
+      "lon": 139.6
+    }
+  ],
+  "strategic_value": "medium",
+  "carrier_navigable": true,
+  "notes": "Passage between Honshu and Hokkaido linking the Sea of Japan and Pacific Ocean.",
+  "wiki_url": "https://en.wikipedia.org/wiki/Tsugaru_Strait"
+}

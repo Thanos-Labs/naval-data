@@ -7,11 +7,11 @@ import { Panel, SectionHeader, Button } from './ui';
 
 const kindLabels: Record<DataKind, string> = {
   poi: 'Point of Interest',
-  areas_of_interest: 'Area of Interest',
+  aoi: 'Area of Interest',
 };
 
 const poiTypes = ['naval_base', 'shipyard', 'port'];
-const areaTypes = ['strait', 'canal', 'chokepoint', 'sea_lane', 'sea', 'gulf', 'bay', 'operating_area'];
+const areaTypes = ['chokepoint', 'canal', 'sea_lane', 'operating_area'];
 const strategic = ['low', 'medium', 'high', 'critical'];
 
 type Mode = 'create' | 'edit';
@@ -127,7 +127,7 @@ export function EditorPanel({
   const [kind, setKind] = useState<DataKind>('poi');
   const [saving, setSaving] = useState(false);
   const [message, setMessage] = useState<string | null>(null);
-  const center = useMemo(() => (kind === 'areas_of_interest' ? centerFromPoints(points) : bounds ? centerFromBounds(bounds) : null), [bounds, kind, points]);
+  const center = useMemo(() => (kind === 'aoi' ? centerFromPoints(points) : bounds ? centerFromBounds(bounds) : null), [bounds, kind, points]);
   const editing = mode === 'edit' ? selected : null;
   const data = editing?.data;
 
@@ -176,14 +176,14 @@ export function EditorPanel({
   async function submit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (!bounds || !center) return;
-    if (kind === 'areas_of_interest' && points.length < 3) return;
+    if (kind === 'aoi' && points.length < 3) return;
 
     const form = new FormData(event.currentTarget);
     const common = {
       name: text(form.get('name'), true),
       bounds,
       notes: text(form.get('notes')),
-      wikipedia_url: text(form.get('wikipedia_url')),
+      wiki_url: text(form.get('wiki_url')),
     };
 
     const payload = kind === 'poi'
@@ -200,12 +200,11 @@ export function EditorPanel({
       }
       : {
           ...common,
-          bounds: points,
+          id: text(form.get('id'), true),
+          bounds: common.bounds,
+          poly: points,
           type: String(form.get('type')),
           region: text(form.get('region'), true),
-          center,
-          min_depth_m: num(form.get('min_depth_m')),
-          min_width_km: num(form.get('min_width_km')),
           strategic_value: String(form.get('strategic_value')),
           carrier_navigable: bool(form.get('carrier_navigable')),
         };
@@ -286,18 +285,17 @@ export function EditorPanel({
             {kind === 'poi' && <Field name="proper" label="Proper Name" required value={getText(data, 'proper')} />}
             {kind === 'poi' && <Field name="country" label="Country" required value={getText(data, 'country')} />}
             {kind === 'poi' && <Select name="type" label="Type" values={poiTypes} value={String(getValue(data, 'type') ?? poiTypes[0])} />}
-            {kind === 'areas_of_interest' && <Select name="type" label="Type" values={areaTypes} value={String(getValue(data, 'type') ?? areaTypes[0])} />}
-            {kind === 'areas_of_interest' && <Field name="region" label="Region" required value={getText(data, 'region')} />}
+            {kind === 'aoi' && <Field name="id" label="ID" required value={getText(data, 'id')} />}
+            {kind === 'aoi' && <Select name="type" label="Type" values={areaTypes} value={String(getValue(data, 'type') ?? areaTypes[0])} />}
+            {kind === 'aoi' && <Field name="region" label="Region" required value={getText(data, 'region')} />}
             {kind === 'poi' && <Field name="operator" label="Operator" value={getText(data, 'operator')} />}
 
-            {kind === 'areas_of_interest' && <Select name="strategic_value" label="Strategic Value" values={strategic} value={String(getValue(data, 'strategic_value') ?? strategic[0])} />}
-            {kind === 'areas_of_interest' && <TriBool name="carrier_navigable" label="Carrier Navigable" value={getBool(data, 'carrier_navigable')} />}
+            {kind === 'aoi' && <Select name="strategic_value" label="Strategic Value" values={strategic} value={String(getValue(data, 'strategic_value') ?? strategic[0])} />}
+            {kind === 'aoi' && <TriBool name="carrier_navigable" label="Carrier Navigable" value={getBool(data, 'carrier_navigable')} />}
             {kind === 'poi' && <Field name="carriers" label="Carriers" value={listText(getValue(data, 'carriers'))} />}
-            {kind === 'areas_of_interest' && <Field name="min_depth_m" label="Min Depth M" type="number" value={getText(data, 'min_depth_m')} />}
-            {kind === 'areas_of_interest' && <Field name="min_width_km" label="Min Width KM" type="number" value={getText(data, 'min_width_km')} />}
 
-            {kind === 'areas_of_interest' && <Field name="wikipedia_url" label="Wikipedia URL" value={getText(data, 'wikipedia_url')} />}
-            {kind === 'areas_of_interest' && (
+            {kind === 'aoi' && <Field name="wiki_url" label="Wiki URL" value={getText(data, 'wiki_url')} />}
+            {kind === 'aoi' && (
               <label className="space-y-1 text-xs text-muted-foreground">
                 <span className="tracking-tui uppercase">Notes</span>
                 <textarea name="notes" defaultValue={String(getValue(data, 'notes') ?? '')} className="h-20 w-full border border-border bg-background px-2 py-1 text-foreground" />

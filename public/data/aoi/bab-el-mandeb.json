@@ -1,0 +1,34 @@
+{
+  "id": "bab-el-mandeb",
+  "name": "Bab el-Mandeb",
+  "type": "chokepoint",
+  "region": "Red Sea / Gulf of Aden",
+  "bounds": {
+    "north": 13.3,
+    "south": 11.8,
+    "east": 44.5,
+    "west": 42.8
+  },
+  "poly": [
+    {
+      "lat": 13.3,
+      "lon": 42.8
+    },
+    {
+      "lat": 13.3,
+      "lon": 44.5
+    },
+    {
+      "lat": 11.8,
+      "lon": 44.5
+    },
+    {
+      "lat": 11.8,
+      "lon": 42.8
+    }
+  ],
+  "strategic_value": "critical",
+  "carrier_navigable": true,
+  "notes": "Southern Red Sea chokepoint linking the Red Sea and Gulf of Aden.",
+  "wiki_url": "https://en.wikipedia.org/wiki/Bab-el-Mandeb"
+}

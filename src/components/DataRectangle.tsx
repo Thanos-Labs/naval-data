@@ -11,11 +11,11 @@ function subtitle(item: GeoItem) {
 }
 
 function notes(item: GeoItem) {
-  return item.kind === 'areas_of_interest' ? item.data.notes : null;
+  return item.kind === 'aoi' ? item.data.notes : null;
 }
 
 function wiki(item: GeoItem) {
-  return item.kind === 'areas_of_interest' ? item.data.wikipedia_url : null;
+  return item.kind === 'aoi' ? item.data.wiki_url : null;
 }
 
 function itemLabel(item: GeoItem) {

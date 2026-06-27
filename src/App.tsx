@@ -12,7 +12,7 @@ const initialVisibility: LayerVisibility = {
   ports: true,
   naval_bases: true,
   shipyards: true,
-  areas_of_interest: true,
+  aoi: true,
   ocean_seas: false,
   world_eez: false,
 };
@@ -57,7 +57,7 @@ export function App() {
       ports: items.filter((item) => item.kind === 'poi' && item.data.type === 'port').length,
       naval_bases: items.filter((item) => item.kind === 'poi' && item.data.type === 'naval_base').length,
       shipyards: items.filter((item) => item.kind === 'poi' && item.data.type === 'shipyard').length,
-      areas_of_interest: items.filter((item) => item.kind === 'areas_of_interest').length,
+      aoi: items.filter((item) => item.kind === 'aoi').length,
     }),
     [items],
   );
