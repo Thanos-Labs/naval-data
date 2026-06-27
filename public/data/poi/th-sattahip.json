@@ -1,0 +1,21 @@
+{
+  "id": "th-sattahip",
+  "name": "Sattahip",
+  "proper": "Sattahip Naval Base",
+  "type": "naval_base",
+  "country": "Thailand",
+  "operator": "Royal Thai Navy",
+  "bounds": {
+    "north": 12.656752858641697,
+    "south": 12.619022940154691,
+    "east": 100.92322111129762,
+    "west": 100.86256027221681
+  },
+  "center": {
+    "lat": 12.637887899398194,
+    "lon": 100.89289069175722
+  },
+  "carriers": [
+    "th-chakri-naruebet"
+  ]
+}

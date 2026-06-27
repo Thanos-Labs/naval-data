@@ -1,0 +1,19 @@
+{
+  "id": "es-base-naval-de-rota",
+  "name": "Rota",
+  "proper": "Base Naval de Rota",
+  "type": "naval_base",
+  "country": "Spain",
+  "operator": "Spanish Navy",
+  "bounds": {
+    "north": 36.62589525627344,
+    "south": 36.61080835031683,
+    "east": -6.311216354370118,
+    "west": -6.336321830749513
+  },
+  "center": {
+    "lat": 36.618351803295134,
+    "lon": -6.323769092559815
+  },
+  "carriers": []
+}

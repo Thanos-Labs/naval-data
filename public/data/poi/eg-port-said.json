@@ -1,0 +1,19 @@
+{
+  "id": "eg-port-said",
+  "name": "Port Said",
+  "proper": "Port Said",
+  "type": "port",
+  "country": "Egypt",
+  "operator": "Suez Canal Authority",
+  "bounds": {
+    "north": 31.315,
+    "south": 31.215,
+    "east": 32.352,
+    "west": 32.252
+  },
+  "center": {
+    "lat": 31.265,
+    "lon": 32.302
+  },
+  "carriers": []
+}

@@ -1,0 +1,19 @@
+{
+  "id": "sg-changi",
+  "name": "Changi",
+  "proper": "Changi Naval Base",
+  "type": "naval_base",
+  "country": "Singapore",
+  "operator": "Republic of Singapore Navy",
+  "bounds": {
+    "north": 1.367,
+    "south": 1.267,
+    "east": 104.075,
+    "west": 103.975
+  },
+  "center": {
+    "lat": 1.317,
+    "lon": 104.025
+  },
+  "carriers": []
+}

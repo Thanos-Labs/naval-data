@@ -1,0 +1,22 @@
+{
+  "id": "us-north-island",
+  "name": "North Island",
+  "proper": "Naval Air Station North Island",
+  "type": "naval_base",
+  "country": "United States",
+  "operator": "United States Navy",
+  "bounds": {
+    "north": 32.71566625570318,
+    "south": 32.6814298884819,
+    "east": -117.18008995056154,
+    "west": -117.24034309387207
+  },
+  "center": {
+    "lat": 32.698548072092535,
+    "lon": -117.2102165222168
+  },
+  "carriers": [
+    "us-abraham-lincoln",
+    "us-john-c-stennis"
+  ]
+}

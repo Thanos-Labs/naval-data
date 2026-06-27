@@ -1,0 +1,22 @@
+{
+  "id": "uk-portsmouth",
+  "name": "Portsmouth",
+  "proper": "HMNB Portsmouth",
+  "type": "naval_base",
+  "country": "United Kingdom",
+  "operator": "Royal Navy",
+  "bounds": {
+    "north": 50.81165676176885,
+    "south": 50.79757414320238,
+    "east": -1.0954999923706057,
+    "west": -1.1158847808837893
+  },
+  "center": {
+    "lat": 50.80461545248562,
+    "lon": -1.1056923866271975
+  },
+  "carriers": [
+    "uk-prince-of-wales",
+    "uk-queen-elizabeth"
+  ]
+}

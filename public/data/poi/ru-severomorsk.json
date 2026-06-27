@@ -1,0 +1,21 @@
+{
+  "id": "ru-severomorsk",
+  "name": "Severomorsk",
+  "proper": "Severomorsk Naval Base",
+  "type": "naval_base",
+  "country": "Russia",
+  "operator": "Russian Navy",
+  "bounds": {
+    "north": 69.08833193744714,
+    "south": 69.07800537416125,
+    "east": 33.44126701354981,
+    "west": 33.39745044708253
+  },
+  "center": {
+    "lat": 69.0831686558042,
+    "lon": 33.41935873031617
+  },
+  "carriers": [
+    "ru-admiral-kuznetsov"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "us-mayport",
+  "name": "Mayport",
+  "proper": "Naval Station Mayport",
+  "type": "naval_base",
+  "country": "United States",
+  "operator": "United States Navy",
+  "bounds": {
+    "north": 30.442,
+    "south": 30.342,
+    "east": -81.374,
+    "west": -81.474
+  },
+  "center": {
+    "lat": 30.392,
+    "lon": -81.424
+  },
+  "carriers": []
+}

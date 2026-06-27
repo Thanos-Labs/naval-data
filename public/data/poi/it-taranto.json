@@ -1,0 +1,22 @@
+{
+  "id": "it-taranto",
+  "name": "Taranto",
+  "proper": "Taranto Naval Base",
+  "type": "naval_base",
+  "country": "Italy",
+  "operator": "Italian Navy",
+  "bounds": {
+    "north": 40.49,
+    "south": 40.43,
+    "east": 17.265,
+    "west": 17.205
+  },
+  "center": {
+    "lat": 40.46,
+    "lon": 17.235
+  },
+  "carriers": [
+    "it-cavour",
+    "it-giuseppe-garibaldi"
+  ]
+}

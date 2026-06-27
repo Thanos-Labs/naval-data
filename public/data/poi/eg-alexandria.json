@@ -1,0 +1,21 @@
+{
+  "id": "eg-alexandria",
+  "name": "Alexandria",
+  "proper": "Alexandria Naval Base",
+  "type": "naval_base",
+  "country": "Egypt",
+  "operator": "Egyptian Navy",
+  "bounds": {
+    "north": 31.32029921807511,
+    "south": 31.317769541040384,
+    "east": 30.078248977661136,
+    "west": 30.07166147232056
+  },
+  "center": {
+    "lat": 31.31903437955775,
+    "lon": 30.07495522499085
+  },
+  "carriers": [
+    "eg-anwar-el-sadat"
+  ]
+}

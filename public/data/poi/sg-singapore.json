@@ -1,0 +1,19 @@
+{
+  "id": "sg-singapore",
+  "name": "Singapore",
+  "proper": "Port of Singapore",
+  "type": "port",
+  "country": "Singapore",
+  "operator": "Maritime and Port Authority of Singapore",
+  "bounds": {
+    "north": 1.314,
+    "south": 1.214,
+    "east": 103.89,
+    "west": 103.79
+  },
+  "center": {
+    "lat": 1.264,
+    "lon": 103.84
+  },
+  "carriers": []
+}

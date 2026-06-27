@@ -25,7 +25,7 @@ function ClearSelectionEvents({
 }
 
 function itemKey(item: GeoItem) {
-  return `${item.kind}:${item.data._file ?? item.data.name}`;
+  return `${item.kind}:${item.data._file ?? (item.kind === 'poi' ? item.data.id : item.data.name)}`;
 }
 
 function itemArea(item: GeoItem) {

@@ -1,0 +1,23 @@
+{
+  "id": "jp-yokosuka",
+  "name": "Yokosuka",
+  "proper": "Yokosuka Naval Base",
+  "type": "naval_base",
+  "country": "Japan",
+  "operator": "United States Navy / Japan Maritime Self-Defense Force",
+  "bounds": {
+    "north": 35.342,
+    "south": 35.242,
+    "east": 139.722,
+    "west": 139.622
+  },
+  "center": {
+    "lat": 35.292,
+    "lon": 139.67200000000003
+  },
+  "carriers": [
+    "jp-hyuga",
+    "jp-izumo",
+    "us-george-washington"
+  ]
+}

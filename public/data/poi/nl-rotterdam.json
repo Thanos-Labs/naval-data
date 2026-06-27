@@ -1,0 +1,19 @@
+{
+  "id": "nl-rotterdam",
+  "name": "Rotterdam",
+  "proper": "Port of Rotterdam",
+  "type": "port",
+  "country": "Netherlands",
+  "operator": "Port of Rotterdam Authority",
+  "bounds": {
+    "north": 52.005,
+    "south": 51.905,
+    "east": 4.184,
+    "west": 4.084
+  },
+  "center": {
+    "lat": 51.955,
+    "lon": 4.134
+  },
+  "carriers": []
+}

@@ -6,14 +6,12 @@ import { centerFromBounds, centerFromPoints } from '../lib/bounds';
 import { Panel, SectionHeader, Button } from './ui';
 
 const kindLabels: Record<DataKind, string> = {
-  ports: 'Port',
-  naval_bases: 'Naval Base',
+  poi: 'Point of Interest',
   areas_of_interest: 'Area of Interest',
 };
 
-const portTypes = ['commercial', 'military', 'dual_use', 'shipyard', 'terminal'];
+const poiTypes = ['naval_base', 'shipyard', 'port'];
 const areaTypes = ['strait', 'canal', 'chokepoint', 'sea_lane', 'sea', 'gulf', 'bay', 'operating_area'];
-const carrier = ['yes', 'no', 'limited', 'unknown'];
 const strategic = ['low', 'medium', 'high', 'critical'];
 
 type Mode = 'create' | 'edit';
@@ -38,6 +36,17 @@ function boolValue(value: boolean | null | undefined) {
   if (value === true) return 'true';
   if (value === false) return 'false';
   return 'null';
+}
+
+function listText(value: unknown) {
+  return Array.isArray(value) ? value.join(', ') : '';
+}
+
+function list(value: FormDataEntryValue | null) {
+  return String(value ?? '')
+    .split(',')
+    .map((item) => item.trim())
+    .filter(Boolean);
 }
 
 function getValue(item: GeoItem['data'] | undefined, key: string) {
@@ -115,7 +124,7 @@ export function EditorPanel({
 }) {
   const [open, setOpen] = useState(false);
   const [mode, setMode] = useState<Mode>('create');
-  const [kind, setKind] = useState<DataKind>('ports');
+  const [kind, setKind] = useState<DataKind>('poi');
   const [saving, setSaving] = useState(false);
   const [message, setMessage] = useState<string | null>(null);
   const center = useMemo(() => (kind === 'areas_of_interest' ? centerFromPoints(points) : bounds ? centerFromBounds(bounds) : null), [bounds, kind, points]);
@@ -177,37 +186,19 @@ export function EditorPanel({
       wikipedia_url: text(form.get('wikipedia_url')),
     };
 
-    const payload = kind === 'ports'
+    const payload = kind === 'poi'
       ? {
-        ...common,
-        country: text(form.get('country'), true),
+        id: text(form.get('id'), true),
+        name: text(form.get('name'), true),
+        proper: text(form.get('proper'), true),
         type: String(form.get('type')),
-        location: center,
-        nearest_city: text(form.get('nearest_city')),
+        country: text(form.get('country'), true),
         operator: text(form.get('operator')),
-        max_ship_length_m: num(form.get('max_ship_length_m')),
-        max_ship_beam_m: num(form.get('max_ship_beam_m')),
-        max_draught_m: num(form.get('max_draught_m')),
-        berth_depth_m: num(form.get('berth_depth_m')),
-        channel_depth_m: num(form.get('channel_depth_m')),
-        carrier_capable: String(form.get('carrier_capable')),
+        bounds: common.bounds,
+        center,
+        carriers: list(form.get('carriers')),
       }
-      : kind === 'naval_bases'
-        ? {
-          ...common,
-          country: text(form.get('country'), true),
-          operator: text(form.get('operator'), true),
-          location: center,
-          nearest_city: text(form.get('nearest_city')),
-          max_ship_length_m: num(form.get('max_ship_length_m')),
-          max_ship_beam_m: num(form.get('max_ship_beam_m')),
-          max_draught_m: num(form.get('max_draught_m')),
-          pier_depth_m: num(form.get('pier_depth_m')),
-          dry_dock_length_m: num(form.get('dry_dock_length_m')),
-          carrier_capable: String(form.get('carrier_capable')),
-          homeport_for_carriers: bool(form.get('homeport_for_carriers')),
-        }
-        : {
+      : {
           ...common,
           bounds: points,
           type: String(form.get('type')),
@@ -291,34 +282,27 @@ export function EditorPanel({
         {bounds && (
           <form key={`${mode}:${kind}:${data?._file ?? 'new'}`} className="space-y-3" onSubmit={submit}>
             <Field name="name" label="Name" required value={data?.name} />
-            {kind !== 'areas_of_interest' && <Field name="country" label="Country" required value={getText(data, 'country')} />}
-            {kind === 'ports' && <Select name="type" label="Type" values={portTypes} value={String(getValue(data, 'type') ?? portTypes[0])} />}
+            {kind === 'poi' && <Field name="id" label="ID" required value={getText(data, 'id')} />}
+            {kind === 'poi' && <Field name="proper" label="Proper Name" required value={getText(data, 'proper')} />}
+            {kind === 'poi' && <Field name="country" label="Country" required value={getText(data, 'country')} />}
+            {kind === 'poi' && <Select name="type" label="Type" values={poiTypes} value={String(getValue(data, 'type') ?? poiTypes[0])} />}
             {kind === 'areas_of_interest' && <Select name="type" label="Type" values={areaTypes} value={String(getValue(data, 'type') ?? areaTypes[0])} />}
             {kind === 'areas_of_interest' && <Field name="region" label="Region" required value={getText(data, 'region')} />}
-            {kind === 'naval_bases' && <Field name="operator" label="Operator" required value={getText(data, 'operator')} />}
-            {kind === 'ports' && <Field name="operator" label="Operator" value={getText(data, 'operator')} />}
-            {kind !== 'areas_of_interest' && <Field name="nearest_city" label="Nearest City" value={getText(data, 'nearest_city')} />}
+            {kind === 'poi' && <Field name="operator" label="Operator" value={getText(data, 'operator')} />}
 
-            {kind !== 'areas_of_interest' && <Select name="carrier_capable" label="Carrier Capable" values={carrier} value={String(getValue(data, 'carrier_capable') ?? carrier[0])} />}
             {kind === 'areas_of_interest' && <Select name="strategic_value" label="Strategic Value" values={strategic} value={String(getValue(data, 'strategic_value') ?? strategic[0])} />}
             {kind === 'areas_of_interest' && <TriBool name="carrier_navigable" label="Carrier Navigable" value={getBool(data, 'carrier_navigable')} />}
-            {kind === 'naval_bases' && <TriBool name="homeport_for_carriers" label="Homeport For Carriers" value={getBool(data, 'homeport_for_carriers')} />}
-
-            {kind !== 'areas_of_interest' && <Field name="max_ship_length_m" label="Max Ship Length M" type="number" value={getText(data, 'max_ship_length_m')} />}
-            {kind !== 'areas_of_interest' && <Field name="max_ship_beam_m" label="Max Ship Beam M" type="number" value={getText(data, 'max_ship_beam_m')} />}
-            {kind !== 'areas_of_interest' && <Field name="max_draught_m" label="Max Draught M" type="number" value={getText(data, 'max_draught_m')} />}
-            {kind === 'ports' && <Field name="berth_depth_m" label="Berth Depth M" type="number" value={getText(data, 'berth_depth_m')} />}
-            {kind === 'ports' && <Field name="channel_depth_m" label="Channel Depth M" type="number" value={getText(data, 'channel_depth_m')} />}
-            {kind === 'naval_bases' && <Field name="pier_depth_m" label="Pier Depth M" type="number" value={getText(data, 'pier_depth_m')} />}
-            {kind === 'naval_bases' && <Field name="dry_dock_length_m" label="Dry Dock Length M" type="number" value={getText(data, 'dry_dock_length_m')} />}
+            {kind === 'poi' && <Field name="carriers" label="Carriers" value={listText(getValue(data, 'carriers'))} />}
             {kind === 'areas_of_interest' && <Field name="min_depth_m" label="Min Depth M" type="number" value={getText(data, 'min_depth_m')} />}
             {kind === 'areas_of_interest' && <Field name="min_width_km" label="Min Width KM" type="number" value={getText(data, 'min_width_km')} />}
 
-            <Field name="wikipedia_url" label="Wikipedia URL" value={data?.wikipedia_url} />
-            <label className="space-y-1 text-xs text-muted-foreground">
-              <span className="tracking-tui uppercase">Notes</span>
-              <textarea name="notes" defaultValue={data?.notes ?? ''} className="h-20 w-full border border-border bg-background px-2 py-1 text-foreground" />
-            </label>
+            {kind === 'areas_of_interest' && <Field name="wikipedia_url" label="Wikipedia URL" value={getText(data, 'wikipedia_url')} />}
+            {kind === 'areas_of_interest' && (
+              <label className="space-y-1 text-xs text-muted-foreground">
+                <span className="tracking-tui uppercase">Notes</span>
+                <textarea name="notes" defaultValue={String(getValue(data, 'notes') ?? '')} className="h-20 w-full border border-border bg-background px-2 py-1 text-foreground" />
+              </label>
+            )}
             <div className="flex gap-2">
               <Button type="submit" variant="accent" disabled={saving}>Save</Button>
               <Button type="button" onClick={onClearPoints}>Clear Points</Button>

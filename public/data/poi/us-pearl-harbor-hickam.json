@@ -1,0 +1,19 @@
+{
+  "id": "us-pearl-harbor-hickam",
+  "name": "Pearl Harbor-Hickam",
+  "proper": "Joint Base Pearl Harbor-Hickam",
+  "type": "naval_base",
+  "country": "United States",
+  "operator": "United States Navy / United States Air Force",
+  "bounds": {
+    "north": 21.39,
+    "south": 21.295612154984944,
+    "east": -157.89533615112305,
+    "west": -158.02
+  },
+  "center": {
+    "lat": 21.342806077492472,
+    "lon": -157.95766807556151
+  },
+  "carriers": []
+}

@@ -1,0 +1,22 @@
+{
+  "id": "kr-jinhae",
+  "name": "Jinhae",
+  "proper": "Jinhae Naval Base",
+  "type": "naval_base",
+  "country": "South Korea",
+  "operator": "Republic of Korea Navy",
+  "bounds": {
+    "north": 35.1506000105052,
+    "south": 35.131351214899574,
+    "east": 128.66071701049808,
+    "west": 128.6184668540955
+  },
+  "center": {
+    "lat": 35.14097561270239,
+    "lon": 128.63959193229678
+  },
+  "carriers": [
+    "kr-dokdo",
+    "kr-marado"
+  ]
+}

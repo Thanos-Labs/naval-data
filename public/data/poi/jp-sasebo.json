@@ -1,0 +1,22 @@
+{
+  "id": "jp-sasebo",
+  "name": "Sasebo",
+  "proper": "Sasebo Naval Base",
+  "type": "naval_base",
+  "country": "Japan",
+  "operator": "United States Navy / Japan Maritime Self-Defense Force",
+  "bounds": {
+    "north": 33.171,
+    "south": 33.149,
+    "east": 129.731,
+    "west": 129.703
+  },
+  "center": {
+    "lat": 33.16,
+    "lon": 129.717
+  },
+  "carriers": [
+    "jp-ise",
+    "us-tripoli"
+  ]
+}

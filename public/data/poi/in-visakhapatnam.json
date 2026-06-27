@@ -1,0 +1,19 @@
+{
+  "id": "in-visakhapatnam",
+  "name": "Visakhapatnam",
+  "proper": "Visakhapatnam Naval Base",
+  "type": "naval_base",
+  "country": "India",
+  "operator": "Indian Navy",
+  "bounds": {
+    "north": 17.70614334518997,
+    "south": 17.68769421600462,
+    "east": 83.28127026557924,
+    "west": 83.2622802257538
+  },
+  "center": {
+    "lat": 17.696918780597294,
+    "lon": 83.27177524566652
+  },
+  "carriers": []
+}

@@ -1,0 +1,19 @@
+{
+  "id": "ru-severomorsk-shipyard",
+  "name": "Severomorsk Shipyard",
+  "proper": "Severomorsk Shipyard",
+  "type": "shipyard",
+  "country": "Russia",
+  "operator": "Russian Navy",
+  "bounds": {
+    "north": 69.05261259503708,
+    "south": 69.02522415609292,
+    "east": 33.08704376220704,
+    "west": 33.04636001586915
+  },
+  "center": {
+    "lat": 69.038918375565,
+    "lon": 33.06670188903809
+  },
+  "carriers": []
+}

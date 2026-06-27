@@ -1,0 +1,19 @@
+{
+  "id": "ae-jebel-ali",
+  "name": "Jebel Ali",
+  "proper": "Jebel Ali Port",
+  "type": "port",
+  "country": "United Arab Emirates",
+  "operator": "DP World",
+  "bounds": {
+    "north": 25.061,
+    "south": 24.961,
+    "east": 55.111,
+    "west": 55.011
+  },
+  "center": {
+    "lat": 25.011,
+    "lon": 55.061
+  },
+  "carriers": []
+}

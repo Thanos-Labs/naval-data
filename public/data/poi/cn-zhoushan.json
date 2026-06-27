@@ -1,0 +1,22 @@
+{
+  "id": "cn-zhoushan",
+  "name": "Zhoushan",
+  "proper": "Zhoushan",
+  "type": "naval_base",
+  "country": "China",
+  "operator": "People's Liberation Army Navy",
+  "bounds": {
+    "north": 30.026178825393803,
+    "south": 29.992872195070262,
+    "east": 122.11569786071779,
+    "west": 122.00470805168153
+  },
+  "center": {
+    "lat": 30.00952551023203,
+    "lon": 122.06020295619966
+  },
+  "carriers": [
+    "cn-anhui",
+    "cn-guangxi"
+  ]
+}

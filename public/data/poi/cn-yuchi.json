@@ -1,0 +1,21 @@
+{
+  "id": "cn-yuchi",
+  "name": "Yuchi",
+  "proper": "Yuchi Naval Base",
+  "type": "naval_base",
+  "country": "China",
+  "operator": "People's Liberation Army Navy",
+  "bounds": {
+    "north": 35.75152769433241,
+    "south": 35.68909089912437,
+    "east": 120.04898071289064,
+    "west": 119.95422363281251
+  },
+  "center": {
+    "lat": 35.72030929672839,
+    "lon": 120.00160217285158
+  },
+  "carriers": [
+    "cn-liaoning"
+  ]
+}

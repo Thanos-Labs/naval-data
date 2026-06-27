@@ -1,0 +1,21 @@
+{
+  "id": "jp-kure",
+  "name": "Kure",
+  "proper": "JMSDF Kure Naval Base",
+  "type": "naval_base",
+  "country": "Japan",
+  "operator": "Japan Maritime Self-Defense Force",
+  "bounds": {
+    "north": 34.267,
+    "south": 34.217,
+    "east": 132.567,
+    "west": 132.497
+  },
+  "center": {
+    "lat": 34.242000000000004,
+    "lon": 132.532
+  },
+  "carriers": [
+    "jp-kaga"
+  ]
+}
