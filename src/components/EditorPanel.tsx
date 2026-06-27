@@ -160,6 +160,8 @@ export function EditorPanel({
   const center = useMemo(() => (kind === 'aoi' ? centerFromPoints(points) : bounds ? centerFromBounds(bounds) : null), [bounds, kind, points]);
   const editing = mode === 'edit' ? selected : null;
   const data = editing?.data;
+  const areaNeedsMorePoints = kind === 'areas_of_interest' && points.length > 0 && points.length < 3;
+  const canSave = Boolean(bounds && center && !areaNeedsMorePoints);
 
   useEffect(() => {
     if (!selected && mode === 'edit') {
@@ -301,6 +303,7 @@ export function EditorPanel({
 
         <SectionHeader label="Bounds" count={pointsCount} />
         {bounds ? <BoundsReadout bounds={bounds} /> : <div className="text-xs text-muted-foreground">Add points to define bounds.</div>}
+        {areaNeedsMorePoints && <div className="text-xs text-destructive">Add at least 3 points to save an area.</div>}
 
         {bounds && (
           <form key={`${mode}:${kind}:${data?._file ?? 'new'}`} className="space-y-3" onSubmit={submit}>
