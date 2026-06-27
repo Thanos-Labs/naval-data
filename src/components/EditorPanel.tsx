@@ -1,9 +1,9 @@
 import type * as React from 'react';
 import { useEffect, useMemo, useState } from 'react';
-import { X } from 'lucide-react';
+import { CircleHelp, X } from 'lucide-react';
 import type { Bounds, DataKind, GeoItem } from '../data/types';
 import { centerFromBounds, centerFromPoints } from '../lib/bounds';
-import { Panel, SectionHeader, Button } from './ui';
+import { Panel, SectionHeader, Button, Tooltip } from './ui';
 
 const kindLabels: Record<DataKind, string> = {
   poi: 'Point of Interest',
@@ -96,6 +96,36 @@ function BoundsReadout({ bounds }: { bounds: Bounds }) {
       <div>E {bounds.east.toFixed(5)}</div>
       <div>W {bounds.west.toFixed(5)}</div>
     </div>
+  );
+}
+
+function DrawHelp() {
+  return (
+    <Tooltip
+      content={(
+        <>
+        <span className="block">select point + delete: remove the point</span>
+        <span className="block">select point + drag: move the point</span>
+        <span className="block">ctrl + drag: select points within a bounding box</span>
+        <span className="block">shift + select points: select multiple points</span>
+        <span className="block">click line segment: insert a new point in the middle</span>
+        <span className="block">esc: cancel without saving</span>
+        </>
+      )}
+    >
+      <span tabIndex={0} className="inline-flex outline-none">
+        <CircleHelp className="size-3.5 text-accent" aria-hidden="true" />
+      </span>
+    </Tooltip>
+  );
+}
+
+function EditorTitle({ mode }: { mode: Mode }) {
+  return (
+    <span className="inline-flex items-center gap-1.5">
+      <span>{mode === 'edit' ? 'Edit Area' : 'Create Area'}</span>
+      <DrawHelp />
+    </span>
   );
 }
 
@@ -247,7 +277,9 @@ export function EditorPanel({
 
   return (
     <Panel
-      title={mode === 'edit' ? 'Edit Area' : 'Create Area'}
+      title={<EditorTitle mode={mode} />}
+      className="flex max-h-[calc(100vh-20rem)] min-h-0 flex-col overflow-hidden"
+      bodyClassName="flex-1 overflow-y-auto pb-0"
       action={
         <Button variant="ghost" onClick={close} aria-label="Close" className="h-5 w-5 justify-center p-0">
           <X className="size-3.5" aria-hidden="true" />
@@ -268,14 +300,6 @@ export function EditorPanel({
         </label>
 
         <SectionHeader label="Bounds" count={pointsCount} />
-        <div className="space-y-1 border border-border/60 bg-background/70 p-2 text-[11px] text-muted-foreground">
-          <p>select point + delete: remove the point</p>
-          <p>select point + drag: move the point</p>
-          <p>ctrl + drag: select points within a bounding box</p>
-          <p>shift + select points: select multiple points</p>
-          <p>click line segment: insert a new point in the middle</p>
-          <p>esc: cancel without saving</p>
-        </div>
         {bounds ? <BoundsReadout bounds={bounds} /> : <div className="text-xs text-muted-foreground">Add points to define bounds.</div>}
 
         {bounds && (
@@ -301,7 +325,7 @@ export function EditorPanel({
                 <textarea name="notes" defaultValue={String(getValue(data, 'notes') ?? '')} className="h-20 w-full border border-border bg-background px-2 py-1 text-foreground" />
               </label>
             )}
-            <div className="flex gap-2">
+            <div className="sticky bottom-0 z-10 -mx-3 flex gap-2 border-t border-border bg-card px-3 py-3">
               <Button type="submit" variant="accent" disabled={saving}>Save</Button>
               <Button type="button" onClick={onClearPoints}>Clear Points</Button>
             </div>

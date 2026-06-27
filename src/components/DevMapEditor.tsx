@@ -56,7 +56,7 @@ export function DevMapEditor({
 
       <div className="pointer-events-none absolute right-4 top-4 z-[1000] w-96 space-y-3">
         {controls}
-        <div className="pointer-events-auto max-h-[calc(100vh-12rem)] overflow-auto">
+        <div className="pointer-events-auto min-h-0">
           <EditorPanel
             selected={selected}
             bounds={drawBounds}
