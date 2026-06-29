@@ -1,0 +1,35 @@
+{
+  "id": "au-adelaide",
+  "mmsi": 503000021,
+  "name": "Adelaide",
+  "proper": "HMAS Adelaide",
+  "comm": "2015-12-04",
+  "pennant": "L01",
+  "deck": "L01",
+  "type": "helicopter",
+  "country": "Australia",
+  "navy": "Royal Australian Navy",
+  "class": "Canberra class",
+  "home_port": "au-fleet-base-east-kuttabul",
+  "img": "https://commons.wikimedia.org/wiki/File:HMAS_Adelaide_arriving_at_Pearl_Harbor_in_June_2018.jpg",
+  "displacement": {
+    "tons": 27500,
+    "tonnes": 27941.3
+  },
+  "length": {
+    "m": 230.8,
+    "ft": 757.2
+  },
+  "beam": {
+    "m": 32,
+    "ft": 105
+  },
+  "draught": {
+    "m": 7.1,
+    "ft": 23.3
+  },
+  "speed": {
+    "knots": 20,
+    "km_h": 37
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "in-vikrant",
+  "mmsi": null,
+  "name": "Vikrant",
+  "proper": "INS Vikrant",
+  "comm": "2022-09-02",
+  "pennant": "R11",
+  "deck": null,
+  "type": "aircraft",
+  "country": "India",
+  "navy": "Indian Navy",
+  "class": "Vikrant class",
+  "home_port": "in-karwar",
+  "img": "https://commons.wikimedia.org/wiki/File:IAC1_Vikrant_at_Cochin.jpg",
+  "displacement": {
+    "tons": 45000,
+    "tonnes": 45722.1
+  },
+  "length": {
+    "m": 262,
+    "ft": 859.6
+  },
+  "beam": {
+    "m": 62,
+    "ft": 203.4
+  },
+  "draught": {
+    "m": 8.4,
+    "ft": 27.6
+  },
+  "speed": {
+    "knots": 28,
+    "km_h": 51.9
+  }
+}

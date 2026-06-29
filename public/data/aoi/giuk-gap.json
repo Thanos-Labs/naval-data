@@ -1,0 +1,34 @@
+{
+  "id": "giuk-gap",
+  "name": "GIUK Gap",
+  "type": "chokepoint",
+  "region": "North Atlantic",
+  "bounds": {
+    "north": 66,
+    "south": 55,
+    "east": -5,
+    "west": -45
+  },
+  "poly": [
+    {
+      "lat": 66,
+      "lon": -45
+    },
+    {
+      "lat": 66,
+      "lon": -5
+    },
+    {
+      "lat": 55,
+      "lon": -5
+    },
+    {
+      "lat": 55,
+      "lon": -45
+    }
+  ],
+  "strategic_value": "high",
+  "carrier_navigable": true,
+  "notes": "Strategic North Atlantic naval passage between Greenland, Iceland, and the United Kingdom.",
+  "wiki_url": "https://en.wikipedia.org/wiki/GIUK_gap"
+}

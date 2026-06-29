@@ -1,0 +1,34 @@
+{
+  "id": "bashi-channel",
+  "name": "Bashi Channel",
+  "type": "chokepoint",
+  "region": "Western Pacific",
+  "bounds": {
+    "north": 22,
+    "south": 20,
+    "east": 122.5,
+    "west": 120.5
+  },
+  "poly": [
+    {
+      "lat": 22,
+      "lon": 120.5
+    },
+    {
+      "lat": 22,
+      "lon": 122.5
+    },
+    {
+      "lat": 20,
+      "lon": 122.5
+    },
+    {
+      "lat": 20,
+      "lon": 120.5
+    }
+  ],
+  "strategic_value": "high",
+  "carrier_navigable": true,
+  "notes": "Southern component of the Luzon Strait, important for naval access between the Philippine Sea and South China Sea.",
+  "wiki_url": "https://en.wikipedia.org/wiki/Bashi_Channel"
+}

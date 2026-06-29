@@ -1,0 +1,34 @@
+{
+  "id": "denmark-strait",
+  "name": "Denmark Strait",
+  "type": "chokepoint",
+  "region": "North Atlantic / Arctic",
+  "bounds": {
+    "north": 68,
+    "south": 63,
+    "east": -20,
+    "west": -40
+  },
+  "poly": [
+    {
+      "lat": 68,
+      "lon": -40
+    },
+    {
+      "lat": 68,
+      "lon": -20
+    },
+    {
+      "lat": 63,
+      "lon": -20
+    },
+    {
+      "lat": 63,
+      "lon": -40
+    }
+  ],
+  "strategic_value": "medium",
+  "carrier_navigable": true,
+  "notes": "Passage between Greenland and Iceland connecting the Arctic and North Atlantic.",
+  "wiki_url": "https://en.wikipedia.org/wiki/Denmark_Strait"
+}

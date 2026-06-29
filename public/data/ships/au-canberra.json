@@ -1,0 +1,35 @@
+{
+  "id": "au-canberra",
+  "mmsi": 503778000,
+  "name": "Canberra",
+  "proper": "HMAS Canberra",
+  "comm": "2014-11-28",
+  "pennant": "L02",
+  "deck": "L02",
+  "type": "helicopter",
+  "country": "Australia",
+  "navy": "Royal Australian Navy",
+  "class": "Canberra class",
+  "home_port": "au-fleet-base-east-kuttabul",
+  "img": "https://commons.wikimedia.org/wiki/File:HMAS_Canberra_arrives_at_Joint_Base_Pearl_Harbor-Hickam_for_RIMPAC_2016.jpg",
+  "displacement": {
+    "tons": 27500,
+    "tonnes": 27941.3
+  },
+  "length": {
+    "m": 230.8,
+    "ft": 757.2
+  },
+  "beam": {
+    "m": 32,
+    "ft": 105
+  },
+  "draught": {
+    "m": 7.1,
+    "ft": 23.3
+  },
+  "speed": {
+    "knots": 20,
+    "km_h": 37
+  }
+}

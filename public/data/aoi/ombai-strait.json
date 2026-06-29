@@ -1,0 +1,34 @@
+{
+  "id": "ombai-strait",
+  "name": "Ombai Strait",
+  "type": "chokepoint",
+  "region": "Indonesia / Timor-Leste",
+  "bounds": {
+    "north": -8,
+    "south": -9.6,
+    "east": 126.5,
+    "west": 124
+  },
+  "poly": [
+    {
+      "lat": -8,
+      "lon": 124
+    },
+    {
+      "lat": -8,
+      "lon": 126.5
+    },
+    {
+      "lat": -9.6,
+      "lon": 126.5
+    },
+    {
+      "lat": -9.6,
+      "lon": 124
+    }
+  ],
+  "strategic_value": "medium",
+  "carrier_navigable": true,
+  "notes": "Deep passage north of Timor used as an alternative route between the Pacific and Indian Ocean.",
+  "wiki_url": "https://en.wikipedia.org/wiki/Ombai_Strait"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "eg-safaga",
+  "name": "Safaga",
+  "proper": "Safaga Naval Base",
+  "type": "naval_base",
+  "country": "Egypt",
+  "operator": "Egyptian Navy",
+  "bounds": {
+    "north": 26.751799536252133,
+    "south": 26.748599613224908,
+    "east": 33.95766735076905,
+    "west": 33.95148754119874
+  },
+  "center": {
+    "lat": 26.75019957473852,
+    "lon": 33.954577445983894
+  },
+  "carriers": [
+    "eg-gamal-abdel-nasser"
+  ]
+}

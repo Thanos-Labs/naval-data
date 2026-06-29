@@ -1,0 +1,35 @@
+{
+  "id": "cn-sichuan",
+  "mmsi": null,
+  "name": "Sichuan",
+  "proper": "CNS Sichuan",
+  "comm": null,
+  "pennant": "51",
+  "deck": "51",
+  "type": "helicopter",
+  "country": "China",
+  "navy": "People's Liberation Army Navy",
+  "class": "Type 076 class",
+  "home_port": null,
+  "img": "https://commons.wikimedia.org/wiki/File:LHD-Sichuan.jpg",
+  "displacement": {
+    "tons": 40000,
+    "tonnes": 40641.9
+  },
+  "length": {
+    "m": 237,
+    "ft": 777.6
+  },
+  "beam": {
+    "m": 36,
+    "ft": 118.1
+  },
+  "draught": {
+    "m": 8.5,
+    "ft": 27.9
+  },
+  "speed": {
+    "knots": 23,
+    "km_h": 42.6
+  }
+}

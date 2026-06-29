@@ -1,0 +1,35 @@
+{
+  "id": "br-atlantico",
+  "mmsi": 710509000,
+  "name": "Atlântico",
+  "proper": "NAM Atlântico",
+  "comm": "2018-06-29",
+  "pennant": "A140",
+  "deck": null,
+  "type": "helicopter",
+  "country": "Brazil",
+  "navy": "Brazilian Navy",
+  "class": "Ocean class",
+  "home_port": "br-rio-de-janeiro",
+  "img": "https://commons.wikimedia.org/wiki/File:UNITAS_LX_NAM_Atlântico_(A140).jpg",
+  "displacement": {
+    "tons": 21578,
+    "tonnes": 21924.3
+  },
+  "length": {
+    "m": 203.4,
+    "ft": 667.3
+  },
+  "beam": {
+    "m": 35,
+    "ft": 114.8
+  },
+  "draught": {
+    "m": 6.5,
+    "ft": 21.3
+  },
+  "speed": {
+    "knots": 18,
+    "km_h": 33.3
+  }
+}

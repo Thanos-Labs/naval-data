@@ -1,0 +1,23 @@
+{
+  "id": "cn-yulin",
+  "name": "Yulin",
+  "proper": "Yulin Naval Base",
+  "type": "naval_base",
+  "country": "China",
+  "operator": "People's Liberation Army Navy",
+  "bounds": {
+    "north": 18.234283410656186,
+    "south": 18.18415624913272,
+    "east": 109.57435369491579,
+    "west": 109.52939987182619
+  },
+  "center": {
+    "lat": 18.20921982989445,
+    "lon": 109.55187678337099
+  },
+  "carriers": [
+    "cn-hainan",
+    "cn-hubei",
+    "cn-shandong"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "pa-balboa",
+  "name": "Balboa",
+  "proper": "Balboa Port",
+  "type": "port",
+  "country": "Panama",
+  "operator": "Panama Ports Company",
+  "bounds": {
+    "north": 9.009,
+    "south": 8.909,
+    "east": -79.515,
+    "west": -79.615
+  },
+  "center": {
+    "lat": 8.959,
+    "lon": -79.565
+  },
+  "carriers": []
+}

@@ -1,0 +1,34 @@
+{
+  "id": "yucatan-channel",
+  "name": "Yucatán Channel",
+  "type": "chokepoint",
+  "region": "Caribbean / Gulf of Mexico",
+  "bounds": {
+    "north": 22.5,
+    "south": 20,
+    "east": -84,
+    "west": -87
+  },
+  "poly": [
+    {
+      "lat": 22.5,
+      "lon": -87
+    },
+    {
+      "lat": 22.5,
+      "lon": -84
+    },
+    {
+      "lat": 20,
+      "lon": -84
+    },
+    {
+      "lat": 20,
+      "lon": -87
+    }
+  ],
+  "strategic_value": "high",
+  "carrier_navigable": true,
+  "notes": "Main deep-water entrance between the Caribbean Sea and Gulf of Mexico.",
+  "wiki_url": "https://en.wikipedia.org/wiki/Yucat%C3%A1n_Channel"
+}

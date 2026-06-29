@@ -1,0 +1,35 @@
+{
+  "id": "in-vikramaditya",
+  "mmsi": 419000033,
+  "name": "Vikramaditya",
+  "proper": "INS Vikramaditya",
+  "comm": "2013-11-16",
+  "pennant": "R33",
+  "deck": null,
+  "type": "aircraft",
+  "country": "India",
+  "navy": "Indian Navy",
+  "class": "Kiev class",
+  "home_port": "in-karwar",
+  "img": "https://commons.wikimedia.org/wiki/File:INS_Vikramaditya_(R33)_with_a_Sea_Harrier.jpg",
+  "displacement": {
+    "tons": 45400,
+    "tonnes": 46128.5
+  },
+  "length": {
+    "m": 283.5,
+    "ft": 930.1
+  },
+  "beam": {
+    "m": 61,
+    "ft": 200.1
+  },
+  "draught": {
+    "m": 10.2,
+    "ft": 33.5
+  },
+  "speed": {
+    "knots": 30,
+    "km_h": 55.6
+  }
+}

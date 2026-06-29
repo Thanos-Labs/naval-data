@@ -1,0 +1,19 @@
+{
+  "id": "au-fleet-base-east-waterhen",
+  "name": "Waterhen",
+  "proper": "Fleet Base East Waterhen",
+  "type": "naval_base",
+  "country": "Australia",
+  "operator": "Royal Australian Navy",
+  "bounds": {
+    "north": -33.838892683342465,
+    "south": -33.84263540731689,
+    "east": 151.19474887847903,
+    "west": 151.19086503982547
+  },
+  "center": {
+    "lat": -33.84076404532968,
+    "lon": 151.19280695915225
+  },
+  "carriers": []
+}

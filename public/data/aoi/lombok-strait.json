@@ -1,0 +1,34 @@
+{
+  "id": "lombok-strait",
+  "name": "Lombok Strait",
+  "type": "chokepoint",
+  "region": "Indonesia",
+  "bounds": {
+    "north": -8.1,
+    "south": -9,
+    "east": 116.2,
+    "west": 115.4
+  },
+  "poly": [
+    {
+      "lat": -8.1,
+      "lon": 115.4
+    },
+    {
+      "lat": -8.1,
+      "lon": 116.2
+    },
+    {
+      "lat": -9,
+      "lon": 116.2
+    },
+    {
+      "lat": -9,
+      "lon": 115.4
+    }
+  ],
+  "strategic_value": "high",
+  "carrier_navigable": true,
+  "notes": "Deep alternative to Malacca/Sunda routes between Bali and Lombok, suitable for deep-draught warships.",
+  "wiki_url": "https://en.wikipedia.org/wiki/Lombok_Strait"
+}

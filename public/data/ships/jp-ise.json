@@ -1,0 +1,35 @@
+{
+  "id": "jp-ise",
+  "mmsi": 431999551,
+  "name": "Ise",
+  "proper": "JS Ise",
+  "comm": "2011-03-16",
+  "pennant": "DDH-182",
+  "deck": "82",
+  "type": "helicopter",
+  "country": "Japan",
+  "navy": "Japan Maritime Self-Defense Force",
+  "class": "Hyūga class",
+  "home_port": "jp-sasebo",
+  "img": "https://commons.wikimedia.org/wiki/File:JMSDF_DDH_182_Ise.jpg",
+  "displacement": {
+    "tons": 19000,
+    "tonnes": 19304.9
+  },
+  "length": {
+    "m": 197,
+    "ft": 646.3
+  },
+  "beam": {
+    "m": 33,
+    "ft": 108.3
+  },
+  "draught": {
+    "m": 7,
+    "ft": 23
+  },
+  "speed": {
+    "knots": 30,
+    "km_h": 55.6
+  }
+}

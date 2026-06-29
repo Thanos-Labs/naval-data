@@ -1,0 +1,35 @@
+{
+  "id": "jp-kaga",
+  "mmsi": 431999555,
+  "name": "Kaga",
+  "proper": "JS Kaga",
+  "comm": "2017-03-22",
+  "pennant": "DDH-184",
+  "deck": "84",
+  "type": "helicopter",
+  "country": "Japan",
+  "navy": "Japan Maritime Self-Defense Force",
+  "class": "Izumo class",
+  "home_port": "jp-kure",
+  "img": "https://commons.wikimedia.org/wiki/Special:FilePath/JS_Kaga.jpg",
+  "displacement": {
+    "tons": 27000,
+    "tonnes": 27433.3
+  },
+  "length": {
+    "m": 248,
+    "ft": 813.6
+  },
+  "beam": {
+    "m": 38,
+    "ft": 124.7
+  },
+  "draught": {
+    "m": 7.5,
+    "ft": 24.6
+  },
+  "speed": {
+    "knots": 30,
+    "km_h": 55.6
+  }
+}

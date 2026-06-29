@@ -1,0 +1,35 @@
+{
+  "id": "it-giuseppe-garibaldi",
+  "mmsi": null,
+  "name": "Giuseppe Garibaldi",
+  "proper": "ITS Giuseppe Garibaldi",
+  "comm": "1985-09-30",
+  "pennant": "C 551",
+  "deck": "551",
+  "type": "aircraft",
+  "country": "Italy",
+  "navy": "Italian Navy",
+  "class": "Giuseppe Garibaldi class",
+  "home_port": "it-taranto",
+  "img": "https://commons.wikimedia.org/wiki/File:ITS_Giuseppe_Garibaldi_(C_551).jpg",
+  "displacement": {
+    "tons": 14000,
+    "tonnes": 14224.7
+  },
+  "length": {
+    "m": 180.2,
+    "ft": 591.2
+  },
+  "beam": {
+    "m": 33.4,
+    "ft": 109.6
+  },
+  "draught": {
+    "m": 6.7,
+    "ft": 22
+  },
+  "speed": {
+    "knots": 30,
+    "km_h": 55.6
+  }
+}

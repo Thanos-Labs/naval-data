@@ -1,0 +1,35 @@
+{
+  "id": "us-ronald-reagan",
+  "mmsi": 369970410,
+  "name": "Ronald Reagan",
+  "proper": "USS Ronald Reagan",
+  "comm": "2003-07-12",
+  "pennant": "CVN-76",
+  "deck": "76",
+  "type": "aircraft",
+  "country": "United States",
+  "navy": "United States Navy",
+  "class": "Nimitz class",
+  "home_port": "us-kitsap",
+  "img": "https://commons.wikimedia.org/wiki/File:USS_Ronald_Reagan_(CVN-76).jpg",
+  "displacement": {
+    "tons": 100000,
+    "tonnes": 101604.7
+  },
+  "length": {
+    "m": 332.8,
+    "ft": 1091.9
+  },
+  "beam": {
+    "m": 76.8,
+    "ft": 252
+  },
+  "draught": {
+    "m": 11.3,
+    "ft": 37.1
+  },
+  "speed": {
+    "knots": 30,
+    "km_h": 55.6
+  }
+}

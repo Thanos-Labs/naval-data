@@ -1,6 +1,8 @@
-export type DataKind = 'ports' | 'naval_bases' | 'areas_of_interest';
+export type FacilityType = 'naval_base' | 'shipyard' | 'port';
+export type FacilityLayerKind = 'ports' | 'naval_bases' | 'shipyards';
+export type DataKind = 'poi' | 'aoi';
 export type OverlayKind = 'ocean_seas' | 'world_eez';
-export type LayerKind = DataKind | OverlayKind;
+export type LayerKind = FacilityLayerKind | 'aoi' | OverlayKind;
 
 export type Point = {
   lat: number;
@@ -18,59 +20,33 @@ type CollectionMeta = {
   _file?: string;
 };
 
-export type Port = CollectionMeta & {
+export type PointOfInterest = CollectionMeta & {
+  id: string;
   name: string;
+  proper: string;
+  type: FacilityType;
   country: string;
-  type: 'commercial' | 'military' | 'dual_use' | 'shipyard' | 'terminal';
-  bounds: Bounds;
-  location: Point;
-  nearest_city: string | null;
   operator: string | null;
-  max_ship_length_m: number | null;
-  max_ship_beam_m: number | null;
-  max_draught_m: number | null;
-  berth_depth_m: number | null;
-  channel_depth_m: number | null;
-  carrier_capable: 'yes' | 'no' | 'limited' | 'unknown';
-  notes: string | null;
-  wikipedia_url: string | null;
-};
-
-export type NavalBase = CollectionMeta & {
-  name: string;
-  country: string;
-  operator: string;
   bounds: Bounds;
-  location: Point;
-  nearest_city: string | null;
-  max_ship_length_m: number | null;
-  max_ship_beam_m: number | null;
-  max_draught_m: number | null;
-  pier_depth_m: number | null;
-  dry_dock_length_m: number | null;
-  carrier_capable: 'yes' | 'no' | 'limited' | 'unknown';
-  homeport_for_carriers: boolean | null;
-  notes: string | null;
-  wikipedia_url: string | null;
+  center: Point;
+  carriers: string[];
 };
 
 export type AreaOfInterest = CollectionMeta & {
+  id: string;
   name: string;
-  type: 'strait' | 'canal' | 'chokepoint' | 'sea_lane' | 'sea' | 'gulf' | 'bay' | 'operating_area';
+  type: 'chokepoint' | 'canal' | 'sea_lane' | 'operating_area';
   region: string;
-  bounds: Point[];
-  center: Point;
-  min_depth_m: number | null;
-  min_width_km: number | null;
+  bounds: Bounds;
+  poly: Point[];
   strategic_value: 'low' | 'medium' | 'high' | 'critical';
   carrier_navigable: boolean | null;
   notes: string | null;
-  wikipedia_url: string | null;
+  wiki_url: string | null;
 };
 
 export type GeoItem =
-  | { kind: 'ports'; data: Port }
-  | { kind: 'naval_bases'; data: NavalBase }
-  | { kind: 'areas_of_interest'; data: AreaOfInterest };
+  | { kind: 'poi'; data: PointOfInterest }
+  | { kind: 'aoi'; data: AreaOfInterest };
 
 export type LayerVisibility = Record<LayerKind, boolean>;

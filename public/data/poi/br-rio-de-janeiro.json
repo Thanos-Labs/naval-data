@@ -1,0 +1,21 @@
+{
+  "id": "br-rio-de-janeiro",
+  "name": "Rio de Janeiro",
+  "proper": "Arsenal de Marinha do Rio de Janeiro",
+  "type": "naval_base",
+  "country": "Brazil",
+  "operator": "Brazillian Nazy",
+  "bounds": {
+    "north": -22.889776247440736,
+    "south": -22.90124119374514,
+    "east": -43.16425323486328,
+    "west": -43.17987442016602
+  },
+  "center": {
+    "lat": -22.895508720592936,
+    "lon": -43.17206382751465
+  },
+  "carriers": [
+    "br-atlantico"
+  ]
+}

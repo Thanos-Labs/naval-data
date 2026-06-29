@@ -1,0 +1,21 @@
+{
+  "id": "tr-tuzla",
+  "name": "Tuzla",
+  "proper": "Tuzla Naval Base",
+  "type": "naval_base",
+  "country": "Turkey",
+  "operator": "Turkish Navy",
+  "bounds": {
+    "north": 40.865448467546265,
+    "south": 40.814767381996575,
+    "east": 29.26843643188477,
+    "west": 29.255068302154545
+  },
+  "center": {
+    "lat": 40.84010792477142,
+    "lon": 29.261752367019657
+  },
+  "carriers": [
+    "tr-anadolu"
+  ]
+}

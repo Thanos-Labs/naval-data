@@ -1,0 +1,28 @@
+{
+  "id": "us-norfolk",
+  "name": "Norfolk",
+  "proper": "Naval Station Norfolk",
+  "type": "naval_base",
+  "country": "United States",
+  "operator": "United States Navy",
+  "bounds": {
+    "north": 36.96525497589677,
+    "south": 36.92951706541426,
+    "east": -76.32438182830812,
+    "west": -76.34571075439455
+  },
+  "center": {
+    "lat": 36.947386020655514,
+    "lon": -76.33504629135133
+  },
+  "carriers": [
+    "us-bataan",
+    "us-dwight-d-eisenhower",
+    "us-george-h-w-bush",
+    "us-gerald-r-ford",
+    "us-harry-s-truman",
+    "us-iwo-jima",
+    "us-kearsarge",
+    "us-wasp"
+  ]
+}

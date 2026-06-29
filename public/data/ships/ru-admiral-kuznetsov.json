@@ -1,0 +1,35 @@
+{
+  "id": "ru-admiral-kuznetsov",
+  "mmsi": null,
+  "name": "Admiral Kuznetsov",
+  "proper": "Admiral Kuznetsov",
+  "comm": "1991-01-21",
+  "pennant": "063",
+  "deck": null,
+  "type": "aircraft",
+  "country": "Russia",
+  "navy": "Russian Navy",
+  "class": "Kuznetsov class",
+  "home_port": "ru-severomorsk",
+  "img": "https://commons.wikimedia.org/wiki/File:MilitarySportsHoliday2017-03.jpg",
+  "displacement": {
+    "tons": 58500,
+    "tonnes": 59438.7
+  },
+  "length": {
+    "m": 305,
+    "ft": 1000.7
+  },
+  "beam": {
+    "m": 72,
+    "ft": 236.2
+  },
+  "draught": {
+    "m": 10,
+    "ft": 32.8
+  },
+  "speed": {
+    "knots": 29,
+    "km_h": 53.7
+  }
+}

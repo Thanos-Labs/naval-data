@@ -1,0 +1,25 @@
+{
+  "id": "us-san-diego",
+  "name": "San Diego",
+  "proper": "Naval Base San Diego",
+  "type": "naval_base",
+  "country": "United States",
+  "operator": "United States Navy",
+  "bounds": {
+    "north": 32.69402628152427,
+    "south": 32.65682793875695,
+    "east": -117.11747646331787,
+    "west": -117.14986681938173
+  },
+  "center": {
+    "lat": 32.67542711014061,
+    "lon": -117.13367164134979
+  },
+  "carriers": [
+    "us-america",
+    "us-boxer",
+    "us-essex",
+    "us-makin-island",
+    "us-theodore-roosevelt"
+  ]
+}

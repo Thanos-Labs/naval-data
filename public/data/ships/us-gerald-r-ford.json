@@ -1,0 +1,35 @@
+{
+  "id": "us-gerald-r-ford",
+  "mmsi": 338803000,
+  "name": "Gerald R. Ford",
+  "proper": "USS Gerald R. Ford",
+  "comm": "2017-07-22",
+  "pennant": "CVN-78",
+  "deck": "78",
+  "type": "aircraft",
+  "country": "United States",
+  "navy": "United States Navy",
+  "class": "Gerald R. Ford class",
+  "home_port": "us-norfolk",
+  "img": "https://commons.wikimedia.org/wiki/File:USS_Gerald_R._Ford_(CVN-78)_underway_in_the_Atlantic_Ocean_on_9_October_2022_(221009-N-TL968-1248).JPG",
+  "displacement": {
+    "tons": 100000,
+    "tonnes": 101604.7
+  },
+  "length": {
+    "m": 337,
+    "ft": 1105.6
+  },
+  "beam": {
+    "m": 78,
+    "ft": 255.9
+  },
+  "draught": {
+    "m": 12,
+    "ft": 39.4
+  },
+  "speed": {
+    "knots": 30,
+    "km_h": 55.6
+  }
+}

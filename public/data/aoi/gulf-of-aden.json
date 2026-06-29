@@ -1,0 +1,34 @@
+{
+  "id": "gulf-of-aden",
+  "name": "Gulf of Aden",
+  "type": "sea_lane",
+  "region": "Western Indian Ocean",
+  "bounds": {
+    "north": 15,
+    "south": 10,
+    "east": 52,
+    "west": 43
+  },
+  "poly": [
+    {
+      "lat": 15,
+      "lon": 43
+    },
+    {
+      "lat": 15,
+      "lon": 52
+    },
+    {
+      "lat": 10,
+      "lon": 52
+    },
+    {
+      "lat": 10,
+      "lon": 43
+    }
+  ],
+  "strategic_value": "critical",
+  "carrier_navigable": true,
+  "notes": "Major sea lane connecting Bab el-Mandeb with the Arabian Sea.",
+  "wiki_url": "https://en.wikipedia.org/wiki/Gulf_of_Aden"
+}

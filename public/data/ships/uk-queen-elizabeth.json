@@ -1,0 +1,35 @@
+{
+  "id": "uk-queen-elizabeth",
+  "mmsi": null,
+  "name": "Queen Elizabeth",
+  "proper": "HMS Queen Elizabeth",
+  "comm": "2017-12-07",
+  "pennant": "R08",
+  "deck": "Q",
+  "type": "aircraft",
+  "country": "United Kingdom",
+  "navy": "Royal Navy",
+  "class": "Queen Elizabeth class",
+  "home_port": "uk-portsmouth",
+  "img": "https://commons.wikimedia.org/wiki/Special:FilePath/HMS_Queen_Elizabeth.jpg",
+  "displacement": {
+    "tons": 65000,
+    "tonnes": 66043
+  },
+  "length": {
+    "m": 284,
+    "ft": 931.8
+  },
+  "beam": {
+    "m": 73,
+    "ft": 239.5
+  },
+  "draught": {
+    "m": 11,
+    "ft": 36.1
+  },
+  "speed": {
+    "knots": 25,
+    "km_h": 46.3
+  }
+}

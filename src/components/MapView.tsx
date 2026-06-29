@@ -25,11 +25,11 @@ function ClearSelectionEvents({
 }
 
 function itemKey(item: GeoItem) {
-  return `${item.kind}:${item.data._file ?? item.data.name}`;
+  return `${item.kind}:${item.data._file ?? (item.kind === 'poi' ? item.data.id : item.data.name)}`;
 }
 
 function itemArea(item: GeoItem) {
-  return item.kind === 'areas_of_interest' ? pointsArea(item.data.bounds) : boundsArea(item.data.bounds);
+  return item.kind === 'aoi' ? pointsArea(item.data.poly) : boundsArea(item.data.bounds);
 }
 
 export function MapView({
@@ -42,7 +42,6 @@ export function MapView({
   onSelect,
   onClearSelection,
   clearSelectionOnMapClick = true,
-  editing = false,
   children,
 }: {
   items: GeoItem[];
@@ -54,7 +53,6 @@ export function MapView({
   onSelect: (item: GeoItem) => void;
   onClearSelection: () => void;
   clearSelectionOnMapClick?: boolean;
-  editing?: boolean;
   children?: ReactNode;
 }) {
   const center: LatLngExpression = [20, 0];
@@ -78,9 +76,9 @@ export function MapView({
           <DataRectangle
             key={`${key}:${offset}`}
             item={item}
-            bounds={item.kind === 'areas_of_interest' ? shiftPoints(item.data.bounds, offset) : shiftBounds(item.data.bounds, offset)}
+            bounds={item.kind === 'aoi' ? shiftPoints(item.data.poly, offset) : shiftBounds(item.data.bounds, offset)}
             selected={selectedKey === key}
-            editing={editing}
+            editing={false}
             onSelect={onSelect}
           />
         ));

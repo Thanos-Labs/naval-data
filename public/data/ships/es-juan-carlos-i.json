@@ -1,0 +1,35 @@
+{
+  "id": "es-juan-carlos-i",
+  "mmsi": null,
+  "name": "Juan Carlos I",
+  "proper": "SPS Juan Carlos I",
+  "comm": "2010-09-30",
+  "pennant": "L-61",
+  "deck": null,
+  "type": "helicopter",
+  "country": "Spain",
+  "navy": "Spanish Navy",
+  "class": "Juan Carlos I class",
+  "home_port": "es-rota",
+  "img": "https://commons.wikimedia.org/wiki/File:Spanish_amphibious_assault_ship_Juan_Carlos_I_(L-61)_underway_in_the_Adriatic_Sea,_22_February_2023_(230222-N-MW880-1248).JPG",
+  "displacement": {
+    "tons": 27079,
+    "tonnes": 27513.5
+  },
+  "length": {
+    "m": 230.8,
+    "ft": 757.2
+  },
+  "beam": {
+    "m": 32,
+    "ft": 105
+  },
+  "draught": {
+    "m": 7,
+    "ft": 23
+  },
+  "speed": {
+    "knots": 21,
+    "km_h": 38.9
+  }
+}

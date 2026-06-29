@@ -1,9 +1,10 @@
-import type { DataKind, LayerVisibility, OverlayKind } from '../data/types';
+import type { FacilityLayerKind, LayerVisibility, OverlayKind } from '../data/types';
 import { colors, labels } from '../data/loaders';
 import { ColorIndicator, Panel } from './ui';
 
-const dataOrder: DataKind[] = ['ports', 'naval_bases', 'areas_of_interest'];
+const dataOrder = ['ports', 'naval_bases', 'shipyards', 'aoi'] as const;
 const overlayOrder: OverlayKind[] = ['ocean_seas', 'world_eez'];
+type DataLayerKind = FacilityLayerKind | 'aoi';
 
 export function LayerControls({
   visible,
@@ -14,7 +15,7 @@ export function LayerControls({
 }: {
   visible: LayerVisibility;
   labelVisible: Record<OverlayKind, boolean>;
-  counts: Record<DataKind, number>;
+  counts: Record<DataLayerKind, number>;
   onChange: (next: LayerVisibility) => void;
   onLabelChange: (next: Record<OverlayKind, boolean>) => void;
 }) {

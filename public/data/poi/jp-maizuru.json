@@ -1,0 +1,19 @@
+{
+  "id": "jp-maizuru",
+  "name": "Maizuru",
+  "proper": "Maizuru",
+  "type": "naval_base",
+  "country": "Japan",
+  "operator": "Japan Maritime Self-Defense Force",
+  "bounds": {
+    "north": 35.502395567147694,
+    "south": 35.47346251763302,
+    "east": 135.39679527282718,
+    "west": 135.3495025634766
+  },
+  "center": {
+    "lat": 35.487929042390356,
+    "lon": 135.37314891815188
+  },
+  "carriers": []
+}

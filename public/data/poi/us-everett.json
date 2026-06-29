@@ -1,0 +1,19 @@
+{
+  "id": "us-everett",
+  "name": "Everett",
+  "proper": "Naval Station Everett",
+  "type": "naval_base",
+  "country": "United States",
+  "operator": "United States Navy",
+  "bounds": {
+    "north": 48.005,
+    "south": 47.975,
+    "east": -122.205,
+    "west": -122.245
+  },
+  "center": {
+    "lat": 47.99,
+    "lon": -122.225
+  },
+  "carriers": []
+}

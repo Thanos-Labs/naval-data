@@ -1,0 +1,34 @@
+{
+  "id": "strait-of-sicily",
+  "name": "Strait of Sicily",
+  "type": "chokepoint",
+  "region": "Central Mediterranean",
+  "bounds": {
+    "north": 38.5,
+    "south": 35,
+    "east": 15.5,
+    "west": 10
+  },
+  "poly": [
+    {
+      "lat": 38.5,
+      "lon": 10
+    },
+    {
+      "lat": 38.5,
+      "lon": 15.5
+    },
+    {
+      "lat": 35,
+      "lon": 15.5
+    },
+    {
+      "lat": 35,
+      "lon": 10
+    }
+  ],
+  "strategic_value": "high",
+  "carrier_navigable": true,
+  "notes": "Central Mediterranean passage between Sicily and Tunisia.",
+  "wiki_url": "https://en.wikipedia.org/wiki/Strait_of_Sicily"
+}

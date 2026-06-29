@@ -1,0 +1,22 @@
+{
+  "id": "us-kitsap",
+  "name": "Kitsap",
+  "proper": "Naval Base Kitsap",
+  "type": "naval_base",
+  "country": "United States",
+  "operator": "United States Navy",
+  "bounds": {
+    "north": 47.59,
+    "south": 47.53,
+    "east": -122.61,
+    "west": -122.69
+  },
+  "center": {
+    "lat": 47.56,
+    "lon": -122.65
+  },
+  "carriers": [
+    "us-nimitz",
+    "us-ronald-reagan"
+  ]
+}

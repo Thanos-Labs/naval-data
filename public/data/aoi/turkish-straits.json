@@ -1,0 +1,34 @@
+{
+  "id": "turkish-straits",
+  "name": "Turkish Straits",
+  "type": "chokepoint",
+  "region": "Turkey",
+  "bounds": {
+    "north": 41.5,
+    "south": 39.8,
+    "east": 30,
+    "west": 26
+  },
+  "poly": [
+    {
+      "lat": 41.5,
+      "lon": 26
+    },
+    {
+      "lat": 41.5,
+      "lon": 30
+    },
+    {
+      "lat": 39.8,
+      "lon": 30
+    },
+    {
+      "lat": 39.8,
+      "lon": 26
+    }
+  ],
+  "strategic_value": "high",
+  "carrier_navigable": false,
+  "notes": "Combined Bosporus, Sea of Marmara, and Dardanelles route between the Black Sea and Mediterranean; legal and physical constraints limit aircraft carrier transit.",
+  "wiki_url": "https://en.wikipedia.org/wiki/Turkish_Straits"
+}

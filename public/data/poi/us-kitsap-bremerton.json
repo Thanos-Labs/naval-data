@@ -1,0 +1,19 @@
+{
+  "id": "us-kitsap-bremerton",
+  "name": "Kitsap Bremerton",
+  "proper": "Naval Base Kitsap Bremerton",
+  "type": "naval_base",
+  "country": "United States",
+  "operator": "United States Navy",
+  "bounds": {
+    "north": 47.56352514582814,
+    "south": 47.54985514515001,
+    "east": -122.62720584869386,
+    "west": -122.658748626709
+  },
+  "center": {
+    "lat": 47.55669014548907,
+    "lon": -122.64297723770143
+  },
+  "carriers": []
+}

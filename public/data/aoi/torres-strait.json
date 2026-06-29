@@ -1,0 +1,34 @@
+{
+  "id": "torres-strait",
+  "name": "Torres Strait",
+  "type": "chokepoint",
+  "region": "Australia / Papua New Guinea",
+  "bounds": {
+    "north": -9,
+    "south": -11,
+    "east": 144.5,
+    "west": 141.5
+  },
+  "poly": [
+    {
+      "lat": -9,
+      "lon": 141.5
+    },
+    {
+      "lat": -9,
+      "lon": 144.5
+    },
+    {
+      "lat": -11,
+      "lon": 144.5
+    },
+    {
+      "lat": -11,
+      "lon": 141.5
+    }
+  ],
+  "strategic_value": "medium",
+  "carrier_navigable": false,
+  "notes": "Shallow reef-filled passage between Australia and New Guinea; unsuitable for large aircraft carriers.",
+  "wiki_url": "https://en.wikipedia.org/wiki/Torres_Strait"
+}

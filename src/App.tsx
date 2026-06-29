@@ -1,6 +1,6 @@
 import { lazy, Suspense, useEffect, useMemo, useState } from 'react';
 import { loadData } from './data/loaders';
-import type { GeoItem, LayerVisibility, OverlayKind } from './data/types';
+import type { FacilityLayerKind, GeoItem, LayerVisibility, OverlayKind } from './data/types';
 import { LayerControls } from './components/LayerControls';
 import { MapView } from './components/MapView';
 
@@ -11,10 +11,17 @@ const DevMapEditor = import.meta.env.DEV
 const initialVisibility: LayerVisibility = {
   ports: true,
   naval_bases: true,
-  areas_of_interest: true,
+  shipyards: true,
+  aoi: true,
   ocean_seas: false,
   world_eez: false,
 };
+
+const facilityLayerByType = {
+  port: 'ports',
+  naval_base: 'naval_bases',
+  shipyard: 'shipyards',
+} satisfies Record<string, FacilityLayerKind>;
 
 const initialOverlayLabels: Record<OverlayKind, boolean> = {
   ocean_seas: false,
@@ -41,12 +48,16 @@ export function App() {
     void refresh();
   }, []);
 
-  const filtered = useMemo(() => items.filter((item) => visible[item.kind]), [items, visible]);
+  const filtered = useMemo(
+    () => items.filter((item) => item.kind === 'poi' ? visible[facilityLayerByType[item.data.type]] : visible[item.kind]),
+    [items, visible],
+  );
   const counts = useMemo(
     () => ({
-      ports: items.filter((item) => item.kind === 'ports').length,
-      naval_bases: items.filter((item) => item.kind === 'naval_bases').length,
-      areas_of_interest: items.filter((item) => item.kind === 'areas_of_interest').length,
+      ports: items.filter((item) => item.kind === 'poi' && item.data.type === 'port').length,
+      naval_bases: items.filter((item) => item.kind === 'poi' && item.data.type === 'naval_base').length,
+      shipyards: items.filter((item) => item.kind === 'poi' && item.data.type === 'shipyard').length,
+      aoi: items.filter((item) => item.kind === 'aoi').length,
     }),
     [items],
   );

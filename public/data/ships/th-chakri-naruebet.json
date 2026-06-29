@@ -1,0 +1,35 @@
+{
+  "id": "th-chakri-naruebet",
+  "mmsi": null,
+  "name": "Chakri Naruebet",
+  "proper": "HTMS Chakri Naruebet",
+  "comm": "1997-08-10",
+  "pennant": "911",
+  "deck": null,
+  "type": "helicopter",
+  "country": "Thailand",
+  "navy": "Royal Thai Navy",
+  "class": "Chakri Naruebet class",
+  "home_port": "th-sattahip",
+  "img": "https://commons.wikimedia.org/wiki/Special:FilePath/HTMS_Chakri_Naruebet.jpg",
+  "displacement": {
+    "tons": 11486,
+    "tonnes": 11670.3
+  },
+  "length": {
+    "m": 182.6,
+    "ft": 599.1
+  },
+  "beam": {
+    "m": 30.5,
+    "ft": 100.1
+  },
+  "draught": {
+    "m": 6.1,
+    "ft": 20
+  },
+  "speed": {
+    "knots": 26,
+    "km_h": 48.2
+  }
+}

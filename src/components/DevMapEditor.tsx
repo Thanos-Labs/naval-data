@@ -32,11 +32,6 @@ export function DevMapEditor({
     setDrawPoints([]);
   }
 
-  function selectMapItem(item: GeoItem) {
-    if (drawKind !== null) return;
-    onSelect(item);
-  }
-
   return (
     <>
       <MapView
@@ -46,10 +41,9 @@ export function DevMapEditor({
         showOceanSeasLabels={overlayLabels.ocean_seas}
         showWorldEez={visible.world_eez}
         showWorldEezLabels={overlayLabels.world_eez}
-        onSelect={selectMapItem}
+        onSelect={onSelect}
         onClearSelection={() => onSelect(null)}
         clearSelectionOnMapClick={drawKind === null}
-        editing={drawKind !== null}
       >
         <DevEditPointLayer
           kind={drawKind}
@@ -62,7 +56,7 @@ export function DevMapEditor({
 
       <div className="pointer-events-none absolute right-4 top-4 z-[1000] w-96 space-y-3">
         {controls}
-        <div className="pointer-events-auto max-h-[calc(100vh-12rem)] overflow-auto">
+        <div className="pointer-events-auto min-h-0">
           <EditorPanel
             selected={selected}
             bounds={drawBounds}
@@ -71,7 +65,7 @@ export function DevMapEditor({
             onStartCreate={(kind) => { setDrawKind(kind); setDrawPoints([]); }}
             onStartEdit={(item) => {
               setDrawKind(item.kind);
-              setDrawPoints(item.kind === 'areas_of_interest' ? item.data.bounds : boundsCorners(item.data.bounds));
+              setDrawPoints(item.kind === 'aoi' ? item.data.poly : boundsCorners(item.data.bounds));
             }}
             onClose={closeEditor}
             onClearPoints={() => setDrawPoints([])}

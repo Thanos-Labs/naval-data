@@ -6,9 +6,9 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import Ajv2020 from 'ajv/dist/2020.js';
 
-type DataKind = 'ports' | 'naval_bases' | 'areas_of_interest';
+type DataKind = 'poi' | 'aoi';
 type NamedPayload = { name: string; [key: string]: unknown };
-const kinds = new Set<DataKind>(['ports', 'naval_bases', 'areas_of_interest']);
+const kinds = new Set<DataKind>(['poi', 'aoi']);
 
 function slugify(value: string) {
   return value
