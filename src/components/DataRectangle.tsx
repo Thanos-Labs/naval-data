@@ -1,7 +1,7 @@
 import type { LeafletMouseEvent } from 'leaflet';
 import { Polygon, Popup, Rectangle } from 'react-leaflet';
 import { colors, labels } from '../data/loaders';
-import type { Bounds, GeoItem, Point } from '../data/types';
+import type { AreaBounds, Bounds, GeoItem } from '../data/types';
 import { leafletBounds, leafletPolygon } from '../lib/bounds';
 import { Tag } from './ui';
 
@@ -49,13 +49,18 @@ export function DataRectangle({
   onSelect,
 }: {
   item: GeoItem;
-  bounds: Bounds | Point[];
+  bounds: Bounds | AreaBounds;
   selected: boolean;
   editing: boolean;
   onSelect: (item: GeoItem) => void;
 }) {
   const color = colors[item.kind];
-  const pathOptions = { color, weight: selected ? 4 : 2, fillColor: color, fillOpacity: selected ? 0.28 : 0.16 };
+  const pathOptions = {
+    color,
+    weight: selected ? 4 : item.kind === 'areas_of_interest' ? 3 : 2,
+    fillColor: color,
+    fillOpacity: item.kind === 'areas_of_interest' ? (selected ? 0.18 : 0.1) : selected ? 0.28 : 0.16,
+  };
   const eventHandlers = {
     click: (event: LeafletMouseEvent) => {
       event.originalEvent.stopPropagation();

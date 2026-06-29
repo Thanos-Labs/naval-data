@@ -31,10 +31,20 @@
         "lon": { "$ref": "#/$defs/longitude" }
       }
     },
-    "bounds": {
+    "linearRing": {
       "type": "array",
       "minItems": 3,
       "items": { "$ref": "#/$defs/coordinate" }
+    },
+    "bounds": {
+      "oneOf": [
+        { "$ref": "#/$defs/linearRing" },
+        {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/linearRing" }
+        }
+      ]
     }
   },
   "required": [

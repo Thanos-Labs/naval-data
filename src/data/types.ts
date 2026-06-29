@@ -7,6 +7,9 @@ export type Point = {
   lon: number;
 };
 
+// AOIs can be a simple exterior ring, or an exterior ring followed by interior land-hole rings.
+export type AreaBounds = Point[] | Point[][];
+
 export type Bounds = {
   north: number;
   south: number;
@@ -58,7 +61,7 @@ export type AreaOfInterest = CollectionMeta & {
   name: string;
   type: 'strait' | 'canal' | 'chokepoint' | 'sea_lane' | 'sea' | 'gulf' | 'bay' | 'operating_area';
   region: string;
-  bounds: Point[];
+  bounds: AreaBounds;
   center: Point;
   min_depth_m: number | null;
   min_width_km: number | null;

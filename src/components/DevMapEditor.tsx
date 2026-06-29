@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
 import { useMemo, useState } from 'react';
 import type { DataKind, GeoItem, LayerVisibility, OverlayKind, Point } from '../data/types';
-import { boundsCorners, boundsFromPoints } from '../lib/bounds';
+import { boundsCorners, boundsFromPoints, hasPolygonRings } from '../lib/bounds';
 import { DevEditPointLayer } from './DevEditPointLayer';
 import { EditorPanel } from './EditorPanel';
 import { MapView } from './MapView';
@@ -71,7 +71,12 @@ export function DevMapEditor({
             onStartCreate={(kind) => { setDrawKind(kind); setDrawPoints([]); }}
             onStartEdit={(item) => {
               setDrawKind(item.kind);
-              setDrawPoints(item.kind === 'areas_of_interest' ? item.data.bounds : boundsCorners(item.data.bounds));
+              if (item.kind === 'areas_of_interest') {
+                const bounds = item.data.bounds;
+                setDrawPoints(hasPolygonRings(bounds) ? bounds[0] : bounds);
+              } else {
+                setDrawPoints(boundsCorners(item.data.bounds));
+              }
             }}
             onClose={closeEditor}
             onClearPoints={() => setDrawPoints([])}

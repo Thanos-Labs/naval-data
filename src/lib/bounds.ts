@@ -1,12 +1,21 @@
-import type { Bounds, Point } from '../data/types';
+import type { AreaBounds, Bounds, Point } from '../data/types';
 
-export function boundsFromPoints(points: Point[]): Bounds | null {
-  if (!points.length) return null;
+export function hasPolygonRings(points: AreaBounds): points is Point[][] {
+  return Array.isArray(points[0]);
+}
+
+function flattenAreaBounds(points: AreaBounds): Point[] {
+  return hasPolygonRings(points) ? points.flat() : points;
+}
+
+export function boundsFromPoints(points: AreaBounds): Bounds | null {
+  const flatPoints = flattenAreaBounds(points);
+  if (!flatPoints.length) return null;
   return {
-    north: Math.max(...points.map((p) => p.lat)),
-    south: Math.min(...points.map((p) => p.lat)),
-    east: Math.max(...points.map((p) => p.lon)),
-    west: Math.min(...points.map((p) => p.lon)),
+    north: Math.max(...flatPoints.map((p) => p.lat)),
+    south: Math.min(...flatPoints.map((p) => p.lat)),
+    east: Math.max(...flatPoints.map((p) => p.lon)),
+    west: Math.min(...flatPoints.map((p) => p.lon)),
   };
 }
 
@@ -17,7 +26,7 @@ export function centerFromBounds(bounds: Bounds): Point {
   };
 }
 
-export function centerFromPoints(points: Point[]): Point | null {
+export function centerFromPoints(points: AreaBounds): Point | null {
   const bounds = boundsFromPoints(points);
   return bounds ? centerFromBounds(bounds) : null;
 }
@@ -29,15 +38,19 @@ export function leafletBounds(bounds: Bounds): [[number, number], [number, numbe
   ];
 }
 
-export function leafletPolygon(points: Point[]): [number, number][] {
-  return points.map((point) => [point.lat, point.lon]);
+export function leafletPolygon(points: AreaBounds): [number, number][] | [number, number][][] {
+  if (hasPolygonRings(points)) {
+    return points.map((polygon) => polygon.map((point) => [point.lat, point.lon] as [number, number]));
+  }
+
+  return points.map((point) => [point.lat, point.lon] as [number, number]);
 }
 
 export function boundsArea(bounds: Bounds) {
   return Math.abs((bounds.north - bounds.south) * (bounds.east - bounds.west));
 }
 
-export function pointsArea(points: Point[]) {
+export function pointsArea(points: AreaBounds) {
   const bounds = boundsFromPoints(points);
   return bounds ? boundsArea(bounds) : 0;
 }
@@ -60,6 +73,10 @@ export function shiftBounds(bounds: Bounds, offset: number): Bounds {
   };
 }
 
-export function shiftPoints(points: Point[], offset: number): Point[] {
+export function shiftPoints(points: AreaBounds, offset: number): AreaBounds {
+  if (hasPolygonRings(points)) {
+    return points.map((polygon) => polygon.map((point) => ({ ...point, lon: point.lon + offset })));
+  }
+
   return points.map((point) => ({ ...point, lon: point.lon + offset }));
 }
