@@ -1,0 +1,58 @@
+{
+  "id": "dover-strait",
+  "name": "Dover Strait",
+  "type": "chokepoint",
+  "region": "Western Europe",
+  "bounds": {
+    "north": 51.3,
+    "south": 50.8,
+    "east": 1.9,
+    "west": 0.8
+  },
+  "poly": [
+    {
+      "lat": 51.3,
+      "lon": 1.9
+    },
+    {
+      "lat": 50.992942,
+      "lon": 1.9
+    },
+    {
+      "lat": 50.870492,
+      "lon": 1.579509
+    },
+    {
+      "lat": 50.8,
+      "lon": 1.600803
+    },
+    {
+      "lat": 50.8,
+      "lon": 0.8
+    },
+    {
+      "lat": 50.936681,
+      "lon": 0.8
+    },
+    {
+      "lat": 50.916278,
+      "lon": 0.98051
+    },
+    {
+      "lat": 51.062605,
+      "lon": 1.0678
+    },
+    {
+      "lat": 51.150198,
+      "lon": 1.385795
+    },
+    {
+      "lat": 51.3,
+      "lon": 1.384847
+    }
+  ],
+  "strategic_value": "high",
+  "carrier_navigable": true,
+  "notes": null,
+  "wiki_url": null
+}
