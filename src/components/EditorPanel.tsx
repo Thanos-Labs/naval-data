@@ -160,7 +160,7 @@ export function EditorPanel({
   const center = useMemo(() => (kind === 'aoi' ? centerFromPoints(points) : bounds ? centerFromBounds(bounds) : null), [bounds, kind, points]);
   const editing = mode === 'edit' ? selected : null;
   const data = editing?.data;
-  const areaNeedsMorePoints = kind === 'areas_of_interest' && points.length > 0 && points.length < 3;
+  const areaNeedsMorePoints = kind === 'aoi' && points.length > 0 && points.length < 3;
   const canSave = Boolean(bounds && center && !areaNeedsMorePoints);
 
   useEffect(() => {
