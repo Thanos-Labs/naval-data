@@ -3,6 +3,8 @@ import { loadData } from './data/loaders';
 import type { FacilityLayerKind, GeoItem, LayerVisibility, OverlayKind } from './data/types';
 import { LayerControls } from './components/LayerControls';
 import { MapView } from './components/MapView';
+import { SelectedItemPanel } from './components/SelectedItemPanel';
+import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 
 const DevMapEditor = import.meta.env.DEV
   ? lazy(() => import('./components/DevMapEditor').then((module) => ({ default: module.DevMapEditor })))
@@ -48,6 +50,12 @@ export function App() {
     void refresh();
   }, []);
 
+  useEffect(() => {
+    if (!selected) return;
+    const isVisible = selected.kind === 'poi' ? visible[facilityLayerByType[selected.data.type]] : visible.aoi;
+    if (!isVisible) setSelected(null);
+  }, [selected, visible]);
+
   const filtered = useMemo(
     () => items.filter((item) => item.kind === 'poi' ? visible[facilityLayerByType[item.data.type]] : visible[item.kind]),
     [items, visible],
@@ -62,8 +70,13 @@ export function App() {
     [items],
   );
   const controls = (
-    <>
-      {error && <div className="pointer-events-auto border border-destructive bg-card p-3 text-xs text-destructive">{error}</div>}
+    <div className="flex flex-col gap-3">
+      {error && (
+        <Alert variant="destructive" className="pointer-events-auto">
+          <AlertTitle>Unable to load map data</AlertTitle>
+          <AlertDescription>{error}</AlertDescription>
+        </Alert>
+      )}
       <div className="pointer-events-auto">
         <LayerControls
           visible={visible}
@@ -73,7 +86,7 @@ export function App() {
           onLabelChange={setOverlayLabels}
         />
       </div>
-    </>
+    </div>
   );
 
   return (
@@ -85,7 +98,6 @@ export function App() {
             selected={selected}
             visible={visible}
             overlayLabels={overlayLabels}
-            controls={controls}
             onSelect={setSelected}
             onRefresh={() => { void refresh(); }}
           />
@@ -102,10 +114,15 @@ export function App() {
             onSelect={setSelected}
             onClearSelection={() => setSelected(null)}
           />
-          <div className="pointer-events-none absolute right-4 top-4 z-[1000] w-96 space-y-3">
-            {controls}
-          </div>
         </>
+      )}
+      <div className="pointer-events-none absolute left-3 top-3 z-10 w-80 max-w-[calc(100vw-1.5rem)] sm:left-4 sm:top-4">
+        {controls}
+      </div>
+      {!DevMapEditor && selected && (
+        <div className="pointer-events-auto absolute right-3 top-[17rem] z-10 max-h-[calc(100vh-18rem)] w-96 max-w-[calc(100vw-1.5rem)] overflow-y-auto sm:right-4 sm:top-4 sm:max-h-[calc(100vh-2rem)]">
+          <SelectedItemPanel item={selected} />
+        </div>
       )}
     </main>
   );

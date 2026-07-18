@@ -1,6 +1,11 @@
 import type { FacilityLayerKind, LayerVisibility, OverlayKind } from '../data/types';
 import { colors, labels } from '../data/loaders';
-import { ColorIndicator, Panel } from './ui';
+import { ColorIndicator } from './ui/color-indicator';
+import { Badge } from '@/components/ui/badge';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Checkbox } from '@/components/ui/checkbox';
+import { Label } from '@/components/ui/label';
+import { cn } from '@/lib/utils';
 
 const dataOrder = ['ports', 'naval_bases', 'shipyards', 'aoi'] as const;
 const overlayOrder: OverlayKind[] = ['ocean_seas', 'world_eez'];
@@ -20,47 +25,49 @@ export function LayerControls({
   onLabelChange: (next: Record<OverlayKind, boolean>) => void;
 }) {
   return (
-    <Panel title="Layers">
-      <div className="space-y-2">
-        {dataOrder.map((kind) => (
-          <label key={kind} className="flex cursor-pointer items-center justify-between gap-4 text-sm">
-            <span className="flex items-center gap-2">
-              <input
-                type="checkbox"
+    <Card size="sm">
+      <CardHeader>
+        <CardTitle>Layers</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <fieldset className="flex flex-col gap-1">
+          <legend className="sr-only">Map layers</legend>
+          {dataOrder.map((kind) => (
+            <div key={kind} className="flex h-7 items-center gap-2">
+              <Checkbox
+                id={`layer-${kind}`}
                 checked={visible[kind]}
-                onChange={(event) => onChange({ ...visible, [kind]: event.target.checked })}
-                className="accent-cyan-300"
+                onCheckedChange={(checked) => onChange({ ...visible, [kind]: checked })}
               />
-              <ColorIndicator color={colors[kind]} label={labels[kind]} />
-            </span>
-            <span className="text-xs text-accent">{counts[kind]}</span>
-          </label>
-        ))}
-        {overlayOrder.map((kind) => (
-          <div key={kind} className="flex items-center justify-between gap-4 text-sm">
-            <label className="flex cursor-pointer items-center gap-2">
-              <input
-                type="checkbox"
+              <Label htmlFor={`layer-${kind}`}>
+                <ColorIndicator color={colors[kind]} />{labels[kind]}
+              </Label>
+              <Badge variant="secondary" className="ml-auto">{counts[kind]}</Badge>
+            </div>
+          ))}
+          {overlayOrder.map((kind) => (
+            <div key={kind} className="flex h-7 items-center gap-2">
+              <Checkbox
+                id={`layer-${kind}`}
                 checked={visible[kind]}
-                onChange={(event) => onChange({ ...visible, [kind]: event.target.checked })}
-                className="accent-cyan-300"
+                onCheckedChange={(checked) => onChange({ ...visible, [kind]: checked })}
               />
-              <ColorIndicator color={colors[kind]} label={labels[kind]} />
-            </label>
-            {visible[kind] && (
-              <label className="flex cursor-pointer items-center gap-1.5 text-[10px] tracking-tui uppercase text-muted-foreground">
-                <input
-                  type="checkbox"
+              <Label htmlFor={`layer-${kind}`}>
+                <ColorIndicator color={colors[kind]} />{labels[kind]}
+              </Label>
+              <div className={cn('ml-auto flex items-center gap-2', !visible[kind] && 'invisible')} aria-hidden={!visible[kind]}>
+                <Checkbox
+                  id={`labels-${kind}`}
                   checked={labelVisible[kind]}
-                  onChange={(event) => onLabelChange({ ...labelVisible, [kind]: event.target.checked })}
-                  className="accent-cyan-300"
+                  disabled={!visible[kind]}
+                  onCheckedChange={(checked) => onLabelChange({ ...labelVisible, [kind]: checked })}
                 />
-                labels
-              </label>
-            )}
-          </div>
-        ))}
-      </div>
-    </Panel>
+                <Label htmlFor={`labels-${kind}`}>Labels</Label>
+              </div>
+            </div>
+          ))}
+        </fieldset>
+      </CardContent>
+    </Card>
   );
 }

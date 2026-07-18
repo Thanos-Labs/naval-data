@@ -142,6 +142,7 @@ export function DevEditPointLayer({
     function onKeyDown(event: KeyboardEvent) {
       if (event.key !== 'Delete' && event.key !== 'Backspace') return;
       if (!selectedIndexes.size) return;
+      if ((event.target as HTMLElement | null)?.closest('input, textarea, select, [contenteditable="true"]')) return;
       event.preventDefault();
       onChangePoints(withoutIndexes(points, selectedIndexes));
       setSelectedIndexes(new Set());

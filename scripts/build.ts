@@ -17,7 +17,10 @@ for (const folder of readdirSync(dataDir, { withFileTypes: true }).filter((entry
     .map((entry) => join(entry.parentPath, entry.name))
     .sort();
 
-  const items = files.map((file) => JSON.parse(readFileSync(file, 'utf8')));
+  const items = files.map((file) => ({
+    ...JSON.parse(readFileSync(file, 'utf8')),
+    ...(['poi', 'aoi'].includes(folder.name) ? { _file: relative(dir, file) } : {}),
+  }));
   const out = join(dataDir, `${folder.name}.json`);
   const keyField = keyedFolders[folder.name];
 
