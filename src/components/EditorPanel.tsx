@@ -1,9 +1,20 @@
 import type * as React from 'react';
 import { useEffect, useMemo, useState } from 'react';
-import { CircleHelp, X } from 'lucide-react';
+import { CircleHelp, Plus } from 'lucide-react';
 import type { Bounds, DataKind, GeoItem } from '../data/types';
 import { centerFromBounds, centerFromPoints } from '../lib/bounds';
-import { Panel, SectionHeader, Button, Tooltip } from './ui';
+import { Alert, AlertDescription } from '@/components/ui/alert';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
+import { Select as SelectPrimitive, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { Separator } from '@/components/ui/separator';
+import { Textarea } from '@/components/ui/textarea';
+import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
+import { SelectedItemPanel } from './SelectedItemPanel';
+import { itemName } from './ItemTypeBadge';
 
 const kindLabels: Record<DataKind, string> = {
   poi: 'Point of Interest',
@@ -15,11 +26,6 @@ const areaTypes = ['chokepoint', 'canal', 'sea_lane', 'operating_area'];
 const strategic = ['low', 'medium', 'high', 'critical'];
 
 type Mode = 'create' | 'edit';
-
-function num(value: FormDataEntryValue | null) {
-  const text = String(value ?? '').trim();
-  return text === '' ? null : Number(text);
-}
 
 function text(value: FormDataEntryValue | null, required = false) {
   const out = String(value ?? '').trim();
@@ -64,28 +70,37 @@ function getBool(item: GeoItem['data'] | undefined, key: string) {
   return typeof value === 'boolean' ? value : null;
 }
 
-function Field({ name, label, type = 'text', required = false, value }: { name: string; label: string; type?: string; required?: boolean; value?: string | number | null }) {
+function TextField({ name, label, type = 'text', required = false, value }: { name: string; label: string; type?: string; required?: boolean; value?: string | number | null }) {
   return (
-    <label className="space-y-1 text-xs text-muted-foreground">
-      <span className="tracking-tui uppercase">{label}</span>
-      <input name={name} type={type} required={required} defaultValue={value ?? ''} className="w-full border border-border bg-background px-2 py-1 text-foreground" />
-    </label>
+    <div className="flex flex-col gap-2">
+      <Label htmlFor={name}>{label}</Label>
+      <Input id={name} name={name} type={type} required={required} defaultValue={value ?? ''} />
+    </div>
   );
 }
 
-function Select({ name, label, values, value }: { name: string; label: string; values: string[]; value?: string }) {
+function SelectField({ name, label, values, value }: { name: string; label: string; values: string[]; value?: string }) {
+  const items = values.map((option) => ({ label: option, value: option }));
+
   return (
-    <label className="space-y-1 text-xs text-muted-foreground">
-      <span className="tracking-tui uppercase">{label}</span>
-      <select name={name} defaultValue={value ?? values[0]} className="w-full border border-border bg-background px-2 py-1 text-foreground">
-        {values.map((option) => <option key={option} value={option}>{option}</option>)}
-      </select>
-    </label>
+    <div className="flex flex-col gap-2">
+      <Label htmlFor={name}>{label}</Label>
+      <SelectPrimitive items={items} name={name} defaultValue={value ?? values[0]}>
+        <SelectTrigger id={name} className="w-full">
+          <SelectValue />
+        </SelectTrigger>
+        <SelectContent>
+          <SelectGroup>
+            {values.map((option) => <SelectItem key={option} value={option}>{option}</SelectItem>)}
+          </SelectGroup>
+        </SelectContent>
+      </SelectPrimitive>
+    </div>
   );
 }
 
 function TriBool({ name, label, value }: { name: string; label: string; value?: boolean | null }) {
-  return <Select name={name} label={label} values={['null', 'true', 'false']} value={boolValue(value)} />;
+  return <SelectField name={name} label={label} values={['null', 'true', 'false']} value={boolValue(value)} />;
 }
 
 function BoundsReadout({ bounds }: { bounds: Bounds }) {
@@ -101,21 +116,18 @@ function BoundsReadout({ bounds }: { bounds: Bounds }) {
 
 function DrawHelp() {
   return (
-    <Tooltip
-      content={(
-        <>
+    <Tooltip>
+      <TooltipTrigger type="button" aria-label="Drawing help" className="flex size-4 items-center justify-center">
+        <CircleHelp className="size-3" aria-hidden="true" />
+      </TooltipTrigger>
+      <TooltipContent side="left" className="flex w-64 flex-col items-start">
         <span className="block">select point + delete: remove the point</span>
         <span className="block">select point + drag: move the point</span>
         <span className="block">ctrl + drag: select points within a bounding box</span>
         <span className="block">shift + select points: select multiple points</span>
         <span className="block">click line segment: insert a new point in the middle</span>
         <span className="block">esc: cancel without saving</span>
-        </>
-      )}
-    >
-      <span tabIndex={0} className="inline-flex outline-none">
-        <CircleHelp className="size-3.5 text-accent" aria-hidden="true" />
-      </span>
+      </TooltipContent>
     </Tooltip>
   );
 }
@@ -123,7 +135,7 @@ function DrawHelp() {
 function EditorTitle({ mode }: { mode: Mode }) {
   return (
     <span className="inline-flex items-center gap-1.5">
-      <span>{mode === 'edit' ? 'Edit Area' : 'Create Area'}</span>
+      <span>{mode === 'edit' ? 'Edit record' : 'Create record'}</span>
       <DrawHelp />
     </span>
   );
@@ -138,8 +150,7 @@ export function EditorPanel({
   onStartEdit,
   onClose,
   onClearPoints,
-  onClearSelection,
-  onSaved,
+  onMutated,
 }: {
   selected: GeoItem | null;
   bounds: Bounds | null;
@@ -149,13 +160,13 @@ export function EditorPanel({
   onStartEdit: (item: GeoItem) => void;
   onClose: () => void;
   onClearPoints: () => void;
-  onClearSelection: () => void;
-  onSaved: () => void;
+  onMutated: () => void;
 }) {
   const [open, setOpen] = useState(false);
   const [mode, setMode] = useState<Mode>('create');
   const [kind, setKind] = useState<DataKind>('poi');
   const [saving, setSaving] = useState(false);
+  const [deleting, setDeleting] = useState(false);
   const [message, setMessage] = useState<string | null>(null);
   const center = useMemo(() => (kind === 'aoi' ? centerFromPoints(points) : bounds ? centerFromBounds(bounds) : null), [bounds, kind, points]);
   const editing = mode === 'edit' ? selected : null;
@@ -231,111 +242,158 @@ export function EditorPanel({
         carriers: list(form.get('carriers')),
       }
       : {
-          ...common,
-          id: text(form.get('id'), true),
-          bounds: common.bounds,
-          poly: points,
-          type: String(form.get('type')),
-          region: text(form.get('region'), true),
-          strategic_value: String(form.get('strategic_value')),
-          carrier_navigable: bool(form.get('carrier_navigable')),
-        };
+        ...common,
+        id: text(form.get('id'), true),
+        bounds: common.bounds,
+        poly: points,
+        type: String(form.get('type')),
+        region: text(form.get('region'), true),
+        strategic_value: String(form.get('strategic_value')),
+        carrier_navigable: bool(form.get('carrier_navigable')),
+      };
 
     const file = mode === 'edit' && data?._file ? `?file=${encodeURIComponent(data._file)}` : '';
     setSaving(true);
     setMessage(null);
-    const response = await fetch(`/api/data/${kind}${file}`, {
-      method: 'POST',
-      headers: { 'content-type': 'application/json' },
-      body: JSON.stringify(payload),
-    });
-    setSaving(false);
+    try {
+      const response = await fetch(`/api/data/${kind}${file}`, {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
 
-    if (!response.ok) {
-      setMessage(await response.text());
+      if (!response.ok) {
+        setMessage(await response.text());
+        return;
+      }
+
+      onMutated();
+      setOpen(false);
+    } catch (error) {
+      setMessage(error instanceof Error ? error.message : String(error));
+    } finally {
+      setSaving(false);
+    }
+  }
+
+  async function deleteSelected() {
+    if (!selected) return;
+    if (!selected.data._file) {
+      setMessage('This record has no source filename. Rebuild the data collection before deleting it.');
       return;
     }
+    if (!window.confirm(`Delete ${itemName(selected)}? This cannot be undone.`)) return;
 
-    setMessage('saved');
-    onSaved();
-    setOpen(false);
+    setDeleting(true);
+    setMessage(null);
+    try {
+      const response = await fetch(`/api/data/${selected.kind}?file=${encodeURIComponent(selected.data._file)}`, { method: 'DELETE' });
+      if (!response.ok) {
+        setMessage(await response.text());
+        return;
+      }
+      onMutated();
+    } catch (error) {
+      setMessage(error instanceof Error ? error.message : String(error));
+    } finally {
+      setDeleting(false);
+    }
   }
 
   if (!open) {
+    if (selected) {
+      return <SelectedItemPanel item={selected} error={message} deleting={deleting} onEdit={openEdit} onDelete={() => { void deleteSelected(); }} />;
+    }
+
     return (
-      <Panel
-        title="Dev Tools"
-        action={selected && (
-          <Button variant="ghost" onClick={onClearSelection} aria-label="Clear selection" className="h-5 w-5 justify-center p-0">
-            <X className="size-3.5" aria-hidden="true" />
-          </Button>
-        )}
-      >
-        <Button variant="accent" onClick={selected ? openEdit : openCreate}>{selected ? 'Edit' : 'Create'}</Button>
-        {selected && <div className="mt-2 text-xs text-muted-foreground">Selected: <span className="text-foreground">{selected.data.name}</span></div>}
-      </Panel>
+      <div className="flex justify-end">
+        <Button onClick={openCreate} aria-label="Create record" className="bg-white">
+          <Plus aria-hidden="true" /> Create
+        </Button>
+      </div>
     );
   }
 
   return (
-    <Panel
-      title={<EditorTitle mode={mode} />}
-      className="flex max-h-[calc(100vh-20rem)] min-h-0 flex-col overflow-hidden"
-      bodyClassName="flex-1 overflow-y-auto pb-0"
-      action={
-        <Button variant="ghost" onClick={close} aria-label="Close" className="h-5 w-5 justify-center p-0">
-          <X className="size-3.5" aria-hidden="true" />
-        </Button>
-      }
-    >
-      <div className="space-y-3">
-        <label className="space-y-1 text-xs text-muted-foreground">
-          <span className="tracking-tui uppercase">Kind</span>
-          <select
-            value={kind}
-            disabled={mode === 'edit'}
-            onChange={(event) => { const next = event.target.value as DataKind; setKind(next); onStartCreate(next); }}
-            className="w-full border border-border bg-background px-2 py-1 text-foreground disabled:opacity-60"
-          >
-            {(Object.keys(kindLabels) as DataKind[]).map((value) => <option key={value} value={value}>{kindLabels[value]}</option>)}
-          </select>
-        </label>
+    <Card size="sm" className="min-h-0 flex-1">
+      <CardHeader>
+        <CardTitle><EditorTitle mode={mode} /></CardTitle>
+      </CardHeader>
+      <CardContent className="min-h-0 flex-1 overflow-y-auto pb-1">
+        <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-2">
+            <Label htmlFor="kind">Kind</Label>
+            <SelectPrimitive
+              items={Object.entries(kindLabels).map(([value, label]) => ({ value, label }))}
+              value={kind}
+              disabled={mode === 'edit'}
+              onValueChange={(value) => {
+                if (!value) return;
+                const next = value as DataKind;
+                setKind(next);
+                onStartCreate(next);
+              }}
+            >
+              <SelectTrigger id="kind" className="w-full">
+                <SelectValue />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectGroup>
+                  {(Object.keys(kindLabels) as DataKind[]).map((value) => <SelectItem key={value} value={value}>{kindLabels[value]}</SelectItem>)}
+                </SelectGroup>
+              </SelectContent>
+            </SelectPrimitive>
+          </div>
 
-        <SectionHeader label="Bounds" count={pointsCount} />
-        {bounds ? <BoundsReadout bounds={bounds} /> : <div className="text-xs text-muted-foreground">Add points to define bounds.</div>}
-        {areaNeedsMorePoints && <div className="text-xs text-destructive">Add at least 3 points to save an area.</div>}
+          <div className="flex items-center gap-2">
+            <span>Bounds</span>
+            <Badge variant="secondary">{pointsCount}</Badge>
+            <Separator className="flex-1" />
+          </div>
+          {bounds ? <BoundsReadout bounds={bounds} /> : <p className="text-sm text-muted-foreground">Add points to define bounds.</p>}
+          {areaNeedsMorePoints && (
+            <Alert variant="destructive">
+              <AlertDescription>Add at least 3 points to save an area.</AlertDescription>
+            </Alert>
+          )}
 
-        {bounds && (
-          <form key={`${mode}:${kind}:${data?._file ?? 'new'}`} className="space-y-3" onSubmit={submit}>
-            <Field name="name" label="Name" required value={data?.name} />
-            {kind === 'poi' && <Field name="id" label="ID" required value={getText(data, 'id')} />}
-            {kind === 'poi' && <Field name="proper" label="Proper Name" required value={getText(data, 'proper')} />}
-            {kind === 'poi' && <Field name="country" label="Country" required value={getText(data, 'country')} />}
-            {kind === 'poi' && <Select name="type" label="Type" values={poiTypes} value={String(getValue(data, 'type') ?? poiTypes[0])} />}
-            {kind === 'aoi' && <Field name="id" label="ID" required value={getText(data, 'id')} />}
-            {kind === 'aoi' && <Select name="type" label="Type" values={areaTypes} value={String(getValue(data, 'type') ?? areaTypes[0])} />}
-            {kind === 'aoi' && <Field name="region" label="Region" required value={getText(data, 'region')} />}
-            {kind === 'poi' && <Field name="operator" label="Operator" value={getText(data, 'operator')} />}
-
-            {kind === 'aoi' && <Select name="strategic_value" label="Strategic Value" values={strategic} value={String(getValue(data, 'strategic_value') ?? strategic[0])} />}
-            {kind === 'aoi' && <TriBool name="carrier_navigable" label="Carrier Navigable" value={getBool(data, 'carrier_navigable')} />}
-            {kind === 'poi' && <Field name="carriers" label="Carriers" value={listText(getValue(data, 'carriers'))} />}
-
-            {kind === 'aoi' && <Field name="wiki_url" label="Wiki URL" value={getText(data, 'wiki_url')} />}
-            {kind === 'aoi' && (
-              <label className="space-y-1 text-xs text-muted-foreground">
-                <span className="tracking-tui uppercase">Notes</span>
-                <textarea name="notes" defaultValue={String(getValue(data, 'notes') ?? '')} className="h-20 w-full border border-border bg-background px-2 py-1 text-foreground" />
-              </label>
-            )}
-            <div className="sticky bottom-0 z-10 -mx-3 flex gap-2 border-t border-border bg-card px-3 py-3">
-              <Button type="submit" variant="accent" disabled={saving}>Save</Button>
-              <Button type="button" onClick={onClearPoints}>Clear Points</Button>
-            </div>
-            {message && <pre className="max-h-32 overflow-auto whitespace-pre-wrap text-[10px] text-muted-foreground">{message}</pre>}
-          </form>
-        )}
-      </div>
-    </Panel>
+          {bounds && (
+            <form id="editor-form" key={`${mode}:${kind}:${data?._file ?? 'new'}`} onSubmit={submit}>
+              <div className="flex flex-col gap-5">
+                <TextField name="name" label="Name" required value={data?.name} />
+                {kind === 'poi' && <TextField name="id" label="ID" required value={getText(data, 'id')} />}
+                {kind === 'poi' && <TextField name="proper" label="Proper Name" required value={getText(data, 'proper')} />}
+                {kind === 'poi' && <TextField name="country" label="Country" required value={getText(data, 'country')} />}
+                {kind === 'poi' && <SelectField name="type" label="Type" values={poiTypes} value={String(getValue(data, 'type') ?? poiTypes[0])} />}
+                {kind === 'aoi' && <TextField name="id" label="ID" required value={getText(data, 'id')} />}
+                {kind === 'aoi' && <SelectField name="type" label="Type" values={areaTypes} value={String(getValue(data, 'type') ?? areaTypes[0])} />}
+                {kind === 'aoi' && <TextField name="region" label="Region" required value={getText(data, 'region')} />}
+                {kind === 'poi' && <TextField name="operator" label="Operator" value={getText(data, 'operator')} />}
+                {kind === 'aoi' && <SelectField name="strategic_value" label="Strategic Value" values={strategic} value={String(getValue(data, 'strategic_value') ?? strategic[0])} />}
+                {kind === 'aoi' && <TriBool name="carrier_navigable" label="Carrier Navigable" value={getBool(data, 'carrier_navigable')} />}
+                {kind === 'poi' && <TextField name="carriers" label="Carriers" value={listText(getValue(data, 'carriers'))} />}
+                {kind === 'aoi' && <TextField name="wiki_url" label="Wiki URL" value={getText(data, 'wiki_url')} />}
+                {kind === 'aoi' && (
+                  <div className="flex flex-col gap-2">
+                    <Label htmlFor="notes">Notes</Label>
+                    <Textarea id="notes" name="notes" defaultValue={String(getValue(data, 'notes') ?? '')} />
+                  </div>
+                )}
+                {message && (
+                  <Alert variant="destructive">
+                    <AlertDescription><pre className="max-h-32 overflow-auto whitespace-pre-wrap">{message}</pre></AlertDescription>
+                  </Alert>
+                )}
+              </div>
+            </form>
+          )}
+        </div>
+      </CardContent>
+      <CardFooter className="gap-2">
+        <Button type="submit" form="editor-form" disabled={saving || !canSave}>Save</Button>
+        <Button type="button" variant="outline" onClick={onClearPoints} disabled={!pointsCount}>Clear Points</Button>
+        <Button type="button" variant="ghost" className="ml-auto" onClick={close}>Cancel</Button>
+      </CardFooter>
+    </Card>
   );
 }

@@ -17,7 +17,7 @@ export type Bounds = {
 };
 
 type CollectionMeta = {
-  _file?: string;
+  _file: string;
 };
 
 export type PointOfInterest = CollectionMeta & {

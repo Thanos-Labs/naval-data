@@ -1,4 +1,3 @@
-import type { ReactNode } from 'react';
 import { useMemo, useState } from 'react';
 import type { DataKind, GeoItem, LayerVisibility, OverlayKind, Point } from '../data/types';
 import { boundsCorners, boundsFromPoints } from '../lib/bounds';
@@ -11,7 +10,6 @@ export function DevMapEditor({
   selected,
   visible,
   overlayLabels,
-  controls,
   onSelect,
   onRefresh,
 }: {
@@ -19,7 +17,6 @@ export function DevMapEditor({
   selected: GeoItem | null;
   visible: LayerVisibility;
   overlayLabels: Record<OverlayKind, boolean>;
-  controls: ReactNode;
   onSelect: (item: GeoItem | null) => void;
   onRefresh: () => void;
 }) {
@@ -44,6 +41,7 @@ export function DevMapEditor({
         onSelect={onSelect}
         onClearSelection={() => onSelect(null)}
         clearSelectionOnMapClick={drawKind === null}
+        itemsInteractive={drawKind === null}
       >
         <DevEditPointLayer
           kind={drawKind}
@@ -54,9 +52,8 @@ export function DevMapEditor({
         />
       </MapView>
 
-      <div className="pointer-events-none absolute right-4 top-4 z-[1000] w-96 space-y-3">
-        {controls}
-        <div className="pointer-events-auto min-h-0">
+      <div className="pointer-events-none absolute right-3 top-[17rem] z-10 flex max-h-[calc(100vh-18rem)] w-96 max-w-[calc(100vw-1.5rem)] flex-col sm:right-4 sm:top-4 sm:max-h-[calc(100vh-2rem)]">
+        <div className="pointer-events-auto min-h-0 flex-1">
           <EditorPanel
             selected={selected}
             bounds={drawBounds}
@@ -69,8 +66,7 @@ export function DevMapEditor({
             }}
             onClose={closeEditor}
             onClearPoints={() => setDrawPoints([])}
-            onClearSelection={() => { onSelect(null); closeEditor(); }}
-            onSaved={() => { onSelect(null); closeEditor(); onRefresh(); }}
+            onMutated={() => { onSelect(null); closeEditor(); onRefresh(); }}
           />
         </div>
       </div>

@@ -1,7 +1,7 @@
 import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 import { defineConfig, type Plugin } from 'vite';
-import { mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readdirSync, readFileSync, unlinkSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import Ajv2020 from 'ajv/dist/2020.js';
@@ -37,7 +37,7 @@ function buildCollection(dataDir: string, kind: DataKind) {
     .filter((file) => file.endsWith('.json'))
     .sort()
     .map((file) => ({ ...JSON.parse(readFileSync(join(dir, file), 'utf8')), _file: file }));
-  writeFileSync(join(dataDir, `${kind}.json`), `${JSON.stringify(items, null, 2)}\n`);
+  writeFileSync(join(dataDir, `${kind}.json`), `${JSON.stringify(Object.fromEntries(items.map((item) => [item.id, item])), null, 2)}\n`);
 }
 
 function dataWriterPlugin(): Plugin {
@@ -48,7 +48,7 @@ function dataWriterPlugin(): Plugin {
     name: 'naval-data-writer',
     configureServer(server) {
       server.middlewares.use(async (req, res, next) => {
-        if (req.method !== 'POST' || !req.url?.startsWith('/api/data/')) return next();
+        if (!['POST', 'DELETE'].includes(req.method ?? '') || !req.url?.startsWith('/api/data/')) return next();
 
         const kind = decodeURIComponent(req.url.replace('/api/data/', '').split('?')[0] ?? '') as DataKind;
         if (!kinds.has(kind)) {
@@ -58,8 +58,32 @@ function dataWriterPlugin(): Plugin {
         }
 
         try {
-          const payload = JSON.parse(await readBody(req)) as NamedPayload;
           const requestedFile = new URL(req.url, 'http://localhost').searchParams.get('file');
+          const validRequestedFile = requestedFile?.match(/^[a-z0-9][a-z0-9_.-]*\.json$/) ? requestedFile : null;
+          const dir = join(dataDir, kind);
+
+          if (req.method === 'DELETE') {
+            if (!validRequestedFile) {
+              res.statusCode = 400;
+              res.end(JSON.stringify({ error: 'a valid source filename is required' }));
+              return;
+            }
+
+            const file = join(dir, validRequestedFile);
+            if (!existsSync(file)) {
+              res.statusCode = 404;
+              res.end(JSON.stringify({ error: 'source file not found' }));
+              return;
+            }
+
+            unlinkSync(file);
+            buildCollection(dataDir, kind);
+            res.setHeader('content-type', 'application/json');
+            res.end(JSON.stringify({ ok: true, file: validRequestedFile }));
+            return;
+          }
+
+          const payload = JSON.parse(await readBody(req)) as NamedPayload;
           delete payload._file;
           const schema = JSON.parse(readFileSync(join(dataDir, `${kind}.schema.json`), 'utf8'));
           const ajv = new Ajv2020({ allErrors: true, validateFormats: false });
@@ -72,19 +96,16 @@ function dataWriterPlugin(): Plugin {
             return;
           }
 
-          const dir = join(dataDir, kind);
           mkdirSync(dir, { recursive: true });
           if (typeof payload.name !== 'string') throw new Error('payload.name must be string');
           const slug = slugify(payload.name);
-          const safeRequestedFile = requestedFile?.match(/^[a-z0-9_\-.]+\.json$/) ? requestedFile : null;
-          const filename = safeRequestedFile ?? `${slug}.json`;
+          const filename = validRequestedFile ?? `${slug}.json`;
           const file = join(dir, filename);
           writeFileSync(file, `${JSON.stringify(payload, null, 2)}\n`);
           buildCollection(dataDir, kind);
 
           res.setHeader('content-type', 'application/json');
-          res.end(JSON.stringify({ ok: true, file: `/data/${kind}/${safeRequestedFile ?? `${slug}.json`}` }));
-          server.ws.send({ type: 'full-reload' });
+          res.end(JSON.stringify({ ok: true, file: `/data/${kind}/${filename}` }));
         } catch (error) {
           res.statusCode = 500;
           res.setHeader('content-type', 'application/json');
@@ -96,5 +117,6 @@ function dataWriterPlugin(): Plugin {
 }
 
 export default defineConfig({
+  resolve: { alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) } },
   plugins: [react(), tailwindcss(), dataWriterPlugin()],
 });
